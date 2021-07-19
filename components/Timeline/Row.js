@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styles from "./index.module.scss";
+import styles from "./Timeline.module.scss";
 import { TimelineContext } from "./index";
 
 const Row = ({ name, startTime, endTime }) => {

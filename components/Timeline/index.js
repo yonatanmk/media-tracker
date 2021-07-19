@@ -1,7 +1,7 @@
 import React from "react";
 import moment from "moment";
 
-import styles from "./index.module.scss";
+import styles from "./Timeline.module.scss";
 import Row from "./Row";
 
 export const TimelineContext = React.createContext({});
