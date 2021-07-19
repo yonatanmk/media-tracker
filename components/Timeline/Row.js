@@ -17,11 +17,26 @@ const Row = ({ name, startTime, endTime }) => {
   const percentage = rowDuration / timelineDuration;
   const bufferLength = startTime - timelineStartTime;
   const bufferPercentage = bufferLength / timelineDuration;
+
+  const style = {};
+  if (percentage < 0.03 && name.length > 8) {
+    style.fontSize = "0.6rem";
+  }
+  // } else if (percentage < 0.05 && name.length > 5) {
+  //   style.fontSize = "0.75rem";
+  // }
+
+  console.log({
+    name,
+    style,
+  });
+
   return (
     <div className={styles.row}>
       <div
         className={styles.row__block}
         style={{
+          ...style,
           width: `${percentage * 100}%`,
           marginLeft: `${bufferPercentage * 100}%`,
         }}

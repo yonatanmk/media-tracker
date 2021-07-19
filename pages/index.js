@@ -9,7 +9,7 @@ const Home = ({ media }) => {
   const mappedMedia = media.map((item) => ({
     ...item,
     startTime: new Date(item.startTime),
-    endTime: new Date(item.endTime),
+    endTime: item.endTime ? new Date(item.endTime) : new Date(),
   }));
   console.log(mappedMedia);
 
@@ -32,7 +32,7 @@ const Home = ({ media }) => {
             <Timeline.Row
               name={item.name}
               startTime={item.startTime}
-              endTime={item.endTime || new Date()}
+              endTime={item.endTime}
             />
           ))}
         </Timeline>
