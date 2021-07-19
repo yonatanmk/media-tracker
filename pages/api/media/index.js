@@ -21,22 +21,32 @@ handler.get((req, res) => {
     {
       id: 1,
       name: "Dishonored 2",
+      startTime: new Date("04/20/2019"),
+      endTime: new Date("6/14/2019"),
     },
     {
       id: 2,
-      name: "Horizon Zero Dawn",
+      name: "Red Dead Redemption 2",
+      startTime: new Date("10/26/2018"),
+      endTime: new Date("3/18/2019"),
     },
     {
       id: 3,
-      name: "God of War",
+      name: "Cyberpunk 2077",
+      startTime: new Date("12/09/2020"),
+      endTime: new Date("12/30/2020"),
     },
     {
       id: 4,
       name: "Yakuza 6",
+      startTime: new Date("12/7/2020"),
+      endTime: new Date("1/7/2021"),
     },
     {
       id: 5,
       name: "Divinity Original Sin 2",
+      startTime: new Date("05/31/2020"),
+      endTime: new Date("10/26/2020"),
     },
   ];
   // return mockData;
