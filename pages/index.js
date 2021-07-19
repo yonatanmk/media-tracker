@@ -1,11 +1,13 @@
 import React from "react";
 import axios from "axios";
 
+import styles from "./index.module.scss";
+
 const Home = ({ media }) => {
   console.log(media);
   return (
     <div>
-      <h1>Home</h1>
+      <h1 className={styles.title}>Home</h1>
     </div>
   );
 };
