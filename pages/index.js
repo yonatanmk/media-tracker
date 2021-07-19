@@ -6,8 +6,14 @@ import styles from "./index.module.scss";
 const Home = ({ media }) => {
   console.log(media);
   return (
-    <div>
-      <h1 className={styles.title}>Home</h1>
+    <div className={styles.container}>
+      <div className={styles.sidePanel}>
+        <h1 className={styles.title}>Home</h1>
+        {media.map((item) => (
+          <p>{item.name}</p>
+        ))}
+      </div>
+      <div className={styles.content}></div>
     </div>
   );
 };
