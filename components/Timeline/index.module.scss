@@ -1,0 +1,27 @@
+.timeline {
+  background-color: white;
+  width: 100%;
+}
+
+.row {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+
+  &__header {
+    background-color: #A31621;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+  }
+
+  &__block {
+    color: white;
+    background-color: #227C9D;
+    padding-left: 1rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+}
