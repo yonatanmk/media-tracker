@@ -6,9 +6,17 @@ import styles from "./index.module.scss";
 import Timeline from "../components/Timeline";
 
 const Home = ({ media }) => {
-  console.log(media);
+  const mappedMedia = media.map((item) => ({
+    ...item,
+    startTime: new Date(item.startTime),
+    endTime: new Date(item.endTime),
+  }));
+  console.log(mappedMedia);
 
-  // const
+  const timelineStartTime = mappedMedia.reduce(
+    (acc, item) => (item.startTime < acc ? item.startTime : acc),
+    new Date()
+  );
 
   return (
     <div className={styles.container}>
@@ -19,12 +27,12 @@ const Home = ({ media }) => {
         ))}
       </div>
       <div className={styles.content}>
-        <Timeline startTime={new Date("09/01/2018")} endTime={new Date()}>
-          {media.map((item) => (
+        <Timeline startTime={timelineStartTime} endTime={new Date()}>
+          {mappedMedia.map((item) => (
             <Timeline.Row
               name={item.name}
-              startTime={new Date(item.startTime)}
-              endTime={new Date(item.endTime)}
+              startTime={item.startTime}
+              endTime={item.endTime || new Date()}
             />
           ))}
         </Timeline>
@@ -32,15 +40,11 @@ const Home = ({ media }) => {
     </div>
   );
 };
-// "06/2018"
 
 export async function getStaticProps() {
   const response = await axios.get(
     `${process.env.NEXT_PUBLIC_API_HOST}/api/media`
   );
-
-  // console.log("response");
-  // console.log(response.data);
 
   return {
     props: {

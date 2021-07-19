@@ -48,6 +48,12 @@ handler.get((req, res) => {
       startTime: new Date("05/31/2020"),
       endTime: new Date("10/26/2020"),
     },
+    {
+      id: 6,
+      name: "Persona 4 Golden",
+      startTime: new Date("06/15/2021"),
+      endTime: null,
+    },
   ];
   // return mockData;
   res.send(mockData);

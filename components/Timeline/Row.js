@@ -4,23 +4,19 @@ import { TimelineContext } from "./index";
 
 const Row = ({ name, startTime, endTime }) => {
   const { timelineStartTime, timelineEndTime } = useContext(TimelineContext);
-  console.log({
-    name,
-    startTime,
-    endTime,
-    timelineStartTime,
-    timelineEndTime,
-  });
+  // console.log({
+  //   name,
+  //   startTime,
+  //   endTime,
+  //   timelineStartTime,
+  //   timelineEndTime,
+  // });
 
   const timelineDuration = timelineEndTime - timelineStartTime;
   const rowDuration = endTime - startTime;
   const percentage = rowDuration / timelineDuration;
-  const bufferTime = startTime - timelineStartTime;
-  const bufferPercentage = bufferTime / timelineDuration;
-  console.log("Timeline Duration: " + timelineDuration);
-  console.log("Row Duration: " + rowDuration);
-  console.log("percentage: " + percentage);
-  console.log("buffer: " + bufferPercentage);
+  const bufferLength = startTime - timelineStartTime;
+  const bufferPercentage = bufferLength / timelineDuration;
   return (
     <div className={styles.row}>
       <div
