@@ -19,23 +19,28 @@ const handler = nc({
 handler.get((req, res) => {
   const mockData = [
     {
+      id: 1,
       name: "Dishonored 2",
     },
     {
+      id: 2,
       name: "Horizon Zero Dawn",
     },
     {
+      id: 3,
       name: "God of War",
     },
     {
+      id: 4,
       name: "Yakuza 6",
     },
     {
+      id: 5,
       name: "Divinity Original Sin 2",
     },
   ];
   // return mockData;
-  res.send({ data: mockData });
+  res.send(mockData);
 });
 
 export default handler;
