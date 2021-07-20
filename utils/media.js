@@ -23,3 +23,6 @@ export const getDateString = (date) => {
 
   return `${month}/${day}/${year}`;
 };
+
+export const datesEqual = (a, b) =>
+  Math.ceil(a.getTime() / 1000) === Math.ceil(b.getTime() / 1000);

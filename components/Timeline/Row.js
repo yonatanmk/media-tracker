@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styles from "./Timeline.module.scss";
 import { TimelineContext } from "./index";
+import { datesEqual } from "../../utils/media";
 
 const Row = ({ media: { id, name, type, startTime, endTime } }) => {
   const { timelineStartTime, timelineEndTime } = useContext(TimelineContext);
@@ -19,27 +20,39 @@ const Row = ({ media: { id, name, type, startTime, endTime } }) => {
   const bufferPercentage = bufferLength / timelineDuration;
   const isSmall = percentage < 0.01 || (percentage < 0.03 && name.length > 15);
 
-  // const style = {};
-  // if (percentage < 0.03 && name.length > 8) {
-  //   style.fontSize = "0.6rem";
-  // }
-  // } else if (percentage < 0.05 && name.length > 5) {
-  //   style.fontSize = "0.75rem";
+  const style = {};
+  if (
+    percentage < 0.03 &&
+    name.length > 10 &&
+    datesEqual(endTime, timelineEndTime)
+  ) {
+    style.fontSize = "0.6rem";
+  }
+  // } else if (
+  //   percentage < 0.05 &&
+  //   name.length > 5 &&
+  //   endTime.getTime() === timelineEndTime.getTime()
+  // ) {
+  // style.fontSize = "0.75rem";
   // }
 
-  if (id === 13) {
-    console.log({
-      name,
-      percentage,
-    });
-  }
+  // if (id === 30) {
+  //   console.log({
+  //     name,
+  //     namelength: name.length,
+  //     percentage,
+  //     endTime: endTime.getTime(),
+  //     timelineEndTime: timelineEndTime.getTime(),
+  //     equal: datesEqual(endTime, timelineEndTime),
+  //   });
+  // }
 
   return (
     <div className={styles.row}>
       <div
         className={`${styles.row__block} ${styles[`row__block__${type}`]}`}
         style={{
-          // ...style,
+          ...style,
           width: `${percentage * 100}%`,
           marginLeft: `${bufferPercentage * 100}%`,
         }}
