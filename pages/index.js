@@ -20,11 +20,19 @@ const Home = ({ media }) => {
     new Date()
   );
 
+  const sortedMedia = [...mappedMedia].sort((a, b) =>
+    getDurationDays(a) < getDurationDays(b) ? 1 : -1
+  );
+
+  const sortedTimelineMedia = [...mappedMedia].sort((a, b) =>
+    a.startTime > b.startTime ? 1 : -1
+  );
+
   return (
     <div className={styles.container}>
       <div className={styles.sidePanel}>
         <table className={styles.sideTable}>
-          {mappedMedia.map((item) => (
+          {sortedMedia.map((item) => (
             <tr key={item.id}>
               <td style={{ width: "12rem" }}>{item.name}</td>
               <td>{getDateString(item.startTime)}</td>
@@ -37,7 +45,7 @@ const Home = ({ media }) => {
       <div className={styles.content}>
         <div className={styles.content__scrollbox}>
           <Timeline startTime={timelineStartTime} endTime={new Date()}>
-            {mappedMedia.map((item) => (
+            {sortedTimelineMedia.map((item) => (
               <Timeline.Row
                 name={item.name}
                 startTime={item.startTime}
