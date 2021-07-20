@@ -60,6 +60,12 @@ handler.get((req, res) => {
       startTime: new Date("02/25/2021"),
       endTime: new Date("03/10/2021"),
     },
+    {
+      id: 7,
+      name: "Ori and the Will of the Wisps",
+      startTime: new Date("05/30/2021"),
+      endTime: new Date("06/20/2021"),
+    },
   ];
   // return mockData;
   res.send(mockData);
