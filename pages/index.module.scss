@@ -1,11 +1,11 @@
 .container {
   display: flex;
   height: 100vh;
-  width: 200%;
+  width: 300%;
 }
 
 .sidePanel {
-  width: 10%;
+  width: 15%;
   min-width: 10rem;
   border-right: 1px solid black;
   .title {
@@ -16,4 +16,15 @@
 .content {
   flex: 1;
   background-color: #CEFDFF;
+}
+
+.sideTable {
+  width: 100%;
+  table-layout: fixed;
+  margin: 1rem;
+  // display: flex;
+  td {
+    // flex: 1
+    // background-color: blue;
+  }
 }

@@ -4,12 +4,14 @@ import moment from "moment";
 
 import styles from "./index.module.scss";
 import Timeline from "../components/Timeline";
+import { getDurationDays, getDateString } from "../utils/media";
 
 const Home = ({ media }) => {
   const mappedMedia = media.map((item) => ({
     ...item,
     startTime: new Date(item.startTime),
     endTime: item.endTime ? new Date(item.endTime) : new Date(),
+    inProgress: !item.endTime,
   }));
   console.log(mappedMedia);
 
@@ -21,10 +23,16 @@ const Home = ({ media }) => {
   return (
     <div className={styles.container}>
       <div className={styles.sidePanel}>
-        <h1 className={styles.title}>Home</h1>
-        {media.map((item) => (
-          <p key={item.id}>{item.name}</p>
-        ))}
+        <table className={styles.sideTable}>
+          {mappedMedia.map((item) => (
+            <tr key={item.id}>
+              <td>{item.name}</td>
+              <td>{getDateString(item.startTime)}</td>
+              <td>{item.inProgress ? "Today" : getDateString(item.endTime)}</td>
+              <td>{getDurationDays(item) + " days"}</td>
+            </tr>
+          ))}
+        </table>
       </div>
       <div className={styles.content}>
         <Timeline startTime={timelineStartTime} endTime={new Date()}>
