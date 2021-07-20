@@ -17,7 +17,7 @@ const Row = ({ name, startTime, endTime }) => {
   const percentage = rowDuration / timelineDuration;
   const bufferLength = startTime - timelineStartTime;
   const bufferPercentage = bufferLength / timelineDuration;
-  const isSmall = percentage < 0.03 && name.length > 8;
+  const isSmall = percentage < 0.01 && name.length > 8;
 
   // const style = {};
   // if (percentage < 0.03 && name.length > 8) {
