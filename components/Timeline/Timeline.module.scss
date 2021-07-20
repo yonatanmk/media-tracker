@@ -34,5 +34,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &__videogame {
+      background-color: #227C9D;
+    }
+
+    &__book {
+      background-color: #A31621;
+    }
+
+    &__tv {
+      background-color: #19535F;
+    }
   }
 }
+
+// 38023B
+// A663CC
+// F9DC5C
+// AB87FF
+// 9D9171

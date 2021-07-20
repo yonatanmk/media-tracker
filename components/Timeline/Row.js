@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styles from "./Timeline.module.scss";
 import { TimelineContext } from "./index";
 
-const Row = ({ media: { id, name, startTime, endTime } }) => {
+const Row = ({ media: { id, name, type, startTime, endTime } }) => {
   const { timelineStartTime, timelineEndTime } = useContext(TimelineContext);
   // console.log({
   //   name,
@@ -37,7 +37,7 @@ const Row = ({ media: { id, name, startTime, endTime } }) => {
   return (
     <div className={styles.row}>
       <div
-        className={styles.row__block}
+        className={`${styles.row__block} ${styles[`row__block__${type}`]}`}
         style={{
           // ...style,
           width: `${percentage * 100}%`,

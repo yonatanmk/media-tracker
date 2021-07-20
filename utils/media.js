@@ -1,9 +1,18 @@
-export const getDurations = (media) => {
-  return media.endTime - media.startTime;
+export const mediaTypes = Object.freeze({
+  videogame: "videogame",
+  book: "book",
+  tv: "tv",
+});
+
+export const getDuration = (media) => {
+  return media.endTime - media.startTime + 1000 * 60 * 60 * 24;
 };
 
 export const getDurationDays = (media) => {
-  const duration = getDurations(media);
+  const duration = getDuration(media);
+  if (Math.ceil(duration / (1000 * 60 * 60 * 24) === 2)) {
+    console.log(duration);
+  }
   return Math.ceil(duration / (1000 * 60 * 60 * 24));
 };
 
