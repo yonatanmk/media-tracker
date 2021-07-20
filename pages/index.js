@@ -46,11 +46,7 @@ const Home = ({ media }) => {
         <div className={styles.content__scrollbox}>
           <Timeline startTime={timelineStartTime} endTime={new Date()}>
             {sortedTimelineMedia.map((item) => (
-              <Timeline.Row
-                name={item.name}
-                startTime={item.startTime}
-                endTime={item.endTime}
-              />
+              <Timeline.Row media={item} />
             ))}
           </Timeline>
         </div>
