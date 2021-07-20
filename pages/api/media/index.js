@@ -54,6 +54,12 @@ handler.get((req, res) => {
       startTime: new Date("06/15/2021"),
       endTime: null,
     },
+    {
+      id: 7,
+      name: "13 Sentinels",
+      startTime: new Date("02/25/2021"),
+      endTime: new Date("03/10/2021"),
+    },
   ];
   // return mockData;
   res.send(mockData);
