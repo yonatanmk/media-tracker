@@ -26,7 +26,7 @@ const Home = ({ media }) => {
         <table className={styles.sideTable}>
           {mappedMedia.map((item) => (
             <tr key={item.id}>
-              <td>{item.name}</td>
+              <td style={{ width: "12rem" }}>{item.name}</td>
               <td>{getDateString(item.startTime)}</td>
               <td>{item.inProgress ? "Today" : getDateString(item.endTime)}</td>
               <td>{getDurationDays(item) + " days"}</td>
