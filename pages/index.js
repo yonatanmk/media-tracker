@@ -5,6 +5,7 @@ import moment from "moment";
 import styles from "./index.module.scss";
 import Timeline from "../components/Timeline";
 import { getDurationDays, getDateString } from "../utils/media";
+import { capitalize } from "../utils";
 
 const Home = ({ media }) => {
   const mappedMedia = media.map((item) => ({
@@ -35,6 +36,7 @@ const Home = ({ media }) => {
           {sortedMedia.map((item) => (
             <tr key={item.id}>
               <td style={{ width: "12rem" }}>{item.name}</td>
+              <td>{capitalize(item.type)}</td>
               <td>{getDateString(item.startTime)}</td>
               <td>{item.inProgress ? "Today" : getDateString(item.endTime)}</td>
               <td>{getDurationDays(item) + " days"}</td>
