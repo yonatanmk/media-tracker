@@ -286,6 +286,27 @@ handler.get((req, res) => {
       type: mediaTypes.videogame,
       // 10/8 to 10/13, 5/26 to 5/30
     },
+    {
+      id: 39,
+      name: "The Sinking City",
+      startTime: new Date("06/25/2019"),
+      endTime: new Date("07/17/2019"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 40,
+      name: "Moss",
+      startTime: new Date("03/09/2019"),
+      endTime: new Date("03/10/2019"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 41,
+      name: "Super Smash Brothers Ultimate",
+      startTime: new Date("12/07/2018"),
+      endTime: new Date("01/12/2019"),
+      type: mediaTypes.videogame,
+    },
   ];
   // return mockData;
   res.send(mockData);
