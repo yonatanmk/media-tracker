@@ -57,7 +57,11 @@ const Row = ({ media: { id, name, type, startTime, endTime } }) => {
       >
         {(atEnd || !isSmall) && <p>{name}</p>}
       </div>
-      {isSmall && !atEnd && <p style={{ marginLeft: "4px" }}>{name}</p>}
+      {isSmall && !atEnd && (
+        <div className={styles.row__block__label}>
+          <p>{name}</p>
+        </div>
+      )}
     </div>
   );
 };

@@ -37,6 +37,12 @@
     justify-content: center;
     z-index: 1;
 
+    &__label {
+      background-color: white;
+      z-index: 1;
+      margin-left: 4px;
+    }
+
     &__videogame {
       background-color: #227C9D;
     }
