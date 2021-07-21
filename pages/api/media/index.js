@@ -342,6 +342,41 @@ handler.get((req, res) => {
       endTime: new Date("06/24/2021"),
       type: mediaTypes.tv,
     },
+    {
+      id: 47,
+      name: "Yakuza 0",
+      startTime: new Date("04/04/2021"),
+      endTime: new Date("04/24/2021"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 48,
+      name: "Nier Replicant",
+      startTime: new Date("04/25/2021"),
+      endTime: new Date("05/08/2021"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 49,
+      name: "Yakuza Kiwami Playthrough",
+      startTime: new Date("05/08/2021"),
+      endTime: new Date("05/09/2021"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 50,
+      name: "Yakuza Kiwami 2 Playthrough",
+      startTime: new Date("05/10/2021"),
+      endTime: new Date("05/11/2021"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 51,
+      name: "Civilization VI",
+      startTime: new Date("04/28/2021"),
+      endTime: new Date("05/12/2021"),
+      type: mediaTypes.videogame,
+    },
   ];
   // return mockData;
   res.send(mockData);
