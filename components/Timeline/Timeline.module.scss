@@ -1,6 +1,11 @@
+.scrollbox {
+  overflow: auto;
+  height: calc(100% - 2rem);
+}
+
 .timeline {
   background-color: white;
-  width: 100%;
+  width: 600%;
   position: relative;
 }
 
@@ -15,13 +20,10 @@
     background-color: #A31621;
     color: white;
     font-weight: bold;
-    // padding: 0.5rem 2rem;
     height: 2rem;
-    p {
-      position: fixed;
-      margin-top: 0.5rem;
-      margin-left: 2rem;
-    }
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
   }
 
   &__content {
@@ -60,7 +62,7 @@
 .monthLine {
   border-left: 1px solid black;
   position: absolute;
-  top: 2rem;
+  top: 0;
   bottom: 2rem;
 }
 

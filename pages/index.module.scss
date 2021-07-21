@@ -1,7 +1,6 @@
 .container {
   display: flex;
   height: 100vh;
-  // width: 300%;
 }
 
 .sidePanel {
@@ -15,15 +14,10 @@
 .content {
   flex: 1;
   background-color: #CEFDFF;
-  overflow: auto;
-
-  &__scrollbox {
-    width: 600%;
-  }
 }
 
 .sideTable {
-  width: 97%;
+  width: calc(100% - 1rem);
   table-layout: fixed;
   margin: 1rem;
 }

@@ -45,13 +45,11 @@ const Home = ({ media }) => {
         </table>
       </div>
       <div className={styles.content}>
-        <div className={styles.content__scrollbox}>
-          <Timeline startTime={timelineStartTime} endTime={new Date()}>
-            {sortedTimelineMedia.map((item) => (
-              <Timeline.Row media={item} />
-            ))}
-          </Timeline>
-        </div>
+        <Timeline startTime={timelineStartTime} endTime={new Date()}>
+          {sortedTimelineMedia.map((item) => (
+            <Timeline.Row media={item} />
+          ))}
+        </Timeline>
       </div>
     </div>
   );
