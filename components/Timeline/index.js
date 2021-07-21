@@ -33,25 +33,28 @@ const Timeline = ({ startTime, endTime, children }) => {
         </div>
         {children}
         <div className={styles.row}>
-          {months.map((month) => {
+          {months.map((month, i) => {
             const bufferLength = month - timelineStartTime;
             const bufferPercentage = bufferLength / timelineDuration;
             if (month === months[months.length - 1]) {
               return null;
             }
             return (
-              <p
+              <div
                 style={{
                   position: "absolute",
                   // top: "2rem",
                   bottom: 0,
-                  left: `${
-                    (bufferPercentage + monthWidthPercentage / 2) * 100
-                  }%`,
+                  left: `${bufferPercentage * 100}%`,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "2rem",
+                  width: `${monthWidthPercentage * 100}%`,
                 }}
               >
-                {getMonthYear(month)}
-              </p>
+                <p>{getMonthYear(month)}</p>
+              </div>
             );
           })}
         </div>
