@@ -328,6 +328,20 @@ handler.get((req, res) => {
       endTime: new Date("01/05/2020"),
       type: mediaTypes.videogame,
     },
+    {
+      id: 45,
+      name: "Zombieland Saga S1",
+      startTime: new Date("10/20/2018"),
+      endTime: new Date("12/26/2018"),
+      type: mediaTypes.tv,
+    },
+    {
+      id: 46,
+      name: "Zombieland Saga S2",
+      startTime: new Date("04/23/2021"),
+      endTime: new Date("06/24/2021"),
+      type: mediaTypes.tv,
+    },
   ];
   // return mockData;
   res.send(mockData);
