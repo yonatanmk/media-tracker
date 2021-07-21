@@ -18,14 +18,11 @@ const Row = ({ media: { id, name, type, startTime, endTime } }) => {
   const percentage = rowDuration / timelineDuration;
   const bufferLength = startTime - timelineStartTime;
   const bufferPercentage = bufferLength / timelineDuration;
-  const isSmall = percentage < 0.01 || (percentage < 0.03 && name.length > 15);
+  const isSmall = percentage < 0.01 || (percentage < 0.03 && name.length > 11);
+  const atEnd = datesEqual(endTime, timelineEndTime);
 
   const style = {};
-  if (
-    percentage < 0.03 &&
-    name.length > 10 &&
-    datesEqual(endTime, timelineEndTime)
-  ) {
+  if (percentage < 0.03 && name.length > 10 && atEnd) {
     style.fontSize = "0.6rem";
   }
   // } else if (
@@ -36,16 +33,16 @@ const Row = ({ media: { id, name, type, startTime, endTime } }) => {
   // style.fontSize = "0.75rem";
   // }
 
-  // if (id === 30) {
-  //   console.log({
-  //     name,
-  //     namelength: name.length,
-  //     percentage,
-  //     endTime: endTime.getTime(),
-  //     timelineEndTime: timelineEndTime.getTime(),
-  //     equal: datesEqual(endTime, timelineEndTime),
-  //   });
-  // }
+  if (id === 7) {
+    console.log({
+      name,
+      namelength: name.length,
+      percentage,
+      endTime: endTime.getTime(),
+      timelineEndTime: timelineEndTime.getTime(),
+      equal: atEnd,
+    });
+  }
 
   return (
     <div className={styles.row}>
@@ -57,9 +54,9 @@ const Row = ({ media: { id, name, type, startTime, endTime } }) => {
           marginLeft: `${bufferPercentage * 100}%`,
         }}
       >
-        {!isSmall && <p>{name}</p>}
+        {(atEnd || !isSmall) && <p>{name}</p>}
       </div>
-      {isSmall && <p style={{ marginLeft: "4px" }}>{name}</p>}
+      {isSmall && !atEnd && <p style={{ marginLeft: "4px" }}>{name}</p>}
     </div>
   );
 };
