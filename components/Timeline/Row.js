@@ -4,7 +4,8 @@ import { TimelineContext } from "./index";
 import { datesEqual } from "../../utils/media";
 
 const Row = ({ media: { id, name, type, startTime, endTime } }) => {
-  const { timelineStartTime, timelineEndTime } = useContext(TimelineContext);
+  const { timelineStartTime, timelineEndTime, trueEndTime } =
+    useContext(TimelineContext);
   // console.log({
   //   name,
   //   startTime,
@@ -19,7 +20,7 @@ const Row = ({ media: { id, name, type, startTime, endTime } }) => {
   const bufferLength = startTime - timelineStartTime;
   const bufferPercentage = bufferLength / timelineDuration;
   const isSmall = percentage < 0.01 || (percentage < 0.02 && name.length > 12);
-  const atEnd = datesEqual(endTime, timelineEndTime);
+  const atEnd = datesEqual(endTime, trueEndTime);
 
   const style = {};
   if (percentage < 0.02 && name.length > 10 && atEnd) {
