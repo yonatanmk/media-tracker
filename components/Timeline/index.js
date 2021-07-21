@@ -41,6 +41,7 @@ const Timeline = ({ startTime, endTime, children }) => {
             }
             return (
               <div
+                className={styles.monthLabel}
                 style={{
                   position: "absolute",
                   // top: "2rem",
@@ -65,9 +66,6 @@ const Timeline = ({ startTime, endTime, children }) => {
             <div
               className={styles.monthLine}
               style={{
-                position: "absolute",
-                top: "2rem",
-                bottom: "2rem",
                 left: `${bufferPercentage * 100}%`,
               }}
             ></div>
