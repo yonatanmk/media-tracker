@@ -18,11 +18,11 @@ const Row = ({ media: { id, name, type, startTime, endTime } }) => {
   const percentage = rowDuration / timelineDuration;
   const bufferLength = startTime - timelineStartTime;
   const bufferPercentage = bufferLength / timelineDuration;
-  const isSmall = percentage < 0.01 || (percentage < 0.03 && name.length > 11);
+  const isSmall = percentage < 0.01 || (percentage < 0.02 && name.length > 12);
   const atEnd = datesEqual(endTime, timelineEndTime);
 
   const style = {};
-  if (percentage < 0.03 && name.length > 10 && atEnd) {
+  if (percentage < 0.02 && name.length > 10 && atEnd) {
     style.fontSize = "0.6rem";
   }
   // } else if (
