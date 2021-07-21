@@ -6,10 +6,10 @@
 
 .sidePanel {
   // width: 30%;
-  width: 35rem;
+  width: 40rem;
   min-width: 10rem;
   border-right: 1px solid black;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .content {
@@ -18,12 +18,12 @@
   overflow: auto;
 
   &__scrollbox {
-    width: 500%;
+    width: 600%;
   }
 }
 
 .sideTable {
-  width: 100%;
+  width: 97%;
   table-layout: fixed;
   margin: 1rem;
 }
