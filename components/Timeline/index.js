@@ -3,7 +3,7 @@ import moment from "moment";
 
 import styles from "./Timeline.module.scss";
 import Row from "./Row";
-import { getMonths } from "../../utils/media";
+import { getMonths, getMonthYear } from "../../utils/media";
 
 export const TimelineContext = React.createContext({});
 
@@ -16,6 +16,8 @@ const Timeline = ({ startTime, endTime, children }) => {
   const timelineStartTime = months[0];
   const timelineEndTime = months[months.length - 1];
   const timelineDuration = timelineEndTime - timelineStartTime;
+  const monthWidthPercentage =
+    timelineDuration / months.length / timelineDuration;
   console.log(months);
   return (
     <TimelineContext.Provider
@@ -30,6 +32,29 @@ const Timeline = ({ startTime, endTime, children }) => {
           <p>{title}</p>
         </div>
         {children}
+        <div className={styles.row}>
+          {months.map((month) => {
+            const bufferLength = month - timelineStartTime;
+            const bufferPercentage = bufferLength / timelineDuration;
+            if (month === months[months.length - 1]) {
+              return null;
+            }
+            return (
+              <p
+                style={{
+                  position: "absolute",
+                  // top: "2rem",
+                  bottom: 0,
+                  left: `${
+                    (bufferPercentage + monthWidthPercentage / 2) * 100
+                  }%`,
+                }}
+              >
+                {getMonthYear(month)}
+              </p>
+            );
+          })}
+        </div>
         {months.map((month) => {
           const bufferLength = month - timelineStartTime;
           const bufferPercentage = bufferLength / timelineDuration;
@@ -39,7 +64,7 @@ const Timeline = ({ startTime, endTime, children }) => {
               style={{
                 position: "absolute",
                 top: "2rem",
-                bottom: 0,
+                bottom: "2rem",
                 left: `${bufferPercentage * 100}%`,
               }}
             ></div>
