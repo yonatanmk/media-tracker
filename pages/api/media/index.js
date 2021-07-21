@@ -307,6 +307,27 @@ handler.get((req, res) => {
       endTime: new Date("01/12/2019"),
       type: mediaTypes.videogame,
     },
+    {
+      id: 42,
+      name: "Danganronpa 1 Trigger Happy Havoc",
+      startTime: new Date("06/24/2018"),
+      endTime: new Date("06/29/2018"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 43,
+      name: "Danganronpa 2: Goodbye Despair",
+      startTime: new Date("06/30/2018"),
+      endTime: new Date("08/26/2018"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 44,
+      name: "Danganronpa 3: The End of Hope's Peak High School",
+      startTime: new Date("12/21/2019"),
+      endTime: new Date("01/05/2020"),
+      type: mediaTypes.videogame,
+    },
   ];
   // return mockData;
   res.send(mockData);
