@@ -43,14 +43,9 @@ const Timeline = ({ startTime, endTime, children }) => {
               <div
                 className={styles.monthLabel}
                 style={{
-                  position: "absolute",
                   // top: "2rem",
                   bottom: 0,
                   left: `${bufferPercentage * 100}%`,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: "2rem",
                   width: `${monthWidthPercentage * 100}%`,
                 }}
               >
