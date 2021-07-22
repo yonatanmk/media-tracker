@@ -73,7 +73,9 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
       {startTime && !nodes[0] && getBlock(startTime, endTime)}
       {nodes &&
         nodes[0] &&
-        nodes.map((node, i) => getBlock(node.startTime, node.endTime, id + i))}
+        nodes.map((node, i) =>
+          getBlock(node.startTime, node.endTime, `${id}00${i}`)
+        )}
     </div>
   );
 };

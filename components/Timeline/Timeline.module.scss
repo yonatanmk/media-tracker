@@ -40,6 +40,7 @@
     justify-content: center;
     z-index: 1;
     position: absolute;
+    border-radius: 4px;
 
     &__label {
       background-color: white;
@@ -59,6 +60,10 @@
     &__tv {
       background-color: #19535F;
     }
+
+    &__playthrough {
+      background-color: #79b473;
+    }
   }
 }
 
@@ -76,6 +81,13 @@
   align-items: center;
   height: 2rem;
 }
+
+// 4 color palette
+// A31621
+// 19535F
+// CEFDFF
+// 227C9D
+
 
 // 38023B
 // A663CC

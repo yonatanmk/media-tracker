@@ -371,14 +371,14 @@ handler.get((req, res) => {
       name: "Yakuza Kiwami Playthrough",
       startTime: new Date("05/08/2021"),
       endTime: new Date("05/09/2021"),
-      type: mediaTypes.videogame,
+      type: mediaTypes.playthrough,
     },
     {
       id: 50,
       name: "Yakuza Kiwami 2 Playthrough",
       startTime: new Date("05/10/2021"),
       endTime: new Date("05/11/2021"),
-      type: mediaTypes.videogame,
+      type: mediaTypes.playthrough,
     },
     {
       id: 51,
