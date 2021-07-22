@@ -66,7 +66,7 @@ const Home = ({ media }) => {
       <div className={styles.sidePanel}>
         <table className={styles.sideTable}>
           {sortedMedia.map((item) => (
-            <tr key={item.id}>
+            <tr key={item._id}>
               <td style={{ width: "12rem" }}>{item.name}</td>
               <td>{capitalize(item.type)}</td>
               <td>{getDateString(item.startTime)}</td>
@@ -79,7 +79,7 @@ const Home = ({ media }) => {
       <div className={styles.content}>
         <Timeline startTime={timelineStartTime} endTime={new Date()}>
           {sortedTimelineMedia.map((item) => (
-            <Timeline.Row media={item} />
+            <Timeline.Row key={item._id} media={item} />
           ))}
         </Timeline>
       </div>

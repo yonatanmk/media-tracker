@@ -3,7 +3,7 @@ import styles from "./Timeline.module.scss";
 import { TimelineContext } from "./index";
 import { datesEqual } from "../../utils/media";
 
-const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
+const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
   const { timelineStartTime, timelineEndTime, trueEndTime } =
     useContext(TimelineContext);
 
@@ -30,7 +30,7 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
     // style.fontSize = "0.75rem";
     // }
 
-    // if (id === 38) {
+    // if (_id === 38) {
     //   console.log({
     //     name,
     //     namelength: name.length,
@@ -43,7 +43,7 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
     // }
 
     return (
-      <Fragment key={key || id}>
+      <Fragment key={key || _id}>
         <div
           className={`${styles.row__block} ${styles[`row__block__${type}`]}`}
           style={{
@@ -74,7 +74,7 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
       {nodes &&
         nodes[0] &&
         nodes.map((node, i) =>
-          getBlock(node.startTime, node.endTime, `${id}00${i}`)
+          getBlock(node.startTime, node.endTime, `${_id}${i}`)
         )}
     </div>
   );

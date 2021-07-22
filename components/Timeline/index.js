@@ -42,6 +42,7 @@ const Timeline = ({ startTime, endTime, children }) => {
                 }
                 return (
                   <div
+                    key={i}
                     className={styles.monthLabel}
                     style={{
                       // top: "2rem",
@@ -55,11 +56,12 @@ const Timeline = ({ startTime, endTime, children }) => {
                 );
               })}
             </div>
-            {months.map((month) => {
+            {months.map((month, i) => {
               const bufferLength = month - timelineStartTime;
               const bufferPercentage = bufferLength / timelineDuration;
               return (
                 <div
+                  key={i}
                   className={styles.monthLine}
                   style={{
                     left: `${bufferPercentage * 100}%`,
