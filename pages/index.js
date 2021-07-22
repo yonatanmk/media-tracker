@@ -65,15 +65,19 @@ const Home = ({ media }) => {
     <div className={styles.container}>
       <div className={styles.sidePanel}>
         <table className={styles.sideTable}>
-          {sortedMedia.map((item) => (
-            <tr key={item._id}>
-              <td style={{ width: "12rem" }}>{item.name}</td>
-              <td>{capitalize(item.type)}</td>
-              <td>{getDateString(item.startTime)}</td>
-              <td>{item.inProgress ? "Today" : getDateString(item.endTime)}</td>
-              <td>{item.duration + " days"}</td>
-            </tr>
-          ))}
+          <tbody>
+            {sortedMedia.map((item) => (
+              <tr key={item._id}>
+                <td style={{ width: "12rem" }}>{item.name}</td>
+                <td>{capitalize(item.type)}</td>
+                <td>{getDateString(item.startTime)}</td>
+                <td>
+                  {item.inProgress ? "Today" : getDateString(item.endTime)}
+                </td>
+                <td>{item.duration + " days"}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
       <div className={styles.content}>
