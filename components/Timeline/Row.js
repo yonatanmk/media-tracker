@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, Fragment } from "react";
 import styles from "./Timeline.module.scss";
 import { TimelineContext } from "./index";
 import { datesEqual } from "../../utils/media";
@@ -9,7 +9,7 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
 
   const timelineDuration = timelineEndTime - timelineStartTime;
 
-  const getBlock = (startTime, endTime) => {
+  const getBlock = (startTime, endTime, key) => {
     const rowDuration = endTime - startTime;
     const percentage = rowDuration / timelineDuration;
     const bufferLength = startTime - timelineStartTime;
@@ -42,7 +42,7 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
     // }
 
     return (
-      <>
+      <Fragment key={key || id}>
         <div
           className={`${styles.row__block} ${styles[`row__block__${type}`]}`}
           style={{
@@ -63,13 +63,16 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
             <p>{name}</p>
           </div>
         )}
-      </>
+      </Fragment>
     );
   };
 
   return (
     <div className={styles.row}>
       {startTime && getBlock(startTime, endTime)}
+      {nodes &&
+        nodes[0] &&
+        nodes.map((node, i) => getBlock(node.startTime, node.endTime, id + i))}
     </div>
   );
 };

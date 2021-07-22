@@ -8,13 +8,30 @@ import { getDurationDays, getDateString } from "../utils/media";
 import { capitalize } from "../utils";
 
 const Home = ({ media }) => {
-  const mappedMedia = media.map((item) => ({
-    ...item,
-    startTime: new Date(item.startTime),
-    endTime: item.endTime ? new Date(item.endTime) : new Date(),
-    inProgress: !item.endTime,
-  }));
-  console.log(mappedMedia);
+  const mappedMedia = media.map((item) => {
+    const sortedMappedNodes = !item.nodes
+      ? []
+      : item.nodes
+          .map((node) => ({
+            ...node,
+            startTime: new Date(node.startTime),
+            endTime: node.endTime ? new Date(node.endTime) : new Date(),
+          }))
+          .sort((a, b) => (a.startTime > b.startTime ? 1 : -1));
+    return {
+      ...item,
+      startTime: item.startTime
+        ? new Date(item.startTime)
+        : sortedMappedNodes[0],
+      endTime: !item.startTime
+        ? null
+        : item.endTime
+        ? new Date(item.endTime)
+        : new Date(),
+      inProgress: !item.endTime,
+      nodes: sortedMappedNodes,
+    };
+  });
 
   const timelineStartTime = mappedMedia.reduce(
     (acc, item) => (item.startTime < acc ? item.startTime : acc),

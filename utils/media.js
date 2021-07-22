@@ -17,6 +17,9 @@ export const getDurationDays = (media) => {
 };
 
 export const getDateString = (date) => {
+  if (!date) {
+    return "NULL";
+  }
   const day = date.getDate() + "";
   const month = date.getMonth() + 1 + "";
   const year = date.getFullYear() + "";
@@ -42,12 +45,6 @@ export const getMonths = (start, end) => {
   const startMonth = start.getMonth() + 1;
   const endYear = timelineEndDate.getFullYear();
   const endMonth = timelineEndDate.getMonth() + 1;
-  // console.log({
-  //   startYear,
-  //   startMonth,
-  //   endYear,
-  //   endMonth,
-  // });
 
   for (let year = startYear; year <= endYear; year++) {
     const yearStartMonth = year === startYear ? startMonth : 1;
