@@ -10,9 +10,6 @@ export const getDuration = (media) => {
 
 export const getDurationDays = (media) => {
   const duration = getDuration(media);
-  if (Math.ceil(duration / (1000 * 60 * 60 * 24) === 2)) {
-    console.log(duration);
-  }
   return Math.ceil(duration / (1000 * 60 * 60 * 24));
 };
 
@@ -20,7 +17,6 @@ export const getDateString = (date) => {
   if (!date) {
     return "NULL";
   }
-  // console.log(date);
   const day = date.getDate() + "";
   const month = date.getMonth() + 1 + "";
   const year = date.getFullYear() + "";

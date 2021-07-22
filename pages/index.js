@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import moment from "moment";
 
 import styles from "./index.module.scss";
 import Timeline from "../components/Timeline";
@@ -19,23 +18,33 @@ const Home = ({ media }) => {
           }))
           .sort((a, b) => (a.startTime > b.startTime ? 1 : -1));
 
-    // if (item.id === 38) {
-    //   debugger;
-    // }
+    const startTime = item.startTime
+      ? new Date(item.startTime)
+      : sortedMappedNodes[0].startTime;
+
+    const endTime = sortedMappedNodes[0]
+      ? sortedMappedNodes[sortedMappedNodes.length - 1].endTime
+      : !item.startTime
+      ? null
+      : item.endTime
+      ? new Date(item.endTime)
+      : new Date();
+
     return {
       ...item,
-      startTime: item.startTime
-        ? new Date(item.startTime)
-        : sortedMappedNodes[0].startTime,
-      endTime: sortedMappedNodes[0]
-        ? sortedMappedNodes[sortedMappedNodes.length - 1].endTime
-        : !item.startTime
-        ? null
-        : item.endTime
-        ? new Date(item.endTime)
-        : new Date(),
+      startTime,
+      endTime,
       inProgress: !item.nodes && !item.endTime,
       nodes: sortedMappedNodes,
+      duration: sortedMappedNodes[0]
+        ? sortedMappedNodes.reduce(
+            (acc, node) => acc + getDurationDays(node),
+            0
+          )
+        : getDurationDays({
+            startTime,
+            endTime,
+          }),
     };
   });
 
@@ -45,37 +54,26 @@ const Home = ({ media }) => {
   );
 
   const sortedMedia = [...mappedMedia].sort((a, b) =>
-    getDurationDays(a) < getDurationDays(b) ? 1 : -1
+    a.duration < b.duration ? 1 : -1
   );
 
   const sortedTimelineMedia = [...mappedMedia].sort((a, b) =>
     a.startTime > b.startTime ? 1 : -1
   );
 
-  const link = sortedMedia.find((item) => item.id === 38);
-  console.log(link);
-
   return (
     <div className={styles.container}>
       <div className={styles.sidePanel}>
         <table className={styles.sideTable}>
-          {sortedMedia.map((item) => {
-            // if (item.id === 38) {
-            //   // console.log(item);
-            // }
-            // console.log(item);
-            return (
-              <tr key={item.id}>
-                <td style={{ width: "12rem" }}>{item.name}</td>
-                <td>{capitalize(item.type)}</td>
-                <td>{getDateString(item.startTime)}</td>
-                <td>
-                  {item.inProgress ? "Today" : getDateString(item.endTime)}
-                </td>
-                <td>{getDurationDays(item) + " days"}</td>
-              </tr>
-            );
-          })}
+          {sortedMedia.map((item) => (
+            <tr key={item.id}>
+              <td style={{ width: "12rem" }}>{item.name}</td>
+              <td>{capitalize(item.type)}</td>
+              <td>{getDateString(item.startTime)}</td>
+              <td>{item.inProgress ? "Today" : getDateString(item.endTime)}</td>
+              <td>{item.duration + " days"}</td>
+            </tr>
+          ))}
         </table>
       </div>
       <div className={styles.content}>

@@ -70,7 +70,7 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
 
   return (
     <div className={styles.row}>
-      {startTime && getBlock(startTime, endTime)}
+      {startTime && !nodes[0] && getBlock(startTime, endTime)}
       {nodes &&
         nodes[0] &&
         nodes.map((node, i) => getBlock(node.startTime, node.endTime, id + i))}
