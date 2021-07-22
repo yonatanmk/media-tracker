@@ -218,9 +218,18 @@ handler.get((req, res) => {
     {
       id: 29,
       name: "The World Ends With You",
-      startTime: new Date("07/23/2019"),
-      endTime: new Date("08/06/2019"),
+      nodes: [
+        {
+          startTime: new Date("01/01/2019"),
+          endTime: new Date("01/08/2019"),
+        },
+        {
+          startTime: new Date("07/23/2019"),
+          endTime: new Date("08/06/2019"),
+        },
+      ],
       type: mediaTypes.videogame,
+      // 10/8 to 10/13, 5/26 to 5/30
     },
     {
       id: 30,
@@ -281,8 +290,6 @@ handler.get((req, res) => {
     {
       id: 38,
       name: "Link's Awakening",
-      // startTime: new Date("05/26/2020"),
-      // endTime: new Date("05/30/2020"),
       nodes: [
         {
           startTime: new Date("05/26/2020"),
