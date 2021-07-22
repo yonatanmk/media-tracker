@@ -1,7 +1,7 @@
 export const mediaTypes = Object.freeze({
   videogame: "videogame",
   book: "book",
-  tv: "tv",
+  tv: "TV",
   playthrough: "playthrough",
 });
 

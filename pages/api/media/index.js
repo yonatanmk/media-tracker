@@ -394,15 +394,120 @@ handler.get((req, res) => {
       endTime: new Date("05/12/2021"),
       type: mediaTypes.videogame,
     },
+    {
+      id: 52,
+      name: "Golf Story",
+      startTime: new Date("04/26/2019"),
+      endTime: new Date("06/07/2019"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 53,
+      name: "Celeste",
+      nodes: [
+        {
+          startTime: new Date("04/15/2019"),
+          endTime: new Date("05/06/2019"),
+        },
+        {
+          startTime: new Date("06/15/2019"),
+          endTime: new Date("07/18/2019"),
+        },
+      ],
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 54,
+      name: "Forgotton Anne",
+      startTime: new Date("10/06/2019"),
+      endTime: new Date("10/26/2019"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 55,
+      name: "The Witness",
+      startTime: new Date("04/08/2019"),
+      endTime: new Date("04/17/2021"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 56,
+      name: "Hellblade: Senua's Sacrifice",
+      startTime: new Date("06/16/2019"),
+      endTime: new Date("06/23/2019"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 57,
+      name: "The Name of the Wind",
+      startTime: new Date("04/19/2019"),
+      endTime: new Date("05/23/2019"),
+      type: mediaTypes.book,
+    },
+    {
+      id: 58,
+      name: "The Wise Man's Fear",
+      startTime: new Date("05/23/2019"),
+      endTime: new Date("08/27/2019"),
+      type: mediaTypes.book,
+    },
+    {
+      id: 59,
+      name: "MTGA",
+      startTime: new Date("10/01/2018"),
+      endTime: new Date("12/04/2018"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 59,
+      name: "CrossCode",
+      startTime: new Date("09/30/2018"),
+      endTime: new Date("10/19/2018"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 59,
+      name: "Chrono Trigger",
+      startTime: new Date("09/19/2019"),
+      endTime: new Date("09/26/2019"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 60,
+      name: "Chrono Trigger Playthrough",
+      startTime: new Date("01/08/2019"),
+      endTime: new Date("01/09/2019"),
+      type: mediaTypes.playthrough,
+    },
+    {
+      id: 61,
+      name: "Axiom Verge",
+      startTime: new Date("03/27/2019"),
+      endTime: new Date("04/25/2019"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 62,
+      name: "Another Eden: The Cat Beyond Time and Space",
+      startTime: new Date("06/03/2019"),
+      endTime: new Date("06/23/2019"),
+      type: mediaTypes.videogame,
+    },
+    {
+      id: 58,
+      name: "Dishonored: Death of the Outsider",
+      startTime: new Date("07/18/2021"),
+      endTime: null,
+      type: mediaTypes.videogame,
+    },
     // {
-    //   id: 52,
+    //   id: 10052,
     //   name: "1234567890 6 arg 7g argrg are grg arg r gr 54324567687",
     //   startTime: new Date("07/08/2021"),
     //   endTime: new Date("07/21/2021"),
     //   type: mediaTypes.book,
     // },
   ];
-  // return mockData;
   res.send(mockData);
 });
 
