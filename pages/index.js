@@ -18,17 +18,23 @@ const Home = ({ media }) => {
             endTime: node.endTime ? new Date(node.endTime) : new Date(),
           }))
           .sort((a, b) => (a.startTime > b.startTime ? 1 : -1));
+
+    // if (item.id === 38) {
+    //   debugger;
+    // }
     return {
       ...item,
       startTime: item.startTime
         ? new Date(item.startTime)
-        : sortedMappedNodes[0],
-      endTime: !item.startTime
+        : sortedMappedNodes[0].startTime,
+      endTime: sortedMappedNodes[0]
+        ? sortedMappedNodes[sortedMappedNodes.length - 1].endTime
+        : !item.startTime
         ? null
         : item.endTime
         ? new Date(item.endTime)
         : new Date(),
-      inProgress: !item.endTime,
+      inProgress: !item.nodes && !item.endTime,
       nodes: sortedMappedNodes,
     };
   });
@@ -46,19 +52,30 @@ const Home = ({ media }) => {
     a.startTime > b.startTime ? 1 : -1
   );
 
+  const link = sortedMedia.find((item) => item.id === 38);
+  console.log(link);
+
   return (
     <div className={styles.container}>
       <div className={styles.sidePanel}>
         <table className={styles.sideTable}>
-          {sortedMedia.map((item) => (
-            <tr key={item.id}>
-              <td style={{ width: "12rem" }}>{item.name}</td>
-              <td>{capitalize(item.type)}</td>
-              <td>{getDateString(item.startTime)}</td>
-              <td>{item.inProgress ? "Today" : getDateString(item.endTime)}</td>
-              <td>{getDurationDays(item) + " days"}</td>
-            </tr>
-          ))}
+          {sortedMedia.map((item) => {
+            // if (item.id === 38) {
+            //   // console.log(item);
+            // }
+            // console.log(item);
+            return (
+              <tr key={item.id}>
+                <td style={{ width: "12rem" }}>{item.name}</td>
+                <td>{capitalize(item.type)}</td>
+                <td>{getDateString(item.startTime)}</td>
+                <td>
+                  {item.inProgress ? "Today" : getDateString(item.endTime)}
+                </td>
+                <td>{getDurationDays(item) + " days"}</td>
+              </tr>
+            );
+          })}
         </table>
       </div>
       <div className={styles.content}>

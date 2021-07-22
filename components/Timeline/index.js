@@ -18,7 +18,6 @@ const Timeline = ({ startTime, endTime, children }) => {
   const title = `${moment(timelineStartTime).format("MMM Do YYYY")} to ${moment(
     timelineEndTime
   ).format("MMM Do YYYY")}`;
-  console.log(months);
   return (
     <TimelineContext.Provider
       value={{

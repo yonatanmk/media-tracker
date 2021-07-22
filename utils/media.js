@@ -20,6 +20,7 @@ export const getDateString = (date) => {
   if (!date) {
     return "NULL";
   }
+  // console.log(date);
   const day = date.getDate() + "";
   const month = date.getMonth() + 1 + "";
   const year = date.getFullYear() + "";

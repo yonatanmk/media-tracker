@@ -281,8 +281,8 @@ handler.get((req, res) => {
     {
       id: 38,
       name: "Link's Awakening",
-      startTime: new Date("05/26/2020"),
-      endTime: new Date("05/30/2020"),
+      // startTime: new Date("05/26/2020"),
+      // endTime: new Date("05/30/2020"),
       nodes: [
         {
           startTime: new Date("05/26/2020"),

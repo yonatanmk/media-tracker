@@ -30,13 +30,14 @@ const Row = ({ media: { id, name, type, startTime, endTime, nodes } }) => {
     // style.fontSize = "0.75rem";
     // }
 
-    // if (id === 7) {
+    // if (id === 38) {
     //   console.log({
     //     name,
     //     namelength: name.length,
     //     percentage,
-    //     endTime: endTime.getTime(),
-    //     timelineEndTime: timelineEndTime.getTime(),
+    //     startTime: startTime,
+    //     endTime: endTime,
+    //     timelineEndTime: timelineEndTime,
     //     equal: atEnd,
     //   });
     // }
