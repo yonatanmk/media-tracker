@@ -15,6 +15,7 @@
   align-items: center;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
+  position: relative;
 
   &__header {
     background-color: #A31621;
@@ -38,11 +39,13 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+    position: absolute;
 
     &__label {
       background-color: white;
       z-index: 1;
       margin-left: 4px;
+      position: absolute;
     }
 
     &__videogame {

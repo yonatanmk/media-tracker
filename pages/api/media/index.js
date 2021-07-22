@@ -283,6 +283,16 @@ handler.get((req, res) => {
       name: "Link's Awakening",
       startTime: new Date("05/26/2020"),
       endTime: new Date("05/30/2020"),
+      nodes: [
+        {
+          startTime: new Date("05/26/2020"),
+          endTime: new Date("05/30/2020"),
+        },
+        {
+          startTime: new Date("10/08/2019"),
+          endTime: new Date("10/13/2019"),
+        },
+      ],
       type: mediaTypes.videogame,
       // 10/8 to 10/13, 5/26 to 5/30
     },
