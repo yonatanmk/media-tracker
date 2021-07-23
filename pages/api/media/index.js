@@ -3,7 +3,7 @@ import { media } from "../../../db";
 import middleware from "../../../middleware/all";
 import onError from "../../../middleware/error";
 import mockMediaData from "../../../utils/mocks/media";
-import { mediaTypes } from "../../../utils/media";
+// import { mediaTypes } from "../../../utils/media";
 
 const handler = nc({
   onError,
@@ -27,9 +27,9 @@ handler.get(async (req, res) => {
   // //   console.log(`${newMedia.name} UPLOADED!`);
   // // }
 
-  // const mediaData = await media.getMedia(req.db);
-  res.send(mockMediaData);
-  // res.send(mediaData);
+  const mediaData = await media.getMedia(req.db);
+  // res.send(mockMediaData);
+  res.send(mediaData);
 });
 
 export default handler;
