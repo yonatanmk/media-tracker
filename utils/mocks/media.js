@@ -510,8 +510,6 @@ const mockMediaData = [
     endTime: new Date("08/11/2018"),
     type: mediaTypes.videogame,
   },
-
-  // NEED TO POPULATE IN DB
   {
     _id: 70,
     name: "Ghost of Tsushima",
@@ -546,6 +544,35 @@ const mockMediaData = [
     startTime: new Date("09/20/2020"),
     endTime: new Date("09/22/2020"),
     type: mediaTypes.videogame,
+  },
+  // NEED TO POPULATE IN DB
+  {
+    _id: 75,
+    name: "Famicom Detective Club: The Missing Heir",
+    startTime: new Date("07/16/2021"),
+    endTime: null,
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 76,
+    name: "Divinity Original Sin Playthrough",
+    startTime: new Date("03/19/2020"),
+    endTime: new Date("04/11/2020"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 77,
+    name: "Uncharted 4 with Lily",
+    startTime: new Date("05/23/2020"),
+    endTime: new Date("06/24/2020"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 78,
+    name: "Grace and Frankie",
+    startTime: new Date("03/07/2021"),
+    endTime: new Date("04/14/2021"),
+    type: mediaTypes.tv,
   },
   // {
   //   _id: 10052,

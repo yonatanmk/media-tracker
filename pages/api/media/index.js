@@ -28,8 +28,8 @@ handler.get(async (req, res) => {
   // // }
 
   const mediaData = await media.getMedia(req.db);
-  // res.send(mockMediaData);
-  res.send(mediaData);
+  res.send(mockMediaData);
+  // res.send(mediaData);
 });
 
 export default handler;
