@@ -550,7 +550,7 @@ const mockMediaData = [
     _id: 75,
     name: "Famicom Detective Club: The Missing Heir",
     startTime: new Date("07/16/2021"),
-    endTime: null,
+    endTime: new Date("07/25/2021"),
     type: mediaTypes.playthrough,
   },
   {
