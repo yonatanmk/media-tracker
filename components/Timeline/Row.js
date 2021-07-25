@@ -15,7 +15,7 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     const bufferLength = startTime - timelineStartTime;
     const bufferPercentage = bufferLength / timelineDuration;
     const isSmall =
-      percentage < 0.01 ||
+      percentage < 0.013 ||
       (percentage < 0.02 && name.length > 12) ||
       (percentage < 0.025 && name.length > 20) ||
       (percentage < 0.032 && name.length > 25);
@@ -33,7 +33,7 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     // style.fontSize = "0.75rem";
     // }
 
-    // if (_id === 41 || _id === 69) {
+    // if (_id === 7) {
     //   console.log({
     //     name,
     //     namelength: name.length,

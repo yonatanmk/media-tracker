@@ -574,6 +574,20 @@ const mockMediaData = [
     endTime: new Date("04/14/2021"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 79,
+    name: "Castlevania S2",
+    startTime: new Date("11/08/2018"),
+    endTime: new Date("11/09/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 80,
+    name: "Castlevania S3",
+    startTime: new Date("02/16/2021"),
+    endTime: new Date("03/01/2021"),
+    type: mediaTypes.tv,
+  },
   // {
   //   _id: 10052,
   //   name: "1234567890 6 arg 7g argrg are grg arg r gr 54324567687",
