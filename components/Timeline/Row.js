@@ -17,7 +17,7 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     const isSmall =
       percentage < 0.013 ||
       (percentage < 0.02 && name.length > 12) ||
-      (percentage < 0.025 && name.length > 20) ||
+      (percentage < 0.025 && name.length > 18) ||
       (percentage < 0.032 && name.length > 25);
     const atEnd = datesEqual(endTime, trueEndTime);
 
@@ -33,17 +33,17 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     // style.fontSize = "0.75rem";
     // }
 
-    // if (_id === 7) {
-    //   console.log({
-    //     name,
-    //     namelength: name.length,
-    //     percentage,
-    //     startTime: startTime,
-    //     endTime: endTime,
-    //     timelineEndTime: timelineEndTime,
-    //     equal: atEnd,
-    //   });
-    // }
+    if (_id === 86) {
+      console.log({
+        name,
+        namelength: name.length,
+        percentage,
+        startTime: startTime,
+        endTime: endTime,
+        timelineEndTime: timelineEndTime,
+        equal: atEnd,
+      });
+    }
 
     return (
       <Fragment key={key || _id}>
