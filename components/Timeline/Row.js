@@ -18,7 +18,7 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
       percentage < 0.013 ||
       (percentage < 0.02 && name.length > 12) ||
       (percentage < 0.025 && name.length > 18) ||
-      (percentage < 0.032 && name.length > 25);
+      (percentage < 0.032 && name.length > 23);
     const atEnd = datesEqual(endTime, trueEndTime);
 
     const style = {};
@@ -33,7 +33,7 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     // style.fontSize = "0.75rem";
     // }
 
-    if (_id === 86) {
+    if (_id === 37) {
       console.log({
         name,
         namelength: name.length,
