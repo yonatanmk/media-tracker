@@ -23,4 +23,12 @@ export default (req, res) =>
     pages: {
       signIn: '/signin',
     },
+    callbacks: {
+      async session(session, user) {
+        if (user) {
+          session.user.id = user.sub
+        }
+        return session
+      },
+    },
   })

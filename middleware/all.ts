@@ -1,6 +1,6 @@
 import nc from 'next-connect'
 import db from './db'
-// import auth from './auth'
+import auth from './auth'
 
 const middleware = nc()
 

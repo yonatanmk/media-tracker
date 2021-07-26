@@ -1,25 +1,16 @@
 import { Db } from 'mongodb'
 import { nanoid } from 'nanoid'
 
-export const getMedia = async (db: Db) => {
+export const getMedia = async (db: Db, userId: String) => {
   return db
     .collection('media')
-    // .find({
-    //   createdBy: userId,
-    // })
-    .find()
+    .find({
+      userId,
+    })
+    // .find()
     .toArray()
-
 }
 
-// export const getFolders = async (db: Db, userId: string) => {
-//   return db
-//     .collection('folders')
-//     .find({
-//       createdBy: userId,
-//     })
-//     .toArray()
-// }
 
 export const createMedia = async (db: Db, media: { createdBy: string; name: string }) => {
   return db

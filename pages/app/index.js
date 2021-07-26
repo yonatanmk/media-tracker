@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useRouter } from 'next/router'
+import { getSession } from "next-auth/client";
 
 import styles from "./App.module.scss";
 import Timeline from "../../components/Timeline";
 import { getDurationDays, getDateString } from "../../utils/media";
 import { capitalize } from "../../utils";
-
-import { getSession } from "next-auth/client";
 
 const App = ({ media }) => {
   const router = useRouter()
@@ -104,13 +103,20 @@ const App = ({ media }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
+  const session = await getSession(context)
+  
+  if (!session || !session.user) {
+    return { props: {} }
+  }
+
   const response = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_HOST}/api/media`
+    `${process.env.NEXT_PUBLIC_API_HOST}/api/media/${session.user.id}`
   );
 
   return {
     props: {
+      session,
       media: response?.data,
     },
   };
