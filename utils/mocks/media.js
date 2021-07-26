@@ -659,7 +659,7 @@ const mockMediaData = [
     _id: 87,
     name: "Invincible",
     startTime: new Date("07/12/2021"),
-    endTime: null,
+    endTime: new Date("07/25/2021"),
     type: mediaTypes.tv,
   },
   // {
