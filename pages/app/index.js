@@ -20,15 +20,13 @@ const App = ({ media }) => {
 
 
   const mappedMedia = media.map((item) => {
-    const sortedMappedNodes = !item.nodes
-      ? []
-      : item.nodes
-          .map((node) => ({
-            ...node,
-            startTime: new Date(node.startTime),
-            endTime: node.endTime ? new Date(node.endTime) : new Date(),
-          }))
-          .sort((a, b) => (a.startTime > b.startTime ? 1 : -1));
+    const sortedMappedNodes = (item.nodes || [])
+        .map((node) => ({
+          ...node,
+          startTime: new Date(node.startTime),
+          endTime: node.endTime ? new Date(node.endTime) : new Date(),
+        }))
+        .sort((a, b) => (a.startTime > b.startTime ? 1 : -1));
 
     const startTime = item.startTime
       ? new Date(item.startTime)
@@ -117,7 +115,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       session,
-      media: response?.data,
+      media: response?.data || [],
     },
   };
 }

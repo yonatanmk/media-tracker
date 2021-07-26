@@ -30,5 +30,13 @@ export default (req, res) =>
         }
         return session
       },
+      // async jwt(tokenPayload, user, account, profile, isNewUser) {
+      //   if (tokenPayload && user) {
+      //     console.log('JWT USER')
+      //     console.log(user)
+      //     return { ...tokenPayload, id: `${user.id}` }
+      //   }
+      //   return tokenPayload
+      // },
     },
   })

@@ -1,5 +1,7 @@
 TODO
 
+Get Auth Middleware Working
+
 Sortable sidebar table by duration, start time, end time
 
 Sort in getServerProps using url param?
