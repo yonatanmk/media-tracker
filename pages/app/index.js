@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
+import { useRouter } from 'next/router'
 
 import styles from "./App.module.scss";
 import Timeline from "../../components/Timeline";
 import { getDurationDays, getDateString } from "../../utils/media";
 import { capitalize } from "../../utils";
 
-import { signIn, useSession } from "next-auth/client";
+import { getSession } from "next-auth/client";
 
 const App = ({ media }) => {
-  const [session] = useSession();
+  const router = useRouter()
 
-  console.log('SESSION IN APP')
-  console.log(session)
+  useEffect(async () => {
+    const session = await getSession()
+    if (!session) {
+      router.push('/')
+    }
+  }, [router])
 
 
   const mappedMedia = media.map((item) => {
