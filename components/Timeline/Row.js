@@ -14,12 +14,16 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     const percentage = rowDuration / timelineDuration;
     const bufferLength = startTime - timelineStartTime;
     const bufferPercentage = bufferLength / timelineDuration;
-    const isSmall =
-      percentage < 0.013 ||
-      (percentage < 0.02 && name.length > 12) ||
-      (percentage < 0.025 && name.length > 18) ||
-      (percentage < 0.032 && name.length > 23);
-    const atEnd = datesEqual(endTime, trueEndTime);
+    // const isSmall =
+    //   percentage < 0.013 ||
+    //   (percentage < 0.02 && name.length > 12) ||
+    //   (percentage < 0.025 && name.length > 18) ||
+    //   (percentage < 0.032 && name.length > 23);
+
+
+    const isSmall = percentage < name.length * 0.001
+    // const atEnd = datesEqual(endTime, trueEndTime);
+    const atEnd = ((trueEndTime - endTime) / 1000 / 60 / 60 / 24 * 0.0007778) < name.length * 0.001
 
     const style = {};
     if (percentage < 0.02 && name.length > 10 && atEnd) {
@@ -33,17 +37,24 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     // style.fontSize = "0.75rem";
     // }
 
-    if (_id === 37) {
-      console.log({
-        name,
-        namelength: name.length,
-        percentage,
-        startTime: startTime,
-        endTime: endTime,
-        timelineEndTime: timelineEndTime,
-        equal: atEnd,
-      });
-    }
+
+    // 1 day = 7 px = 0.0007778
+    // 1 char = 4 days = 28px = 0.0031112 => 0.001
+
+    // 0.0015556
+    // 0.00128
+
+    // if (name.toLowerCase().includes('tomb raider')) {
+    //   console.log({
+    //     name,
+    //     namelength: name.length,
+    //     percentage,
+    //     startTime: startTime,
+    //     endTime: endTime,
+    //     timelineEndTime: timelineEndTime,
+    //     equal: atEnd,
+    //   });
+    // }
 
     return (
       <Fragment key={key || _id}>
