@@ -479,7 +479,7 @@ const mockMediaData = [
     _id: 65,
     name: "Dishonored: Death of the Outsider",
     startTime: new Date("07/18/2021"),
-    endTime: null,
+    endTime: new Date("07/29/2021"),
     type: mediaTypes.videogame,
   },
   {
