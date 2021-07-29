@@ -662,6 +662,14 @@ const mockMediaData = [
     endTime: new Date("07/25/2021"),
     type: mediaTypes.tv,
   },
+  // NEW ENTRIES
+  {
+    _id: 90,
+    name: "Frostpunk",
+    startTime: new Date("07/10/2021"),
+    endTime: new Date("07/29/2021"),
+    type: mediaTypes.tv,
+  },
   // {
   //   _id: 10052,
   //   name: "1234567890 6 arg 7g argrg are grg arg r gr 54324567687",
