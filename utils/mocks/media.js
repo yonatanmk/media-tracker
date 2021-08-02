@@ -668,15 +668,111 @@ const mockMediaData = [
     name: "Frostpunk",
     startTime: new Date("07/10/2021"),
     endTime: new Date("07/29/2021"),
-    type: mediaTypes.tv,
+    type: mediaTypes.videogame,
   },
   {
     _id: 91,
     name: "The Great Ace Attorney Chronicles",
     startTime: new Date("07/29/2021"),
     endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 92,
+    name: "Voltron Legendary Defender",
+    nodes: [
+      {
+        startTime: new Date("06/16/2018"),
+        endTime: new Date("06/17/2018"),
+      },
+      {
+        startTime: new Date("08/07/2018"),
+        endTime: new Date("08/09/2018"),
+      },
+    ],
     type: mediaTypes.tv,
   },
+  {
+    _id: 93,
+    name: "DOOM 2016",
+    startTime: new Date("06/17/2018"),
+    endTime: new Date("06/20/2018"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 94,
+    name: "Drifters",
+    startTime: new Date("06/17/2018"),
+    endTime: new Date("06/18/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 95,
+    name: "Megalo Box S1",
+    startTime: new Date("06/19/2018"),
+    endTime: new Date("07/01/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 96,
+    name: "SAO Gun Gale Online",
+    startTime: new Date("06/20/2018"),
+    endTime: new Date("07/21/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 97,
+    name: "Adventure Time",
+    nodes: [
+      {
+        startTime: new Date("06/21/2018"),
+        endTime: new Date("06/22/2018"),
+      },
+      {
+        startTime: new Date("09/06/2018"),
+        endTime: new Date("09/06/2018").addHours(4),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 98,
+    name: "Dirk Gently's Holistic Detective Agency",
+    startTime: new Date("07/06/2018"),
+    endTime: new Date("07/07/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 99,
+    name: "Marvelous Ms. Maisel S1",
+    startTime: new Date("07/10/2018"),
+    endTime: new Date("07/13/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 100,
+    name: "Overwatch",
+    startTime: new Date("06/28/2018"),
+    endTime: new Date("09/14/2018"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 101,
+    name: "The Blood Mirror",
+    startTime: new Date("08/07/2018"),
+    endTime: new Date("08/22/2018"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 102,
+    name: "Disenchantment",
+    startTime: new Date("08/19/2018"),
+    endTime: new Date("08/20/2018"),
+    type: mediaTypes.tv,
+  },
+
+  // Marvelous Ms. Maisel
+
   // {
   //   _id: 10052,
   //   name: "1234567890 6 arg 7g argrg are grg arg r gr 54324567687",
