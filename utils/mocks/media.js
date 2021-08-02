@@ -770,8 +770,96 @@ const mockMediaData = [
     endTime: new Date("08/20/2018"),
     type: mediaTypes.tv,
   },
-
-  // Marvelous Ms. Maisel
+  {
+    _id: 103,
+    name: "Bojack Horseman S4",
+    startTime: new Date("10/18/2018"),
+    endTime: new Date("10/19/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 104,
+    name: "Shoukugeki No Souma S3",
+    startTime: new Date("10/19/2018"),
+    endTime: new Date("10/22/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 104,
+    name: "Bojack Horseman S5",
+    startTime: new Date("10/19/2018"),
+    endTime: new Date("10/23/2018"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 105,
+    name: "Adventure Zone",
+    startTime: new Date("10/31/2018"),
+    endTime: new Date("11/14/2019"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 106,
+    name: "That Time I was Reincarnated as A Slime",
+    startTime: new Date("10/24/2018"),
+    endTime: new Date("01/15/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 107,
+    name: "The Rising of Shield Hero",
+    startTime: new Date("01/15/2019"),
+    endTime: new Date("06/03/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 108,
+    name: "Blame!",
+    nodes: [
+      {
+        startTime: new Date("11/11/2018"),
+        endTime: new Date("11/25/2018"),
+      },
+      {
+        startTime: new Date("01/20/2019"),
+        endTime: new Date("01/21/2019"),
+      },
+    ],
+    type: mediaTypes.book,
+  },
+  {
+    _id: 109,
+    name: "Dr. Who S11",
+    startTime: new Date("10/08/2018"),
+    endTime: new Date("01/03/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 110,
+    name: "Scarlet Nexus",
+    startTime: new Date("07/10/2021"),
+    endTime: new Date("07/12/2021"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 111,
+    name: "Chainsaw Man",
+    nodes: [
+      {
+        startTime: new Date("07/12/2020"),
+        startTime: new Date("07/13/2020"),
+      },
+      {
+        startTime: new Date("01/16/2021"),
+        endTime: new Date("01/16/2021").addHours(4),
+      },
+      {
+        startTime: new Date("08/02/2021"),
+        endTime: new Date("08/02/2021").addHours(4),
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
 
   // {
   //   _id: 10052,

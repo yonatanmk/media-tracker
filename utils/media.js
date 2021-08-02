@@ -3,6 +3,7 @@ export const mediaTypes = Object.freeze({
   book: "book",
   tv: "TV",
   playthrough: "playthrough",
+  podcast: "podcast",
 });
 
 export const getDuration = (media) => {
