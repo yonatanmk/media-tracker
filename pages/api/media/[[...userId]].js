@@ -27,11 +27,11 @@ handler.get(async (req, res) => {
   //   const resp = await media.createMedia(req.db, {...newMedia, userId: '60fecae2b9ef572c8c0dd971'});
   //   console.log(`${newMedia.name} UPLOADED!`);
   // }
-  const userId = req.query.userId[0]
+  const userId = req.query.userId[0];
 
-  const mediaData = await media.getMedia(req.db, userId);
-  // res.send(mockMediaData);
-  res.send(mediaData);
+  // const mediaData = await media.getMedia(req.db, userId);
+  res.send(mockMediaData);
+  // res.send(mediaData);
 });
 
 export default handler;

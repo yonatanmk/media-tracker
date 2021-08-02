@@ -1,4 +1,4 @@
-import { mediaTypes } from "../media";
+import { mediaTypes, addHoursToDate } from "../media";
 
 const mockMediaData = [
   {
@@ -730,7 +730,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("09/06/2018"),
-        endTime: new Date("09/06/2018").addHours(4),
+        endTime: addHoursToDate(new Date("09/06/2018"), 4),
       },
     ],
     type: mediaTypes.tv,
@@ -847,18 +847,18 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("07/12/2020"),
-        startTime: new Date("07/13/2020"),
+        endTime: new Date("07/13/2020"),
       },
       {
         startTime: new Date("01/16/2021"),
-        endTime: new Date("01/16/2021").addHours(4),
+        endTime: addHoursToDate(new Date("01/16/2021"), 4),
       },
       {
         startTime: new Date("08/02/2021"),
-        endTime: new Date("08/02/2021").addHours(4),
+        eendTime: addHoursToDate(new Date("08/02/2021"), 4),
       },
     ],
-    type: mediaTypes.videogame,
+    type: mediaTypes.book,
   },
 
   // {
