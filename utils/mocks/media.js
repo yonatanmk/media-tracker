@@ -590,7 +590,7 @@ const mockMediaData = [
   },
   {
     _id: 81,
-    name: "Never Have I Ever",
+    name: "Never Have I Ever S1",
     startTime: new Date("05/10/2020"),
     endTime: new Date("05/12/2020"),
     type: mediaTypes.tv,
@@ -873,6 +873,20 @@ const mockMediaData = [
     startTime: new Date("07/07/2021"),
     endTime: new Date("07/14/2021"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 114,
+    name: "Never Have I Ever S2",
+    startTime: new Date("08/03/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 115,
+    name: "Pillars of Eternity 2: Deadfire",
+    startTime: new Date("08/04/2021"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
   // {
