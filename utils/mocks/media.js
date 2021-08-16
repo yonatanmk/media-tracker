@@ -878,7 +878,7 @@ const mockMediaData = [
     _id: 114,
     name: "Never Have I Ever S2",
     startTime: new Date("08/03/2021"),
-    endTime: null,
+    endTime: new Date("08/14/2021"),
     type: mediaTypes.tv,
   },
   {
@@ -1050,6 +1050,13 @@ const mockMediaData = [
     name: "The Stone Sky",
     startTime: new Date("03/10/2019"),
     endTime: new Date("04/11/2019"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 136,
+    name: "Moonlighter",
+    startTime: new Date("07/25/2021"),
+    endTime: null,
     type: mediaTypes.book,
   },
 
