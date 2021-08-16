@@ -956,7 +956,7 @@ const mockMediaData = [
     _id: 124,
     name: "Mistborn: The Bands of Mourning",
     startTime: new Date("01/24/2019"),
-    endTime: new Date("01/30/2019"),
+    endTime: new Date("02/18/2019"),
     type: mediaTypes.book,
   },
   {
@@ -968,7 +968,7 @@ const mockMediaData = [
   },
   {
     _id: 126,
-    name: "JoJo's Bizarre Adventure S1",
+    name: "JoJo's Bizarre Adventure S1 Part 1 and 2",
     startTime: new Date("01/31/2019"),
     endTime: new Date("03/07/2019"),
     type: mediaTypes.tv,
@@ -986,6 +986,71 @@ const mockMediaData = [
     startTime: new Date("06/11/2021"),
     endTime: new Date("07/15/2021"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 129,
+    name: "Moriarty The Patriot",
+    startTime: new Date("08/15/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 130,
+    name: "Naruto Shippuden",
+    startTime: new Date("01/24/2019"),
+    endTime: new Date("01/28/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 131,
+    name: "The Good Place S3",
+    startTime: new Date("01/28/2019"),
+    endTime: new Date("01/30/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 132,
+    name: "The Good Place S4",
+    nodes: [
+      {
+        startTime: new Date("09/27/2019"),
+        endTime: new Date("11/11/2019"),
+      },
+      {
+        startTime: new Date("12/22/2019"),
+        endTime: addHoursToDate(new Date("12/22/2019"), 4),
+      },
+      {
+        startTime: new Date("01/21/2020"),
+        endTime: addHoursToDate(new Date("01/21/2020"), 4),
+      },
+      {
+        startTime: new Date("02/02/2020"),
+        endTime: new Date("02/03/2020"),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 133,
+    name: "The Fifth Season",
+    startTime: new Date("02/18/2019"),
+    endTime: new Date("02/26/2019"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 134,
+    name: "The Obelisk Gate",
+    startTime: new Date("02/28/2019"),
+    endTime: new Date("03/09/2019"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 135,
+    name: "The Stone Sky",
+    startTime: new Date("03/10/2019"),
+    endTime: new Date("04/11/2019"),
+    type: mediaTypes.book,
   },
 
   // {
