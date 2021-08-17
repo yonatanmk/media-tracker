@@ -1059,6 +1059,41 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.book,
   },
+  {
+    _id: 137,
+    name: "Mario Rabbids",
+    startTime: new Date("03/03/2019"),
+    endTime: new Date("03/17/2019"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 138,
+    name: "Mx0",
+    startTime: new Date("03/04/2019"),
+    endTime: new Date("04/16/2019"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 139,
+    name: "Billions",
+    startTime: new Date("03/19/2019"),
+    endTime: new Date("04/29/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 140,
+    name: "Promised Neverland Manga",
+    startTime: new Date("05/21/2021"),
+    endTime: new Date("06/08/2021"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 141,
+    name: "Sekiro Shadows Die Twice",
+    startTime: new Date("03/23/2019"),
+    endTime: new Date("04/02/2019"),
+    type: mediaTypes.playthrough,
+  },
 
   // {
   //   _id: 10052,
