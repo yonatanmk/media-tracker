@@ -569,7 +569,7 @@ const mockMediaData = [
   },
   {
     _id: 78,
-    name: "Grace and Frankie",
+    name: "Grace and Frankie S1-6",
     startTime: new Date("03/07/2021"),
     endTime: new Date("04/14/2021"),
     type: mediaTypes.tv,
@@ -1093,6 +1093,13 @@ const mockMediaData = [
     startTime: new Date("03/23/2019"),
     endTime: new Date("04/02/2019"),
     type: mediaTypes.playthrough,
+  },
+  {
+    _id: 142,
+    name: "Grace and Frankie S7",
+    startTime: new Date("08/16/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // {
