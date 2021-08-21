@@ -388,7 +388,7 @@ const mockMediaData = [
     name: "Celeste",
     nodes: [
       {
-        startTime: new Date("04/15/2019"),
+        startTime: new Date("04/21/2019"),
         endTime: new Date("05/06/2019"),
       },
       {
@@ -1106,6 +1106,41 @@ const mockMediaData = [
     name: "The Amazing Race",
     startTime: new Date("07/15/2021"),
     endTime: new Date("08/07/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 144,
+    name: "Russian Doll",
+    startTime: new Date("03/30/2019"),
+    endTime: new Date("03/31/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 145,
+    name: "Jumyou Wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de",
+    startTime: new Date("04/01/2019"),
+    endTime: new Date("04/03/2019"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 146,
+    name: "Kaguya-sama: Love is War",
+    startTime: new Date("04/17/2019"),
+    endTime: new Date("05/05/2019"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 147,
+    name: "Game of Thrones Final Season",
+    startTime: new Date("04/14/2019"),
+    endTime: new Date("05/20/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 148,
+    name: "Good Omens",
+    startTime: new Date("06/03/2019"),
+    endTime: new Date("06/14/2019"),
     type: mediaTypes.tv,
   },
 
