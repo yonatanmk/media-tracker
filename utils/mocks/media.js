@@ -1056,8 +1056,8 @@ const mockMediaData = [
     _id: 136,
     name: "Moonlighter",
     startTime: new Date("07/25/2021"),
-    endTime: null,
-    type: mediaTypes.book,
+    endTime: new Date("08/22/2021"),
+    type: mediaTypes.videogame,
   },
   {
     _id: 137,
