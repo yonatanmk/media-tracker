@@ -40,7 +40,7 @@ const mockMediaData = [
     _id: 6,
     name: "Persona 4 Golden",
     startTime: new Date("06/15/2021"),
-    endTime: null,
+    endTime: new Date("08/23/2021"),
     type: mediaTypes.videogame,
   },
   {
@@ -855,7 +855,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("08/02/2021"),
-        eendTime: addHoursToDate(new Date("08/02/2021"), 4),
+        endTime: addHoursToDate(new Date("08/02/2021"), 4),
       },
     ],
     type: mediaTypes.book,
@@ -991,7 +991,7 @@ const mockMediaData = [
     _id: 129,
     name: "Moriarty The Patriot",
     startTime: new Date("08/15/2021"),
-    endTime: null,
+    endTime: new Date("08/25/2021"),
     type: mediaTypes.tv,
   },
   {
