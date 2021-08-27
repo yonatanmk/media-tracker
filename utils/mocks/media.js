@@ -211,7 +211,6 @@ const mockMediaData = [
       },
     ],
     type: mediaTypes.videogame,
-    // 10/8 to 10/13, 5/26 to 5/30
   },
   {
     _id: 30,
@@ -609,7 +608,6 @@ const mockMediaData = [
     endTime: new Date("02/15/2020"),
     type: mediaTypes.tv,
   },
-
   {
     _id: 84,
     name: "Dark S2",
@@ -641,8 +639,6 @@ const mockMediaData = [
   {
     _id: 88,
     name: "Umbrella Academy S2",
-    // startTime: new Date("08/10/2020"),
-    // endTime: new Date("12/05/2020"),
     nodes: [
       {
         startTime: new Date("08/10/2020"),
@@ -1141,6 +1137,99 @@ const mockMediaData = [
     name: "Good Omens",
     startTime: new Date("06/03/2019"),
     endTime: new Date("06/14/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 149,
+    name: "Borderlands Commander Lilith and the Fight for Sanctuary",
+    nodes: [
+      {
+        startTime: new Date("06/10/2019"),
+        endTime: new Date("06/20/2019"),
+      },
+      {
+        startTime: new Date("07/18/2019"),
+        endTime: addHoursToDate(new Date("07/18/2019"), 4),
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 150,
+    name: "Letterkenny",
+    nodes: [
+      {
+        startTime: new Date("06/07/2019"),
+        endTime: new Date("06/23/2019"),
+      },
+      {
+        startTime: new Date("09/20/2019"),
+        endTime: addHoursToDate(new Date("09/20/2019"), 4),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 151,
+    name: "Kingdom Hearts 3",
+    startTime: new Date("07/09/2019"),
+    endTime: new Date("06/11/2019"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 152,
+    name: "Infinity Train S1-3",
+    startTime: new Date("08/19/2019"),
+    endTime: new Date("08/30/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 153,
+    name: "Infinity Train S4",
+    startTime: new Date("04/27/2021"),
+    endTime: new Date("04/30/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 154,
+    name: "Steven Universe",
+    startTime: new Date("07/09/2019"),
+    endTime: new Date("09/16/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 155,
+    name: "Steven Universe Future",
+    startTime: new Date("07/09/2019"),
+    endTime: new Date("09/16/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 156,
+    name: "Fire Force",
+    startTime: new Date("07/15/2019"),
+    endTime: new Date("10/21/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 157,
+    name: "Dr. Stone S1",
+    startTime: new Date("07/16/2019"),
+    endTime: new Date("01/06/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 158,
+    name: "Dr. Stone S2",
+    startTime: new Date("02/24/2021"),
+    endTime: new Date("04/06/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 159,
+    name: "Jujutsu Kaisen",
+    startTime: new Date("10/24/2020"),
+    endTime: new Date("04/06/2021"),
     type: mediaTypes.tv,
   },
 
