@@ -273,12 +273,12 @@ const mockMediaData = [
     name: "Link's Awakening",
     nodes: [
       {
-        startTime: new Date("05/26/2020"),
-        endTime: new Date("05/30/2020"),
-      },
-      {
         startTime: new Date("10/08/2019"),
         endTime: new Date("10/13/2019"),
+      },
+      {
+        startTime: new Date("05/26/2020"),
+        endTime: new Date("05/30/2020"),
       },
     ],
     type: mediaTypes.videogame,
@@ -669,8 +669,18 @@ const mockMediaData = [
   {
     _id: 91,
     name: "The Great Ace Attorney Chronicles",
-    startTime: new Date("07/29/2021"),
-    endTime: null,
+    // startTime: new Date("07/29/2021"),
+    // endTime: new Date("09/02/2021"),
+    nodes: [
+      {
+        startTime: new Date("07/29/2021"),
+        endTime: new Date("09/02/2021"),
+      },
+      // {
+      //   startTime: new Date("07/29/2021"),
+      //   endTime: new Date("09/02/2021"),
+      // },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -1244,6 +1254,67 @@ const mockMediaData = [
     name: "Big Mouth S4",
     startTime: new Date("12/04/2020"),
     endTime: new Date("12/07/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 162,
+    name: "Sex Education",
+    startTime: new Date("09/02/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 163,
+    name: "Psychonauts 2",
+    startTime: new Date("09/02/2021"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 164,
+    name: "Babylon",
+    nodes: [
+      {
+        startTime: new Date("10/15/2019"),
+        endTime: addHoursToDate(new Date("10/15/2019"), 4),
+      },
+      {
+        startTime: new Date("01/11/2020"),
+        endTime: addHoursToDate(new Date("01/11/2020"), 4),
+      },
+      {
+        startTime: new Date("03/25/2020"),
+        endTime: new Date("03/27/2020"),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 165,
+    name: "Seis Manos",
+    startTime: new Date("10/17/2019"),
+    endTime: new Date("10/24/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 166,
+    name: "Demon Slayer",
+    startTime: new Date("10/19/2019"),
+    endTime: new Date("10/26/2019"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 167,
+    name: "Great British Bake Off", // S8?
+    startTime: new Date("09/25/2020"),
+    endTime: new Date("12/19/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 168,
+    name: "Baccano",
+    startTime: new Date("10/27/2019"),
+    endTime: new Date("12/28/2019"),
     type: mediaTypes.tv,
   },
 
