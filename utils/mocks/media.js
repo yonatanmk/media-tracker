@@ -1270,9 +1270,9 @@ const mockMediaData = [
   },
   {
     _id: 162,
-    name: "Sex Education",
+    name: "Sex Education S1-2",
     startTime: new Date("09/02/2021"),
-    endTime: null,
+    endTime: new Date("09/13/2021"),
     type: mediaTypes.tv,
   },
   {
