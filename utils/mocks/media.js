@@ -869,8 +869,16 @@ const mockMediaData = [
   {
     _id: 112,
     name: "Tokyo Revengers",
-    startTime: new Date("07/14/2021"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("07/14/2021"),
+        endTime: new Date("07/16/2021"),
+      },
+      {
+        startTime: new Date("09/13/2021"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -1103,8 +1111,12 @@ const mockMediaData = [
   {
     _id: 142,
     name: "Grace and Frankie S7",
-    startTime: new Date("08/16/2021"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("08/16/2021"),
+        endTime: new Date("08/20/2021"),
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
