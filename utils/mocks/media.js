@@ -1373,6 +1373,103 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 177,
+    name: "Rick and Morty S4",
+    nodes: [
+      {
+        startTime: new Date("12/04/2019"),
+        endTime: new Date("12/18/2019"),
+      },
+      {
+        startTime: new Date("05/06/2020"),
+        endTime: new Date("06/04/2020"),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 178,
+    name: "Rick and Morty S5",
+    startTime: new Date("06/22/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 179,
+    name: "What We Do In The Shadows S1",
+    startTime: new Date("06/16/2020"),
+    endTime: new Date("06/23/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 180,
+    name: "So I'm a Spider, so What?",
+    startTime: new Date("01/09/2020"),
+    endTime: new Date("01/13/2020"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 181,
+    name: "Dead Cells",
+    startTime: new Date("08/26/2020"),
+    endTime: new Date("09/03/2020"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 182,
+    name: "Slay the Spire",
+    startTime: new Date("01/11/2020"),
+    endTime: new Date("01/14/2020"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 183,
+    name: "Spirit Circle",
+    startTime: new Date("01/16/2020"),
+    endTime: new Date("01/22/2020"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 184,
+    name: "Solo Leveling",
+    nodes: [
+      {
+        startTime: new Date("01/23/2020"),
+        endTime: new Date("01/28/2020"),
+      },
+      {
+        startTime: new Date("01/19/2021"),
+        endTime: new Date("01/20/2021"),
+      },
+      {
+        startTime: new Date("08/16/2021"),
+        endTime: new Date("09/09/2021"),
+      },
+    ],
+    type: mediaTypes.book,
+  },
+  {
+    _id: 185,
+    name: "Gravity Falls with Lily",
+    startTime: new Date("01/23/2020"),
+    endTime: new Date("02/14/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 186,
+    name: "Avatar The Last Airbender Books 1-3",
+    startTime: new Date("02/16/2020"),
+    endTime: new Date("03/18/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 187,
+    name: "Legend of Korra Book 1",
+    startTime: new Date("03/19/2020"),
+    endTime: new Date("03/24/2020"),
+    type: mediaTypes.tv,
+  },
 
   // {
   //   _id: 10052,
