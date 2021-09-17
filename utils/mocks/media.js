@@ -785,7 +785,7 @@ const mockMediaData = [
   },
   {
     _id: 104,
-    name: "Shoukugeki No Souma S3",
+    name: "Shokugeki No Souma S3",
     startTime: new Date("10/19/2018"),
     endTime: new Date("10/22/2018"),
     type: mediaTypes.tv,
@@ -1195,7 +1195,7 @@ const mockMediaData = [
     _id: 151,
     name: "Kingdom Hearts 3",
     startTime: new Date("07/09/2019"),
-    endTime: new Date("06/11/2019"),
+    endTime: new Date("07/11/2019"),
     type: mediaTypes.playthrough,
   },
   {
@@ -1222,8 +1222,18 @@ const mockMediaData = [
   {
     _id: 155,
     name: "Steven Universe Future",
-    startTime: new Date("07/09/2019"),
-    endTime: new Date("09/16/2019"),
+    // startTime: new Date("07/09/2019"),
+    // endTime: new Date("09/16/2019"),
+    nodes: [
+      {
+        startTime: new Date("12/31/2019"),
+        endTime: addHoursToDate(new Date("12/31/2019"), 4),
+      },
+      {
+        startTime: new Date("04/12/2020"),
+        endTime: new Date("04/13/2020"),
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
