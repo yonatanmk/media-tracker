@@ -1528,6 +1528,20 @@ const mockMediaData = [
     endTime: new Date("10/23/2018"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 193,
+    name: "Ni No Kuni Wrath of the White Witch",
+    startTime: new Date("02/04/2020"),
+    endTime: new Date("03/24/2020"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 194,
+    name: "Legends of Runeterra",
+    startTime: new Date("02/01/2020"),
+    endTime: new Date("02/04/2020"),
+    type: mediaTypes.videogame,
+  },
 
   // {
   //   _id: 10052,
