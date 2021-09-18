@@ -791,13 +791,6 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   {
-    _id: 104,
-    name: "Bojack Horseman S5",
-    startTime: new Date("10/19/2018"),
-    endTime: new Date("10/23/2018"),
-    type: mediaTypes.tv,
-  },
-  {
     _id: 105,
     name: "Adventure Zone",
     startTime: new Date("10/31/2018"),
@@ -1527,6 +1520,13 @@ const mockMediaData = [
     startTime: new Date("09/16/2021"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 192,
+    name: "Bojack Horseman S5",
+    startTime: new Date("10/19/2018"),
+    endTime: new Date("10/23/2018"),
+    type: mediaTypes.tv,
   },
 
   // {
