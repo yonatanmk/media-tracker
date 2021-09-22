@@ -861,7 +861,7 @@ const mockMediaData = [
   },
   {
     _id: 112,
-    name: "Tokyo Revengers",
+    name: "Tokyo Revengers S1",
     nodes: [
       {
         startTime: new Date("07/14/2021"),
@@ -869,7 +869,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("09/13/2021"),
-        endTime: null,
+        endTime: new Date("09/21/2021"),
       },
     ],
     type: mediaTypes.tv,
@@ -1518,7 +1518,7 @@ const mockMediaData = [
     _id: 191,
     name: "Deathloop",
     startTime: new Date("09/16/2021"),
-    endTime: null,
+    endTime: new Date("09/20/2021"),
     type: mediaTypes.videogame,
   },
   {
@@ -1548,6 +1548,13 @@ const mockMediaData = [
     startTime: new Date("09/18/2021"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 193,
+    name: "Judgement Playthrough",
+    startTime: new Date("09/21/2021"),
+    endTime: null,
+    type: mediaTypes.playthrough,
   },
 
   // {
