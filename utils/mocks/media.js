@@ -1320,7 +1320,7 @@ const mockMediaData = [
   },
   {
     _id: 167,
-    name: "Great British Bake Off", // S8?
+    name: "Great British Bake Off, Various Seasons",
     startTime: new Date("09/25/2020"),
     endTime: new Date("12/19/2020"),
     type: mediaTypes.tv,
@@ -1553,8 +1553,29 @@ const mockMediaData = [
     _id: 193,
     name: "Judgement Playthrough",
     startTime: new Date("09/21/2021"),
-    endTime: null,
+    endTime: new Date("09/24/2021"),
     type: mediaTypes.playthrough,
+  },
+  {
+    _id: 194,
+    name: "Tales of Arise",
+    startTime: new Date("09/26/2021"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 195,
+    name: "Great British Bake Off S12",
+    startTime: new Date("09/25/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 196,
+    name: "Taskmaster S9",
+    startTime: new Date("09/18/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // {
