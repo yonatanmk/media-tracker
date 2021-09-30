@@ -1546,7 +1546,7 @@ const mockMediaData = [
     _id: 192,
     name: "Sex Education S3",
     startTime: new Date("09/18/2021"),
-    endTime: null,
+    endTime: new Date("09/28/2021"),
     type: mediaTypes.tv,
   },
   {
@@ -1652,6 +1652,13 @@ const mockMediaData = [
     name: "Middleditch & Schwartz",
     startTime: new Date("04/26/2020"),
     endTime: new Date("04/28/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 208,
+    name: "Altered Carbon S1-2",
+    startTime: new Date("04/29/2020"),
+    endTime: new Date("05/16/2020"),
     type: mediaTypes.tv,
   },
 
