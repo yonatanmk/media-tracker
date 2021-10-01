@@ -1661,6 +1661,20 @@ const mockMediaData = [
     endTime: new Date("05/16/2020"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 209,
+    name: "Upload",
+    startTime: new Date("05/07/2020"),
+    endTime: new Date("05/13/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 210,
+    name: "Quantum Break",
+    startTime: new Date("05/15/2020"),
+    endTime: new Date("05/17/2020"),
+    type: mediaTypes.playthrough,
+  },
 
   // {
   //   _id: 10052,
