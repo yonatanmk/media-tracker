@@ -1407,7 +1407,7 @@ const mockMediaData = [
     _id: 178,
     name: "Rick and Morty S5",
     startTime: new Date("06/22/2021"),
-    endTime: null,
+    endTime: new Date("10/07/2021"),
     type: mediaTypes.tv,
   },
   {
@@ -1674,6 +1674,34 @@ const mockMediaData = [
     startTime: new Date("05/15/2020"),
     endTime: new Date("05/17/2020"),
     type: mediaTypes.playthrough,
+  },
+  {
+    _id: 211,
+    name: "Squid Game",
+    startTime: new Date("09/30/2021"),
+    endTime: new Date("10/04/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 212,
+    name: "Only Murders in the Building",
+    startTime: new Date("10/10/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 213,
+    name: "Megalo Box Nomad S2",
+    startTime: new Date("05/04/2021"),
+    endTime: new Date("06/30/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 214,
+    name: "Hy Hero Academia S6",
+    startTime: new Date("05/26/2021"),
+    endTime: new Date("10/01/2021"),
+    type: mediaTypes.tv,
   },
 
   // {
