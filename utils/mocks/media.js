@@ -32,8 +32,16 @@ const mockMediaData = [
   {
     _id: 5,
     name: "Divinity Original Sin 2",
-    startTime: new Date("05/31/2020"),
-    endTime: new Date("10/26/2020"),
+    nodes: [
+      {
+        startTime: new Date("05/31/2020"),
+        endTime: new Date("07/19/2020"),
+      },
+      {
+        startTime: new Date("09/16/2020"),
+        endTime: new Date("10/26/2020"),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -792,7 +800,7 @@ const mockMediaData = [
   },
   {
     _id: 105,
-    name: "Adventure Zone",
+    name: "Adventure Zone Campaign 1",
     startTime: new Date("10/31/2018"),
     endTime: new Date("11/14/2019"),
     type: mediaTypes.podcast,
@@ -891,8 +899,18 @@ const mockMediaData = [
   {
     _id: 115,
     name: "Pillars of Eternity 2: Deadfire",
-    startTime: new Date("08/04/2021"),
-    endTime: null,
+    // startTime: new Date("08/04/2021"),
+    // endTime: null,
+    nodes: [
+      {
+        startTime: new Date("08/04/2021"),
+        endTime: new Date("08/24/2021"),
+      },
+      {
+        startTime: new Date("10/20/2021"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -1384,8 +1402,16 @@ const mockMediaData = [
   {
     _id: 176,
     name: "Dying Light",
-    startTime: new Date("09/10/2021"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("09/10/2021"),
+        endTime: new Date("09/24/2021"),
+      },
+      {
+        startTime: new Date("10/17/2021"),
+        endTime: new Date("10/20/2021"),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -1560,7 +1586,7 @@ const mockMediaData = [
     _id: 194,
     name: "Tales of Arise",
     startTime: new Date("09/26/2021"),
-    endTime: null,
+    endTime: new Date("10/17/2021"),
     type: mediaTypes.videogame,
   },
   {
@@ -1684,9 +1710,9 @@ const mockMediaData = [
   },
   {
     _id: 212,
-    name: "Only Murders in the Building",
+    name: "Only Murders in the Building S1",
     startTime: new Date("10/10/2021"),
-    endTime: null,
+    endTime: new Date("10/20/2021"),
     type: mediaTypes.tv,
   },
   {
@@ -1701,6 +1727,69 @@ const mockMediaData = [
     name: "Hy Hero Academia S6",
     startTime: new Date("05/26/2021"),
     endTime: new Date("10/01/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 215,
+    name: "Ted Lasso S1",
+    startTime: new Date("10/18/2021"),
+    endTime: new Date("10/20/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 216,
+    name: "Ted Lasso S2",
+    startTime: new Date("10/20/2021"),
+    endTime: new Date("10/24/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 217,
+    name: "Komi Can't Communicate",
+    startTime: new Date("10/21/2021"),
+    // endTime: new Date("10/20/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 218,
+    name: "Mythic Quest S1",
+    startTime: new Date("10/24/2021"),
+    // endTime: new Date("10/24/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 219,
+    name: "The Adventure Zone Amnesty",
+    startTime: new Date("10/24/2021"),
+    // endTime: new Date("10/24/2021"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 220,
+    name: "Money Heist",
+    startTime: new Date("05/17/2020"),
+    endTime: new Date("06/06/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 221,
+    name: "Solar Opposites S1",
+    startTime: new Date("05/09/2020"),
+    endTime: new Date("06/02/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 222,
+    name: "Solar Opposites S2",
+    startTime: new Date("03/28/2021"),
+    endTime: new Date("04/15/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 223,
+    name: "Psych",
+    startTime: new Date("05/21/2020"),
+    endTime: new Date("06/01/2020"),
     type: mediaTypes.tv,
   },
 
