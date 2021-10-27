@@ -1792,6 +1792,67 @@ const mockMediaData = [
     endTime: new Date("06/01/2020"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 224,
+    name: "Time Paradox Ghostwriter",
+    nodes: [
+      {
+        startTime: new Date("07/11/2020"),
+        endTime: new Date("07/20/2020"),
+      },
+      {
+        startTime: new Date("08/18/2020"),
+        endTime: addHoursToDate(new Date("08/18/2020"), 4),
+      },
+      {
+        startTime: new Date("10/08/2020"),
+        endTime: addHoursToDate(new Date("10/08/2020"), 4),
+      },
+    ],
+    type: mediaTypes.book,
+  },
+  {
+    _id: 225,
+    name: "Three Body Problem",
+    startTime: new Date("07/02/2020"),
+    endTime: new Date("07/30/2020"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 226,
+    name: "The Invisible Hours",
+    startTime: new Date("07/13/2020"),
+    endTime: new Date("07/15/2020"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 227,
+    name: "Community S5",
+    startTime: new Date("07/21/2020"),
+    endTime: new Date("07/25/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 228,
+    name: "Rei Zero S2 Part 1",
+    startTime: new Date("07/27/2020"),
+    endTime: new Date("10/01/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 229,
+    name: "Deca Dence",
+    startTime: new Date("08/09/2020"),
+    endTime: new Date("10/07/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 230,
+    name: "Risk of Rain 2",
+    startTime: new Date("08/11/2020"),
+    endTime: new Date("08/12/2020"),
+    type: mediaTypes.videogame,
+  },
 
   // {
   //   _id: 10052,
