@@ -899,8 +899,6 @@ const mockMediaData = [
   {
     _id: 115,
     name: "Pillars of Eternity 2: Deadfire",
-    // startTime: new Date("08/04/2021"),
-    // endTime: null,
     nodes: [
       {
         startTime: new Date("08/04/2021"),
@@ -1591,7 +1589,7 @@ const mockMediaData = [
   },
   {
     _id: 195,
-    name: "Great British Bake Off S12",
+    name: "Great British Bake Off S9 (Series 12)",
     startTime: new Date("09/25/2021"),
     endTime: null,
     type: mediaTypes.tv,
@@ -1754,7 +1752,7 @@ const mockMediaData = [
     _id: 218,
     name: "Mythic Quest S1",
     startTime: new Date("10/24/2021"),
-    // endTime: new Date("10/24/2021"),
+    endTime: new Date("10/31/2021"),
     type: mediaTypes.tv,
   },
   {
@@ -1908,6 +1906,77 @@ const mockMediaData = [
     startTime: new Date("09/06/2020"),
     endTime: new Date("09/09/2020"),
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 238,
+    name: "Cobra Kai S1-2",
+    startTime: new Date("09/13/2020"),
+    endTime: new Date("09/19/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 239,
+    name: "Cobra Kai S3",
+    startTime: new Date("01/01/2021"),
+    endTime: new Date("01/02/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 240,
+    name: "Kipo and the Age of Wonderbeasts S1",
+    nodes: [
+      {
+        startTime: new Date("09/20/2020"),
+        endTime: new Date("09/25/2020"),
+      },
+      {
+        startTime: new Date("11/13/2020"),
+        endTime: addHoursToDate(new Date("11/13/2020"), 4),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 241,
+    name: "Paradise Killer",
+    startTime: new Date("09/23/2020"),
+    endTime: new Date("09/28/2020"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 242,
+    name: "Hades",
+    startTime: new Date("09/27/2020"),
+    endTime: new Date("09/30/2020"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 243,
+    name: "Great British Bake off S8 (Series 11)",
+    startTime: new Date("09/25/2020"),
+    endTime: new Date("12/19/2020"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 244,
+    name: "Metroid Dread",
+    startTime: new Date("10/29/2021"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 245,
+    name: "Opus Magnum / Sigmar's Garden",
+    startTime: new Date("09/30/2020"),
+    endTime: new Date("10/16/2020"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 246,
+    name: "Inside Job S1",
+    startTime: new Date("10/31/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // {
