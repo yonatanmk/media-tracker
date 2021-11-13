@@ -2137,7 +2137,7 @@ const mockMediaData = [
   {
     _id: 267,
     name: "Kim's Convenience S1-4",
-    startTime: new Date("12/29/2020"),
+    startTime: new Date("12/30/2020"),
     endTime: new Date("01/13/2021"),
     type: mediaTypes.tv,
   },
@@ -2154,6 +2154,20 @@ const mockMediaData = [
     startTime: new Date("05/30/2021"),
     endTime: new Date("06/05/2021"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 270,
+    name: "Alice in Borderland",
+    startTime: new Date("01/09/2021"),
+    endTime: new Date("01/15/2021"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 271,
+    name: "Lair of the Clockwork God",
+    startTime: new Date("01/14/2021"),
+    endTime: new Date("01/19/2021"),
+    type: mediaTypes.videogame,
   },
 
   // {
