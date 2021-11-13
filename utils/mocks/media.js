@@ -2010,7 +2010,7 @@ const mockMediaData = [
     _id: 251,
     name: "Pyramid Game",
     startTime: new Date("11/09/2021"),
-    // endTime: new Date("03/12/2021"),
+    endTime: new Date("11/12/2021"),
     type: mediaTypes.book,
   },
   {
@@ -2042,11 +2042,90 @@ const mockMediaData = [
     type: mediaTypes.playthrough,
   },
   {
-    _id: 255,
+    _id: 256,
     name: "Assassins Creed IV Black Flag",
     startTime: new Date("11/16/2020"),
     endTime: new Date("12/06/2020"),
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 257,
+    name: "Critical Role Campaign 1",
+    startTime: new Date("09/05/2020"),
+    endTime: new Date("03/23/2020"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 258,
+    name: "Akudama Drive",
+    startTime: new Date("04/01/2021"),
+    endTime: new Date("04/03/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 259,
+    name: "Fantasy High S1",
+    nodes: [
+      {
+        startTime: new Date("11/04/2018"),
+        endTime: new Date("12/06/2018"),
+      },
+      {
+        startTime: new Date("01/21/2020"),
+        endTime: new Date("02/04/2020"),
+      },
+    ],
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 260,
+    name: "Fantasy High S2",
+    startTime: new Date("04/04/2021"),
+    endTime: new Date("06/01/2021"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 261,
+    name: "Escape from the Bloodkeep",
+    nodes: [
+      {
+        startTime: new Date("05/28/2019"),
+        endTime: new Date("06/25/2019"),
+      },
+      {
+        startTime: new Date("03/28/2021"),
+        endTime: new Date("03/31/2021"),
+      },
+    ],
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 262,
+    name: "Tiny Heist",
+    startTime: new Date("06/05/2021"),
+    endTime: new Date("06/14/2021"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 263,
+    name: "Mice & Murder",
+    startTime: new Date("06/15/2021"),
+    endTime: new Date("07/03/2021"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 264,
+    name: "Misfits and Magic",
+    startTime: new Date("08/30/2021"),
+    endTime: new Date("10/07/2021"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 265,
+    name: "A Crown of Candy",
+    startTime: new Date("07/05/2021"),
+    endTime: new Date("08/28/2021"),
+    type: mediaTypes.podcast,
   },
 
   // {
