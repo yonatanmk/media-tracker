@@ -24,7 +24,7 @@ const mockMediaData = [
   },
   {
     _id: 4,
-    name: "Yakuza 6",
+    name: "Yakuza 7: Like A Dragon",
     startTime: new Date("12/7/2020"),
     endTime: new Date("1/7/2021"),
     type: mediaTypes.videogame,
@@ -2027,6 +2027,28 @@ const mockMediaData = [
     endTime: new Date("11/03/2020"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 254,
+    name: "A Returner's Magic Should Be Special",
+    startTime: new Date("11/05/2020"),
+    endTime: new Date("11/09/2020"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 255,
+    name: "Assassins Creed Playthroughs",
+    startTime: new Date("11/12/2020"),
+    endTime: new Date("11/16/2020"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 255,
+    name: "Assassins Creed IV Black Flag",
+    startTime: new Date("11/16/2020"),
+    endTime: new Date("12/06/2020"),
+    type: mediaTypes.videogame,
+  },
+
   // {
   //   _id: 10052,
   //   name: "1234567890 6 arg 7g argrg are grg arg r gr 54324567687",
