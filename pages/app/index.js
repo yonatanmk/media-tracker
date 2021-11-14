@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 import { getSession } from "next-auth/client";
 
 import styles from "./App.module.scss";
@@ -9,24 +9,23 @@ import { getDurationDays, getDateString } from "../../utils/media";
 import { capitalize } from "../../utils";
 
 const App = ({ media }) => {
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(async () => {
-    const session = await getSession()
+    const session = await getSession();
     if (!session) {
-      router.push('/')
+      router.push("/");
     }
-  }, [router])
-
+  }, [router]);
 
   const mappedMedia = media.map((item) => {
     const sortedMappedNodes = (item.nodes || [])
-        .map((node) => ({
-          ...node,
-          startTime: new Date(node.startTime),
-          endTime: node.endTime ? new Date(node.endTime) : new Date(),
-        }))
-        .sort((a, b) => (a.startTime > b.startTime ? 1 : -1));
+      .map((node) => ({
+        ...node,
+        startTime: new Date(node.startTime),
+        endTime: node.endTime ? new Date(node.endTime) : new Date(),
+      }))
+      .sort((a, b) => (a.startTime > b.startTime ? 1 : -1));
 
     const startTime = item.startTime
       ? new Date(item.startTime)
@@ -102,10 +101,14 @@ const App = ({ media }) => {
 };
 
 export async function getServerSideProps(context) {
-  const session = await getSession(context)
-  
+  const session = await getSession(context);
+
   if (!session || !session.user) {
-    return { props: {} }
+    return {
+      props: {
+        media: [],
+      },
+    };
   }
 
   const response = await axios.get(

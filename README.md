@@ -18,3 +18,11 @@ Month bars
 Flattened media list with separate item for each node
 
 Create your own types
+
+
+
+
+
+To run:
+`yarn run dev`
+Make sure user is logged in

@@ -552,7 +552,6 @@ const mockMediaData = [
     endTime: new Date("09/22/2020"),
     type: mediaTypes.videogame,
   },
-  // NEED TO POPULATE IN DB
   {
     _id: 75,
     name: "Famicom Detective Club: The Missing Heir",
@@ -2197,6 +2196,7 @@ const mockMediaData = [
     // endTime: new Date("02/12/2021"),
     type: mediaTypes.tv,
   },
+  // NEED TO POPULATE IN DB
 
   // {
   //   _id: 10052,
