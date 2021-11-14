@@ -2023,7 +2023,7 @@ const mockMediaData = [
     _id: 257,
     name: "Critical Role Campaign 1",
     startTime: new Date("09/05/2020"),
-    endTime: new Date("03/23/2020"),
+    endTime: new Date("03/23/2021"),
     type: mediaTypes.podcast,
   },
   {
