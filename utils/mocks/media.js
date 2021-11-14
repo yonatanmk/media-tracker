@@ -1982,7 +1982,7 @@ const mockMediaData = [
     _id: 247,
     name: "Mythic Quest S2",
     startTime: new Date("11/07/2021"),
-    // endTime: new Date("11/08/2021"),
+    endTime: new Date("11/13/2021"),
     type: mediaTypes.tv,
   },
   {
@@ -2168,6 +2168,34 @@ const mockMediaData = [
     startTime: new Date("01/14/2021"),
     endTime: new Date("01/19/2021"),
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 272,
+    name: "Dorohedoro",
+    startTime: new Date("01/18/2021"),
+    endTime: new Date("01/20/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 273,
+    name: "Dorohedoro",
+    startTime: new Date("01/25/2021"),
+    endTime: new Date("02/14/2021"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 274,
+    name: "GLOW S1-3",
+    startTime: new Date("01/26/2021"),
+    endTime: new Date("02/12/2021"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 275,
+    name: "Big Mouth S5",
+    startTime: new Date("11/13/2021"),
+    // endTime: new Date("02/12/2021"),
+    type: mediaTypes.tv,
   },
 
   // {
