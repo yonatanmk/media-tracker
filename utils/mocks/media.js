@@ -2003,7 +2003,7 @@ const mockMediaData = [
     _id: 250,
     name: "Marvel's Guardians of the Galaxy",
     startTime: new Date("11/08/2021"),
-    // endTime: new Date("03/12/2021"),
+    endTime: new Date("11/13/2021"),
     type: mediaTypes.videogame,
   },
   {
