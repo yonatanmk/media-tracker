@@ -2197,6 +2197,14 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   // NEED TO POPULATE IN DB
+  {
+    _id: 280,
+    name: "Ni No Kuni 2: Revenant Kingdom",
+    startTime: new Date("11/14/2021"),
+    endTime: null,
+    // endTime: new Date("11/14/2021"),
+    type: mediaTypes.videogame,
+  },
 
   // {
   //   _id: 10052,
