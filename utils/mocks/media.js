@@ -1569,7 +1569,7 @@ const mockMediaData = [
     _id: 195,
     name: "Great British Bake Off S9 (Series 12)",
     startTime: new Date("09/25/2021"),
-    endTime: null,
+    endTime: new Date("11/27/2021"),
     type: mediaTypes.tv,
   },
   {
@@ -2165,7 +2165,7 @@ const mockMediaData = [
     _id: 275,
     name: "Big Mouth S5",
     startTime: new Date("11/13/2021"),
-    // endTime: new Date("02/12/2021"),
+    endTime: new Date("11/29/2021"),
     type: mediaTypes.tv,
   },
   {
@@ -2311,6 +2311,22 @@ const mockMediaData = [
     // startTime: new Date("05/07/2021"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 296,
+    name: "World's End Club",
+    startTime: new Date("05/28/2021"),
+    endTime: new Date("05/30/2021"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 297,
+    name: "Fleabag",
+    startTime: new Date("05/31/2021"),
+    startTime: new Date("06/01/2021"),
+    type: mediaTypes.tv,
+  },
+
+  // Add Rocket Contracts
 
   // {
   //   _id: 10052,
