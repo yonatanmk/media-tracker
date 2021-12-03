@@ -665,7 +665,6 @@ const mockMediaData = [
     endTime: new Date("07/25/2021"),
     type: mediaTypes.tv,
   },
-  // NEW ENTRIES
   {
     _id: 90,
     name: "Frostpunk",
@@ -1737,7 +1736,7 @@ const mockMediaData = [
     _id: 219,
     name: "The Adventure Zone Amnesty",
     startTime: new Date("10/24/2021"),
-    // endTime: new Date("10/24/2021"),
+    endTime: new Date("11/26/2021"),
     type: mediaTypes.podcast,
   },
   {
