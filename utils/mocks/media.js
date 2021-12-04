@@ -2324,6 +2324,13 @@ const mockMediaData = [
     startTime: new Date("06/01/2021"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 298,
+    name: "Stellaris",
+    startTime: new Date("07/02/2021"),
+    endTime: new Date("07/07/2021"),
+    type: mediaTypes.videogame,
+  },
 
   // Add Rocket Contracts
 
