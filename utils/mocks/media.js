@@ -1931,7 +1931,7 @@ const mockMediaData = [
     _id: 244,
     name: "Metroid Dread",
     startTime: new Date("10/29/2021"),
-    endTime: null,
+    endTime: new Date("12/21/2021"),
     type: mediaTypes.videogame,
   },
   {
@@ -2337,6 +2337,29 @@ const mockMediaData = [
     startTime: new Date("07/18/2021"),
     startTime: new Date("07/30/2021"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 300,
+    name: "Dicey Dungeons",
+    startTime: new Date("12/08/2021"),
+    endTime: new Date("12/19/2021"),
+    // endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 301,
+    name: "Vinland Saga",
+    startTime: new Date("12/08/2021"),
+    startTime: new Date("12/21/2021"),
+    // endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 30,
+    name: "Oshi No Ko",
+    startTime: new Date("12/24/2021"),
+    endTime: null,
+    type: mediaTypes.book,
   },
 
   // Add Rocket Contracts
