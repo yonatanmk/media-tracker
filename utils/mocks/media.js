@@ -2208,8 +2208,8 @@ const mockMediaData = [
     _id: 281,
     name: "Lost Judgement",
     startTime: new Date("11/20/2021"),
-    endTime: null,
-    // endTime: new Date("11/14/2021"),
+    // endTime: null,
+    endTime: new Date("12/26/2021"),
     type: mediaTypes.videogame,
   },
   {
@@ -2355,10 +2355,17 @@ const mockMediaData = [
     type: mediaTypes.book,
   },
   {
-    _id: 30,
+    _id: 302,
     name: "Oshi No Ko",
-    startTime: new Date("12/24/2021"),
+    startTime: new Date("12/23/2021"),
     endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 303,
+    name: "Chikan Otoko",
+    startTime: new Date("12/24/2021"),
+    endTime: new Date("12/26/2021"),
     type: mediaTypes.book,
   },
 
