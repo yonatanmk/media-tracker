@@ -2379,6 +2379,22 @@ const mockMediaData = [
     endTime: new Date("07/30/2021"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 305,
+    name: "Cobra Kai S5",
+    startTime: new Date("01/02/2022"),
+    endTime: null,
+    // endTime: new Date("01/02/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 306,
+    name: "Eastward",
+    startTime: new Date("12/30/2021"),
+    endTime: null,
+    // endTime: new Date("01/02/2022"),
+    type: mediaTypes.videogame,
+  },
 
   // Add Rocket Contracts
 
