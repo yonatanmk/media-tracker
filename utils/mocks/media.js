@@ -2383,8 +2383,7 @@ const mockMediaData = [
     _id: 305,
     name: "Cobra Kai S5",
     startTime: new Date("01/02/2022"),
-    endTime: null,
-    // endTime: new Date("01/02/2022"),
+    endTime: new Date("01/03/2022"),
     type: mediaTypes.tv,
   },
   {
