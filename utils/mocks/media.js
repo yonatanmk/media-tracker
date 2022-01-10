@@ -2376,7 +2376,7 @@ const mockMediaData = [
     _id: 304,
     name: "Ranking of Kings",
     startTime: new Date("12/29/2021"),
-    endTime: new Date("07/30/2021"),
+    endTime: null,
     type: mediaTypes.tv,
   },
   {
@@ -2393,6 +2393,36 @@ const mockMediaData = [
     endTime: null,
     // endTime: new Date("01/02/2022"),
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 307,
+    name: "Outer Worlds Murder on Eridanos DLC Playthrough",
+    startTime: new Date("01/03/2022"),
+    endTime: new Date("01/04/2022"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 308,
+    name: "The Forgotten City",
+    startTime: new Date("01/04/2022"),
+    endTime: new Date("01/05/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 309,
+    name: "Inscryption",
+    startTime: new Date("01/09/2022"),
+    endTime: null,
+    // endTime: new Date("01/05/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 310,
+    name: "To Your Eternity",
+    startTime: new Date("01/07/2022"),
+    endTime: null,
+    // endTime: new Date("01/03/2022"),
+    type: mediaTypes.tv,
   },
 
   // Add Rocket Contracts

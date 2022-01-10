@@ -29,9 +29,9 @@ handler.get(async (req, res) => {
   // }
   const userId = req.query.userId[0];
 
-  // const mediaData = await media.getMedia(req.db, userId);
-  res.send(mockMediaData);
-  // res.send(mediaData);
+  const mediaData = await media.getMedia(req.db, userId);
+  // res.send(mockMediaData);
+  res.send(mediaData);
 });
 
 export default handler;
