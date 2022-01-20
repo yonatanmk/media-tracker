@@ -1722,7 +1722,7 @@ const mockMediaData = [
     _id: 217,
     name: "Komi Can't Communicate",
     startTime: new Date("10/21/2021"),
-    // endTime: new Date("10/20/2021"),
+    endTime: new Date("01/06/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -2412,17 +2412,50 @@ const mockMediaData = [
     _id: 309,
     name: "Inscryption",
     startTime: new Date("01/09/2022"),
-    endTime: null,
-    // endTime: new Date("01/05/2022"),
+    endTime: new Date("01/13/2022"),
     type: mediaTypes.videogame,
   },
   {
     _id: 310,
     name: "To Your Eternity",
     startTime: new Date("01/07/2022"),
-    endTime: null,
-    // endTime: new Date("01/03/2022"),
+    endTime: new Date("01/17/2022"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 311,
+    name: "New Girl, various seasons",
+    nodes: [
+      {
+        startTime: new Date("08/21/2021"),
+        endTime: new Date("08/23/2021"),
+      },
+      {
+        startTime: new Date("10/11/2021"),
+        endTime: new Date("11/05/2021"),
+      },
+      {
+        startTime: new Date("12/06/2021"),
+        endTime: new Date("01/11/2022"),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 312,
+    name: "Gnosia",
+    startTime: new Date("01/14/2022"),
+    endTime: null,
+    // endTime: new Date("01/05/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 313,
+    name: "Kingdom Come Deliverance",
+    startTime: new Date("01/17/2022"),
+    endTime: null,
+    // endTime: new Date("01/05/2022"),
+    type: mediaTypes.videogame,
   },
 
   // Add Rocket Contracts
