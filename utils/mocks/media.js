@@ -1574,8 +1574,16 @@ const mockMediaData = [
   {
     _id: 196,
     name: "Taskmaster S9",
-    startTime: new Date("09/18/2021"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("09/18/2021"),
+        endTime: new Date("10/04/2021"),
+      },
+      {
+        startTime: new Date("01/24/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -2456,6 +2464,22 @@ const mockMediaData = [
     endTime: null,
     // endTime: new Date("01/05/2022"),
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 314,
+    name: "Succession S1",
+    startTime: new Date("01/20/2022"),
+    endTime: null,
+    // endTime: new Date("01/17/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 315,
+    name: "Peacemaker",
+    startTime: new Date("01/22/2022"),
+    endTime: null,
+    // endTime: new Date("01/17/2022"),
+    type: mediaTypes.tv,
   },
 
   // Add Rocket Contracts
