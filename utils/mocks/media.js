@@ -2397,8 +2397,16 @@ const mockMediaData = [
   {
     _id: 306,
     name: "Eastward",
-    startTime: new Date("12/30/2021"),
-    endTime: new Date("02/12/2022"),
+    nodes: [
+      {
+        startTime: new Date("12/30/2021"),
+        endTime: new Date("01/14/2022"),
+      },
+      {
+        startTime: new Date("02/06/2022"),
+        endTime: new Date("02/12/2022"),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
