@@ -2398,8 +2398,7 @@ const mockMediaData = [
     _id: 306,
     name: "Eastward",
     startTime: new Date("12/30/2021"),
-    endTime: null,
-    // endTime: new Date("01/02/2022"),
+    endTime: new Date("02/12/2022"),
     type: mediaTypes.videogame,
   },
   {
@@ -2461,8 +2460,7 @@ const mockMediaData = [
     _id: 313,
     name: "Kingdom Come Deliverance",
     startTime: new Date("01/17/2022"),
-    endTime: null,
-    // endTime: new Date("01/05/2022"),
+    endTime: new Date("02/12/2022"),
     type: mediaTypes.videogame,
   },
   {
@@ -2531,8 +2529,7 @@ const mockMediaData = [
     _id: 322,
     name: "Astro's Playroom",
     startTime: new Date("02/10/2022"),
-    endTime: null,
-    // endTime: new Date("01/05/2022"),
+    endTime: new Date("02/11/2022"),
     type: mediaTypes.videogame,
   },
 
