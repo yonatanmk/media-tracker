@@ -19,6 +19,8 @@ Flattened media list with separate item for each node
 
 Create your own types
 
+Scale slider to change width % of .timeline class?
+
 
 
 

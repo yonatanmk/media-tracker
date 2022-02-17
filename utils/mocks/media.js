@@ -749,7 +749,7 @@ const mockMediaData = [
   },
   {
     _id: 98,
-    name: "Dirk Gently's Holistic Detective Agency",
+    name: "Dirk Gently's Holistic Detective Agency S2",
     startTime: new Date("07/06/2018"),
     endTime: new Date("07/07/2018"),
     type: mediaTypes.tv,
