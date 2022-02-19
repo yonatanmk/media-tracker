@@ -2349,7 +2349,6 @@ const mockMediaData = [
     name: "Dicey Dungeons",
     startTime: new Date("12/08/2021"),
     endTime: new Date("12/19/2021"),
-    // endTime: null,
     type: mediaTypes.videogame,
   },
   {
@@ -2506,7 +2505,6 @@ const mockMediaData = [
     name: "Shriek Week",
     startTime: new Date("01/06/2022"),
     endTime: new Date("01/20/2022"),
-    endTime: null,
     type: mediaTypes.podcast,
   },
   {
@@ -2538,6 +2536,13 @@ const mockMediaData = [
     name: "Astro's Playroom",
     startTime: new Date("02/10/2022"),
     endTime: new Date("02/11/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 323,
+    name: "Horizon Forbidden West",
+    startTime: new Date("02/18/2022"),
+    endTime: null,
     type: mediaTypes.videogame,
   },
 
