@@ -674,19 +674,19 @@ const mockMediaData = [
   },
   {
     _id: 91,
-    name: "The Great Ace Attorney Chronicles",
-    // startTime: new Date("07/29/2021"),
-    // endTime: new Date("09/02/2021"),
-    nodes: [
-      {
-        startTime: new Date("07/29/2021"),
-        endTime: new Date("09/02/2021"),
-      },
-      // {
-      //   startTime: new Date("07/29/2021"),
-      //   endTime: new Date("09/02/2021"),
-      // },
-    ],
+    name: "The Great Ace Attorney Adventures (The Great Ace Attorney Chronicles 1)",
+    startTime: new Date("07/29/2021"),
+    endTime: new Date("09/02/2021"),
+    // nodes: [
+    //   {
+    //     startTime: new Date("07/29/2021"),
+    //     endTime: new Date("09/02/2021"),
+    //   },
+    //   // {
+    //   //   startTime: new Date("07/29/2021"),
+    //   //   endTime: new Date("09/02/2021"),
+    //   // },
+    // ],
     type: mediaTypes.videogame,
   },
   {
@@ -2384,6 +2384,20 @@ const mockMediaData = [
     name: "Ranking of Kings",
     startTime: new Date("12/29/2021"),
     endTime: null,
+    nodes: [
+      {
+        startTime: new Date("12/29/2021"),
+        endTime: new Date("12/31/2021"),
+      },
+      {
+        startTime: new Date("01/20/2022"),
+        endTime: new Date("01/21/2022"),
+      },
+      {
+        startTime: new Date("02/06/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -2542,6 +2556,27 @@ const mockMediaData = [
     _id: 323,
     name: "Horizon Forbidden West",
     startTime: new Date("02/18/2022"),
+    endTime: new Date("03/05/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 324,
+    name: "Inventing Anna",
+    startTime: new Date("02/24/2022"),
+    endTime: new Date("02/26/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 325,
+    name: "Ratchet and Clank: Rift Apart",
+    startTime: new Date("03/05/2022"),
+    endTime: new Date("03/08/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 326,
+    name: "The Great Ace Attorney 2 Resolve (The Great Ace Attorney Chronicles 2)",
+    startTime: new Date("03/08/2022"),
     endTime: null,
     type: mediaTypes.videogame,
   },
