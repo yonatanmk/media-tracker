@@ -1949,13 +1949,13 @@ const mockMediaData = [
     endTime: new Date("10/16/2020"),
     type: mediaTypes.videogame,
   },
-  {
-    _id: 246,
-    name: "Inside Job S1",
-    startTime: new Date("10/31/2021"),
-    endTime: null,
-    type: mediaTypes.tv,
-  },
+  // {
+  //   _id: 246,
+  //   name: "Inside Job S1",
+  //   startTime: new Date("10/31/2021"),
+  //   endTime: null,
+  //   type: mediaTypes.tv,
+  // },
   {
     _id: 247,
     name: "Mythic Quest S2",
@@ -2540,9 +2540,19 @@ const mockMediaData = [
   {
     _id: 321,
     name: "Super Mario 3D World + Bowser's Fury",
-    startTime: new Date("02/05/2022"),
-    endTime: null,
+    // startTime: new Date("02/05/2022"),
+    // endTime: null,
     // endTime: new Date("01/05/2022"),
+    nodes: [
+      {
+        startTime: new Date("02/05/2022"),
+        endTime: new Date("02/12/2022"),
+      },
+      {
+        startTime: new Date("03/07/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
