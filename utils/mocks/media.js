@@ -2590,6 +2590,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 327,
+    name: "Spiderman: Miles Morales",
+    startTime: new Date("03/12/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
 
   // Add Rocket Contracts
 
