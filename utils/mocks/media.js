@@ -2594,8 +2594,15 @@ const mockMediaData = [
     _id: 327,
     name: "Spiderman: Miles Morales",
     startTime: new Date("03/12/2022"),
-    endTime: null,
+    endTime: new Date("03/16/2022"),
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 328,
+    name: "Marvelous Ms. Maisel S4",
+    startTime: new Date("03/16/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // Add Rocket Contracts
