@@ -2601,8 +2601,15 @@ const mockMediaData = [
     _id: 328,
     name: "Marvelous Ms. Maisel S4",
     startTime: new Date("03/16/2022"),
-    endTime: null,
+    endTime: new Date("03/27/2022"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 329,
+    name: "Elden Ring",
+    startTime: new Date("03/19/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
   // Add Rocket Contracts
