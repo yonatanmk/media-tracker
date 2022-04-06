@@ -805,9 +805,17 @@ const mockMediaData = [
   },
   {
     _id: 106,
-    name: "That Time I was Reincarnated as A Slime",
-    startTime: new Date("10/24/2018"),
-    endTime: new Date("01/15/2019"),
+    name: "That Time I was Reincarnated as A Slime S1",
+    nodes: [
+      {
+        startTime: new Date("10/24/2018"),
+        endTime: new Date("01/15/2019"),
+      },
+      {
+        startTime: new Date("04/03/2022"),
+        endTime: new Date("04/05/2022"),
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -2586,8 +2594,16 @@ const mockMediaData = [
   {
     _id: 326,
     name: "The Great Ace Attorney 2 Resolve (The Great Ace Attorney Chronicles 2)",
-    startTime: new Date("03/08/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("03/08/2022"),
+        endTime: new Date("03/22/2022"),
+      },
+      // {
+      //   startTime: new Date("03/07/2022"),
+      //   endTime: null,
+      // },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -2610,6 +2626,20 @@ const mockMediaData = [
     startTime: new Date("03/19/2022"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 330,
+    name: "That Time I was Reincarnated as A Slime S2",
+    startTime: new Date("04/05/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 331,
+    name: "Holyland",
+    startTime: new Date("04/05/2022"),
+    endTime: null,
+    type: mediaTypes.book,
   },
 
   // Add Rocket Contracts
