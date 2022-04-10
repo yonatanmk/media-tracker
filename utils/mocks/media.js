@@ -2641,6 +2641,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.book,
   },
+  {
+    _id: 332,
+    name: "A Short Hike",
+    startTime: new Date("04/10/2022"),
+    endTime: addHoursToDate(new Date("04/10/2022"), 4),
+    type: mediaTypes.videogame,
+  },
 
   // Add Rocket Contracts
 
