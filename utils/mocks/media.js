@@ -2638,7 +2638,7 @@ const mockMediaData = [
     _id: 331,
     name: "Holyland",
     startTime: new Date("04/05/2022"),
-    endTime: null,
+    endTime: new Date("04/13/2022"),
     type: mediaTypes.book,
   },
   {
@@ -2646,6 +2646,13 @@ const mockMediaData = [
     name: "A Short Hike",
     startTime: new Date("04/10/2022"),
     endTime: addHoursToDate(new Date("04/10/2022"), 4),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 333,
+    name: "Kirby and the Forgotten Land",
+    startTime: new Date("04/12/2022"),
+    endTime: null,
     type: mediaTypes.videogame,
   },
 
