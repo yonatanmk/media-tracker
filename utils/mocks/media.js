@@ -2631,7 +2631,7 @@ const mockMediaData = [
     _id: 330,
     name: "That Time I was Reincarnated as A Slime S2",
     startTime: new Date("04/05/2022"),
-    endTime: null,
+    endTime: new Date("04/19/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -2654,6 +2654,13 @@ const mockMediaData = [
     startTime: new Date("04/12/2022"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 334,
+    name: "Helck",
+    startTime: new Date("04/13/2022"),
+    endTime: null,
+    type: mediaTypes.book,
   },
 
   // Add Rocket Contracts
