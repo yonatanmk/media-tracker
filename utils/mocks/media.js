@@ -1125,7 +1125,7 @@ const mockMediaData = [
   },
   {
     _id: 142,
-    name: "Grace and Frankie S7",
+    name: "Grace and Frankie S7 Part 1",
     nodes: [
       {
         startTime: new Date("08/16/2021"),
@@ -2403,6 +2403,14 @@ const mockMediaData = [
       },
       {
         startTime: new Date("02/06/2022"),
+        endTime: addHoursToDate(new Date("02/06/2022"), 4),
+      },
+      {
+        startTime: new Date("02/23/2022"),
+        endTime: addHoursToDate(new Date("02/23/2022"), 4),
+      },
+      {
+        startTime: new Date("04/25/2022"),
         endTime: null,
       },
     ],
@@ -2674,6 +2682,45 @@ const mockMediaData = [
     name: "Our Flag Means Death",
     startTime: new Date("04/15/2022"),
     endTime: new Date("04/23/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 337,
+    name: "Forager",
+    startTime: new Date("04/26/2022"),
+    endTime: new Date("04/30/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 338,
+    name: "Overwatch 2 Beta",
+    startTime: new Date("04/28/2022"),
+    endTime: new Date("05/01/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 339,
+    name: "Half Life Alyx",
+    startTime: new Date("04/30/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 340,
+    name: "Grace and Frankie S7 Part 2",
+    nodes: [
+      {
+        startTime: new Date("04/30/2022"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 341,
+    name: "Ya Boy Kongming",
+    startTime: new Date("05/01/2022"),
+    endTime: null,
     type: mediaTypes.tv,
   },
 
