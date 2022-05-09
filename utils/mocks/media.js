@@ -1736,7 +1736,7 @@ const mockMediaData = [
   },
   {
     _id: 217,
-    name: "Komi Can't Communicate",
+    name: "Komi Can't Communicate S1",
     startTime: new Date("10/21/2021"),
     endTime: new Date("01/06/2022"),
     type: mediaTypes.tv,
@@ -2384,7 +2384,7 @@ const mockMediaData = [
     _id: 303,
     name: "ReLife",
     startTime: new Date("12/27/2021"),
-    endTime: null,
+    endTime: new Date("01/05/22"),
     type: mediaTypes.book,
   },
   {
@@ -2411,7 +2411,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("04/25/2022"),
-        endTime: null,
+        endTime: new Date("05/04/2022"),
       },
     ],
     type: mediaTypes.tv,
@@ -2507,14 +2507,14 @@ const mockMediaData = [
     endTime: new Date("02/07/2022"),
     type: mediaTypes.tv,
   },
-  {
-    _id: 315,
-    name: "Peacemaker",
-    startTime: new Date("01/22/2022"),
-    endTime: null,
-    // endTime: new Date("01/17/2022"),
-    type: mediaTypes.tv,
-  },
+  // {
+  //   _id: 315,
+  //   name: "Peacemaker",
+  //   startTime: new Date("01/22/2022"),
+  //   endTime: null,
+  //   // endTime: new Date("01/17/2022"),
+  //   type: mediaTypes.tv,
+  // },
   {
     _id: 316,
     name: "Critical Role Campaign 2 again, Start at C2E73",
@@ -2660,14 +2660,14 @@ const mockMediaData = [
     _id: 333,
     name: "Kirby and the Forgotten Land",
     startTime: new Date("04/12/2022"),
-    endTime: null,
+    endTime: new Date("05/07/2022"),
     type: mediaTypes.videogame,
   },
   {
     _id: 334,
     name: "Helck",
     startTime: new Date("04/13/2022"),
-    endTime: null,
+    endTime: new Date("05/04/2022"),
     type: mediaTypes.book,
   },
   {
@@ -2708,12 +2708,14 @@ const mockMediaData = [
   {
     _id: 340,
     name: "Grace and Frankie S7 Part 2",
-    nodes: [
-      {
-        startTime: new Date("04/30/2022"),
-        endTime: null,
-      },
-    ],
+    // nodes: [
+    //   {
+    //     startTime: new Date("04/30/2022"),
+    //     endTime: new Date("05/07/2022"),
+    //   },
+    // ],
+    startTime: new Date("04/30/2022"),
+    endTime: new Date("05/07/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -2721,6 +2723,27 @@ const mockMediaData = [
     name: "Ya Boy Kongming",
     startTime: new Date("05/01/2022"),
     endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 342,
+    name: "Komi Can't Communicate S1 Part 2",
+    startTime: new Date("05/01/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 343,
+    name: "My Dress-Up Darling",
+    startTime: new Date("05/05/2022"),
+    endTime: new Date("05/06/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 344,
+    name: "Horimiya",
+    startTime: new Date("05/06/2022"),
+    endTime: new Date("05/08/2022"),
     type: mediaTypes.tv,
   },
 
