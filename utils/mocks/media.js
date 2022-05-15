@@ -1589,7 +1589,11 @@ const mockMediaData = [
       },
       {
         startTime: new Date("01/24/2022"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("01/24/2022"), 4),
+      },
+      {
+        startTime: new Date("05/13/2022"),
+        endTime: new Date("05/15/2022"),
       },
     ],
     type: mediaTypes.tv,
@@ -1825,7 +1829,7 @@ const mockMediaData = [
   },
   {
     _id: 228,
-    name: "Rei Zero S2 Part 1",
+    name: "Re:Zero S2 Part 1",
     startTime: new Date("07/27/2020"),
     endTime: new Date("10/01/2020"),
     type: mediaTypes.tv,
@@ -1856,7 +1860,7 @@ const mockMediaData = [
     name: "Firewatch",
     startTime: new Date("08/30/2020"),
     endTime: new Date("09/01/2020"),
-    type: mediaTypes.tv,
+    type: mediaTypes.videogame,
   },
   {
     _id: 233,
@@ -2015,7 +2019,7 @@ const mockMediaData = [
   },
   {
     _id: 254,
-    name: "A Returner's Magic Should Be Special",
+    name: "A Returner's Magic Should Be Special",
     startTime: new Date("11/05/2020"),
     endTime: new Date("11/09/2020"),
     type: mediaTypes.book,
@@ -2315,7 +2319,7 @@ const mockMediaData = [
     name: "Gone Home",
     startTime: new Date("05/06/2021"),
     endTime: new Date("05/07/2021"),
-    type: mediaTypes.tv,
+    type: mediaTypes.videogame,
   },
   {
     _id: 295,
@@ -2608,7 +2612,7 @@ const mockMediaData = [
         endTime: new Date("03/22/2022"),
       },
       // {
-      //   startTime: new Date("03/07/2022"),
+      //   startTime: new Date("05/12/2022"), // Playthrough
       //   endTime: null,
       // },
     ],
@@ -2744,6 +2748,27 @@ const mockMediaData = [
     name: "Horimiya",
     startTime: new Date("05/06/2022"),
     endTime: new Date("05/08/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 345,
+    name: "Sk8 The Infinity",
+    startTime: new Date("05/09/2022"),
+    endTime: new Date("05/10/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 346,
+    name: "Wotakoi",
+    startTime: new Date("05/10/2022"),
+    endTime: new Date("05/11/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 347,
+    name: "Saiki K S1",
+    startTime: new Date("05/10/2022"),
+    // endTime: new Date("05/10/2022"),
     type: mediaTypes.tv,
   },
 
