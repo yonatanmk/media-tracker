@@ -2523,8 +2523,8 @@ const mockMediaData = [
     _id: 316,
     name: "Critical Role Campaign 2 again, Start at C2E73",
     startTime: new Date("01/27/2022"),
-    // endTime: new Date("03/23/2021"),
-    endTime: null,
+    endTime: new Date("05/12/2022"),
+    // endTime: null,
     type: mediaTypes.podcast,
   },
   {
@@ -2611,10 +2611,10 @@ const mockMediaData = [
         startTime: new Date("03/08/2022"),
         endTime: new Date("03/22/2022"),
       },
-      // {
-      //   startTime: new Date("05/12/2022"), // Playthrough
-      //   endTime: null,
-      // },
+      {
+        startTime: new Date("05/12/2022"), // Playthrough
+        endTime: new Date("05/17/2022"),
+      },
     ],
     type: mediaTypes.videogame,
   },
@@ -2770,6 +2770,13 @@ const mockMediaData = [
     startTime: new Date("05/10/2022"),
     // endTime: new Date("05/10/2022"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 348,
+    name: "MBIMBAM",
+    startTime: new Date("05/12/2022"),
+    endTime: null,
+    type: mediaTypes.podcast,
   },
 
   // Add Rocket Contracts
