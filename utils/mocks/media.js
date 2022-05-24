@@ -2678,7 +2678,7 @@ const mockMediaData = [
     _id: 335,
     name: "Mushoku Tensei S1",
     startTime: new Date("04/21/2022"),
-    endTime: null,
+    endTime: new Date("05/20/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -2777,6 +2777,21 @@ const mockMediaData = [
     startTime: new Date("05/12/2022"),
     endTime: null,
     type: mediaTypes.podcast,
+  },
+  {
+    _id: 349,
+    name: "Bofuri",
+    startTime: new Date("05/22/2022"),
+    endTime: new Date("05/23/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 350,
+    name: "Hilda S1",
+    startTime: new Date("05/23/2022"),
+    // endTime: new Date("05/23/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // Add Rocket Contracts

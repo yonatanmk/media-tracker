@@ -23,7 +23,9 @@ Scale slider to change width % of .timeline class?
 
 
 
-
+Before running:
+Make sure DB isn't paused
+https://cloud.mongodb.com/
 
 To run:
 `yarn run dev`
