@@ -2635,8 +2635,16 @@ const mockMediaData = [
   {
     _id: 329,
     name: "Elden Ring",
-    startTime: new Date("03/19/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("03/19/2022"),
+        endTime: new Date("05/10/2022"),
+      },
+      {
+        startTime: new Date("05/26/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -2775,6 +2783,7 @@ const mockMediaData = [
     _id: 348,
     name: "MBIMBAM",
     startTime: new Date("05/12/2022"),
+    endTime: new Date("05/25/2022"), // Paused to start listening to Storyteller Squad
     endTime: null,
     type: mediaTypes.podcast,
   },
@@ -2792,6 +2801,13 @@ const mockMediaData = [
     // endTime: new Date("05/23/2022"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 351,
+    name: "The Storyteller Squad",
+    startTime: new Date("05/26/2022"),
+    endTime: null,
+    type: mediaTypes.podcast,
   },
 
   // Add Rocket Contracts
