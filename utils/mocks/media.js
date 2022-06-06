@@ -2642,7 +2642,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("05/26/2022"),
-        endTime: null,
+        endTime: new Date("05/28/2022"),
       },
     ],
     type: mediaTypes.videogame,
@@ -2713,8 +2713,16 @@ const mockMediaData = [
   {
     _id: 339,
     name: "Half Life Alyx",
-    startTime: new Date("04/30/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("04/30/2022"),
+        endTime: new Date("05/01/2022"),
+      },
+      {
+        startTime: new Date("05/30/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -2798,8 +2806,7 @@ const mockMediaData = [
     _id: 350,
     name: "Hilda S1",
     startTime: new Date("05/23/2022"),
-    // endTime: new Date("05/23/2022"),
-    endTime: null,
+    endTime: new Date("05/30/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -2808,6 +2815,37 @@ const mockMediaData = [
     startTime: new Date("05/26/2022"),
     endTime: null,
     type: mediaTypes.podcast,
+  },
+  {
+    _id: 352,
+    name: "Old Enough", // Maybe Delete?
+    startTime: new Date("05/28/2022"),
+    // endTime: new Date("05/23/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  // {
+  //   _id: 353,
+  //   name: "Hilda S2",
+  //   startTime: new Date("05/23/2022"),
+  //   endTime: new Date("05/30/2022"),
+  //   endTime: null,
+  //   type: mediaTypes.tv,
+  // },
+  {
+    _id: 354,
+    name: "Bug Fables",
+    startTime: new Date("05/17/2022"),
+    // endTime: new Date("05/23/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 355,
+    name: "Rascal Does Not Dream of Bunny Girl Senpai",
+    startTime: new Date("05/31/2022"),
+    endTime: new Date("06/05/2022"),
+    type: mediaTypes.tv,
   },
 
   // Add Rocket Contracts
