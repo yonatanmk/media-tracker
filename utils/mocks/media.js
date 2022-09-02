@@ -223,7 +223,8 @@ const mockMediaData = [
   {
     _id: 30,
     name: "Rhythm of War",
-    startTime: new Date("07/09/2021"),
+    // startTime: new Date("07/09/2021"),
+    startTime: new Date("06/17/2022"),
     endTime: null,
     type: mediaTypes.book,
   },
@@ -1595,6 +1596,10 @@ const mockMediaData = [
         startTime: new Date("05/13/2022"),
         endTime: new Date("05/15/2022"),
       },
+      {
+        startTime: new Date("07/23/2022"),
+        endTime: new Date("07/24/2022"),
+      },
     ],
     type: mediaTypes.tv,
   },
@@ -1961,13 +1966,6 @@ const mockMediaData = [
     endTime: new Date("10/16/2020"),
     type: mediaTypes.videogame,
   },
-  // {
-  //   _id: 246,
-  //   name: "Inside Job S1",
-  //   startTime: new Date("10/31/2021"),
-  //   endTime: null,
-  //   type: mediaTypes.tv,
-  // },
   {
     _id: 247,
     name: "Mythic Quest S2",
@@ -2394,8 +2392,6 @@ const mockMediaData = [
   {
     _id: 304,
     name: "Ranking of Kings",
-    startTime: new Date("12/29/2021"),
-    endTime: null,
     nodes: [
       {
         startTime: new Date("12/29/2021"),
@@ -2524,7 +2520,6 @@ const mockMediaData = [
     name: "Critical Role Campaign 2 again, Start at C2E73",
     startTime: new Date("01/27/2022"),
     endTime: new Date("05/12/2022"),
-    // endTime: null,
     type: mediaTypes.podcast,
   },
   {
@@ -2560,9 +2555,6 @@ const mockMediaData = [
   {
     _id: 321,
     name: "Super Mario 3D World + Bowser's Fury",
-    // startTime: new Date("02/05/2022"),
-    // endTime: null,
-    // endTime: new Date("01/05/2022"),
     nodes: [
       {
         startTime: new Date("02/05/2022"),
@@ -2570,6 +2562,10 @@ const mockMediaData = [
       },
       {
         startTime: new Date("03/07/2022"),
+        endTime: new Date("03/19/2022"),
+      },
+      {
+        startTime: new Date("07/19/2022"),
         endTime: null,
       },
     ],
@@ -2720,7 +2716,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("05/30/2022"),
-        endTime: null,
+        endTime: new Date("06/12/2022"),
       },
     ],
     type: mediaTypes.videogame,
@@ -2728,12 +2724,6 @@ const mockMediaData = [
   {
     _id: 340,
     name: "Grace and Frankie S7 Part 2",
-    // nodes: [
-    //   {
-    //     startTime: new Date("04/30/2022"),
-    //     endTime: new Date("05/07/2022"),
-    //   },
-    // ],
     startTime: new Date("04/30/2022"),
     endTime: new Date("05/07/2022"),
     type: mediaTypes.tv,
@@ -2742,14 +2732,14 @@ const mockMediaData = [
     _id: 341,
     name: "Ya Boy Kongming",
     startTime: new Date("05/01/2022"),
-    endTime: null,
+    endTime: new Date("06/16/2022"),
     type: mediaTypes.tv,
   },
   {
     _id: 342,
     name: "Komi Can't Communicate S1 Part 2",
     startTime: new Date("05/01/2022"),
-    endTime: null,
+    endTime: new Date("07/18/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -2784,7 +2774,7 @@ const mockMediaData = [
     _id: 347,
     name: "Saiki K S1",
     startTime: new Date("05/10/2022"),
-    // endTime: new Date("05/10/2022"),
+    endTime: new Date("07/19/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -2792,7 +2782,6 @@ const mockMediaData = [
     name: "MBIMBAM",
     startTime: new Date("05/12/2022"),
     endTime: new Date("05/25/2022"), // Paused to start listening to Storyteller Squad
-    endTime: null,
     type: mediaTypes.podcast,
   },
   {
@@ -2812,40 +2801,269 @@ const mockMediaData = [
   {
     _id: 351,
     name: "The Storyteller Squad",
-    startTime: new Date("05/26/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("05/26/2022"),
+        endTime: new Date("06/22/2022"),
+      },
+    ],
     type: mediaTypes.podcast,
   },
   {
     _id: 352,
     name: "Old Enough", // Maybe Delete?
     startTime: new Date("05/28/2022"),
-    // endTime: new Date("05/23/2022"),
+    // endTime: new Date("07/01/2022"),
     endTime: null,
     type: mediaTypes.tv,
   },
-  // {
-  //   _id: 353,
-  //   name: "Hilda S2",
-  //   startTime: new Date("05/23/2022"),
-  //   endTime: new Date("05/30/2022"),
-  //   endTime: null,
-  //   type: mediaTypes.tv,
-  // },
+  {
+    _id: 353,
+    name: "Hilda S2",
+    startTime: new Date("06/01/2022"),
+    endTime: new Date("06/23/2022"),
+    type: mediaTypes.tv,
+  },
   {
     _id: 354,
     name: "Bug Fables",
     startTime: new Date("05/17/2022"),
-    // endTime: new Date("05/23/2022"),
-    endTime: null,
+    endTime: new Date("06/09/2022"),
     type: mediaTypes.videogame,
   },
   {
     _id: 355,
-    name: "Rascal Does Not Dream of Bunny Girl Senpai",
+    name: "Rascal Does Not Dream of Bunny Girl Senpai, tv and movie",
     startTime: new Date("05/31/2022"),
-    endTime: new Date("06/05/2022"),
+    endTime: new Date("06/07/2022"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 356,
+    name: "Planescape Torment",
+    startTime: new Date("06/08/2021"),
+    endTime: new Date("07/06/2021"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 357,
+    name: "Bridgerton S2",
+    startTime: new Date("06/09/2022"),
+    endTime: new Date("06/12/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 358,
+    name: "A Chair In A Room: Greenwater",
+    startTime: new Date("06/13/2022"),
+    endTime: addHoursToDate(new Date("06/13/2022"), 4),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 359,
+    name: "A Plague Tale: Innocence",
+    startTime: new Date("06/15/2022"),
+    endTime: new Date("06/26/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 360,
+    name: "Dawnshard",
+    startTime: new Date("06/18/2022"),
+    endTime: new Date("06/22/2022"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 361,
+    name: "Hilda and the Mountain King",
+    startTime: new Date("06/23/2022"),
+    endTime: new Date("06/24/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 362,
+    name: "Mad Max 2015",
+    startTime: new Date("06/26/2022"),
+    endTime: new Date("07/07/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 363,
+    name: "Deep Rock Galactic",
+    nodes: [
+      {
+        startTime: new Date("07/01/2022"),
+        endTime: new Date("07/17/2022"),
+        // endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 364,
+    name: "Only Murders in the Building S2",
+    nodes: [
+      {
+        startTime: new Date("07/02/2022"),
+        endTime: new Date("07/11/2022"),
+      },
+      {
+        startTime: new Date("08/11/2022"),
+        endTime: new Date("08/23/2022"),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 365,
+    name: "Moon Knight",
+    startTime: new Date("07/02/2022"),
+    endTime: new Date("07/07/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 366,
+    name: "Arkham Knight",
+    startTime: new Date("07/08/2022"),
+    endTime: new Date("07/10/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 367,
+    name: "Umbrella Academy S3",
+    startTime: new Date("07/08/2022"),
+    endTime: new Date("07/11/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 368,
+    name: "Dragon's Dogma Dark Arisen",
+    startTime: new Date("07/10/2022"),
+    endTime: new Date("07/22/2022"),
+    // endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 369,
+    name: "Solar Opposites S3",
+    nodes: [
+      {
+        startTime: new Date("07/18/2022"),
+        endTime: new Date("07/21/2022"),
+      },
+      {
+        startTime: new Date("08/15/2022"),
+        endTime: new Date("08/21/2022"),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 370,
+    name: "Ascendance of a Bookworm S1-3",
+    nodes: [
+      {
+        startTime: new Date("07/19/2022"),
+        endTime: new Date("07/25/2022"),
+      },
+      {
+        startTime: new Date("08/10/2022"),
+        endTime: new Date("08/16/2022"),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 371,
+    name: "Hollow Knight",
+    startTime: new Date("07/23/2022"),
+    endTime: new Date("08/15/2022"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 372,
+    name: "Taskmaster S12",
+    nodes: [
+      {
+        startTime: new Date("07/24/2022"),
+        endTime: new Date("07/25/2022"),
+        // endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 373,
+    name: "Extraordinary Attorney Woo S1",
+    startTime: new Date("07/23/2022"),
+    endTime: new Date("08/26/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 374,
+    name: "Steamworld Quest",
+    startTime: new Date("07/26/2022"),
+    // endTime: new Date("07/10/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 375,
+    name: "Westworld S2",
+    startTime: new Date("07/30/2022"),
+    // endTime: new Date("07/26/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 376,
+    name: "Cult of the Lamb",
+    startTime: new Date("08/15/2022"),
+    // endTime: new Date("07/10/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 377,
+    name: "Xenoblade Chronicles",
+    startTime: new Date("08/16/2022"),
+    // endTime: new Date("07/10/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 378,
+    name: "The Dark Forest",
+    // startTime: new Date("07/30/2020"),
+    // endTime: new Date("07/10/2022"),
+    // endTime: null,
+    nodes: [
+      {
+        startTime: new Date("07/30/2020"),
+        endTime: new Date("07/31/2020"),
+      },
+      {
+        startTime: new Date("12/13/2021"),
+        endTime: addHoursToDate(new Date("12/13/2021"), 4),
+      },
+      {
+        startTime: new Date("01/08/2022"),
+        endTime: new Date("01/14/2022"),
+      },
+      {
+        startTime: new Date("01/29/2022"),
+        endTime: new Date("01/30/2022"),
+      },
+      {
+        startTime: new Date("02/12/2022"),
+        endTime: addHoursToDate(new Date("02/12/2022"), 4),
+      },
+      {
+        startTime: new Date("09/01/2022"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.book,
   },
 
   // Add Rocket Contracts
