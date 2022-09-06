@@ -224,8 +224,18 @@ const mockMediaData = [
     _id: 30,
     name: "Rhythm of War",
     // startTime: new Date("07/09/2021"),
-    startTime: new Date("06/17/2022"),
-    endTime: null,
+    // startTime: new Date("06/17/2022"),
+    // endTime: null,
+    nodes: [
+      {
+        startTime: new Date("06/17/2022"),
+        endTime: new Date("07/25/2022"),
+      },
+      {
+        startTime: new Date("09/04/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.book,
   },
   {
@@ -2566,9 +2576,14 @@ const mockMediaData = [
       },
       {
         startTime: new Date("07/19/2022"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("07/19/2022"), 4),
+      },
+      {
+        startTime: new Date("09/03/2022"),
+        endTime: addHoursToDate(new Date("09/03/2022"), 4),
       },
     ],
+    // endTime: null,
     type: mediaTypes.videogame,
   },
   {
@@ -3034,14 +3049,12 @@ const mockMediaData = [
   {
     _id: 378,
     name: "The Dark Forest",
-    // startTime: new Date("07/30/2020"),
-    // endTime: new Date("07/10/2022"),
-    // endTime: null,
     nodes: [
-      {
-        startTime: new Date("07/30/2020"),
-        endTime: new Date("07/31/2020"),
-      },
+      // {
+      //   startTime: new Date("07/30/2020"),
+      //   endTime: new Date("07/31/2020"),
+      // },
+      // // Restarted
       {
         startTime: new Date("12/13/2021"),
         endTime: addHoursToDate(new Date("12/13/2021"), 4),
@@ -3060,9 +3073,25 @@ const mockMediaData = [
       },
       {
         startTime: new Date("09/01/2022"),
-        endTime: null,
+        endTime: new Date("09/04/2022"),
       },
     ],
+    type: mediaTypes.book,
+  },
+  {
+    _id: 379,
+    name: "We Were Dreamers",
+    startTime: new Date("09/04/2022"),
+    // endTime: new Date("07/10/2022"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 380,
+    name: "The Murder of Roger Ackroyd",
+    startTime: new Date("09/05/2022"),
+    // endTime: new Date("07/10/2022"),
+    endTime: null,
     type: mediaTypes.book,
   },
 
