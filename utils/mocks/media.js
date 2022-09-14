@@ -3033,7 +3033,7 @@ const mockMediaData = [
   {
     _id: 376,
     name: "Cult of the Lamb",
-    startTime: new Date("08/15/2022"),
+    startTime: new Date("09/13/2022"),
     // endTime: new Date("07/10/2022"),
     endTime: null,
     type: mediaTypes.videogame,
@@ -3090,8 +3090,7 @@ const mockMediaData = [
     _id: 380,
     name: "The Murder of Roger Ackroyd",
     startTime: new Date("09/05/2022"),
-    // endTime: new Date("07/10/2022"),
-    endTime: null,
+    endTime: new Date("09/11/2022"),
     type: mediaTypes.book,
   },
 
