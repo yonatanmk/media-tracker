@@ -3010,8 +3010,16 @@ const mockMediaData = [
   {
     _id: 373,
     name: "Extraordinary Attorney Woo S1",
-    startTime: new Date("07/23/2022"),
-    endTime: new Date("08/26/2022"),
+    nodes: [
+      {
+        startTime: new Date("07/23/2022"),
+        endTime: new Date("08/26/2022"),
+      },
+      {
+        startTime: new Date("09/16/2022"),
+        endTime: addHoursToDate(new Date("09/16/2022"), 4),
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -3082,8 +3090,7 @@ const mockMediaData = [
     _id: 379,
     name: "We Were Dreamers",
     startTime: new Date("09/04/2022"),
-    // endTime: new Date("07/10/2022"),
-    endTime: null,
+    endTime: new Date("09/24/2022"),
     type: mediaTypes.book,
   },
   {
@@ -3092,6 +3099,54 @@ const mockMediaData = [
     startTime: new Date("09/05/2022"),
     endTime: new Date("09/11/2022"),
     type: mediaTypes.book,
+  },
+  {
+    _id: 381,
+    name: "Never Have I Ever S3",
+    startTime: new Date("09/14/2022"),
+    endTime: new Date("09/16/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 382,
+    name: "Great British Bake Off S10 (Series 13)",
+    startTime: new Date("09/16/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 383,
+    name: "Stray",
+    startTime: new Date("09/17/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 384,
+    name: "Paper Girls",
+    startTime: new Date("09/17/2022"),
+    endTime: new Date("09/20/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 385,
+    name: "Taskmaster S13",
+    nodes: [
+      {
+        startTime: new Date("09/19/2022"),
+        endTime: new Date("09/20/2022"),
+        // endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 386,
+    name: "Cobra Kai S5",
+    startTime: new Date("09/24/2022"),
+    // endTime: new Date("09/24/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // Add Rocket Contracts
