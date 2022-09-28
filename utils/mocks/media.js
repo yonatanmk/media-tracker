@@ -2557,9 +2557,16 @@ const mockMediaData = [
   {
     _id: 320,
     name: "The Legend of Vox Machina S1",
-    startTime: new Date("01/30/2022"),
-    endTime: null,
-    // endTime: new Date("01/17/2022"),
+    nodes: [
+      {
+        startTime: new Date("01/30/2022"),
+        endTime: new Date("02/06/2022"),
+      },
+      {
+        startTime: new Date("09/27/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -3144,8 +3151,7 @@ const mockMediaData = [
     _id: 386,
     name: "Cobra Kai S5",
     startTime: new Date("09/24/2022"),
-    // endTime: new Date("09/24/2022"),
-    endTime: null,
+    endTime: new Date("09/27/2022"),
     type: mediaTypes.tv,
   },
 
