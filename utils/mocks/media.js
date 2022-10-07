@@ -2564,7 +2564,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("09/27/2022"),
-        endTime: null,
+        endTime: new Date("09/28/2022"),
       },
     ],
     type: mediaTypes.tv,
@@ -3040,25 +3040,31 @@ const mockMediaData = [
   {
     _id: 375,
     name: "Westworld S2",
-    startTime: new Date("07/30/2022"),
-    // endTime: new Date("07/26/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("07/30/2022"),
+        endTime: new Date("08/04/2022"),
+      },
+
+      {
+        startTime: new Date("10/02/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
     _id: 376,
     name: "Cult of the Lamb",
     startTime: new Date("09/13/2022"),
-    // endTime: new Date("07/10/2022"),
-    endTime: null,
+    endTime: new Date("10/05/2022"),
     type: mediaTypes.videogame,
   },
   {
     _id: 377,
     name: "Xenoblade Chronicles",
     startTime: new Date("08/16/2022"),
-    // endTime: new Date("07/10/2022"),
-    endTime: null,
+    endTime: new Date("09/30/2022"),
     type: mediaTypes.videogame,
   },
   {
@@ -3141,7 +3147,7 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("09/19/2022"),
-        endTime: new Date("09/20/2022"),
+        endTime: new Date("09/30/2022"),
         // endTime: null,
       },
     ],
@@ -3153,6 +3159,34 @@ const mockMediaData = [
     startTime: new Date("09/24/2022"),
     endTime: new Date("09/27/2022"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 387,
+    name: "Cyberpunk: Edgerunners",
+    startTime: new Date("09/30/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 388,
+    name: "Xenoblade Chronicles 2",
+    startTime: new Date("10/01/2022"),
+    endTime: null,
+    type: mediaTypes.playthrough,
+  },
+  // {
+  //   _id: 389,
+  //   name: "Prey",
+  //   startTime: new Date("10/05/2022"),
+  //   endTime: null,
+  //   type: mediaTypes.videogame,
+  // },
+  {
+    _id: 389,
+    name: "The Ascent",
+    startTime: new Date("10/06/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
   // Add Rocket Contracts
