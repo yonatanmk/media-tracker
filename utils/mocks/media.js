@@ -233,7 +233,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("09/04/2022"),
-        endTime: null,
+        endTime: new Date("09/23/2022"),
       },
     ],
     type: mediaTypes.book,
@@ -2048,7 +2048,7 @@ const mockMediaData = [
   },
   {
     _id: 257,
-    name: "Critical Role Campaign 2",
+    name: "Critical Role Campaign 2, C2E1 to C2E72",
     startTime: new Date("09/05/2020"),
     endTime: new Date("03/23/2021"),
     type: mediaTypes.podcast,
@@ -2527,7 +2527,7 @@ const mockMediaData = [
   // },
   {
     _id: 316,
-    name: "Critical Role Campaign 2 again, Start at C2E73",
+    name: "Critical Role Campaign 2 again, C2E73 to C2E95",
     startTime: new Date("01/27/2022"),
     endTime: new Date("05/12/2022"),
     type: mediaTypes.podcast,
@@ -3151,7 +3151,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("10/08/2022"),
-        endTime: null,
+        endTime: new Date("10/17/2022"),
       },
     ],
     type: mediaTypes.tv,
@@ -3204,6 +3204,34 @@ const mockMediaData = [
     startTime: new Date("10/16/2022"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 393,
+    name: "Final Fantasy 7 Remake Intergrade Yuffie Playthrough",
+    startTime: new Date("10/25/2022"),
+    endTime: null,
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 394,
+    name: "Critical Role Campaign 2 C2E96 to C2E108",
+    startTime: new Date("09/11/2022"),
+    endTime: new Date("10/27/2022"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 395,
+    name: "Critical Role Exandria Unlimited: Calamity",
+    startTime: new Date("10/28/2022"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 396,
+    name: "Better Call Saul S1",
+    startTime: new Date("10/28/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // Add Rocket Contracts
