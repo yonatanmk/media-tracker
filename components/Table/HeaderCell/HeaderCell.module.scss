@@ -1,0 +1,30 @@
+@import "../../../styles/variables/_palette";
+@import "../../../styles/variables/_mixins";
+
+.HeaderCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    @include table-cell-padding;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      color: #0B95FF;
+    }
+
+    svg {
+      height: 1rem;
+      width: 1rem;
+      margin-left: 4px;
+    }
+  }
+}

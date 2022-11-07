@@ -62,9 +62,9 @@ const App = ({ media }) => {
     new Date()
   );
 
-  const sortedMedia = [...mappedMedia].sort((a, b) =>
-    a.duration < b.duration ? 1 : -1
-  );
+  // const sortedMedia = [...mappedMedia].sort((a, b) =>
+  //   a.duration < b.duration ? 1 : -1
+  // );
 
   const sortedTimelineMedia = [...mappedMedia].sort((a, b) =>
     a.startTime > b.startTime ? 1 : -1
@@ -72,7 +72,7 @@ const App = ({ media }) => {
 
   return (
     <div className={styles.container}>
-      <SidePanel sortedMedia={sortedMedia} />
+      <SidePanel media={mappedMedia} />
       <div className={styles.content}>
         <Timeline startTime={timelineStartTime} endTime={new Date()}>
           {sortedTimelineMedia.map((item) => (

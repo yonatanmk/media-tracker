@@ -1,0 +1,13 @@
+@import "./_palette";
+
+@mixin table-cell-padding {
+  padding: 16px 8px;
+}
+
+@mixin input {
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid $input-border-gray;
+}
+
