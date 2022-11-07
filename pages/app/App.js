@@ -45,15 +45,15 @@ const App = ({ media }) => {
       endTime,
       inProgress: !item.nodes && !item.endTime,
       nodes: sortedMappedNodes,
-      duration: sortedMappedNodes[0]
-        ? sortedMappedNodes.reduce(
-            (acc, node) => acc + getDurationDays(node),
-            0
-          )
-        : getDurationDays({
-            startTime,
-            endTime,
-          }),
+      // duration: sortedMappedNodes[0]
+      //   ? sortedMappedNodes.reduce(
+      //       (acc, node) => acc + getDurationDays(node),
+      //       0
+      //     )
+      //   : getDurationDays({
+      //       startTime,
+      //       endTime,
+      //     }),
     };
   });
 

@@ -16,7 +16,8 @@ function Row({ row, columns, className, isHeader }: IRowProps) {
       {columns.map(
         (col, index) => <Cell 
           key={index} 
-          field={row[col.field]}
+          fieldName={col.field}
+          row={row}
           column={col}
           component={col.component}
           isHeader={isHeader}

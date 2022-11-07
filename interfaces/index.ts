@@ -16,8 +16,8 @@ export interface ITableColumn<T> {
   // field: keyof T;
   field: string;
   component?: React.ComponentType<any>;
-  sortByFunction?: (row: IPerson) => any;
-  formatFunction?: (value: any) => number | string;
+  sortByFunction?: (row: any) => any;
+  formatFunction?: (value: T) => number | string;
 }
 
 export interface ITableCellComponent {

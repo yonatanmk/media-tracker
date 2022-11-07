@@ -2,7 +2,7 @@ import styles from "./SidePanel.module.scss";
 import SideTable from "../../components/SideTable";
 import Table from "../Table";
 import type { ITableColumn, IMedia } from '../../interfaces'
-import { getDateString } from "../../utils/media";
+import { getDateString, getDurationDays } from "../../utils/media";
 import { capitalize } from "../../utils";
 
 export const columns: ITableColumn<IMedia>[] = [
@@ -15,7 +15,7 @@ export const columns: ITableColumn<IMedia>[] = [
     name: 'Type',
     index: 2,
     field: 'type',
-    formatFunction: (type): string => capitalize(type),
+    formatFunction: (media: IMedia): string => capitalize(media.type),
   },
   // {
   //   name: 'Duration',
@@ -35,13 +35,19 @@ export const columns: ITableColumn<IMedia>[] = [
     name: 'Start Date',
     index: 3,
     field: 'startTime',
-    formatFunction: (date): string => getDateString(date),
+    formatFunction:(media: IMedia): string => getDateString(media.startTime),
   },
   {
     name: 'End Date',
     index: 4,
     field: 'endTime',
-    formatFunction: (date): string => getDateString(date),
+    formatFunction:(media: IMedia): string => getDateString(media.endTime),
+  },
+  {
+    name: 'Duration',
+    index: 5,
+    field: 'duration', // doesn't exist on media
+    formatFunction:(media: IMedia): number => getDurationDays(media),
   },
   // {
   //   name: 'Liked',
