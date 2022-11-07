@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 
 import styles from "./Timeline.module.scss";
-import Row from "./Row";
+import TimelineRow from "./TimelineRow";
 import { getMonths, getMonthYear } from "../../utils/media";
 
 export const TimelineContext = React.createContext({});
@@ -88,6 +88,6 @@ const Timeline = ({ startTime, endTime, children }) => {
   );
 };
 
-Timeline.Row = Row;
+Timeline.Row = TimelineRow;
 
 export default Timeline;

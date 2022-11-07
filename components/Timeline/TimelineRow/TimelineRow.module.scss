@@ -1,0 +1,103 @@
+.scrollbox {
+  overflow: auto;
+  height: calc(100% - 2rem);
+}
+
+.timeline {
+  background-color: white;
+  width: 1000%;
+  // width: 470rem;
+  position: relative;
+}
+
+.row {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  position: relative;
+
+  &__header {
+    background-color: #A31621;
+    color: white;
+    font-weight: bold;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+  }
+
+  &__content {
+    margin-top: 2rem;
+  }
+
+  &__block {
+    color: white;
+    background-color: #227C9D;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    border-radius: 4px;
+
+    &__label {
+      background-color: white;
+      z-index: 1;
+      margin-left: 4px;
+      position: absolute;
+    }
+
+    &__videogame {
+      background-color: #227C9D;
+    }
+
+    &__book {
+      background-color: #A31621;
+    }
+
+    &__TV {
+      background-color: #19535F;
+    }
+
+    &__playthrough {
+      background-color: #79B473;
+    }
+
+    &__podcast {
+      background-color: #FFAE03;
+      color: black;
+    }
+  }
+}
+
+.monthLine {
+  border-left: 1px solid black;
+  position: absolute;
+  top: 0;
+  bottom: 2rem;
+}
+
+.monthLabel {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}
+
+// 4 color palette
+// A31621
+// 19535F
+// CEFDFF
+// 227C9D
+
+
+// 38023B
+// A663CC
+// F9DC5C
+// AB87FF
+// 9D9171
+// FFAE03

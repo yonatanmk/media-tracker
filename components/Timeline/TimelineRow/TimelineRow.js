@@ -1,7 +1,7 @@
 import React, { useContext, Fragment } from "react";
-import styles from "./Timeline.module.scss";
-import { TimelineContext } from "./index";
-import { datesEqual } from "../../utils/media";
+import styles from "./TimelineRow.module.scss";
+import { TimelineContext } from "../index";
+import { datesEqual } from "../../../utils/media";
 
 const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
   const { timelineStartTime, timelineEndTime, trueEndTime } =
@@ -20,10 +20,11 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     //   (percentage < 0.025 && name.length > 18) ||
     //   (percentage < 0.032 && name.length > 23);
 
-
-    const isSmall = percentage < name.length * 0.001
+    const isSmall = percentage < name.length * 0.001;
     // const atEnd = datesEqual(endTime, trueEndTime);
-    const atEnd = ((trueEndTime - endTime) / 1000 / 60 / 60 / 24 * 0.0007778) < name.length * 0.001
+    const atEnd =
+      ((trueEndTime - endTime) / 1000 / 60 / 60 / 24) * 0.0007778 <
+      name.length * 0.001;
 
     const style = {};
     if (percentage < 0.02 && name.length > 10 && atEnd) {
@@ -36,7 +37,6 @@ const Row = ({ media: { _id, name, type, startTime, endTime, nodes } }) => {
     // ) {
     // style.fontSize = "0.75rem";
     // }
-
 
     // 1 day = 7 px = 0.0007778
     // 1 char = 4 days = 28px = 0.0031112 => 0.001
