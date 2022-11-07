@@ -15,6 +15,7 @@ export const columns: ITableColumn<IMedia>[] = [
     index: 2,
     field: 'type',
     formatFunction: (media: IMedia): string => capitalize(media.type),
+    sortByFunction: (media: IMedia): string => media.type.toLowerCase(),
   },
   {
     name: 'Start Date',
