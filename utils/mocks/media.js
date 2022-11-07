@@ -2393,13 +2393,6 @@ const mockMediaData = [
     type: mediaTypes.book,
   },
   {
-    _id: 303,
-    name: "ReLife",
-    startTime: new Date("12/27/2021"),
-    endTime: new Date("01/05/22"),
-    type: mediaTypes.book,
-  },
-  {
     _id: 304,
     name: "Ranking of Kings",
     nodes: [
@@ -3244,6 +3237,20 @@ const mockMediaData = [
     _id: 398,
     name: "Russian Doll S2",
     startTime: new Date("11/06/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 399,
+    name: "ReLife",
+    startTime: new Date("12/27/2021"),
+    endTime: new Date("01/05/22"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 400,
+    name: "Big Mouth S6",
+    startTime: new Date("11/07/2022"),
     endTime: null,
     type: mediaTypes.tv,
   },
