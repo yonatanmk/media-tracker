@@ -5,8 +5,8 @@ import { getSession } from "next-auth/client";
 
 import styles from "./App.module.scss";
 import Timeline from "../../components/Timeline";
-import { getDurationDays, getDateString } from "../../utils/media";
-import { capitalize } from "../../utils";
+import SidePanel from "../../components/SidePanel";
+import { getDurationDays } from "../../utils/media";
 
 const App = ({ media }) => {
   const router = useRouter();
@@ -72,23 +72,7 @@ const App = ({ media }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.sidePanel}>
-        <table className={styles.sideTable}>
-          <tbody>
-            {sortedMedia.map((item) => (
-              <tr key={item._id}>
-                <td style={{ width: "12rem" }}>{item.name}</td>
-                <td>{capitalize(item.type)}</td>
-                <td>{getDateString(item.startTime)}</td>
-                <td>
-                  {item.inProgress ? "Today" : getDateString(item.endTime)}
-                </td>
-                <td>{item.duration + " days"}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <SidePanel sortedMedia={sortedMedia} />
       <div className={styles.content}>
         <Timeline startTime={timelineStartTime} endTime={new Date()}>
           {sortedTimelineMedia.map((item) => (

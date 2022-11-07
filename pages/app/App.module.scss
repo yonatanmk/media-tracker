@@ -3,21 +3,7 @@
   height: calc(100vh - 3rem);
 }
 
-.sidePanel {
-  // width: 30%;
-  width: 40rem;
-  min-width: 10rem;
-  border-right: 1px solid black;
-  overflow-y: scroll;
-}
-
 .content {
   flex: 1;
   background-color: #CEFDFF;
-}
-
-.sideTable {
-  width: calc(100% - 1rem);
-  table-layout: fixed;
-  margin: 1rem;
 }

@@ -3048,7 +3048,7 @@ const mockMediaData = [
 
       {
         startTime: new Date("10/02/2022"),
-        endTime: null,
+        endTime: new Date("10/31/2022"),
       },
     ],
     type: mediaTypes.tv,
@@ -3181,7 +3181,7 @@ const mockMediaData = [
     _id: 389,
     name: "Prey",
     startTime: new Date("10/13/2022"),
-    endTime: null,
+    endTime: new Date("10/29/2022"),
     type: mediaTypes.videogame,
   },
   {
@@ -3230,6 +3230,20 @@ const mockMediaData = [
     _id: 396,
     name: "Better Call Saul S1",
     startTime: new Date("10/28/2022"),
+    endTime: new Date("11/05/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 397,
+    name: "Mount and Blade 2 Bannerlord ",
+    startTime: new Date("10/30/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 398,
+    name: "Russian Doll S2",
+    startTime: new Date("11/06/2022"),
     endTime: null,
     type: mediaTypes.tv,
   },
