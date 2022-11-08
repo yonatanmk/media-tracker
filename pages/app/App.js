@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { getSession } from "next-auth/client";
@@ -6,7 +6,7 @@ import { getSession } from "next-auth/client";
 import styles from "./App.module.scss";
 import Timeline from "../../components/Timeline";
 import SidePanel from "../../components/SidePanel";
-import { filterMedia } from "../../utils/media";
+import { filterMedia, getFieldOptions } from "../../utils/media";
 import { FilterContext } from "../../contexts";
 import { FILTER_TYPES } from "../../components/Table/util";
 
@@ -14,6 +14,8 @@ const App = ({ media }) => {
   const router = useRouter();
 
   const [nameSearch, setNameSearch] = useState("");
+  // const [typeFilters, setTypeFilters] = useState<string[]>([]);
+  const [typeFilters, setTypeFilters] = useState([]);
 
   useEffect(async () => {
     const session = await getSession();
@@ -22,13 +24,21 @@ const App = ({ media }) => {
     }
   }, [router]);
 
-  const filters = [
-    {
-      type: FILTER_TYPES.SEARCH,
-      field: "name",
-      value: nameSearch,
-    },
-  ];
+  const filters = useMemo(
+    () => [
+      {
+        type: FILTER_TYPES.SEARCH,
+        field: "name",
+        value: nameSearch,
+      },
+      {
+        type: FILTER_TYPES.SELECT,
+        field: "type",
+        value: typeFilters,
+      },
+    ],
+    [nameSearch, typeFilters]
+  );
 
   const mappedMedia = media.map((item) => {
     const sortedMappedNodes = (item.nodes || [])
@@ -84,9 +94,26 @@ const App = ({ media }) => {
     a.startTime > b.startTime ? 1 : -1
   );
 
+  const filterOptions = getFieldOptions(media, ["type"]);
+
+  const selectFilters = useMemo(
+    () => [
+      {
+        key: 3242653,
+        placeholder: "Type",
+        options: filterOptions.type,
+        updateFilterValues: (options) =>
+          setTypeFilters(options.map((opt) => opt.value)),
+      },
+    ],
+    [filterOptions]
+  );
+
   return (
     <div className={styles.container}>
-      <FilterContext.Provider value={{ nameSearch, setNameSearch, filters }}>
+      <FilterContext.Provider
+        value={{ nameSearch, setNameSearch, filters, selectFilters }}
+      >
         <SidePanel media={mappedMedia} />
         <div className={styles.content}>
           <Timeline startTime={timelineStartTime} endTime={new Date()}>

@@ -1,4 +1,5 @@
 // import { IFilter } from "../interfaces";
+import includes from "lodash/includes";
 import { FILTER_TYPES } from "../components/Table/util";
 
 const msPerDay = 1000 * 60 * 60 * 24;
@@ -110,3 +111,20 @@ export const filterMedia = (rows, filters) => {
 const searchMatch = (value, search) => {
   return !!value && value.toLowerCase().indexOf(search) > -1;
 };
+
+// Get field values from media array to use as select options
+export const getFieldOptions = (media, fields) =>
+  media.reduce((agg, mediaItem) => {
+    const options = { ...agg };
+    for (let i = 0; i < fields.length; i++) {
+      const fieldName = fields[i];
+      if (Array.isArray(agg[fieldName])) {
+        options[fieldName] = !agg[fieldName].includes(mediaItem[fieldName])
+          ? [...agg[fieldName], mediaItem[fieldName]]
+          : agg[fieldName];
+      } else {
+        options[fieldName] = [];
+      }
+    }
+    return options;
+  }, {});

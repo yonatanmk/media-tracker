@@ -43,3 +43,10 @@ export interface IMedia {
   }[];
   type: string,
 }
+
+export interface ISelectFilter {
+  key: number;
+  placeholder: string;
+  options: (string | number)[];
+  updateFilterValues: React.Dispatch<React.SetStateAction<(string | number)[]>>;
+}
