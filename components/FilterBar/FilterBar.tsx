@@ -36,7 +36,7 @@ const FilterBar = () => {
           <input id="people-search" type="text" value={nameSearch} onChange={handleSearch} placeholder="Name" />
         </div>
         <input id="duration-number" type="number" value={durationFilterNumber} onChange={handleDurationNumChange} placeholder="Name" />
-        <Select options={durationTypeOptions} onChange={handleDurationTypeChange} defaultValue={selectedDurationTypeOption}/>
+        <Select options={durationTypeOptions} onChange={handleDurationTypeChange} value={selectedDurationTypeOption}/>
         {selectFilters.map(filter => <Multiselect key={filter.key} options={filter.options.map(opt => ({label: capitalize(opt.toString()), value: opt.toString()}))} placeholder={filter.placeholder} onChange={filter.updateFilterValues}/>)}
       </div>
     </div>

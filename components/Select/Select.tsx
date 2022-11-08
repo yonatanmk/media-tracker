@@ -10,15 +10,20 @@ type ISelectProps = {
     label: string;
     value: string;
   };
+  value?: {
+    label: string;
+    value: string;
+  };
 };
 
-function SelectComponent({ options, onChange, placeholder, defaultValue }: ISelectProps) {
+function SelectComponent({ options, onChange, placeholder, defaultValue, value }: ISelectProps) {
   return (
     <Select 
       options={options}
       // className={styles.Multiselect}
       // classNamePrefix={styles.Multiselect}
       defaultValue={defaultValue}
+      value={value}
       placeholder={placeholder}
       onChange={onChange}
     />
