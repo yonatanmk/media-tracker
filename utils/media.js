@@ -1,3 +1,5 @@
+const msPerDay = 1000 * 60 * 60 * 24;
+
 export const mediaTypes = Object.freeze({
   videogame: "videogame",
   book: "book",
@@ -6,8 +8,23 @@ export const mediaTypes = Object.freeze({
   podcast: "podcast",
 });
 
-export const getDuration = (media) => {
-  return media.endTime - media.startTime + 1000 * 60 * 60 * 24;
+const getMediaTimeDiff = (media) =>
+  (media.endTime || new Date()) - (media.startTime || new Date());
+
+const getDayDiff = (milliseconds) => milliseconds - (milliseconds % msPerDay);
+
+const getDuration = (media) => {
+  let timeDiff = media?.nodes && media?.nodes[0] ? 0 : getMediaTimeDiff(media);
+  if (media?.nodes && media?.nodes[0]) {
+    for (let i = 0; i < media.nodes.length; i++) {
+      const msDiff = getMediaTimeDiff(media.nodes[i]);
+      const dayDiff = getDayDiff(msDiff);
+      timeDiff += dayDiff + msPerDay; // add one day
+    }
+    return timeDiff;
+  } else {
+    return getDayDiff(timeDiff) + msPerDay; // add one day
+  }
 };
 
 export const getDurationDays = (media) => {
