@@ -11,7 +11,6 @@ import {
   getFieldOptions,
   getDurationDays,
   DURATION_TYPES,
-  durationTypeOptionsNone,
 } from "../../utils/media";
 import { FilterContext } from "../../contexts";
 import { FILTER_TYPES } from "../../components/Table/util";
