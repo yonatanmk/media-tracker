@@ -1,8 +1,12 @@
 import styles from "./SidePanel.module.scss";
+import { useContext } from "react";
 import Table from "../Table";
+import FilterBar from "../FilterBar";
 import type { ITableColumn, IMedia } from '../../interfaces'
 import { getDateString, getDurationDays } from "../../utils/media";
 import { capitalize } from "../../utils";
+import { FilterContext } from '../../contexts';
+
 
 export const columns: ITableColumn<IMedia>[] = [
   {
@@ -18,13 +22,13 @@ export const columns: ITableColumn<IMedia>[] = [
     sortByFunction: (media: IMedia): string => media.type.toLowerCase(),
   },
   {
-    name: 'Start Date',
+    name: 'Start',
     index: 3,
     field: 'startTime',
     formatFunction:(media: IMedia): string => getDateString(media.startTime || media.nodes[0]?.startTime),
   },
   {
-    name: 'End Date',
+    name: 'End',
     index: 4,
     field: 'endTime',
     formatFunction:(media: IMedia): string => getDateString(media.endTime  || media.nodes[0]?.endTime),
@@ -44,15 +48,18 @@ export type ISidePanelProps = {
 
 
 const SidePanel = ({ media }: ISidePanelProps) => {
+  const { filters } = useContext(FilterContext);
+
   return (
     <div className={styles.sidePanel}>
-
+      <FilterBar />
       <Table 
         id="_id"
         rows={media} 
         columns={columns} 
         defaultSortPredicate="name" 
         backupSortPredicate="name"
+        filters={filters}
       />
     </div>
   );

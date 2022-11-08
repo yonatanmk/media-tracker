@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { getSession } from "next-auth/client";
@@ -6,10 +6,14 @@ import { getSession } from "next-auth/client";
 import styles from "./App.module.scss";
 import Timeline from "../../components/Timeline";
 import SidePanel from "../../components/SidePanel";
-import { getDurationDays } from "../../utils/media";
+// import { getDurationDays } from "../../utils/media";
+import { FilterContext } from "../../contexts";
+import { FILTER_TYPES } from "../../components/Table/util";
 
 const App = ({ media }) => {
   const router = useRouter();
+
+  const [nameSearch, setNameSearch] = useState("");
 
   useEffect(async () => {
     const session = await getSession();
@@ -70,16 +74,26 @@ const App = ({ media }) => {
     a.startTime > b.startTime ? 1 : -1
   );
 
+  const filters = [
+    {
+      type: FILTER_TYPES.SEARCH,
+      field: "name",
+      value: nameSearch,
+    },
+  ];
+
   return (
     <div className={styles.container}>
-      <SidePanel media={mappedMedia} />
-      <div className={styles.content}>
-        <Timeline startTime={timelineStartTime} endTime={new Date()}>
-          {sortedTimelineMedia.map((item) => (
-            <Timeline.Row key={item._id} media={item} />
-          ))}
-        </Timeline>
-      </div>
+      <FilterContext.Provider value={{ nameSearch, setNameSearch, filters }}>
+        <SidePanel media={mappedMedia} />
+        <div className={styles.content}>
+          <Timeline startTime={timelineStartTime} endTime={new Date()}>
+            {sortedTimelineMedia.map((item) => (
+              <Timeline.Row key={item._id} media={item} />
+            ))}
+          </Timeline>
+        </div>
+      </FilterContext.Provider>
     </div>
   );
 };

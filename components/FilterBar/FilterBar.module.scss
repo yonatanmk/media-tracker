@@ -1,0 +1,29 @@
+@import "../../styles/variables/_mixins";
+
+.FilterBar {
+  background-color: #227C9D;
+  color: #EEE;
+  padding: 1rem;
+
+  &__filters {
+    // display: flex;
+  }
+
+  &__search {
+    label {
+      margin-right: 1rem;
+      font-size: 24px;
+    }
+
+    input {
+      @include input;
+    }
+  }
+
+  h3 {
+    margin: 0 0 1rem 0;
+    font-size: 24px;
+  }
+
+
+}
