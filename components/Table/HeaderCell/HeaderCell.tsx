@@ -1,6 +1,7 @@
 import style from "./HeaderCell.module.scss";
 import { useContext } from 'react';
 import { BsArrowUp, BsArrowDown } from "react-icons/bs";
+import classnames from "classNames";
 import { SORT_ORDERS } from '../util';
 import { TableSortContext } from '../contexts';
 
@@ -30,10 +31,10 @@ function HeaderCell({ name, field }: IHeaderCellProps) {
   }
 
   return (
-    <div className={style.HeaderCell}>
+    <div className={classnames(style.HeaderCell, {[ style.HeaderCell__unsorted]: !isSorted })}>
       <button onClick={onHeaderClick}>
         <p>{name}</p>
-        {isSorted && <ArrowIcon />}
+        <ArrowIcon />
       </button>
     </div>
   )
