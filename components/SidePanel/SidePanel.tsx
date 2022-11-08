@@ -34,6 +34,7 @@ export const columns: ITableColumn<IMedia>[] = [
     index: 5,
     field: 'duration', // doesn't exist on media
     formatFunction:(media: IMedia): number => getDurationDays(media),
+    sortByFunction: (media: IMedia): number => getDurationDays(media),
   },
 ];
 

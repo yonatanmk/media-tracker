@@ -32,6 +32,7 @@ function Table<T extends object>({ className, rows, columns, defaultSortPredicat
 
   const sortByColumn = columns.find(col => col.field === sortPredicate) as ITableColumn<T>;
   const sortByFunction = sortByColumn.sortByFunction || sortPredicate; // default to field value if there's no sort by function
+
   const sortedRows = orderBy(filteredRows, [sortByFunction, defaultSortPredicate || backupSortPredicate], [sortOrder, sortOrder]);
 
   const headerRow = columns.reduce((agg: Partial<any>, col) => {

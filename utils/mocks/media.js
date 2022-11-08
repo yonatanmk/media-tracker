@@ -2491,9 +2491,16 @@ const mockMediaData = [
   {
     _id: 312,
     name: "Gnosia",
-    startTime: new Date("01/14/2022"),
-    endTime: null,
-    // endTime: new Date("01/05/2022"),
+    nodes: [
+      {
+        startTime: new Date("01/14/2022"),
+        endTime: new Date("01/18/2022"),
+      },
+      {
+        startTime: new Date("01/29/2022"),
+        endTime: addHoursToDate(new Date("01/29/2022"), 4),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -2543,8 +2550,7 @@ const mockMediaData = [
     _id: 319,
     name: "Valheim",
     startTime: new Date("01/29/2022"),
-    endTime: null,
-    // endTime: new Date("01/05/2022"),
+    endTime: new Date("02/06/2022"),
     type: mediaTypes.videogame,
   },
   {
@@ -2826,10 +2832,9 @@ const mockMediaData = [
   },
   {
     _id: 352,
-    name: "Old Enough", // Maybe Delete?
+    name: "Old Enough",
     startTime: new Date("05/28/2022"),
-    // endTime: new Date("07/01/2022"),
-    endTime: null,
+    endTime: new Date("07/01/2022"),
     type: mediaTypes.tv,
   },
   {
