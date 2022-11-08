@@ -5,14 +5,22 @@ const mockMediaData = [
     _id: 1,
     name: "Dishonored 2",
     startTime: new Date("04/20/2019"),
-    endTime: new Date("6/14/2019"),
+    endTime: new Date("06/14/2019"),
     type: mediaTypes.videogame,
   },
   {
     _id: 2,
     name: "Red Dead Redemption 2",
-    startTime: new Date("10/26/2018"),
-    endTime: new Date("3/18/2019"),
+    nodes: [
+      {
+        startTime: new Date("10/26/2018"),
+        endTime: new Date("01/15/2019"),
+      },
+      {
+        startTime: new Date("03/09/2019"),
+        endTime: new Date("03/18/2019"),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -1016,8 +1024,26 @@ const mockMediaData = [
   {
     _id: 127,
     name: "Dororo",
-    startTime: new Date("01/26/2019"),
-    endTime: new Date("06/25/2019"),
+    // startTime: new Date("01/26/2019"),
+    // endTime: new Date("06/25/2019"),
+    nodes: [
+      {
+        startTime: new Date("01/26/2019"),
+        endTime: new Date("02/06/2019"),
+      },
+      {
+        startTime: new Date("02/24/2019"),
+        endTime: new Date("03/02/2019"),
+      },
+      {
+        startTime: new Date("03/31/2019"),
+        endTime: new Date("04/28/2019"),
+      },
+      {
+        startTime: new Date("06/15/2019"),
+        endTime: new Date("06/25/2019"),
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -1272,8 +1298,32 @@ const mockMediaData = [
   {
     _id: 157,
     name: "Dr. Stone S1",
-    startTime: new Date("07/16/2019"),
-    endTime: new Date("01/06/2020"),
+    nodes: [
+      {
+        startTime: new Date("07/16/2019"),
+        endTime: new Date("08/02/2019"),
+      },
+      {
+        startTime: new Date("08/23/2019"),
+        endTime: new Date("08/30/2019"),
+      },
+      {
+        startTime: new Date("09/19/2019"),
+        endTime: new Date("10/25/2019"),
+      },
+      {
+        startTime: new Date("11/22/2019"),
+        endTime: addHoursToDate(new Date("11/22/2019"), 4),
+      },
+      {
+        startTime: new Date("12/05/2019"),
+        endTime: addHoursToDate(new Date("12/05/2019"), 4),
+      },
+      {
+        startTime: new Date("01/06/2020"),
+        endTime: addHoursToDate(new Date("01/06/2020"), 4),
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -1355,7 +1405,7 @@ const mockMediaData = [
     _id: 167,
     name: "Great British Bake Off, Various Seasons",
     startTime: new Date("09/25/2020"),
-    endTime: new Date("12/19/2020"),
+    endTime: new Date("11/27/2020"),
     type: mediaTypes.tv,
   },
   {
@@ -1734,7 +1784,7 @@ const mockMediaData = [
   },
   {
     _id: 214,
-    name: "Hy Hero Academia S5",
+    name: "My Hero Academia S5",
     startTime: new Date("05/26/2021"),
     endTime: new Date("10/01/2021"),
     type: mediaTypes.tv,
@@ -1957,7 +2007,7 @@ const mockMediaData = [
   },
   {
     _id: 243,
-    name: "Great British Bake off S8 (Series 11)",
+    name: "Great British Bake Off S8 (Series 11)",
     startTime: new Date("09/25/2020"),
     endTime: new Date("12/19/2020"),
     type: mediaTypes.tv,
@@ -3031,8 +3081,7 @@ const mockMediaData = [
     _id: 374,
     name: "Steamworld Quest",
     startTime: new Date("07/26/2022"),
-    // endTime: new Date("07/10/2022"),
-    endTime: null,
+    endTime: new Date("07/27/2022"),
     type: mediaTypes.videogame,
   },
   {
