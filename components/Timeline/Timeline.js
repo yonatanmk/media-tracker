@@ -37,9 +37,7 @@ const Timeline = ({ startTime, endTime, children }) => {
               {months.map((month, i) => {
                 const bufferLength = month - timelineStartTime;
                 const bufferPercentage = bufferLength / timelineDuration;
-                if (month === months[months.length - 1]) {
-                  return null;
-                }
+                if (month === months[months.length - 1]) return null;
                 return (
                   <div
                     key={i}
@@ -59,6 +57,9 @@ const Timeline = ({ startTime, endTime, children }) => {
             {months.map((month, i) => {
               const bufferLength = month - timelineStartTime;
               const bufferPercentage = bufferLength / timelineDuration;
+              if (month === months[0] || month === months[months.length - 1]) {
+                return null;
+              }
               return (
                 <div
                   key={i}
