@@ -1,3 +1,6 @@
+// import { IFilter } from "../interfaces";
+import { FILTER_TYPES } from "../components/Table/util";
+
 const msPerDay = 1000 * 60 * 60 * 24;
 
 export const mediaTypes = Object.freeze({
@@ -75,4 +78,35 @@ export const getMonths = (start, end) => {
 
 export const addHoursToDate = (date, hours) => {
   return new Date(new Date(date).setHours(date.getHours() + hours));
+};
+
+// COPIED FROM components/Table/util.ts
+// export const filterMedia = (rows: any, filters: IFilter[]) => {
+export const filterMedia = (rows, filters) => {
+  // return rows.filter((row: any) => {
+  return rows.filter((row) => {
+    // return filters.every((filter: IFilter) => {
+    return filters.every((filter) => {
+      if (
+        filter.type === FILTER_TYPES.SEARCH &&
+        typeof filter.value === "string"
+      ) {
+        return searchMatch(row[filter.field], filter.value.toLowerCase());
+      } else if (
+        filter.type === FILTER_TYPES.SELECT &&
+        Array.isArray(filter.value)
+      ) {
+        return (
+          filter.value.length === 0 || includes(filter.value, row[filter.field])
+        ); // filter.value array has the value of row[filter.field]
+      } else {
+        return false;
+      }
+    });
+  });
+};
+
+// COPIED FROM components/Table/util.ts
+const searchMatch = (value, search) => {
+  return !!value && value.toLowerCase().indexOf(search) > -1;
 };

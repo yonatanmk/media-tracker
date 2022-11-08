@@ -6,7 +6,7 @@ import { getSession } from "next-auth/client";
 import styles from "./App.module.scss";
 import Timeline from "../../components/Timeline";
 import SidePanel from "../../components/SidePanel";
-// import { getDurationDays } from "../../utils/media";
+import { filterMedia } from "../../utils/media";
 import { FilterContext } from "../../contexts";
 import { FILTER_TYPES } from "../../components/Table/util";
 
@@ -21,6 +21,14 @@ const App = ({ media }) => {
       router.push("/");
     }
   }, [router]);
+
+  const filters = [
+    {
+      type: FILTER_TYPES.SEARCH,
+      field: "name",
+      value: nameSearch,
+    },
+  ];
 
   const mappedMedia = media.map((item) => {
     const sortedMappedNodes = (item.nodes || [])
@@ -61,7 +69,9 @@ const App = ({ media }) => {
     };
   });
 
-  const timelineStartTime = mappedMedia.reduce(
+  const filteredMedia = filterMedia(mappedMedia, filters);
+
+  const timelineStartTime = filteredMedia.reduce(
     (acc, item) => (item.startTime < acc ? item.startTime : acc),
     new Date()
   );
@@ -70,17 +80,9 @@ const App = ({ media }) => {
   //   a.duration < b.duration ? 1 : -1
   // );
 
-  const sortedTimelineMedia = [...mappedMedia].sort((a, b) =>
+  const sortedTimelineMedia = [...filteredMedia].sort((a, b) =>
     a.startTime > b.startTime ? 1 : -1
   );
-
-  const filters = [
-    {
-      type: FILTER_TYPES.SEARCH,
-      field: "name",
-      value: nameSearch,
-    },
-  ];
 
   return (
     <div className={styles.container}>
