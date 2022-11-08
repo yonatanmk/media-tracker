@@ -35,7 +35,11 @@ export interface IFilter {
 export interface IMedia {
   _id: number;
   name: string;
-  startTime: Date,
-  endTime: Date,
+  startTime?: Date,
+  endTime?: Date | null;
+  nodes: {
+    startTime?: Date;
+    endTime?: Date | null;
+  }[];
   type: string,
 }

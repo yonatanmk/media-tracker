@@ -21,13 +21,13 @@ export const columns: ITableColumn<IMedia>[] = [
     name: 'Start Date',
     index: 3,
     field: 'startTime',
-    formatFunction:(media: IMedia): string => getDateString(media.startTime),
+    formatFunction:(media: IMedia): string => getDateString(media.startTime || media.nodes[0]?.startTime),
   },
   {
     name: 'End Date',
     index: 4,
     field: 'endTime',
-    formatFunction:(media: IMedia): string => getDateString(media.endTime),
+    formatFunction:(media: IMedia): string => getDateString(media.endTime  || media.nodes[0]?.endTime),
   },
   {
     name: 'Duration',
