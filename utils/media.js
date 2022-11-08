@@ -100,6 +100,8 @@ export const filterMedia = (rows, filters) => {
         return (
           filter.value.length === 0 || includes(filter.value, row[filter.field])
         ); // filter.value array has the value of row[filter.field]
+      } else if (filter.type === FILTER_TYPES.CUSTOM && filter.filterMethod) {
+        return filter.filterMethod(row);
       } else {
         return false;
       }
@@ -128,3 +130,34 @@ export const getFieldOptions = (media, fields) =>
     }
     return options;
   }, {});
+
+export const DURATION_TYPES = Object.freeze({
+  GREATER_THAN: "GREATER_THAN",
+  GREATER_THAN_OR_EQUAL: "GREATER_THAN_OR_EQUAL",
+  LESS_THAN: "LESS_THAN",
+  LESS_THAN_OR_EQUAL: "LESS_THAN_OR_EQUAL",
+  EQUAL: "EQUAL",
+});
+
+export const durationTypeOptions = [
+  {
+    label: ">",
+    value: DURATION_TYPES.GREATER_THAN,
+  },
+  {
+    label: ">=",
+    value: DURATION_TYPES.GREATER_THAN_OR_EQUAL,
+  },
+  {
+    label: "<",
+    value: DURATION_TYPES.LESS_THAN,
+  },
+  {
+    label: "<=",
+    value: DURATION_TYPES.LESS_THAN_OR_EQUAL,
+  },
+  {
+    label: "=",
+    value: DURATION_TYPES.EQUAL,
+  },
+];

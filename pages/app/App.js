@@ -6,7 +6,12 @@ import { getSession } from "next-auth/client";
 import styles from "./App.module.scss";
 import Timeline from "../../components/Timeline";
 import SidePanel from "../../components/SidePanel";
-import { filterMedia, getFieldOptions } from "../../utils/media";
+import {
+  filterMedia,
+  getFieldOptions,
+  getDurationDays,
+  DURATION_TYPES,
+} from "../../utils/media";
 import { FilterContext } from "../../contexts";
 import { FILTER_TYPES } from "../../components/Table/util";
 
@@ -16,6 +21,10 @@ const App = ({ media }) => {
   const [nameSearch, setNameSearch] = useState("");
   // const [typeFilters, setTypeFilters] = useState<string[]>([]);
   const [typeFilters, setTypeFilters] = useState([]);
+  const [durationFilterNumber, setDurationFilterNumber] = useState(0);
+  const [durationFilterType, setDurationFilterType] = useState(null);
+
+  const durationFilterNumberInt = parseInt(durationFilterNumber);
 
   useEffect(async () => {
     const session = await getSession();
@@ -36,8 +45,29 @@ const App = ({ media }) => {
         field: "type",
         value: typeFilters,
       },
+      {
+        type: FILTER_TYPES.CUSTOM,
+        value: typeFilters,
+        filterMethod: (row) => {
+          const duration = getDurationDays(row);
+          switch (durationFilterType) {
+            case DURATION_TYPES.GREATER_THAN:
+              return duration > durationFilterNumberInt;
+            case DURATION_TYPES.GREATER_THAN_OR_EQUAL:
+              return duration >= durationFilterNumberInt;
+            case DURATION_TYPES.LESS_THAN:
+              return duration < durationFilterNumberInt;
+            case DURATION_TYPES.LESS_THAN:
+              return duration <= durationFilterNumberInt;
+            case DURATION_TYPES.EQUAL:
+              return duration === durationFilterNumberInt;
+            default:
+              return true;
+          }
+        },
+      },
     ],
-    [nameSearch, typeFilters]
+    [nameSearch, typeFilters, durationFilterNumber, durationFilterType]
   );
 
   const mappedMedia = media.map((item) => {
@@ -112,7 +142,16 @@ const App = ({ media }) => {
   return (
     <div className={styles.container}>
       <FilterContext.Provider
-        value={{ nameSearch, setNameSearch, filters, selectFilters }}
+        value={{
+          nameSearch,
+          setNameSearch,
+          filters,
+          selectFilters,
+          durationFilterNumber,
+          setDurationFilterNumber,
+          durationFilterType,
+          setDurationFilterType,
+        }}
       >
         <SidePanel media={mappedMedia} />
         <div className={styles.content}>

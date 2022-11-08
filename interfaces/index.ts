@@ -27,15 +27,16 @@ export interface ITableCellComponent {
 }
 
 export interface IFilter {
-  type: 'SEARCH' | 'SELECT',
-  field: string,
-  value: string | string[],
+  type: 'SEARCH' | 'SELECT' | 'CUSTOM';
+  field?: string;
+  value: string | string[];
+  filterMethod?: (row: any) => boolean;
 }
 
 export interface IMedia {
   _id: number;
   name: string;
-  startTime?: Date,
+  startTime?: Date;
   endTime?: Date | null;
   nodes: {
     startTime?: Date;

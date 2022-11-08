@@ -1,7 +1,7 @@
-// import styles from "./Multiselect.module.scss";
+
 import Select, { StylesConfig } from 'react-select';
 
-type IMultiselectProps = {
+type ISelectProps = {
   placeholder?: string;
   // options: { label: string; value: string }[];
   options: any[];
@@ -9,10 +9,9 @@ type IMultiselectProps = {
   defaultValue?: string;
 };
 
-function Multiselect({ options, onChange, placeholder, defaultValue }: IMultiselectProps) {
+function SelectComponent({ options, onChange, placeholder, defaultValue }: ISelectProps) {
   return (
     <Select 
-      isMulti
       options={options}
       // className={styles.Multiselect}
       // classNamePrefix={styles.Multiselect}
@@ -23,4 +22,4 @@ function Multiselect({ options, onChange, placeholder, defaultValue }: IMultisel
   );
 }
 
-export default Multiselect;
+export default SelectComponent;
