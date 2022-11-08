@@ -10,6 +10,6 @@ export const FilterContext = createContext({
   selectFilters: [] as ISelectFilter[],
   durationFilterNumber: 0,
   setDurationFilterNumber: (() => {}) as React.Dispatch<React.SetStateAction<number>>,
-  durationFilterType: DURATION_TYPES.GREATER_THAN_OR_EQUAL,
+  durationFilterType: DURATION_TYPES.NONE,
   setDurationFilterType: (() => {}) as React.Dispatch<React.SetStateAction<string>>,
 });

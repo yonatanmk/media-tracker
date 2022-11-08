@@ -11,6 +11,7 @@ import {
   getFieldOptions,
   getDurationDays,
   DURATION_TYPES,
+  durationTypeOptionsNone,
 } from "../../utils/media";
 import { FilterContext } from "../../contexts";
 import { FILTER_TYPES } from "../../components/Table/util";
@@ -22,7 +23,12 @@ const App = ({ media }) => {
   // const [typeFilters, setTypeFilters] = useState<string[]>([]);
   const [typeFilters, setTypeFilters] = useState([]);
   const [durationFilterNumber, setDurationFilterNumber] = useState(0);
-  const [durationFilterType, setDurationFilterType] = useState(null);
+  const [durationFilterType, setDurationFilterType] = useState(
+    DURATION_TYPES.NONE
+  );
+
+  console.log("durationFilterType");
+  console.log(durationFilterType);
 
   const durationFilterNumberInt = parseInt(durationFilterNumber);
 

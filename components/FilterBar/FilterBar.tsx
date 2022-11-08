@@ -4,7 +4,7 @@ import { FilterContext } from '../../contexts';
 import Multiselect from "../Multiselect";
 import Select from "../Select";
 import { capitalize } from "../../utils";
-import { durationTypeOptions, DURATION_TYPES } from "../../utils/media";
+import { durationTypeOptions } from "../../utils/media";
 
 const FilterBar = () => {
   const { 
@@ -25,6 +25,8 @@ const FilterBar = () => {
 
   const handleDurationTypeChange = (option) => setDurationFilterType(option.value);
 
+  const selectedDurationTypeOption = durationTypeOptions.find(opt => opt.value === durationFilterType);
+
   return (
     <div className={styles.FilterBar}>
       <h3>Filters</h3>
@@ -34,7 +36,7 @@ const FilterBar = () => {
           <input id="people-search" type="text" value={nameSearch} onChange={handleSearch} placeholder="Name" />
         </div>
         <input id="duration-number" type="number" value={durationFilterNumber} onChange={handleDurationNumChange} placeholder="Name" />
-        <Select options={durationTypeOptions} onChange={handleDurationTypeChange} defaultValue={durationFilterType}/>
+        <Select options={durationTypeOptions} onChange={handleDurationTypeChange} defaultValue={selectedDurationTypeOption}/>
         {selectFilters.map(filter => <Multiselect key={filter.key} options={filter.options.map(opt => ({label: capitalize(opt.toString()), value: opt.toString()}))} placeholder={filter.placeholder} onChange={filter.updateFilterValues}/>)}
       </div>
     </div>

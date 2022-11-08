@@ -137,9 +137,16 @@ export const DURATION_TYPES = Object.freeze({
   LESS_THAN: "LESS_THAN",
   LESS_THAN_OR_EQUAL: "LESS_THAN_OR_EQUAL",
   EQUAL: "EQUAL",
+  NONE: "NONE",
 });
 
+export const durationTypeOptionsNone = {
+  label: "None",
+  value: DURATION_TYPES.NONE,
+};
+
 export const durationTypeOptions = [
+  durationTypeOptionsNone,
   {
     label: ">",
     value: DURATION_TYPES.GREATER_THAN,

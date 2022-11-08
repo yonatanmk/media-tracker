@@ -6,7 +6,10 @@ type ISelectProps = {
   // options: { label: string; value: string }[];
   options: any[];
   onChange: (selected: any) => void;
-  defaultValue?: string;
+  defaultValue?: {
+    label: string;
+    value: string;
+  };
 };
 
 function SelectComponent({ options, onChange, placeholder, defaultValue }: ISelectProps) {
