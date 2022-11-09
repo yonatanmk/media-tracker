@@ -16,11 +16,6 @@ $scrollbar-width: 26px;
 
       &__filter {
         width: calc(50% - 1rem);
-        // height: 38px;
-        // background-color: red;
-        // border: 1px solid black;
-        // box-sizing: border-box;
-        margin-bottom: 1rem;
       }
     }
   }
@@ -51,21 +46,17 @@ $scrollbar-width: 26px;
     align-items: center;
     gap: 0.5rem;
 
-    &__Select {
-      width: 6.25rem;
-    }
+    // &__Select {
+    //   width: 6.25rem;
+    // }
 
     input {
       @include input;
-      flex: 1;
+      width: 100%;
     }
   }
 
   label {
     font-size: 20px;
   }
-
-
-
-
 }

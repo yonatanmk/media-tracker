@@ -14,10 +14,11 @@ type ISelectProps = {
     label: string;
     value: string;
   };
-  className: string;
+  className?: string;
+  customStyles?: StylesConfig
 };
 
-function SelectComponent({ options, onChange, placeholder, defaultValue, value, className }: ISelectProps) {
+function SelectComponent({ options, onChange, placeholder, defaultValue, value, className, customStyles }: ISelectProps) {
   return (
     <Select 
       options={options}
@@ -27,6 +28,7 @@ function SelectComponent({ options, onChange, placeholder, defaultValue, value, 
       value={value}
       placeholder={placeholder}
       onChange={onChange}
+      styles={customStyles}
     />
   );
 }
