@@ -31,6 +31,11 @@ const FilterBar = () => {
 
   const durationSelectStyles: StylesConfig<any, true> = {
     control: (styles: any) => ({ ...styles, width: '6.25rem' }),
+    option: (styles: any) => ({ ...styles, color: 'black' }),
+  };
+
+  const typeSelectStyles: StylesConfig<any, true> = {
+    option: (styles: any) => ({ ...styles, color: 'black' }),
   };
 
   return (
@@ -59,7 +64,8 @@ const FilterBar = () => {
           {selectFilters.map(filter => (
           <div className={styles.FilterBar__filters__row__filter}>
             <Multiselect 
-              key={filter.key} 
+              key={filter.key}
+              customStyles={typeSelectStyles}
               options={filter.options.map(opt => ({label: capitalize(opt.toString()), value: opt.toString()}))} 
               placeholder={filter.placeholder} 
               onChange={filter.updateFilterValues}/>

@@ -7,15 +7,17 @@ type IMultiselectProps = {
   options: any[];
   onChange: (selected: any) => void;
   defaultValue?: string;
+  customStyles?: StylesConfig;
 };
 
-function Multiselect({ options, onChange, placeholder, defaultValue }: IMultiselectProps) {
+function Multiselect({ options, onChange, placeholder, defaultValue, customStyles }: IMultiselectProps) {
   return (
     <Select 
       isMulti
       options={options}
       // className={styles.Multiselect}
       // classNamePrefix={styles.Multiselect}
+      styles={customStyles}
       defaultValue={defaultValue}
       placeholder={placeholder}
       onChange={onChange}
