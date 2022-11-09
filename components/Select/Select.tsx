@@ -14,14 +14,15 @@ type ISelectProps = {
     label: string;
     value: string;
   };
+  className: string;
 };
 
-function SelectComponent({ options, onChange, placeholder, defaultValue, value }: ISelectProps) {
+function SelectComponent({ options, onChange, placeholder, defaultValue, value, className }: ISelectProps) {
   return (
     <Select 
       options={options}
-      // className={styles.Multiselect}
-      // classNamePrefix={styles.Multiselect}
+      className={className}
+      classNamePrefix={className}
       defaultValue={defaultValue}
       value={value}
       placeholder={placeholder}
