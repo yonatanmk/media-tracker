@@ -2381,9 +2381,17 @@ const mockMediaData = [
   },
   {
     _id: 295,
-    name: "Modern Family",
-    startTime: new Date("11/16/2021"),
-    // endTime: new Date("12/07/2021"), // stopped before flight to LA
+    name: "Modern Family, various seasons",
+    nodes: [
+      {
+        startTime: new Date("11/16/2021"),
+        endTime: new Date("05/23/2022"),
+      },
+      {
+        startTime: new Date("09/21/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
