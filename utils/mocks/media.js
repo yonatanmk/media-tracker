@@ -2620,7 +2620,7 @@ const mockMediaData = [
   },
   {
     _id: 321,
-    name: "Super Mario 3D World + Bowser's Fury",
+    name: "Super Mario 3D World",
     nodes: [
       {
         startTime: new Date("02/05/2022"),
@@ -3256,7 +3256,7 @@ const mockMediaData = [
     _id: 393,
     name: "Final Fantasy 7 Remake Intergrade Yuffie Playthrough",
     startTime: new Date("10/25/2022"),
-    endTime: null,
+    endTime: new Date("11/10/2022"),
     type: mediaTypes.playthrough,
   },
   {
@@ -3318,6 +3318,13 @@ const mockMediaData = [
   {
     _id: 402,
     name: "God of War Ragnarok",
+    startTime: new Date("11/09/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 403,
+    name: "Love, Death & Robots",
     startTime: new Date("11/09/2022"),
     endTime: null,
     type: mediaTypes.tv,
