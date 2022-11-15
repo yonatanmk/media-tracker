@@ -3320,7 +3320,7 @@ const mockMediaData = [
     _id: 401,
     name: "Over the Garden Wall",
     startTime: new Date("11/09/2022"),
-    endTime: null,
+    endTime: new Date("11/14/2022"),,
     type: mediaTypes.tv,
   },
   {
