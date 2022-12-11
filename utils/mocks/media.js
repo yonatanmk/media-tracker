@@ -243,6 +243,10 @@ const mockMediaData = [
         startTime: new Date("09/04/2022"),
         endTime: new Date("09/23/2022"),
       },
+      {
+        startTime: new Date("012/04/2022"),
+        endTime: null,
+      },
     ],
     type: mediaTypes.book,
   },
@@ -3179,7 +3183,7 @@ const mockMediaData = [
     _id: 382,
     name: "Great British Bake Off S10 (Series 13)",
     startTime: new Date("09/16/2022"),
-    endTime: null,
+    endTime: new Date("11/21/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -3256,8 +3260,16 @@ const mockMediaData = [
   {
     _id: 392,
     name: "It Takes Two",
-    startTime: new Date("10/16/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("10/16/2022"),
+        endTime: new Date("10/30/2022"),
+      },
+      {
+        startTime: new Date("11/17/2022"),
+        startTime: new Date("11/27/2022"),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -3278,7 +3290,7 @@ const mockMediaData = [
     _id: 395,
     name: "Critical Role Exandria Unlimited: Calamity",
     startTime: new Date("10/28/2022"),
-    endTime: null,
+    endTime: new Date("11/30/2022"),
     type: mediaTypes.podcast,
   },
   {
@@ -3291,15 +3303,23 @@ const mockMediaData = [
   {
     _id: 397,
     name: "Mount and Blade 2 Bannerlord ",
-    startTime: new Date("10/30/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("10/30/2022"),
+        endTime: new Date("11/07/2022"),
+      },
+      {
+        startTime: new Date("11/21/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
     _id: 398,
     name: "Russian Doll S2",
     startTime: new Date("11/06/2022"),
-    endTime: null,
+    endTime: new Date("11/28/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -3320,7 +3340,7 @@ const mockMediaData = [
     _id: 401,
     name: "Over the Garden Wall",
     startTime: new Date("11/09/2022"),
-    endTime: new Date("11/14/2022"),,
+    endTime: new Date("11/14/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -3328,6 +3348,7 @@ const mockMediaData = [
     name: "God of War Ragnarok",
     startTime: new Date("11/09/2022"),
     endTime: null,
+    // endTime: new Date("12/09/2022"),
     type: mediaTypes.videogame,
   },
   {
@@ -3336,6 +3357,34 @@ const mockMediaData = [
     startTime: new Date("11/09/2022"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 404,
+    name: "Appare Ranman",
+    startTime: new Date("11/21/2022"),
+    endTime: new Date("11/23/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 405,
+    name: "Severance S1",
+    startTime: new Date("11/30/2022"),
+    endTime: new Date("12/09/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 406,
+    name: "Yuppie Psycho",
+    startTime: new Date("12/03/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 407,
+    name: "Xenoblade Chronicles 3",
+    startTime: new Date("12/10/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
   // TESTING
