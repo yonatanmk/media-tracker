@@ -3254,7 +3254,7 @@ const mockMediaData = [
     _id: 391,
     name: "Bowser’s Fury",
     startTime: new Date("10/15/2022"),
-    endTime: null,
+    endTime: new Date("12/27/2022"),
     type: mediaTypes.videogame,
   },
   {
@@ -3347,15 +3347,30 @@ const mockMediaData = [
     _id: 402,
     name: "God of War Ragnarok",
     startTime: new Date("11/09/2022"),
-    endTime: null,
-    // endTime: new Date("12/09/2022"),
+    endTime: new Date("12/17/2022"),
     type: mediaTypes.videogame,
   },
   {
     _id: 403,
     name: "Love, Death & Robots",
-    startTime: new Date("11/09/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("11/12/2022"),
+        endTime: addHoursToDate(new Date("11/12/2022"), 4),
+      },
+      {
+        startTime: new Date("12/08/2022"),
+        endTime: addHoursToDate(new Date("12/08/2022"), 4),
+      },
+      {
+        startTime: new Date("12/20/2022"),
+        endTime: addHoursToDate(new Date("12/20/2022"), 4),
+      },
+      // {
+      //   startTime: new Date("12/20/2022"),
+      //   endTime: null,
+      // },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -3385,6 +3400,41 @@ const mockMediaData = [
     startTime: new Date("12/10/2022"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 408,
+    name: "Kena Bridge of Spirits",
+    startTime: new Date("12/16/2022"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 409,
+    name: "Bocchi the Rock!",
+    startTime: new Date("12/20/2022"),
+    endTime: new Date("12/30/2022"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 410,
+    name: "BlueLock",
+    startTime: new Date("12/20/2022"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 411,
+    name: "Living with Yourself",
+    startTime: new Date("01/02/2023"),
+    endTime: addHoursToDate(new Date("01/02/2023"), 10),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 412,
+    name: "Grand Theft Auto V",
+    startTime: new Date("01/02/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // TESTING
