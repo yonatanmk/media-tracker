@@ -3434,6 +3434,13 @@ const mockMediaData = [
     name: "Grand Theft Auto V",
     startTime: new Date("01/02/2023"),
     endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 413,
+    name: "White Lotus S1",
+    startTime: new Date("01/07/2023"),
+    endTime: null,
     type: mediaTypes.tv,
   },
 
