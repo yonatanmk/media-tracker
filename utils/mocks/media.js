@@ -231,9 +231,6 @@ const mockMediaData = [
   {
     _id: 30,
     name: "Rhythm of War",
-    // startTime: new Date("07/09/2021"),
-    // startTime: new Date("06/17/2022"),
-    // endTime: null,
     nodes: [
       {
         startTime: new Date("06/17/2022"),
@@ -244,8 +241,8 @@ const mockMediaData = [
         endTime: new Date("09/23/2022"),
       },
       {
-        startTime: new Date("012/04/2022"),
-        endTime: null,
+        startTime: new Date("12/04/2022"),
+        endTime: new Date("01/13/2023"),
       },
     ],
     type: mediaTypes.book,
