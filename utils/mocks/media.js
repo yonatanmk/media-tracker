@@ -3440,6 +3440,28 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 414,
+    name: "Abbott Elementary S1",
+    startTime: new Date("01/14/2023"),
+    // endTime: addHoursToDate(new Date("01/14/2023"), 1),
+    endtime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 415,
+    name: "The Looker",
+    startTime: new Date("01/14/2023"),
+    endTime: addHoursToDate(new Date("01/14/2023"), 1),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 416,
+    name: "The Adventurer Zone: Ethersea",
+    startTime: new Date("01/14/2023"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
 
   // TESTING
 
