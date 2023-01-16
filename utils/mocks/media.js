@@ -3437,7 +3437,7 @@ const mockMediaData = [
     _id: 413,
     name: "White Lotus S1",
     startTime: new Date("01/07/2023"),
-    endTime: null,
+    endTime: new Date("01/15/2023"),
     type: mediaTypes.tv,
   },
   {
