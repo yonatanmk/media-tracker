@@ -818,7 +818,7 @@ const mockMediaData = [
   },
   {
     _id: 105,
-    name: "Adventure Zone Campaign 1",
+    name: "Adventure Zone Campaign 1 Balance",
     startTime: new Date("10/31/2018"),
     endTime: new Date("11/14/2019"),
     type: mediaTypes.podcast,
@@ -3457,7 +3457,7 @@ const mockMediaData = [
   },
   {
     _id: 416,
-    name: "The Adventurer Zone: Ethersea",
+    name: "The Adventure Zone: Ethersea",
     startTime: new Date("01/14/2023"),
     endTime: null,
     type: mediaTypes.podcast,
