@@ -2440,8 +2440,17 @@ const mockMediaData = [
   {
     _id: 302,
     name: "Oshi No Ko",
-    startTime: new Date("12/23/2021"),
-    endTime: new Date("12/27/2021"),
+    nodes: [
+      {
+        startTime: new Date("12/23/2021"),
+        endTime: new Date("12/27/2021"),
+      },
+      {
+        startTime: new Date("01/13/2023"),
+        // endTime: new Date("01/14/2023"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.book,
   },
   {
@@ -3461,6 +3470,13 @@ const mockMediaData = [
     startTime: new Date("01/14/2023"),
     endTime: null,
     type: mediaTypes.podcast,
+  },
+  {
+    _id: 417,
+    name: "Wednesday S1",
+    startTime: new Date("01/16/2023"),
+    endtime: null,
+    type: mediaTypes.tv,
   },
 
   // TESTING
