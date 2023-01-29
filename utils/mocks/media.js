@@ -2390,7 +2390,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("09/21/2022"),
-        endTime: null,
+        endTime: new Date("01/05/2023"),
       },
     ],
     type: mediaTypes.tv,
@@ -2447,7 +2447,10 @@ const mockMediaData = [
       },
       {
         startTime: new Date("01/13/2023"),
-        // endTime: new Date("01/14/2023"),
+        endTime: new Date("01/14/2023"),
+      },
+      {
+        startTime: new Date("01/23/2023"),
         endTime: null,
       },
     ],
@@ -3028,7 +3031,6 @@ const mockMediaData = [
     name: "Dragon's Dogma Dark Arisen",
     startTime: new Date("07/10/2022"),
     endTime: new Date("07/22/2022"),
-    // endTime: null,
     type: mediaTypes.videogame,
   },
   {
@@ -3253,7 +3255,7 @@ const mockMediaData = [
     _id: 390,
     name: "The Ascent",
     startTime: new Date("10/06/2022"),
-    endTime: null,
+    endTime: new Date("10/10/2022"),
     type: mediaTypes.videogame,
   },
   {
@@ -3316,7 +3318,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("11/21/2022"),
-        endTime: null,
+        endTime: new Date("12/01/2022"),
       },
     ],
     type: mediaTypes.videogame,
@@ -3339,7 +3341,7 @@ const mockMediaData = [
     _id: 400,
     name: "Big Mouth S6",
     startTime: new Date("11/07/2022"),
-    endTime: null,
+    endTime: new Date("12/12/2022"),
     type: mediaTypes.tv,
   },
   {
@@ -3403,15 +3405,33 @@ const mockMediaData = [
   {
     _id: 407,
     name: "Xenoblade Chronicles 3",
-    startTime: new Date("12/10/2022"),
-    endTime: null,
+    // startTime: new Date("12/10/2022"),
+    // endTime: null,
+    nodes: [
+      {
+        startTime: new Date("12/10/2022"),
+        endTime: new Date("01/02/2023"),
+      },
+      {
+        startTime: new Date("01/18/2023"),
+        endTime: addHoursToDate(new Date("01/18/2023"), 4),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
     _id: 408,
     name: "Kena Bridge of Spirits",
-    startTime: new Date("12/16/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("12/16/2022"),
+        endTime: new Date("01/02/2023"),
+      },
+      {
+        startTime: new Date("01/28/2023"),
+        endTime: addHoursToDate(new Date("01/28/2023"), 4),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -3439,7 +3459,7 @@ const mockMediaData = [
     _id: 412,
     name: "Grand Theft Auto V",
     startTime: new Date("01/02/2023"),
-    endTime: null,
+    endTime: new Date("01/23/2023"),
     type: mediaTypes.videogame,
   },
   {
@@ -3475,7 +3495,36 @@ const mockMediaData = [
     _id: 417,
     name: "Wednesday S1",
     startTime: new Date("01/16/2023"),
-    endtime: null,
+    endtime: new Date("01/20/2023"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 418,
+    name: "Taskmaster S14",
+    nodes: [
+      {
+        startTime: new Date("01/22/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  // {
+  //   _id: 418,
+  //   name: "Kerbal Space Program",
+  //   startTime: new Date("01/19/2023"),
+  //   endtime: null,
+  //   type: mediaTypes.videogame,
+  // },
+  {
+    _id: 419,
+    name: "The Uncanny Counter S1",
+    nodes: [
+      {
+        startTime: new Date("01/23/2023"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
 
