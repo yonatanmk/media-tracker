@@ -2451,7 +2451,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("01/23/2023"),
-        endTime: null,
+        endTime: new Date("01/29/2023"),
       },
     ],
     type: mediaTypes.book,
@@ -2658,6 +2658,11 @@ const mockMediaData = [
       {
         startTime: new Date("09/03/2022"),
         endTime: addHoursToDate(new Date("09/03/2022"), 4),
+      },
+      {
+        startTime: new Date("02/05/2023"),
+        // endTime: addHoursToDate(new Date("02/05/2023"), 4),
+        endTime: new Date("02/09/2023"),
       },
     ],
     // endTime: null,
@@ -3416,6 +3421,10 @@ const mockMediaData = [
         startTime: new Date("01/18/2023"),
         endTime: addHoursToDate(new Date("01/18/2023"), 4),
       },
+      {
+        startTime: new Date("02/01/2023"),
+        endTime: null,
+      },
     ],
     type: mediaTypes.videogame,
   },
@@ -3473,8 +3482,7 @@ const mockMediaData = [
     _id: 414,
     name: "Abbott Elementary S1",
     startTime: new Date("01/14/2023"),
-    // endTime: addHoursToDate(new Date("01/14/2023"), 1),
-    endtime: null,
+    endtime: new Date("02/11/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -3510,7 +3518,7 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   // {
-  //   _id: 418,
+  //   _id: 418asdf,
   //   name: "Kerbal Space Program",
   //   startTime: new Date("01/19/2023"),
   //   endtime: null,
@@ -3526,6 +3534,45 @@ const mockMediaData = [
       },
     ],
     type: mediaTypes.tv,
+  },
+  {
+    _id: 420,
+    name: "Lucifer and the Biscuit Hammer",
+    startTime: new Date("01/29/2023"),
+    endTime: new Date("02/12/2023"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 421,
+    name: "The Last of Us S1",
+    nodes: [
+      {
+        startTime: new Date("02/01/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 422,
+    name: "Plague Tale Requiem",
+    startTime: new Date("01/24/2023"),
+    endTime: new Date("02/07/2023"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 423,
+    name: "Hogwarts Legacy",
+    startTime: new Date("02/07/2023"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 424,
+    name: "One Punch Man",
+    startTime: new Date("02/13/2023"),
+    endTime: null,
+    type: mediaTypes.book,
   },
 
   // TESTING
