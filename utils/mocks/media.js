@@ -3482,7 +3482,7 @@ const mockMediaData = [
     _id: 414,
     name: "Abbott Elementary S1",
     startTime: new Date("01/14/2023"),
-    endtime: new Date("02/11/2023"),
+    endTime: new Date("02/11/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -3503,7 +3503,7 @@ const mockMediaData = [
     _id: 417,
     name: "Wednesday S1",
     startTime: new Date("01/16/2023"),
-    endtime: new Date("01/20/2023"),
+    endTime: new Date("01/20/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -3521,7 +3521,7 @@ const mockMediaData = [
   //   _id: 418asdf,
   //   name: "Kerbal Space Program",
   //   startTime: new Date("01/19/2023"),
-  //   endtime: null,
+  //   endTime: null,
   //   type: mediaTypes.videogame,
   // },
   {
