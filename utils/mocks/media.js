@@ -3574,6 +3574,17 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.book,
   },
+  {
+    _id: 425,
+    name: "Party Down S1",
+    nodes: [
+      {
+        startTime: new Date("02/27/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
 
   // TESTING
 
