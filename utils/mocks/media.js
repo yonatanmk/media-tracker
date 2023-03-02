@@ -3453,8 +3453,16 @@ const mockMediaData = [
   {
     _id: 410,
     name: "BlueLock",
-    startTime: new Date("12/20/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("12/20/2022"),
+        endTime: new Date("01/24/2023"),
+      },
+      {
+        startTime: new Date("02/28/2022"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -3571,7 +3579,7 @@ const mockMediaData = [
     _id: 424,
     name: "One Punch Man",
     startTime: new Date("02/13/2023"),
-    endTime: null,
+    endTime: new Date("03/01/2023"),
     type: mediaTypes.book,
   },
   {
