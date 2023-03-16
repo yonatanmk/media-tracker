@@ -3504,7 +3504,7 @@ const mockMediaData = [
     _id: 416,
     name: "The Adventure Zone: Ethersea",
     startTime: new Date("01/14/2023"),
-    endTime: null,
+    endTime: new Date("03/09/2023"),
     type: mediaTypes.podcast,
   },
   {
@@ -3553,12 +3553,14 @@ const mockMediaData = [
   {
     _id: 421,
     name: "The Last of Us S1",
-    nodes: [
-      {
-        startTime: new Date("02/01/2023"),
-        endTime: null,
-      },
-    ],
+    startTime: new Date("02/01/2023"),
+    endTime: new Date("03/15/2023"),
+    // nodes: [
+    //   {
+    //     startTime: new Date("02/01/2023"),
+    //     endTime: new Date("03/15/2023"),
+    //   },
+    // ],
     type: mediaTypes.tv,
   },
   {
@@ -3571,8 +3573,16 @@ const mockMediaData = [
   {
     _id: 423,
     name: "Hogwarts Legacy",
-    startTime: new Date("02/07/2023"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("02/07/2023"),
+        endTime: new Date("02/27/2023"),
+      },
+      {
+        startTime: new Date("03/13/2023"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -3592,6 +3602,31 @@ const mockMediaData = [
       },
     ],
     type: mediaTypes.tv,
+  },
+  {
+    _id: 426,
+    name: "Atomic Heart",
+    startTime: new Date("03/03/2023"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 427,
+    name: "Inuyasha",
+    nodes: [
+      {
+        startTime: new Date("03/07/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 428,
+    name: "Not Another D&D Podcast: Bahumia",
+    startTime: new Date("03/12/2023"),
+    endTime: null,
+    type: mediaTypes.podcast,
   },
 
   // TESTING
