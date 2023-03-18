@@ -3580,7 +3580,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("03/13/2023"),
-        endTime: null,
+        endTime: new Date("03/16/2023"),
       },
     ],
     type: mediaTypes.videogame,
@@ -3607,7 +3607,7 @@ const mockMediaData = [
     _id: 426,
     name: "Atomic Heart",
     startTime: new Date("03/03/2023"),
-    endTime: null,
+    endTime: new Date("03/18/2023"),
     type: mediaTypes.videogame,
   },
   {
