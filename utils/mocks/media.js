@@ -3628,6 +3628,20 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.podcast,
   },
+  {
+    _id: 429,
+    name: "Like A Dragon: Ishin",
+    startTime: new Date("03/18/2023"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 427,
+    name: "Made in Abyss S2",
+    startTime: new Date("03/19/2023"),
+    endTime: new Date("03/25/2023"),
+    type: mediaTypes.tv,
+  },
 
   // TESTING
 
