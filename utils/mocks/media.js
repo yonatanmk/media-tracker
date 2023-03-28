@@ -3636,10 +3636,17 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 427,
+    _id: 430,
     name: "Made in Abyss S2",
     startTime: new Date("03/19/2023"),
     endTime: new Date("03/25/2023"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 431,
+    name: "Carol and Tuesday",
+    startTime: new Date("03/27/2023"),
+    endTime: null,
     type: mediaTypes.tv,
   },
 
