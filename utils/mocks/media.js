@@ -3651,10 +3651,17 @@ const mockMediaData = [
   },
   {
     _id: 432,
-    name: "The Sandman",
+    name: "The Sandman S1",
     startTime: new Date("04/01/2023"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 433,
+    name: "Tunic",
+    startTime: new Date("04/01/2023"),
+    endTime: null,
+    type: mediaTypes.videogames,
   },
 
   // TESTING
