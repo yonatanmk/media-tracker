@@ -3646,6 +3646,13 @@ const mockMediaData = [
     _id: 431,
     name: "Carol and Tuesday",
     startTime: new Date("03/27/2023"),
+    endTime: new Date("04/01/2023"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 432,
+    name: "The Sandman",
+    startTime: new Date("04/01/2023"),
     endTime: null,
     type: mediaTypes.tv,
   },
