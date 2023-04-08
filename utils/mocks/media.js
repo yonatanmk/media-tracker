@@ -3653,7 +3653,7 @@ const mockMediaData = [
     _id: 432,
     name: "The Sandman S1",
     startTime: new Date("04/01/2023"),
-    endTime: null,
+    endTime: new Date("04/05/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -3662,6 +3662,29 @@ const mockMediaData = [
     startTime: new Date("04/01/2023"),
     endTime: null,
     type: mediaTypes.videogames,
+  },
+  {
+    _id: 434,
+    name: "Abbott Elementary S2",
+    nodes: [
+      {
+        startTime: new Date("02/15/2023"),
+        endTime: new Date("02/19/2023"),
+      },
+      {
+        startTime: new Date("03/1/2023"),
+        endTime: new Date("03/4/2023"),
+      },
+      {
+        startTime: new Date("03/18/2023"),
+        endTime: new Date("03/19/2023"),
+      },
+      {
+        startTime: new Date("04/06/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
   },
 
   // TESTING
