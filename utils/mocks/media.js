@@ -3520,6 +3520,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("01/22/2023"),
+        endTime: addHoursToDate(new Date("01/22/2023"), 4),
+      },
+      {
+        startTime: new Date("04/16/2023"),
         endTime: null,
       },
     ],
@@ -3632,7 +3636,7 @@ const mockMediaData = [
     _id: 429,
     name: "Like A Dragon: Ishin",
     startTime: new Date("03/18/2023"),
-    endTime: null,
+    endTime: new Date("04/08/2023"),
     type: mediaTypes.videogame,
   },
   {
@@ -3685,6 +3689,13 @@ const mockMediaData = [
       },
     ],
     type: mediaTypes.tv,
+  },
+  {
+    _id: 433,
+    name: "Assassin's Creed Origins",
+    startTime: new Date("04/08/2023"),
+    endTime: null,
+    type: mediaTypes.videogames,
   },
 
   // TESTING
