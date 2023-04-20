@@ -3691,11 +3691,25 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   {
-    _id: 433,
+    _id: 435,
     name: "Assassin's Creed Origins",
     startTime: new Date("04/08/2023"),
-    endTime: null,
+    endTime: new Date("04/18/2023"),
     type: mediaTypes.videogames,
+  },
+  {
+    _id: 436,
+    name: "Assassin's Creed Origins: The Hidden Ones DLC",
+    startTime: new Date("04/18/2023"),
+    endTime: addHoursToDate(new Date("04/18/2023"), 4),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 437,
+    name: "Assassin's Creed Origins: The Curse of the Pharohs",
+    startTime: new Date("04/19/2023"),
+    endTime: addHoursToDate(new Date("04/19/2023"), 4),
+    type: mediaTypes.playthrough,
   },
 
   // TESTING
