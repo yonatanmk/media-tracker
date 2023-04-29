@@ -3460,7 +3460,11 @@ const mockMediaData = [
       },
       {
         startTime: new Date("02/28/2022"),
-        endTime: null,
+        endTime: new Date("03/14/2022"),
+      },
+      {
+        startTime: new Date("04/19/2023"),
+        endTime: addHoursToDate(new Date("04/19/2023"), 4),
       },
     ],
     type: mediaTypes.tv,
@@ -3710,6 +3714,49 @@ const mockMediaData = [
     startTime: new Date("04/19/2023"),
     endTime: addHoursToDate(new Date("04/19/2023"), 4),
     type: mediaTypes.playthrough,
+  },
+  {
+    _id: 438,
+    name: "NADDPod Bahumia",
+    startTime: new Date("03/13/2023"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 439,
+    name: "Cunk on Earth",
+    nodes: [
+      {
+        startTime: new Date("04/20/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 440,
+    name: "Firefly",
+    nodes: [
+      {
+        startTime: new Date("04/24/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 441,
+    name: "Horizon Forbidden West: Burning Shores",
+    startTime: new Date("04/20/2023"),
+    endTime: new Date("04/28/2023"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 442,
+    name: "Chained Echoes",
+    startTime: new Date("04/28/2023"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
   // TESTING
