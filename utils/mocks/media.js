@@ -3762,7 +3762,7 @@ const mockMediaData = [
     _id: 443,
     name: "Finding Paradise",
     startTime: new Date("04/30/2023"),
-    endTime: null,
+    endTime: new Date("05/01/2023"),
     type: mediaTypes.videogame,
   },
 
