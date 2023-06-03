@@ -3766,11 +3766,25 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 442,
+    _id: 444,
     name: "The Legend of Zelda: Tears of the Kingdom",
     startTime: new Date("05/18/2023"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 445,
+    name: "The Callisto Protocol",
+    startTime: new Date("05/26/2021"),
+    endTime: addHoursToDate(new Date("05/26/2021"), 6),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 446,
+    name: "Queen Charlotte",
+    startTime: new Date("05/27/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // TESTING
