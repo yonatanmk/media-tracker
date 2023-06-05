@@ -3783,7 +3783,7 @@ const mockMediaData = [
     _id: 446,
     name: "Queen Charlotte",
     startTime: new Date("05/27/2023"),
-    endTime: null,
+    endTime: new Date("06/04/2023"),
     type: mediaTypes.tv,
   },
 
