@@ -3775,8 +3775,8 @@ const mockMediaData = [
   {
     _id: 445,
     name: "The Callisto Protocol",
-    startTime: new Date("05/26/2021"),
-    endTime: addHoursToDate(new Date("05/26/2021"), 6),
+    startTime: new Date("05/26/2023"),
+    endTime: addHoursToDate(new Date("05/26/2023"), 6),
     type: mediaTypes.playthrough,
   },
   {
@@ -3784,6 +3784,24 @@ const mockMediaData = [
     name: "Queen Charlotte",
     startTime: new Date("05/27/2023"),
     endTime: new Date("06/04/2023"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 447,
+    name: "Marvelous Ms. Maisel S5",
+    nodes: [
+      {
+        startTime: new Date("05/05/2023"),
+        endTime: addHoursToDate(new Date("05/05/2023"), 6),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 448,
+    name: "Sabikui Bisco",
+    startTime: new Date("06/06/2023"),
+    endTime: null,
     type: mediaTypes.tv,
   },
 
