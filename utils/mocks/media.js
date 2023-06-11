@@ -3804,6 +3804,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 449,
+    name: "Never Have I Ever S1",
+    startTime: new Date("06/10/2023"),
+    endTime: addHoursToDate(new Date("06/10/2023"), 4),
+    type: mediaTypes.tv,
+  },
 
   // TESTING
 
