@@ -3754,8 +3754,16 @@ const mockMediaData = [
   {
     _id: 442,
     name: "Chained Echoes",
-    startTime: new Date("04/28/2023"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("04/28/2023"),
+        endTime: new Date("05/17/2023"),
+      },
+      {
+        startTime: new Date("06/09/2023"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
