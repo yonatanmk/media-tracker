@@ -3761,7 +3761,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("06/09/2023"),
-        endTime: null,
+        endTime: new Date("06/14/2023"),
       },
     ],
     type: mediaTypes.videogame,
@@ -3802,6 +3802,10 @@ const mockMediaData = [
         startTime: new Date("05/05/2023"),
         endTime: addHoursToDate(new Date("05/05/2023"), 6),
       },
+      {
+        startTime: new Date("06/07/2023"),
+        endTime: new Date("06/11/2023"),
+      },
     ],
     type: mediaTypes.tv,
   },
@@ -3809,14 +3813,25 @@ const mockMediaData = [
     _id: 448,
     name: "Sabikui Bisco",
     startTime: new Date("06/06/2023"),
-    endTime: null,
+    endTime: new Date("06/12/2023"),
     type: mediaTypes.tv,
   },
   {
     _id: 449,
-    name: "Never Have I Ever S1",
+    name: "Never Have I Ever S4",
     startTime: new Date("06/10/2023"),
     endTime: addHoursToDate(new Date("06/10/2023"), 4),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 158,
+    name: "Dr. Stone S3",
+    nodes: [
+      {
+        startTime: new Date("06/15/2023"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
 
