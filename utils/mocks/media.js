@@ -3528,6 +3528,10 @@ const mockMediaData = [
       },
       {
         startTime: new Date("04/16/2023"),
+        endTime: addHoursToDate(new Date("04/16/2023"), 4),
+      },
+      {
+        startTime: new Date("06/17/2023"),
         endTime: null,
       },
     ],
