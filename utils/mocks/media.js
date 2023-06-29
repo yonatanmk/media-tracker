@@ -3532,7 +3532,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("06/17/2023"),
-        endTime: null,
+        endTime: new Date("06/22/2023"),
       },
     ],
     type: mediaTypes.tv,
@@ -3828,11 +3828,44 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   {
-    _id: 158,
-    name: "Dr. Stone S3",
+    _id: 450,
+    name: "Dr. Stone S3 Part 1",
     nodes: [
       {
         startTime: new Date("06/15/2023"),
+        endTime: new Date("06/28/2023"),
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 451,
+    name: "Taskmaster S15",
+    nodes: [
+      {
+        startTime: new Date("06/24/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 452,
+    name: "Final Fantasy XVI",
+    nodes: [
+      {
+        startTime: new Date("06/24/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 453,
+    name: "Hell's Paradise",
+    nodes: [
+      {
+        startTime: new Date("06/28/2023"),
         endTime: null,
       },
     ],
