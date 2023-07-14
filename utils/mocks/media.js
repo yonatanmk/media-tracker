@@ -3830,12 +3830,8 @@ const mockMediaData = [
   {
     _id: 450,
     name: "Dr. Stone S3 Part 1",
-    nodes: [
-      {
-        startTime: new Date("06/15/2023"),
-        endTime: new Date("06/28/2023"),
-      },
-    ],
+    startTime: new Date("06/15/2023"),
+    endTime: new Date("06/28/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -3863,23 +3859,22 @@ const mockMediaData = [
   {
     _id: 453,
     name: "Hell's Paradise",
-    nodes: [
-      {
-        startTime: new Date("06/28/2023"),
-        endTime: null,
-      },
-    ],
+    startTime: new Date("06/28/2023"),
+    endTime: new Date("07/06/2023"),
     type: mediaTypes.tv,
   },
   {
     _id: 454,
     name: "American Born Chinese",
-    nodes: [
-      {
-        startTime: new Date("07/06/2023"),
-        endTime: null,
-      },
-    ],
+    startTime: new Date("07/06/2023"),
+    endTime: new Date("07/08/2023"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 455,
+    name: "Ted Lasso S3",
+    startTime: new Date("07/09/2023"),
+    endTime: new Date("07/13/2023"),
     type: mediaTypes.tv,
   },
 
