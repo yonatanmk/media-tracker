@@ -3722,8 +3722,12 @@ const mockMediaData = [
   {
     _id: 438,
     name: "NADDPod Bahumia",
-    startTime: new Date("03/13/2023"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("04/20/2023"),
+        endTime: new Date("07/16/2023"),
+      },
+    ],
     type: mediaTypes.podcast,
   },
   {
@@ -3877,6 +3881,16 @@ const mockMediaData = [
     endTime: new Date("07/13/2023"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 438,
+    name: "NRB Plays Call of Cthulu",
+    startTime: new Date("07/16/2023"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+
+
+  
 
   // TESTING
 
