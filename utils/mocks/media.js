@@ -2661,11 +2661,9 @@ const mockMediaData = [
       },
       {
         startTime: new Date("02/05/2023"),
-        // endTime: addHoursToDate(new Date("02/05/2023"), 4),
         endTime: new Date("02/09/2023"),
       },
     ],
-    // endTime: null,
     type: mediaTypes.videogame,
   },
   {
@@ -2990,7 +2988,6 @@ const mockMediaData = [
       {
         startTime: new Date("07/01/2022"),
         endTime: new Date("07/17/2022"),
-        // endTime: null,
       },
     ],
     type: mediaTypes.videogame,
@@ -3403,15 +3400,25 @@ const mockMediaData = [
   {
     _id: 406,
     name: "Yuppie Psycho",
-    startTime: new Date("12/03/2022"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("12/03/2022"),
+        endTime: new Date("12/18/2022"),
+      },
+      {
+        startTime: new Date("01/12/2023"),
+        endTime: addHoursToDate(new Date("01/12/2023"), 4),
+      },
+      {
+        startTime: new Date("07/16/2023"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
     _id: 407,
     name: "Xenoblade Chronicles 3",
-    // startTime: new Date("12/10/2022"),
-    // endTime: null,
     nodes: [
       {
         startTime: new Date("12/10/2022"),
@@ -3537,13 +3544,6 @@ const mockMediaData = [
     ],
     type: mediaTypes.tv,
   },
-  // {
-  //   _id: 418asdf,
-  //   name: "Kerbal Space Program",
-  //   startTime: new Date("01/19/2023"),
-  //   endTime: null,
-  //   type: mediaTypes.videogame,
-  // },
   {
     _id: 419,
     name: "The Uncanny Counter S1",
@@ -3634,13 +3634,6 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   {
-    _id: 428,
-    name: "Not Another D&D Podcast: Bahumia",
-    startTime: new Date("03/12/2023"),
-    endTime: null,
-    type: mediaTypes.podcast,
-  },
-  {
     _id: 429,
     name: "Like A Dragon: Ishin",
     startTime: new Date("03/18/2023"),
@@ -3721,9 +3714,14 @@ const mockMediaData = [
   },
   {
     _id: 438,
-    name: "NADDPod Bahumia",
-    startTime: new Date("03/13/2023"),
-    endTime: null,
+    name: "Not Another D&D Podcast: Bahumia",
+    nodes: [
+      {
+        startTime: new Date("03/13/2023"),
+        endTime: new Date("07/16/2023"),
+      },
+      // endTime: null,
+    ],
     type: mediaTypes.podcast,
   },
   {
@@ -3876,6 +3874,24 @@ const mockMediaData = [
     startTime: new Date("07/09/2023"),
     endTime: new Date("07/13/2023"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 456,
+    name: "Zom 100",
+    nodes: [
+      {
+        startTime: new Date("07/18/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 457,
+    name: "NRB plays Call of Cthulhu.",
+    startTime: new Date("07/17/2023"),
+    endTime: null,
+    type: mediaTypes.podcast,
   },
 
   // TESTING
