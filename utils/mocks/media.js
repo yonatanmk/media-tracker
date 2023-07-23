@@ -3720,6 +3720,10 @@ const mockMediaData = [
         startTime: new Date("03/13/2023"),
         endTime: new Date("07/16/2023"),
       },
+      {
+        startTime: new Date("07/22/2023"),
+        endTime: null,
+      },
       // endTime: null,
     ],
     type: mediaTypes.podcast,
