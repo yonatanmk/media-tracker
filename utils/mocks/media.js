@@ -3888,9 +3888,9 @@ const mockMediaData = [
   },
   {
     _id: 457,
-    name: "NRB plays Call of Cthulhu.",
+    name: "NRB plays Call of Cthulhu",
     startTime: new Date("07/17/2023"),
-    endTime: null,
+    endTime: new Date("07/22/2023"),
     type: mediaTypes.podcast,
   },
 
