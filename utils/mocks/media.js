@@ -3904,6 +3904,17 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 459,
+    name: "Murder By Numbers",
+    nodes: [
+      {
+        startTime: new Date("07/28/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
 
   // TESTING
 
