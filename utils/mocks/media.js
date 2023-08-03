@@ -3901,7 +3901,7 @@ const mockMediaData = [
     _id: 458,
     name: "Good Omens S2",
     startTime: new Date("07/27/2023"),
-    endTime: null,
+    endTime: new Date("08/03/2023"),
     type: mediaTypes.tv,
   },
   {
