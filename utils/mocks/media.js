@@ -2085,14 +2085,14 @@ const mockMediaData = [
   },
   {
     _id: 255,
-    name: "Assassins Creed Playthroughs",
+    name: "Assassin's Creed Playthroughs",
     startTime: new Date("11/12/2020"),
     endTime: new Date("11/16/2020"),
     type: mediaTypes.playthrough,
   },
   {
     _id: 256,
-    name: "Assassins Creed IV Black Flag",
+    name: "Assassin's Creed IV Black Flag",
     startTime: new Date("11/16/2020"),
     endTime: new Date("12/06/2020"),
     type: mediaTypes.videogame,
