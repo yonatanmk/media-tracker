@@ -3926,6 +3926,13 @@ const mockMediaData = [
     ],
     type: mediaTypes.videogame,
   },
+  {
+    _id: 461,
+    name: "Harley Quinn S1",
+    startTime: new Date("08/07/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
   // TESTING
 
