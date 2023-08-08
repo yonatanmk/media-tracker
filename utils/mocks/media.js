@@ -3915,6 +3915,17 @@ const mockMediaData = [
     ],
     type: mediaTypes.videogame,
   },
+  {
+    _id: 460,
+    name: "Loop Hero",
+    nodes: [
+      {
+        startTime: new Date("08/03/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
 
   // TESTING
 
