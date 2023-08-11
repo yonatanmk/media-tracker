@@ -3782,8 +3782,16 @@ const mockMediaData = [
   {
     _id: 444,
     name: "The Legend of Zelda: Tears of the Kingdom",
-    startTime: new Date("05/18/2023"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("05/18/2023"),
+        endTime: new Date("06/24/2023"),
+      },
+      {
+        startTime: new Date("08/10/2023"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
