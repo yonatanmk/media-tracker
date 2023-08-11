@@ -3850,12 +3850,8 @@ const mockMediaData = [
   {
     _id: 452,
     name: "Final Fantasy XVI",
-    nodes: [
-      {
-        startTime: new Date("06/24/2023"),
-        endTime: null,
-      },
-    ],
+    startTime: new Date("06/24/2023"),
+    endTime: new Date("08/09/2023"),
     type: mediaTypes.videogame,
   },
   {
