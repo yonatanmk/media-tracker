@@ -3932,7 +3932,7 @@ const mockMediaData = [
   },
   {
     _id: 461,
-    name: "Harley Quinn S1",
+    name: "Harley Quinn S1-2",
     startTime: new Date("08/07/2023"),
     endTime: null,
     type: mediaTypes.tv,
