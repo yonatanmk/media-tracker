@@ -3925,7 +3925,7 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("08/03/2023"),
-        endTime: null,
+        endTime: new Date("08/17/2023"),
       },
     ],
     type: mediaTypes.videogame,
