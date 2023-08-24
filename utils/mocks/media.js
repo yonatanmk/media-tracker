@@ -3937,6 +3937,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 462,
+    name: "House of the Dragon S1",
+    startTime: new Date("08/10/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
   // TESTING
 
