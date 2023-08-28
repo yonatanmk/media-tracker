@@ -3722,9 +3722,8 @@ const mockMediaData = [
       },
       {
         startTime: new Date("07/23/2023"),
-        endTime: null,
+        endTime: new Date("08/27/2023"),
       },
-      // endTime: null,
     ],
     type: mediaTypes.podcast,
   },
@@ -3941,7 +3940,7 @@ const mockMediaData = [
     _id: 462,
     name: "House of the Dragon S1",
     startTime: new Date("08/10/2023"),
-    endTime: null,
+    endTime: new Date("08/24/2023"),
     type: mediaTypes.tv,
   },
 
