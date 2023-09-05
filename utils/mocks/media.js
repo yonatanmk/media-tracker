@@ -3943,6 +3943,24 @@ const mockMediaData = [
     endTime: new Date("08/24/2023"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 463,
+    name: "A Starstruck Odyssey",
+    nodes: [
+      {
+        startTime: new Date("08/28/2023"),
+        endTime: null
+      },
+    ],
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 464,
+    name: "One Piece Live Action S1",
+    startTime: new Date("09/04/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
   // TESTING
 
