@@ -3913,6 +3913,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("07/28/2023"),
+        endTime: new Date("08/02/2023"),
+      },
+      {
+        startTime: new Date("09/07/2023"),
         endTime: null,
       },
     ],
@@ -3961,6 +3965,14 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 465,
+    name: "Pain Killer",
+    startTime: new Date("09/06/2023"),
+    endTime: new Date("09/08/2023"),
+    type: mediaTypes.tv,
+  },
+
 
   // TESTING
 
