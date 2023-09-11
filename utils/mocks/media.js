@@ -3962,7 +3962,7 @@ const mockMediaData = [
     _id: 464,
     name: "One Piece Live Action S1",
     startTime: new Date("09/04/2023"),
-    endTime: null,
+    endTime: new Date("09/10/2023"),
     type: mediaTypes.tv,
   },
   {
