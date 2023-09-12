@@ -3972,7 +3972,13 @@ const mockMediaData = [
     endTime: new Date("09/08/2023"),
     type: mediaTypes.tv,
   },
-
+  {
+    _id: 466,
+    name: "Only Murders in the Building S3",
+    startTime: new Date("09/11/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
   // TESTING
 
