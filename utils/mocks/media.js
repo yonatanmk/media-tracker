@@ -3937,7 +3937,7 @@ const mockMediaData = [
     _id: 461,
     name: "Harley Quinn S1-2",
     startTime: new Date("08/07/2023"),
-    endTime: null,
+    endTime: new Date("09/16/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -3976,6 +3976,13 @@ const mockMediaData = [
     _id: 466,
     name: "Only Murders in the Building S3",
     startTime: new Date("09/11/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 467,
+    name: "White Lotus S2",
+    startTime: new Date("09/19/2023"),
     endTime: null,
     type: mediaTypes.tv,
   },
