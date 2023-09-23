@@ -3993,6 +3993,28 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 469,
+    name: "Centennial Case: A Shijima Story",
+    nodes: [
+      {
+        startTime: new Date("09/09/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 470,
+    name: "Starfield",
+    nodes: [
+      {
+        startTime: new Date("09/08/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
 
   // TESTING
 
