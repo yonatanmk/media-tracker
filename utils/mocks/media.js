@@ -3888,6 +3888,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("07/18/2023"),
+        endTime: new Date("07/25/2023"),
+      },
+      {
+        startTime: new Date("09/26/2023"),
         endTime: null,
       },
     ],
@@ -4014,6 +4018,31 @@ const mockMediaData = [
       },
     ],
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 471,
+    name: "Don't Starve Together",
+    nodes: [
+      {
+        startTime: new Date("09/24/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 472,
+    name: "Great British Bake Off S11 (Series 14)",
+    startTime: new Date("9/30/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 473,
+    name: "Mushoku Tensei S2 Part 1",
+    startTime: new Date("10/01/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // TESTING
