@@ -3980,7 +3980,7 @@ const mockMediaData = [
     _id: 466,
     name: "Only Murders in the Building S3",
     startTime: new Date("09/11/2023"),
-    endTime: null,
+    endTime: new Date("10/04/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -3994,7 +3994,7 @@ const mockMediaData = [
     _id: 468,
     name: "Sex Education S4",
     startTime: new Date("09/23/2023"),
-    endTime: null,
+    endTime: new Date("10/03/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -4041,7 +4041,7 @@ const mockMediaData = [
     _id: 473,
     name: "Mushoku Tensei S2 Part 1",
     startTime: new Date("10/01/2023"),
-    endTime: null,
+    endTime: new Date("10/03/2023"),
     type: mediaTypes.tv,
   },
 
