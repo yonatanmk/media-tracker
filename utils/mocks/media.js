@@ -4044,6 +4044,20 @@ const mockMediaData = [
     endTime: new Date("10/03/2023"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 474,
+    name: "Rick and Morty S6",
+    startTime: new Date("10/05/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 475,
+    name: "Demon Slayer S2",
+    startTime: new Date("10/05/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
   // TESTING
 
