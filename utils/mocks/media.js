@@ -4058,6 +4058,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 476,
+    name: "Summertime Render",
+    startTime: new Date("10/07/2023"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
 
   // TESTING
 
