@@ -4053,9 +4053,9 @@ const mockMediaData = [
   },
   {
     _id: 475,
-    name: "Demon Slayer S2",
+    name: "Demon Slayer S3: Entertainment District Arc",
     startTime: new Date("10/05/2023"),
-    endTime: null,
+    endTime: new Date("10/15/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -4069,6 +4069,24 @@ const mockMediaData = [
     _id: 475,
     name: "Winning Time S1",
     startTime: new Date("10/10/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 476,
+    name: "Baldur's Gate 3 with Lily",
+    nodes: [
+      {
+        // startTime: new Date("10/16/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 475,
+    name: "Demon Slayer S4: Swordsmith Village Arc",
+    startTime: new Date("10/17/2023"),
     endTime: null,
     type: mediaTypes.tv,
   },
