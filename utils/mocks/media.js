@@ -3954,12 +3954,8 @@ const mockMediaData = [
   {
     _id: 463,
     name: "A Starstruck Odyssey",
-    nodes: [
-      {
-        startTime: new Date("08/28/2023"),
-        endTime: null
-      },
-    ],
+    startTime: new Date("08/28/2023"),
+    endTime: new Date("10/17/2023"),
     type: mediaTypes.podcast,
   },
   {
