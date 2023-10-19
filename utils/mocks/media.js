@@ -4062,14 +4062,14 @@ const mockMediaData = [
     type: mediaTypes.book,
   },
   {
-    _id: 475,
+    _id: 477,
     name: "Winning Time S1",
     startTime: new Date("10/10/2023"),
     endTime: null,
     type: mediaTypes.tv,
   },
   {
-    _id: 476,
+    _id: 478,
     name: "Baldur's Gate 3 with Lily",
     nodes: [
       {
@@ -4080,12 +4080,22 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 475,
+    _id: 479,
     name: "Demon Slayer S4: Swordsmith Village Arc",
     startTime: new Date("10/17/2023"),
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 480,
+    name: "Dungeons and Daddies S1",
+    startTime: new Date("10/18/2023"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+
+
+  
 
 
 
