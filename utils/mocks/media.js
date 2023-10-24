@@ -4065,7 +4065,7 @@ const mockMediaData = [
     _id: 477,
     name: "Winning Time S1",
     startTime: new Date("10/10/2023"),
-    endTime: null,
+    endTime: new Date("10/20/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -4073,7 +4073,7 @@ const mockMediaData = [
     name: "Baldur's Gate 3 with Lily",
     nodes: [
       {
-        // startTime: new Date("10/16/2023"),
+        startTime: new Date("10/20/2023"),
         endTime: null,
       },
     ],
@@ -4083,7 +4083,7 @@ const mockMediaData = [
     _id: 479,
     name: "Demon Slayer S4: Swordsmith Village Arc",
     startTime: new Date("10/17/2023"),
-    endTime: null,
+    endTime: new Date("10/24/2023"),
     type: mediaTypes.tv,
   },
   {
