@@ -3788,7 +3788,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("08/10/2023"),
-        endTime: null,
+        endTime: new Date("10/28/2023"),
       },
     ],
     type: mediaTypes.videogame,
@@ -4007,12 +4007,8 @@ const mockMediaData = [
   {
     _id: 470,
     name: "Starfield",
-    nodes: [
-      {
-        startTime: new Date("09/08/2023"),
-        endTime: null,
-      },
-    ],
+    startTime: new Date("09/08/2023"),
+    endTime: new Date("10/29/2023"),
     type: mediaTypes.videogame,
   },
   {
@@ -4058,7 +4054,7 @@ const mockMediaData = [
     _id: 476,
     name: "Summertime Render",
     startTime: new Date("10/07/2023"),
-    endTime: null,
+    endTime: new Date("10/29/2023"),
     type: mediaTypes.book,
   },
   {
@@ -4099,6 +4095,13 @@ const mockMediaData = [
     startTime: new Date("10/24/2023"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 470,
+    name: "The Case of the Golden Idol",
+    startTime: new Date("10/29/2023"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
   
