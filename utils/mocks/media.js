@@ -3686,7 +3686,11 @@ const mockMediaData = [
       },
       {
         startTime: new Date("04/06/2023"),
-        endTime: null,
+        endTime: new Date("04/30/2023"),
+      },
+      {
+        startTime: new Date("11/04/2023"),
+        endTime: addHoursToDate(new Date("11/04/2023"), 4),
       },
     ],
     type: mediaTypes.tv,
@@ -4097,12 +4101,23 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   {
-    _id: 470,
+    _id: 482,
     name: "The Case of the Golden Idol",
     startTime: new Date("10/29/2023"),
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 483,
+    name: "All The Light We Cannot See",
+    startTime: new Date("11/04/2023"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+
+
+
+  
 
   
 
