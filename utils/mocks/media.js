@@ -3850,12 +3850,8 @@ const mockMediaData = [
   {
     _id: 451,
     name: "Taskmaster S15",
-    nodes: [
-      {
-        startTime: new Date("06/24/2023"),
-        endTime: new Date("07/30/2023"),
-      },
-    ],
+    startTime: new Date("06/24/2023"),
+    endTime: new Date("07/30/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -4112,6 +4108,17 @@ const mockMediaData = [
     name: "All The Light We Cannot See",
     startTime: new Date("11/04/2023"),
     endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 84,
+    name: "Taskmaster S16",
+    nodes: [
+      {
+        startTime: new Date("11/07/2023"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
 
