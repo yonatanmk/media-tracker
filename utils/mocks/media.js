@@ -4100,7 +4100,7 @@ const mockMediaData = [
     _id: 482,
     name: "The Case of the Golden Idol",
     startTime: new Date("10/29/2023"),
-    endTime: null,
+    endTime: new Date("11/11/2023"),
     type: mediaTypes.videogame,
   },
   {
