@@ -4125,7 +4125,7 @@ const mockMediaData = [
     _id: 485,
     name: "Turnip Boy Commits Tax Evasion",
     startTime: new Date("11/07/2023"),
-    endTime: null,
+    endTime: new Date("11/13/2023"),
     type: mediaTypes.videogame,
   },
   {
