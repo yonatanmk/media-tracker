@@ -4107,7 +4107,7 @@ const mockMediaData = [
     _id: 483,
     name: "All The Light We Cannot See",
     startTime: new Date("11/04/2023"),
-    endTime: null,
+    endTime: new Date("11/11/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -4135,6 +4135,22 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 487,
+    name: "Ron Kamonohashi's Forbidden Deductions",
+    nodes: [
+      {
+        startTime: new Date("11/12/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+
+
+
+
+  
 
   
 
