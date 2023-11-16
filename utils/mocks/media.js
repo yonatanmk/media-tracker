@@ -3884,7 +3884,7 @@ const mockMediaData = [
   },
   {
     _id: 456,
-    name: "Zom 100",
+    name: "Zom 100 S1 Part 1",
     nodes: [
       {
         startTime: new Date("07/18/2023"),
@@ -3892,7 +3892,11 @@ const mockMediaData = [
       },
       {
         startTime: new Date("09/26/2023"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("09/26/2023"), 4),
+      },
+      {
+        startTime: new Date("11/15/2023"),
+        endTime: new Date("11/16/2023"),
       },
     ],
     type: mediaTypes.tv,
@@ -4157,6 +4161,20 @@ const mockMediaData = [
     ],
     type: mediaTypes.tv,
   },
+  {
+    _id: 489,
+    name: "Shangri-La Frontier",
+    nodes: [
+      {
+        startTime: new Date("11/13/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+
+
+  
 
 
 
