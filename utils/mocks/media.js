@@ -4136,7 +4136,7 @@ const mockMediaData = [
     _id: 486,
     name: "Sunset Overdrive",
     startTime: new Date("11/09/2023"),
-    endTime: null,
+    endTime: new Date("11/18/2023"),
     type: mediaTypes.videogame,
   },
   {
@@ -4172,13 +4172,43 @@ const mockMediaData = [
     ],
     type: mediaTypes.tv,
   },
+  {
+    _id: 490,
+    name: "Cyberpunk 2077: Phantom Liberty DLC",
+    startTime: new Date("11/09/2023"),
+    endTime: new Date("11/18/2023"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 491,
+    name: "Dave the Diver",
+    nodes: [
+      {
+        startTime: new Date("11/20/2023"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 492,
+    name: "Super Mario Wonder",
+    nodes: [
+      {
+        startTime: new Date("11/22/2023"),
+        startTime: new Date("11/23/2023"),
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+
 
 
   
 
 
 
-  
+ 
 
   
 
