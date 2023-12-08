@@ -3430,8 +3430,9 @@ const mockMediaData = [
       },
       {
         startTime: new Date("02/01/2023"),
-        endTime: null,
+        endTime: new Date("02/05/2023"),
       },
+      // endTime: null,
     ],
     type: mediaTypes.videogame,
   },
@@ -3550,9 +3551,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("01/23/2023"),
-        endTime: null,
+        endTime: new Date("02/03/2023"),
       },
     ],
+    // endTime: null,
     type: mediaTypes.tv,
   },
   {
@@ -3610,7 +3612,8 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("02/27/2023"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("02/27/2023"), 4),
+        // endTime: null,
       },
     ],
     type: mediaTypes.tv,
@@ -3628,7 +3631,8 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("03/07/2023"),
-        endTime: null,
+        startTime: new Date("03/14/2023"),
+        // endTime: null,
       },
     ],
     type: mediaTypes.tv,
@@ -3665,6 +3669,7 @@ const mockMediaData = [
     _id: 433,
     name: "Tunic",
     startTime: new Date("04/01/2023"),
+    endTime: new Date("05/12/2023"),
     endTime: null,
     type: mediaTypes.videogames,
   },
@@ -3737,7 +3742,7 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("04/20/2023"),
-        endTime: null,
+        endTime: new Date("04/21/2023"),
       },
     ],
     type: mediaTypes.tv,
@@ -3745,12 +3750,8 @@ const mockMediaData = [
   {
     _id: 440,
     name: "Firefly",
-    nodes: [
-      {
-        startTime: new Date("04/24/2023"),
-        endTime: null,
-      },
-    ],
+    startTime: new Date("04/24/2023"),
+    endTime: new Date("04/30/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -3925,7 +3926,8 @@ const mockMediaData = [
       },
       {
         startTime: new Date("09/07/2023"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("09/07/2023"), 4),
+        // endTime: null,
       },
     ],
     type: mediaTypes.videogame,
@@ -4020,8 +4022,8 @@ const mockMediaData = [
     name: "Don't Starve Together",
     nodes: [
       {
-        startTime: new Date("09/24/2023"),
-        endTime: null,
+        startTime: new Date("09/23/2023"),
+        endTime: new Date("09/24/2023"),
       },
     ],
     type: mediaTypes.videogame,
@@ -4030,7 +4032,7 @@ const mockMediaData = [
     _id: 472,
     name: "Great British Bake Off S11 (Series 14)",
     startTime: new Date("9/30/2023"),
-    endTime: null,
+    endTime: new Date("12/01/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -4044,7 +4046,7 @@ const mockMediaData = [
     _id: 474,
     name: "Rick and Morty S6",
     startTime: new Date("10/05/2023"),
-    endTime: null,
+    endTime: new Date("11/03/2023"),
     type: mediaTypes.tv,
   },
   {
@@ -4176,7 +4178,7 @@ const mockMediaData = [
     _id: 490,
     name: "Cyberpunk 2077: Phantom Liberty DLC",
     startTime: new Date("11/09/2023"),
-    endTime: new Date("11/18/2023"),
+    endTime: new Date("12/08/2023"),
     type: mediaTypes.videogame,
   },
   {
