@@ -3432,7 +3432,10 @@ const mockMediaData = [
         startTime: new Date("02/01/2023"),
         endTime: new Date("02/05/2023"),
       },
-      // endTime: null,
+      {
+        startTime: new Date("12/15/2023"),
+        endTime: null,
+      },
     ],
     type: mediaTypes.videogame,
   },
@@ -4224,6 +4227,27 @@ const mockMediaData = [
       },
     ],
     type: mediaTypes.tv,
+  },
+  {
+    _id: 495,
+    name: "Like a Dragon Gaiden: The Man Who Erased His Name",
+    startTime: new Date("12/12/2023"),
+    endTime: new Date("12/15/2023"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 496,
+    name: "Storyteller",
+    startTime: new Date("12/13/2023"),
+    endTime: new Date("12/15/2023"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 477,
+    name: "Franken Fran",
+    startTime: new Date("12/17/2023"),
+    endTime: null,
+    type: mediaTypes.book,
   },
 
 
