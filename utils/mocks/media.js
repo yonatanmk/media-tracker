@@ -4243,15 +4243,23 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 477,
+    _id: 497,
     name: "Franken Fran",
     startTime: new Date("12/17/2023"),
     endTime: null,
     type: mediaTypes.book,
   },
+  {
+    _id: 498,
+    name: "Alan Wake 2",
+    startTime: new Date("12/26/2023"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
 
 
 
+  
     
   
 
