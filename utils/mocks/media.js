@@ -4103,6 +4103,16 @@ const mockMediaData = [
     name: "Elementary S1",
     startTime: new Date("10/24/2023"),
     endTime: null,
+    nodes: [
+      {
+        startTime: new Date("10/24/2023"),
+        endTime: new Date("12/7/2023"),
+      }
+      // {
+      //   startTime: new Date("11/07/2023"),
+      //   endTime: null,
+      // },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -4125,8 +4135,12 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("11/07/2023"),
-        endTime: null,
+        endTime: new Date("11/16/2023"),
       },
+      // {
+      //   startTime: new Date("11/07/2023"),
+      //   endTime: null,
+      // },
     ],
     type: mediaTypes.tv,
   },
@@ -4150,6 +4164,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("11/12/2023"),
+        endTime: new Date("11/27/2023"),
+      },
+      {
+        startTime: new Date("12/26/2023"),
         endTime: null,
       },
     ],
@@ -4161,8 +4179,12 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("11/13/2023"),
-        endTime: null,
+        endTime: new Date("11/14/2023"),
       },
+      // {
+      //   startTime: new Date("12/27/2023"),
+      //   endTime: null,
+      // },
     ],
     type: mediaTypes.tv,
   },
@@ -4172,8 +4194,12 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("11/13/2023"),
-        endTime: null,
+        endTime: new Date("12/05/2023"),
       },
+      // {
+      //   startTime: new Date("12/27/2023"),
+      //   endTime: null,
+      // },
     ],
     type: mediaTypes.tv,
   },
@@ -4212,8 +4238,12 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("11/28/2023"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("11/28/2023"), 4),
       },
+      // {
+      //   startTime: new Date("11/28/2023"),
+      //   endTime: null,
+      // },
     ],
     type: mediaTypes.tv,
   },
@@ -4223,8 +4253,12 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("11/30/2023"),
-        endTime: null,
+        endTime: new Date("12/06/2023"),
       },
+      // {
+      //   startTime: new Date("12/27/2023"),
+      //   endTime: null,
+      // },
     ],
     type: mediaTypes.tv,
   },
