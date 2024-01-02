@@ -4181,10 +4181,10 @@ const mockMediaData = [
         startTime: new Date("11/13/2023"),
         endTime: new Date("11/14/2023"),
       },
-      // {
-      //   startTime: new Date("12/27/2023"),
-      //   endTime: null,
-      // },
+      {
+        startTime: new Date("12/27/2023"),
+        endTime: null,
+      },
     ],
     type: mediaTypes.tv,
   },
@@ -4286,8 +4286,28 @@ const mockMediaData = [
   {
     _id: 498,
     name: "Alan Wake 2",
-    startTime: new Date("12/26/2023"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("12/26/2023"),
+        // endTime: new Date("1/1/2024"),
+        endTime: null,
+      }
+      // endTime: null,
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 499,
+    name: "Slay the Princess",
+    startTime: new Date("1/1/2024"),
+    endTime: addHoursToDate(new Date("1/1/2023"), 4),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 500,
+    name: "South Scrimshaw Part 1",
+    startTime: new Date("1/1/2024"),
+    endTime: addHoursToDate(new Date("1/1/2023"), 4),
     type: mediaTypes.videogame,
   },
 
