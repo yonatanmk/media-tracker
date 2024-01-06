@@ -4168,7 +4168,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("12/26/2023"),
-        endTime: null,
+        endTime: new Date("1/4/2024"),
       },
     ],
     type: mediaTypes.tv,
@@ -4183,23 +4183,23 @@ const mockMediaData = [
       },
       {
         startTime: new Date("12/27/2023"),
-        endTime: null,
+        endTime: new Date("1/1/2024"),
       },
     ],
     type: mediaTypes.tv,
   },
   {
     _id: 489,
-    name: "Shangri-La Frontier",
+    name: "Shangri-La Frontier S1 Part 1",
     nodes: [
       {
         startTime: new Date("11/13/2023"),
         endTime: new Date("12/05/2023"),
       },
-      // {
-      //   startTime: new Date("12/27/2023"),
-      //   endTime: null,
-      // },
+      {
+        startTime: new Date("1/4/2024"),
+        endTime: new Date("1/5/2024"),
+      },
     ],
     type: mediaTypes.tv,
   },
@@ -4229,6 +4229,7 @@ const mockMediaData = [
         startTime: new Date("11/22/2023"),
         startTime: new Date("11/23/2023"),
       },
+      // null
     ],
     type: mediaTypes.videogame,
   },
@@ -4255,10 +4256,10 @@ const mockMediaData = [
         startTime: new Date("11/30/2023"),
         endTime: new Date("12/06/2023"),
       },
-      // {
-      //   startTime: new Date("12/27/2023"),
-      //   endTime: null,
-      // },
+      {
+        startTime: new Date("1/5/2024"),
+        endTime: null,
+      },
     ],
     type: mediaTypes.tv,
   },
@@ -4313,32 +4314,14 @@ const mockMediaData = [
 
 
 
-  
-    
-  
 
 
 
-  
 
 
 
- 
-
-  
 
 
-  
-
-
-
-  
-
-  
-
-
-
-  
 
   // TESTING
 
