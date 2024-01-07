@@ -4079,8 +4079,9 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("10/20/2023"),
-        endTime: null,
+        endTime: new Date("11/20/2023"),
       },
+      // null
     ],
     type: mediaTypes.videogame,
   },
@@ -4250,7 +4251,7 @@ const mockMediaData = [
   },
   {
     _id: 494,
-    name: "Heavenly Delusion",
+    name: "Heavenly Delusion S1",
     nodes: [
       {
         startTime: new Date("11/30/2023"),
@@ -4258,7 +4259,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("1/5/2024"),
-        endTime: null,
+        endTime: new Date("1/6/2024"),
       },
     ],
     type: mediaTypes.tv,
@@ -4301,16 +4302,31 @@ const mockMediaData = [
     _id: 499,
     name: "Slay the Princess",
     startTime: new Date("1/1/2024"),
-    endTime: addHoursToDate(new Date("1/1/2023"), 4),
+    endTime: addHoursToDate(new Date("1/1/2024"), 4),
     type: mediaTypes.videogame,
   },
   {
     _id: 500,
     name: "South Scrimshaw Part 1",
     startTime: new Date("1/1/2024"),
-    endTime: addHoursToDate(new Date("1/1/2023"), 4),
+    endTime: addHoursToDate(new Date("1/1/2024"), 4),
     type: mediaTypes.videogame,
   },
+  {
+    _id: 501,
+    name: "Dr. Stone S3 Part 2",
+    startTime: new Date("01/6/2024"),
+    endTime: addHoursToDate(new Date("1/6/2024"), 4),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 502,
+    name: "Hilda S3",
+    startTime: new Date("01/06/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+
 
 
 
