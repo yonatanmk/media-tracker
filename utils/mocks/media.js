@@ -1336,7 +1336,7 @@ const mockMediaData = [
   },
   {
     _id: 159,
-    name: "Jujutsu Kaisen",
+    name: "Jujutsu Kaisen S1",
     startTime: new Date("10/24/2020"),
     endTime: new Date("04/06/2021"),
     type: mediaTypes.tv,
@@ -4138,10 +4138,10 @@ const mockMediaData = [
         startTime: new Date("11/07/2023"),
         endTime: new Date("11/16/2023"),
       },
-      // {
-      //   startTime: new Date("11/07/2023"),
-      //   endTime: null,
-      // },
+      {
+        startTime: new Date("1/07/2024"),
+        endTime: null,
+      },
     ],
     type: mediaTypes.tv,
   },
@@ -4291,10 +4291,8 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("12/26/2023"),
-        // endTime: new Date("1/1/2024"),
-        endTime: null,
+        endTime: new Date("1/7/2024"),
       }
-      // endTime: null,
     ],
     type: mediaTypes.videogame,
   },
@@ -4323,6 +4321,13 @@ const mockMediaData = [
     _id: 502,
     name: "Hilda S3",
     startTime: new Date("01/06/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 503,
+    name: "Jujutsu Kaisen S2",
+    startTime: new Date("1/07/2024"),
     endTime: null,
     type: mediaTypes.tv,
   },
