@@ -3434,7 +3434,11 @@ const mockMediaData = [
       },
       {
         startTime: new Date("12/15/2023"),
-        endTime: null,
+        endTime: new Date("12/25/2023"),
+      },
+      {
+        startTime: new Date("1/10/2024"),
+        endTime: new Date("1/11/2024"),
       },
     ],
     type: mediaTypes.videogame,
@@ -4081,6 +4085,10 @@ const mockMediaData = [
         startTime: new Date("10/20/2023"),
         endTime: new Date("11/20/2023"),
       },
+      {
+        startTime: new Date("1/18/2024"),
+        endTime: null,
+      },
       // null
     ],
     type: mediaTypes.videogame,
@@ -4230,7 +4238,10 @@ const mockMediaData = [
         startTime: new Date("11/22/2023"),
         startTime: new Date("11/23/2023"),
       },
-      // null
+      {
+        startTime: new Date("1/14/2024"),
+        endTime: null,
+      },
     ],
     type: mediaTypes.videogame,
   },
@@ -4321,7 +4332,7 @@ const mockMediaData = [
     _id: 502,
     name: "Hilda S3",
     startTime: new Date("01/06/2024"),
-    endTime: null,
+    endTime: new Date("01/16/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4335,8 +4346,15 @@ const mockMediaData = [
     _id: 504,
     name: "Chants of Sennaar",
     startTime: new Date("1/8/2024"),
-    endTime: null,
+    endTime: new Date("1/22/2024"),
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 505,
+    name: "Yu Yu Hakusho",
+    startTime: new Date("1/10/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
 
