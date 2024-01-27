@@ -4222,12 +4222,8 @@ const mockMediaData = [
   {
     _id: 491,
     name: "Dave the Diver",
-    nodes: [
-      {
-        startTime: new Date("11/20/2023"),
-        endTime: null,
-      },
-    ],
+    startTime: new Date("11/20/2023"),
+    endTime: new Date("1/25/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4242,6 +4238,7 @@ const mockMediaData = [
         startTime: new Date("1/14/2024"),
         endTime: null,
       },
+      // endTime: null,
     ],
     type: mediaTypes.videogame,
   },
@@ -4339,7 +4336,7 @@ const mockMediaData = [
     _id: 503,
     name: "Jujutsu Kaisen S2",
     startTime: new Date("1/07/2024"),
-    endTime: null,
+    endTime: new Date("1/22/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4356,9 +4353,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
-
-
-  
+  {
+    _id: 506,
+    name: "Like a Dragon: Infinite Wealth",
+    startTime: new Date("1/26/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
 
 
 
