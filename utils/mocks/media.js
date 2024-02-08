@@ -4360,6 +4360,23 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 505,
+    name: "Sousou no Frieren",
+    startTime: new Date("2/5/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 505,
+    name: "Poker Face S1",
+    startTime: new Date("1/25/2024"),
+    endTime: new Date("2/6/2024"),
+    type: mediaTypes.tv,
+  },
+
+
+  
 
 
 
