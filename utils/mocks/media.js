@@ -4104,7 +4104,7 @@ const mockMediaData = [
     _id: 480,
     name: "Dungeons and Daddies S1",
     startTime: new Date("10/18/2023"),
-    endTime: null,
+    endTime: new Date("2/8/2024"),
     type: mediaTypes.podcast,
   },
   {
@@ -4290,18 +4290,14 @@ const mockMediaData = [
     _id: 497,
     name: "Franken Fran",
     startTime: new Date("12/17/2023"),
-    endTime: null,
+    endTime: new Date("2/10/2024"),
     type: mediaTypes.book,
   },
   {
     _id: 498,
     name: "Alan Wake 2",
-    nodes: [
-      {
-        startTime: new Date("12/26/2023"),
-        endTime: new Date("1/7/2024"),
-      }
-    ],
+    startTime: new Date("12/26/2023"),
+    endTime: new Date("1/7/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4361,22 +4357,28 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 505,
+    _id: 507,
     name: "Sousou no Frieren",
     startTime: new Date("2/5/2024"),
     endTime: null,
     type: mediaTypes.tv,
   },
   {
-    _id: 505,
+    _id: 508,
     name: "Poker Face S1",
     startTime: new Date("1/25/2024"),
     endTime: new Date("2/6/2024"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 509,
+    name: "Ted S1",
+    startTime: new Date("2/10/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
 
-  
 
 
 
