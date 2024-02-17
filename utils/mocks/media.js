@@ -4353,7 +4353,7 @@ const mockMediaData = [
     _id: 506,
     name: "Like a Dragon: Infinite Wealth",
     startTime: new Date("1/26/2024"),
-    endTime: null,
+    endTime: new Date("2/15/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4376,6 +4376,20 @@ const mockMediaData = [
     startTime: new Date("2/10/2024"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 510,
+    name: "Dungeons and Daddies Fetch Quest",
+    startTime: new Date("2/10/2024"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 511,
+    name: "Raging Loop VN",
+    startTime: new Date("2/15/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
 
