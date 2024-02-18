@@ -4374,7 +4374,7 @@ const mockMediaData = [
     _id: 509,
     name: "Ted S1",
     startTime: new Date("2/10/2024"),
-    endTime: null,
+    endTime: new Date("2/17/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4390,6 +4390,13 @@ const mockMediaData = [
     startTime: new Date("2/15/2024"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 512,
+    name: "Twisted Metal",
+    startTime: new Date("2/18/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
 
