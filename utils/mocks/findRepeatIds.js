@@ -29,4 +29,5 @@ function findRepeatedNumbersInFile(filePath) {
 const filePath = "./media.js";
 const repeatedNumbers = findRepeatedNumbersInFile(filePath);
 
+console.log('REPEATED NUMBERS')
 console.log(repeatedNumbers); // Output any repeated numbers in the file
