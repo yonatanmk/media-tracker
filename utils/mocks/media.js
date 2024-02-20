@@ -4381,7 +4381,7 @@ const mockMediaData = [
     _id: 510,
     name: "Dungeons and Daddies Fetch Quest",
     startTime: new Date("2/10/2024"),
-    endTime: null,
+    endTime: new Date("2/19/2024"),
     type: mediaTypes.podcast,
   },
   {
@@ -4397,6 +4397,13 @@ const mockMediaData = [
     startTime: new Date("2/18/2024"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 513,
+    name: "Critical Role Campaign 2 C2E109 to ?????????",
+    startTime: new Date("02/20/2024"),
+    endTime: null,
+    type: mediaTypes.podcast,
   },
 
 
