@@ -3638,7 +3638,7 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("03/07/2023"),
-        startTime: new Date("03/14/2023"),
+        endTime: new Date("03/14/2023"),
         // endTime: null,
       },
     ],
@@ -4388,14 +4388,14 @@ const mockMediaData = [
     _id: 511,
     name: "Raging Loop VN",
     startTime: new Date("2/15/2024"),
-    endTime: null,
+    endTime: new Date("2/28/2024"),
     type: mediaTypes.videogame,
   },
   {
     _id: 512,
     name: "Twisted Metal",
     startTime: new Date("2/18/2024"),
-    endTime: null,
+    endTime: new Date("2/24/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4405,13 +4405,27 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.podcast,
   },
-
-
-
-
-
-
-
+  {
+    _id: 514,
+    name: "True Detective S1",
+    startTime: new Date("2/26/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 515,
+    name: "Final Fantasy VII: Rebirth",
+    startTime: new Date("2/29/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 49,
+    name: "Crisis Core: Final Fantasy VII Reunion",
+    startTime: new Date("2/29/2024"),
+    endTime: null,
+    type: mediaTypes.playthrough,
+  },
 
 
 
