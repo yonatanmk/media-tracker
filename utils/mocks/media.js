@@ -4199,7 +4199,7 @@ const mockMediaData = [
   },
   {
     _id: 489,
-    name: "Shangri-La Frontier S1 Part 1",
+    name: "Shangri-La Frontier S1 Part 1 E1-13",
     nodes: [
       {
         startTime: new Date("11/13/2023"),
@@ -4359,8 +4359,16 @@ const mockMediaData = [
   {
     _id: 507,
     name: "Sousou no Frieren",
-    startTime: new Date("2/5/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("2/5/2024"),
+        endTime: new Date("2/20/2024"),
+      },
+      {
+        startTime: new Date("3/10/2024"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -4409,7 +4417,7 @@ const mockMediaData = [
     _id: 514,
     name: "True Detective S1",
     startTime: new Date("2/26/2024"),
-    endTime: null,
+    endTime: new Date("3/2/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4423,13 +4431,20 @@ const mockMediaData = [
     _id: 49,
     name: "Crisis Core: Final Fantasy VII Reunion",
     startTime: new Date("2/29/2024"),
-    endTime: null,
+    endTime: new Date("3/1/2024"),
     type: mediaTypes.playthrough,
+  },
+  {
+    _id: 514,
+    name: "Avatar: The Last Airbender (Netflix Live Action)",
+    startTime: new Date("3/9/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
 
 
-
+  
 
 
 
