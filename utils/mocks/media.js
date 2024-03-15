@@ -4366,8 +4366,10 @@ const mockMediaData = [
       },
       {
         startTime: new Date("3/10/2024"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("3/10/2024"), 4),
+        
       },
+      // endTime: null,
     ],
     type: mediaTypes.tv,
   },
@@ -4428,18 +4430,25 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 49,
+    _id: 516,
     name: "Crisis Core: Final Fantasy VII Reunion",
     startTime: new Date("2/29/2024"),
     endTime: new Date("3/1/2024"),
     type: mediaTypes.playthrough,
   },
   {
-    _id: 514,
+    _id: 517,
     name: "Avatar: The Last Airbender (Netflix Live Action)",
     startTime: new Date("3/9/2024"),
-    endTime: null,
+    endTime: new Date("3/14/2024"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 518,
+    name: "Pizza Tower",
+    startTime: new Date("3/15/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
 
