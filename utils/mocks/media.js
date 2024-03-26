@@ -4367,9 +4367,11 @@ const mockMediaData = [
       {
         startTime: new Date("3/10/2024"),
         endTime: addHoursToDate(new Date("3/10/2024"), 4),
-        
       },
-      // endTime: null,
+      {
+        startTime: new Date("3/25/2024"),
+        endTime: addHoursToDate(new Date("3/25/2024"), 4),
+      },
     ],
     type: mediaTypes.tv,
   },
@@ -4448,6 +4450,20 @@ const mockMediaData = [
     name: "Pizza Tower",
     startTime: new Date("3/15/2024"),
     endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 519,
+    name: "Witch Hat Atelier",
+    startTime: new Date("3/20/2024"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 519,
+    name: "Dredge",
+    startTime: new Date("3/16/2024"),
+    endTime: new Date("3/26/2024"),
     type: mediaTypes.videogame,
   },
 
