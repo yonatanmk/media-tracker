@@ -4427,8 +4427,16 @@ const mockMediaData = [
   {
     _id: 515,
     name: "Final Fantasy VII: Rebirth",
-    startTime: new Date("2/29/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("2/29/2024"),
+        endTime: new Date("3/15/2024"),
+      },
+      {
+        startTime: new Date("3/26/2024"),
+        endTime: null,
+      }
+    ],
     type: mediaTypes.videogame,
   },
   {
