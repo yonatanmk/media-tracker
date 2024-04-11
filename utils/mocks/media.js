@@ -4012,6 +4012,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("09/09/2023"),
+        endTime: new Date("09/23/2023"),
+      },
+      {
+        startTime: new Date("04/07/2024"),
         endTime: null,
       },
     ],
@@ -4484,13 +4488,16 @@ const mockMediaData = [
   {
     _id: 522,
     name: "Shangri-La Frontier S1 Part 2 E14-25",
-    nodes: [
-      {
-        startTime: new Date("4/2/2024"),
-        endTime: null
-      },
-    ],
+    startTime: new Date("4/2/2024"),
+    endTime: new Date("4/8/2024"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 520,
+    name: "Balatro",
+    startTime: new Date("4/05/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
 
