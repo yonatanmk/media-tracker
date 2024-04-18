@@ -2326,9 +2326,17 @@ const mockMediaData = [
   },
   {
     _id: 287,
-    name: "Resident Alien",
-    startTime: new Date("02/24/2021"),
-    endTime: new Date("03/05/2021"),
+    name: "Resident Alien S1",
+    nodes: [
+      {
+        startTime: new Date("02/24/2021"),
+        endTime: new Date("03/05/2021"),
+      },
+      {
+        startTime: new Date("04/11/2024"),
+        endTime: new Date("04/17/2024"),
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -4493,11 +4501,33 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   {
-    _id: 520,
+    _id: 523,
     name: "Balatro",
     startTime: new Date("4/05/2024"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 524,
+    name: "Hi-Fi Rush",
+    nodes: [
+      {
+        startTime: new Date("02/20/2024"),
+        endTime: addHoursToDate(new Date("02/20/2024"), 4),
+      },
+      {
+        startTime: new Date("04/12/2024"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 525,
+    name: "Resident Alien S2",
+    startTime: new Date("04/17/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
 
@@ -4526,26 +4556,6 @@ const mockMediaData = [
   //     //   startTime: new Date("12/22/2019"),
   //     //   endTime: addHoursToDate(new Date("12/22/2019"), 4),
   //     // },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
   //     {
   //       startTime: new Date("01/21/2020"),
   //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
