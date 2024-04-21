@@ -4446,7 +4446,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("3/26/2024"),
-        endTime: null,
+        endTime: new Date("4/21/2024"),
       }
     ],
     type: mediaTypes.videogame,
@@ -4529,6 +4529,22 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 526,
+    name: "Attack on Titan starting S3E18",
+    startTime: new Date("04/18/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 527,
+    name: "Conan O'Brien Must Go",
+    startTime: new Date("04/18/2024"),
+    endTime: addHoursToDate(new Date("04/18/2024"), 4),
+    type: mediaTypes.tv,
+  },
+
+  
 
 
   
