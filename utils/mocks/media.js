@@ -4517,7 +4517,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("04/12/2024"),
-        endTime: null,
+        endTime: new Date("04/24/2024"),
       },
     ],
     type: mediaTypes.videogame,
@@ -4542,6 +4542,20 @@ const mockMediaData = [
     startTime: new Date("04/18/2024"),
     endTime: addHoursToDate(new Date("04/18/2024"), 4),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 528,
+    name: "Conan Without Borders",
+    startTime: new Date("04/21/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 529,
+    name: "Blacktail",
+    startTime: new Date("4/24/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
   
