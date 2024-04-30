@@ -4531,9 +4531,9 @@ const mockMediaData = [
   },
   {
     _id: 526,
-    name: "Attack on Titan starting S3E18",
+    name: "Attack on Titan starting S3E18 until the end",
     startTime: new Date("04/18/2024"),
-    endTime: null,
+    endTime: new Date("04/29/2024"),
     type: mediaTypes.tv,
   },
   {
