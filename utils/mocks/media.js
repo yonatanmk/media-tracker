@@ -4547,24 +4547,37 @@ const mockMediaData = [
     _id: 528,
     name: "Conan Without Borders",
     startTime: new Date("04/21/2024"),
-    endTime: null,
+    endTime: new Date("5/7/2024"),
     type: mediaTypes.tv,
   },
   {
     _id: 529,
     name: "Blacktail",
     startTime: new Date("4/24/2024"),
-    endTime: null,
+    endTime: new Date("5/1/2024"),
     type: mediaTypes.videogame,
   },
   {
     _id: 530,
     name: "Mob Psycho S3",
     startTime: new Date("04/29/2024"),
-    endTime: null,
+    endTime: new Date("04/30/2024"),
     type: mediaTypes.tv,
   },
-
+  {
+    _id: 531,
+    name: "Pentiment",
+    startTime: new Date("5/1/2024"),
+    endTime: new Date("5/10/2024"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 532,
+    name: "Assassin's Creed Odyssey",
+    startTime: new Date("5/4/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
   
 
 
