@@ -4424,9 +4424,9 @@ const mockMediaData = [
   },
   {
     _id: 513,
-    name: "Critical Role Campaign 2 C2E109 to ?????????",
+    name: "Critical Role Campaign 2 C2E109 to End",
     startTime: new Date("02/20/2024"),
-    endTime: null,
+    endTime: new Date("5/10/2024"),
     type: mediaTypes.podcast,
   },
   {
@@ -4578,6 +4578,29 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 533,
+    name: "Critical Role Campaign 2",
+    nodes: [
+      {    
+        startTime: new Date("09/05/2020"),
+        endTime: new Date("03/23/2021"),
+      },
+      {    
+        startTime: new Date("01/27/2022"),
+        endTime: new Date("05/12/2022"),
+      },
+      {    
+        startTime: new Date("09/11/2022"),
+        endTime: new Date("10/27/2022"),
+      },
+      {
+        startTime: new Date("02/20/2024"),
+        endTime: new Date("5/10/2024"),
+      },
+    ],
+    type: mediaTypes.podcast,
+  },
   
 
 
@@ -4598,42 +4621,10 @@ const mockMediaData = [
   //   // startTime: new Date("11/05/2022"),
   //   // endTime: new Date("11/07/2022"),
   //   nodes: [
-  //     // {
-  //     //   startTime: new Date("11/05/2022"),
-  //     //   endTime: new Date("11/07/2022"),
-  //     // },
-  //     // {
-  //     //   startTime: new Date("12/22/2019"),
-  //     //   endTime: addHoursToDate(new Date("12/22/2019"), 4),
-  //     // },
   //     {
   //       startTime: new Date("01/21/2020"),
   //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
   //     },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
-  //     {
-  //       startTime: new Date("01/21/2020"),
-  //       endTime: addHoursToDate(new Date("01/21/2020"), 4),
-  //     },
-  //     // {
-  //     //   startTime: new Date("02/02/2020"),
-  //     //   endTime: new Date("02/03/2020"),
-  //     // },
-  //     // {
-  //     //   startTime: new Date("02/02/2020"),
-  //     //   endTime: new Date("02/03/2020"),
-  //     // },
   //   ],
   //   type: mediaTypes.tv,
   // },
