@@ -4525,8 +4525,16 @@ const mockMediaData = [
   {
     _id: 525,
     name: "Resident Alien S2",
-    startTime: new Date("04/17/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("04/17/2024"),
+        endTime: addHoursToDate(new Date("4/17/2024"), 4),
+      },
+      {
+        startTime: new Date("05/10/2024"),
+        endTime: null
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -4581,6 +4589,7 @@ const mockMediaData = [
   {
     _id: 533,
     name: "Critical Role Campaign 2",
+    duplicate: true,
     nodes: [
       {    
         startTime: new Date("09/05/2020"),
