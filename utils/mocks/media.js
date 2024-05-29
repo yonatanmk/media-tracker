@@ -4635,6 +4635,20 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 537,
+    name: "Factorio",
+    startTime: new Date("5/28/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 538,
+    name: "Kaiju No. 8",
+    startTime: new Date("05/28/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
   
   
 
