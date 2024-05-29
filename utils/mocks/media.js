@@ -4114,7 +4114,7 @@ const mockMediaData = [
   },
   {
     _id: 480,
-    name: "Dungeons and Daddies S1",
+    name: "Dungeons and Daddies C1",
     startTime: new Date("10/18/2023"),
     endTime: new Date("2/8/2024"),
     type: mediaTypes.podcast,
@@ -4532,6 +4532,10 @@ const mockMediaData = [
       },
       {
         startTime: new Date("05/10/2024"),
+        ndTime: addHoursToDate(new Date("5/10/2024"), 4),
+      },
+      {
+        startTime: new Date("05/28/2024"),
         endTime: null
       },
     ],
@@ -4610,6 +4614,28 @@ const mockMediaData = [
     ],
     type: mediaTypes.podcast,
   },
+  {
+    _id: 534,
+    name: "Dungeons and Daddies C2",
+    startTime: new Date("05/10/2024"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 535,
+    name: "Animal Well",
+    startTime: new Date("5/15/2024"),
+    endTime: new Date("5/28/2024"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 536,
+    name: "Pacific Drive",
+    startTime: new Date("5/18/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  
   
 
 
