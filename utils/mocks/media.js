@@ -4650,9 +4650,16 @@ const mockMediaData = [
     type: mediaTypes.tv,
   },
   {
-    _id: 537,
+    _id: 539,
     name: "Lily playing Paper Mario: The Thousand-Year Door",
     startTime: new Date("5/28/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 540,
+    name: "Unicorn Overload",
+    startTime: new Date("6/01/2024"),
     endTime: null,
     type: mediaTypes.videogame,
   },
