@@ -4532,7 +4532,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("05/10/2024"),
-        ndTime: addHoursToDate(new Date("5/10/2024"), 4),
+        endTime: addHoursToDate(new Date("5/10/2024"), 4),
       },
       {
         startTime: new Date("05/28/2024"),
@@ -4670,15 +4670,36 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
-  
-  
+  {
+    _id: 542,
+    name: "Mashle: Magic and Muscles S1 Part 1",
+    startTime: new Date("06/07/2024"),
+    endTime: new Date("06/10/2024"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 543,
+    name: "Mushoku Tensei S2 Part 2",
+    startTime: new Date("6/11/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 544,
+    name: "Citizen Sleeper",
+    startTime: new Date("6/07/2024"),
+    endTime: new Date("6/13/2024"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 545,
+    name: "Dungeon Meshi S1",
+    startTime: new Date("6/13/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
 
 
-  
-
-
-
-  
 
 
 
