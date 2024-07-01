@@ -4646,7 +4646,7 @@ const mockMediaData = [
     _id: 538,
     name: "Kaiju No. 8",
     startTime: new Date("05/28/2024"),
-    endTime: null,
+    endTime: new Date("06/29/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4695,9 +4695,25 @@ const mockMediaData = [
     _id: 545,
     name: "Dungeon Meshi S1",
     startTime: new Date("6/13/2024"),
-    endTime: null,
-    type: mediaTypes.videogame,
+    endTime: new Date("6/28/2024"),
+    type: mediaTypes.tv,
   },
+  {
+    _id: 546,
+    name: "Game Changer S6",
+    startTime: new Date("6/28/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 546,
+    name: "Jellyfish Can't Swim in the Night",
+    startTime: new Date("6/30/2024"),
+    endTime: addHoursToDate(new Date("6/30/2024"), 4),
+    type: mediaTypes.tv,
+  },
+
+  
 
 
 
