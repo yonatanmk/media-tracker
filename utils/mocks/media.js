@@ -310,7 +310,6 @@ const mockMediaData = [
       },
     ],
     type: mediaTypes.videogame,
-    // 10/8 to 10/13, 5/26 to 5/30
   },
   {
     _id: 39,
@@ -4723,6 +4722,13 @@ const mockMediaData = [
     _id: 549,
     name: "Fallout S1",
     startTime: new Date("7/3/2024"),
+    endTime: new Date("7/10/2024"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 550,
+    name: "The Bear S1",
+    startTime: new Date("7/10/2024"),
     endTime: null,
     type: mediaTypes.tv,
   },
