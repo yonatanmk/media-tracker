@@ -4097,10 +4097,13 @@ const mockMediaData = [
         endTime: new Date("11/20/2023"),
       },
       {
-        startTime: new Date("1/18/2024"),
+        startTime: new Date("1/17/2024"),
+        endTime: addHoursToDate(new Date("1/17/2024"), 4),
+      },
+      {
+        startTime: new Date("7/20/2024"),
         endTime: null,
       },
-      // null
     ],
     type: mediaTypes.videogame,
   },
