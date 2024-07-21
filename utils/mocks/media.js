@@ -4667,6 +4667,7 @@ const mockMediaData = [
     name: "Vampire Survivors Mobile App",
     startTime: new Date("5/24/2024"),
     endTime: null,
+    // endTime: new Date("7/14/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4727,8 +4728,15 @@ const mockMediaData = [
   },
   {
     _id: 550,
-    name: "The Bear S1",
+    name: "The Bear S1-3",
     startTime: new Date("7/10/2024"),
+    endTime: new Date("7/20/2024"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 551,
+    name: "House of the Dragon S2",
+    startTime: new Date("07/19/2023"),
     endTime: null,
     type: mediaTypes.tv,
   },
