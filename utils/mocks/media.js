@@ -4538,6 +4538,10 @@ const mockMediaData = [
       },
       {
         startTime: new Date("05/28/2024"),
+        endTime: new Date("05/29/2024"),
+      },
+      {
+        startTime: new Date("07/23/2024"),
         endTime: null
       },
     ],
@@ -4662,7 +4666,7 @@ const mockMediaData = [
     _id: 540,
     name: "Unicorn Overload",
     startTime: new Date("6/01/2024"),
-    endTime: null,
+    endTime: new Date("7/23/2024"),
     type: mediaTypes.videogame,
   },
   {
