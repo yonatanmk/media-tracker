@@ -4542,7 +4542,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("07/23/2024"),
-        endTime: null
+        endTime: new Date("07/31/2024"),
       },
     ],
     type: mediaTypes.tv,
@@ -4644,8 +4644,16 @@ const mockMediaData = [
   {
     _id: 537,
     name: "Factorio",
-    startTime: new Date("5/28/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("5/28/2024"),
+        endTime: addHoursToDate(new Date("05/28/2024"), 4),
+      },
+      {
+        startTime: new Date("7/24/2024"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -4746,6 +4754,24 @@ const mockMediaData = [
     startTime: new Date("07/19/2023"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 552,
+    name: "Abbott Elementary S3",
+    nodes: [
+      {
+        startTime: new Date("08/1/2024"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 553,
+    name: "428: Shibuya Scramble VN",
+    startTime: new Date("8/02/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
   
