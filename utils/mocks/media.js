@@ -4638,7 +4638,7 @@ const mockMediaData = [
     _id: 536,
     name: "Pacific Drive",
     startTime: new Date("5/18/2024"),
-    endTime: null,
+    endTime: new Date("6/29/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4751,8 +4751,8 @@ const mockMediaData = [
   {
     _id: 551,
     name: "House of the Dragon S2",
-    startTime: new Date("07/19/2023"),
-    endTime: null,
+    startTime: new Date("07/19/2024"),
+    endTime: new Date("08/4/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4770,6 +4770,27 @@ const mockMediaData = [
     _id: 553,
     name: "428: Shibuya Scramble VN",
     startTime: new Date("8/02/2024"),
+    endTime: new Date("08/23/2024"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 554,
+    name: "Shogun S1",
+    startTime: new Date("08/11/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 555,
+    name: "Siren: Survive the Island",
+    startTime: new Date("08/18/2024"),
+    endTime: new Date("08/24/2024"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 556,
+    name: "Black Myth Wukong",
+    startTime: new Date("08/24/2024"),
     endTime: null,
     type: mediaTypes.videogame,
   },
