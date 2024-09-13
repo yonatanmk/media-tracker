@@ -4492,7 +4492,7 @@ const mockMediaData = [
     _id: 521,
     name: "The Apothecary Diaries",
     startTime: new Date("3/27/2024"),
-    endTime: null,
+    endTime: new Date("4/11/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4624,7 +4624,7 @@ const mockMediaData = [
     _id: 534,
     name: "Dungeons and Daddies C2",
     startTime: new Date("05/10/2024"),
-    endTime: null,
+    endTime: new Date("09/08/2024"),
     type: mediaTypes.podcast,
   },
   {
@@ -4777,7 +4777,7 @@ const mockMediaData = [
     _id: 554,
     name: "Shogun S1",
     startTime: new Date("08/11/2024"),
-    endTime: null,
+    endTime: new Date("09/06/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4793,6 +4793,27 @@ const mockMediaData = [
     startTime: new Date("08/24/2024"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 557,
+    name: "Samurai Champloo",
+    startTime: new Date("08/28/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 558,
+    name: "Never Stop Blowing Up",
+    startTime: new Date("09/08/2024"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 559,
+    name: "Only Murders in the Building S4",
+    startTime: new Date("09/8/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   
