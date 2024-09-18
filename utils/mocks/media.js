@@ -4815,6 +4815,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 560,
+    name: "Astro Bot",
+    startTime: new Date("09/16/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
 
   
 
