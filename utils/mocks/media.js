@@ -4791,7 +4791,7 @@ const mockMediaData = [
     _id: 556,
     name: "Black Myth Wukong",
     startTime: new Date("08/24/2024"),
-    endTime: null,
+    endTime: new Date("09/19/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4822,6 +4822,16 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 561,
+    name: "Agatha All Along",
+    startTime: new Date("09/21/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+
+
+  
 
   
 
