@@ -4829,6 +4829,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 562,
+    name: "Days Gone",
+    startTime: new Date("09/21/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
 
 
   
