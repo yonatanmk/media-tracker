@@ -4805,7 +4805,7 @@ const mockMediaData = [
     _id: 558,
     name: "Never Stop Blowing Up",
     startTime: new Date("09/08/2024"),
-    endTime: null,
+    endTime: new Date("09/25/2024"),
     type: mediaTypes.podcast,
   },
   {
@@ -4836,6 +4836,59 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id:563,
+    name: "Dr. Who S14",
+    startTime: new Date("9/21/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 564,
+    name: "The Plucky Squire",
+    startTime: new Date("09/22/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 558,
+    name: "Chaotic Neutral plays Call of Cthulu",
+    startTime: new Date("09/25/2024"),
+    endTime: new Date("9/28/2024"),
+    nodes: [
+      {    
+        startTime: new Date("09/25/2024"),
+        endTime: new Date("9/28/2024"),
+      },
+      // endTime: new Date("9/28/2024"),
+    ],
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 559,
+    name: "Great British Bake Off S12 (Series 15)",
+    startTime: new Date("9/28/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id:560,
+    name: "Loki S2",
+    startTime: new Date("9/29/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id:560,
+    name: "Project Hail Mary",
+    startTime: new Date("9/29/2024"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  
+
+
+  
 
 
   
