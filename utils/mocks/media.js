@@ -4797,8 +4797,16 @@ const mockMediaData = [
   {
     _id: 557,
     name: "Samurai Champloo",
-    startTime: new Date("08/28/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("08/28/2024"),
+        endTime: new Date("09/3/2024"),
+      },
+      {
+        startTime: new Date("09/27/2024"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -4837,7 +4845,7 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id:563,
+    _id: 563,
     name: "Dr. Who S14",
     startTime: new Date("9/21/2024"),
     endTime: null,
@@ -4851,7 +4859,7 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 558,
+    _id: 565,
     name: "Chaotic Neutral plays Call of Cthulu",
     startTime: new Date("09/25/2024"),
     endTime: new Date("9/28/2024"),
@@ -4865,35 +4873,50 @@ const mockMediaData = [
     type: mediaTypes.podcast,
   },
   {
-    _id: 559,
+    _id: 566,
     name: "Great British Bake Off S12 (Series 15)",
     startTime: new Date("9/28/2024"),
     endTime: null,
     type: mediaTypes.tv,
   },
   {
-    _id:560,
+    _id: 567,
     name: "Loki S2",
     startTime: new Date("9/29/2024"),
+    endTime: new Date("10/7/2024"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 568,
+    name: "Project Hail Mary",
+    startTime: new Date("9/29/2024"),
+    endTime: new Date("10/12/2024"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 569,
+    name: "Star vs. the Forces of Evil S1",
+    startTime: new Date("10/3/2024"),
     endTime: null,
     type: mediaTypes.tv,
   },
   {
-    _id:560,
-    name: "Project Hail Mary",
-    startTime: new Date("9/29/2024"),
+    _id: 570,
+    name: "Dan Da Dan",
+    startTime: new Date("10/10/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 571,
+    name: "The Devotion of Suspect X",
+    startTime: new Date("10/14/2024"),
     endTime: null,
     type: mediaTypes.book,
   },
-  
 
 
-  
 
-
-  
-
-  
 
 
 
