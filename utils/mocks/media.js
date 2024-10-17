@@ -4124,17 +4124,11 @@ const mockMediaData = [
   {
     _id: 481,
     name: "Elementary S1",
-    startTime: new Date("10/24/2023"),
-    endTime: null,
     nodes: [
       {
         startTime: new Date("10/24/2023"),
         endTime: new Date("12/7/2023"),
       }
-      // {
-      //   startTime: new Date("11/07/2023"),
-      //   endTime: null,
-      // },
     ],
     type: mediaTypes.tv,
   },
@@ -4250,9 +4244,8 @@ const mockMediaData = [
       },
       {
         startTime: new Date("1/14/2024"),
-        endTime: null,
+        endTime: new Date("1/26/2024"),
       },
-      // endTime: null,
     ],
     type: mediaTypes.videogame,
   },
@@ -4360,7 +4353,8 @@ const mockMediaData = [
     _id: 505,
     name: "Yu Yu Hakusho",
     startTime: new Date("1/10/2024"),
-    endTime: null,
+    endTime: new Date("1/23/2024"),
+    // null
     type: mediaTypes.tv,
   },
   {
@@ -4470,15 +4464,16 @@ const mockMediaData = [
   {
     _id: 518,
     name: "Pizza Tower",
-    startTime: new Date("3/15/2024"),
-    endTime: null,
+    startTime: new Date("3/14/2024"),
+    endTime: new Date("3/15/2024"),
     type: mediaTypes.videogame,
   },
   {
     _id: 519,
     name: "Witch Hat Atelier",
     startTime: new Date("3/20/2024"),
-    endTime: null,
+    endTime: new Date("4/13/2024"),
+    // endTime: null,
     type: mediaTypes.book,
   },
   {
@@ -4506,7 +4501,7 @@ const mockMediaData = [
     _id: 523,
     name: "Balatro",
     startTime: new Date("4/05/2024"),
-    endTime: null,
+    endTime: new Date("4/21/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4593,7 +4588,8 @@ const mockMediaData = [
     _id: 532,
     name: "Assassin's Creed Odyssey",
     startTime: new Date("5/4/2024"),
-    endTime: null,
+    endTime: new Date("8/16/2024"),
+    // null
     type: mediaTypes.videogame,
   },
   {
@@ -4651,7 +4647,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("7/24/2024"),
-        endTime: null,
+        endTime: new Date("8/1/2024"),
       },
     ],
     type: mediaTypes.videogame,
@@ -4681,8 +4677,8 @@ const mockMediaData = [
     _id: 541,
     name: "Vampire Survivors Mobile App",
     startTime: new Date("5/24/2024"),
-    endTime: null,
-    // endTime: new Date("7/14/2024"),
+    // endTime: null,
+    endTime: new Date("7/14/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4727,13 +4723,13 @@ const mockMediaData = [
     endTime: addHoursToDate(new Date("6/30/2024"), 4),
     type: mediaTypes.tv,
   },
-  {
-    _id: 548,
-    name: "Konosuba S3",
-    startTime: new Date("7/1/2024"),
-    endTime: null,
-    type: mediaTypes.tv,
-  },
+  // {
+  //   _id: 548,
+  //   name: "Konosuba S3",
+  //   startTime: new Date("7/1/2024"),
+  //   endTime: null,
+  //   type: mediaTypes.tv,
+  // },
   {
     _id: 549,
     name: "Fallout S1",
@@ -4827,7 +4823,7 @@ const mockMediaData = [
     _id: 560,
     name: "Astro Bot",
     startTime: new Date("09/16/2024"),
-    endTime: null,
+    endTime: new Date("10/16/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4855,7 +4851,7 @@ const mockMediaData = [
     _id: 564,
     name: "The Plucky Squire",
     startTime: new Date("09/22/2024"),
-    endTime: null,
+    endTime: new Date("10/14/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4913,6 +4909,13 @@ const mockMediaData = [
     startTime: new Date("10/14/2024"),
     endTime: null,
     type: mediaTypes.book,
+  },
+    {
+    _id: 572,
+    name: "Culinary Class Wars S1",
+    startTime: new Date("10/15/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
 
