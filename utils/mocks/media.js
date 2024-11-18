@@ -4830,14 +4830,14 @@ const mockMediaData = [
     _id: 561,
     name: "Agatha All Along",
     startTime: new Date("09/21/2024"),
-    endTime: null,
+    endTime: new Date("11/5/2024"),
     type: mediaTypes.tv,
   },
   {
     _id: 562,
     name: "Days Gone",
     startTime: new Date("09/21/2024"),
-    endTime: null,
+    endTime: new Date("11/1/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4907,14 +4907,14 @@ const mockMediaData = [
     _id: 571,
     name: "The Devotion of Suspect X",
     startTime: new Date("10/14/2024"),
-    endTime: null,
+    endTime: new Date("11/4/2024"),
     type: mediaTypes.book,
   },
     {
     _id: 572,
     name: "Culinary Class Wars S1",
     startTime: new Date("10/15/2024"),
-    endTime: null,
+    endTime: new Date("10/21/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4924,10 +4924,53 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 574,
+    name: "Pico Park 2",
+    startTime: new Date("10/26/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 575,
+    name: "Shangri-La Frontier S2",
+    startTime: new Date("11/7/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 576,
+    name: "Andor S1",
+    startTime: new Date("11/8/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 577,
+    name: "Manor Lords",
+    startTime: new Date("11/9/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 578,
+    name: "What If...? S1",
+    startTime: new Date("11/13/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+    {
+    _id: 579,
+    name: "Silent Hill 2 Remake",
+    startTime: new Date("11/16/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
     
     
     
 
+  
 
 
 
