@@ -4966,6 +4966,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 580,
+    name: "Trails in the Sky 1-3",
+    startTime: new Date("11/18/2021"),
+    endTime: null,
+    type: mediaTypes.playthrough,
+  },
     
     
     
