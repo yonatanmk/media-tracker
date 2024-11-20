@@ -4959,7 +4959,7 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
-    {
+  {
     _id: 579,
     name: "Silent Hill 2 Remake",
     startTime: new Date("11/16/2024"),
@@ -4968,11 +4968,19 @@ const mockMediaData = [
   },
   {
     _id: 580,
-    name: "Trails in the Sky 1-3",
-    startTime: new Date("11/18/2021"),
-    endTime: null,
+    name: "Trails in the Sky First Chapter",
+    startTime: new Date("11/18/2024"),
+    endTime: new Date("11/19/2024"),
     type: mediaTypes.playthrough,
   },
+  {
+    _id: 581,
+    name: "Trails in the Sky Second Chapter",
+    startTime: new Date("11/18/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+    
     
     
     
