@@ -4872,7 +4872,7 @@ const mockMediaData = [
     _id: 566,
     name: "Great British Bake Off S12 (Series 15)",
     startTime: new Date("9/28/2024"),
-    endTime: null,
+    endTime: new Date("11/29/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4980,15 +4980,20 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
-    
-    
-    
-    
-
-  
-
-
-
+  {
+    _id: 582,
+    name: "Rise of the Golden Idol",
+    startTime: new Date("12/3/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 583,
+    name: "Arcane S1",
+    startTime: new Date("12/3/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
 
 
