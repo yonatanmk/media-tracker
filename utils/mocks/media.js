@@ -3568,7 +3568,6 @@ const mockMediaData = [
         endTime: new Date("02/03/2023"),
       },
     ],
-    // endTime: null,
     type: mediaTypes.tv,
   },
   {
@@ -3627,7 +3626,6 @@ const mockMediaData = [
       {
         startTime: new Date("02/27/2023"),
         endTime: addHoursToDate(new Date("02/27/2023"), 4),
-        // endTime: null,
       },
     ],
     type: mediaTypes.tv,
@@ -3646,7 +3644,6 @@ const mockMediaData = [
       {
         startTime: new Date("03/07/2023"),
         endTime: new Date("03/14/2023"),
-        // endTime: null,
       },
     ],
     type: mediaTypes.tv,
@@ -3684,7 +3681,6 @@ const mockMediaData = [
     name: "Tunic",
     startTime: new Date("04/01/2023"),
     endTime: new Date("05/12/2023"),
-    endTime: null,
     type: mediaTypes.videogames,
   },
   {
@@ -3941,7 +3937,6 @@ const mockMediaData = [
       {
         startTime: new Date("09/07/2023"),
         endTime: addHoursToDate(new Date("09/07/2023"), 4),
-        // endTime: null,
       },
     ],
     type: mediaTypes.videogame,
@@ -4471,9 +4466,16 @@ const mockMediaData = [
   {
     _id: 519,
     name: "Witch Hat Atelier",
-    startTime: new Date("3/20/2024"),
-    endTime: new Date("4/13/2024"),
-    // endTime: null,
+    nodes: [
+      {
+        startTime: new Date("3/20/2024"),
+        endTime: new Date("4/13/2024"),
+      },
+      {
+        startTime: new Date("12/14/2024"),
+        endTime: new Date("12/21/2024"),
+      },
+    ],
     type: mediaTypes.book,
   },
   {
@@ -4659,13 +4661,13 @@ const mockMediaData = [
     endTime: new Date("06/29/2024"),
     type: mediaTypes.tv,
   },
-  {
-    _id: 539,
-    name: "Lily playing Paper Mario: The Thousand-Year Door",
-    startTime: new Date("5/28/2024"),
-    endTime: null,
-    type: mediaTypes.videogame,
-  },
+  // {
+  //   _id: 539,
+  //   name: "Lily playing Paper Mario: The Thousand-Year Door",
+  //   startTime: new Date("5/28/2024"),
+  //   endTime: null,
+  //   type: mediaTypes.videogame,
+  // },
   {
     _id: 540,
     name: "Unicorn Overload",
@@ -4816,7 +4818,7 @@ const mockMediaData = [
     _id: 559,
     name: "Only Murders in the Building S4",
     startTime: new Date("09/8/2024"),
-    endTime: null,
+    endTime: new Date("11/2/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4838,13 +4840,13 @@ const mockMediaData = [
     name: "Days Gone",
     startTime: new Date("09/21/2024"),
     endTime: new Date("11/1/2024"),
-    type: mediaTypes.videogame,
+    type: mediaTypes.videogame,s
   },
   {
     _id: 563,
-    name: "Dr. Who S14",
+    name: "Dr. Who S14 (Dropped)",
     startTime: new Date("9/21/2024"),
-    endTime: null,
+    endTime: new Date("9/28/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4862,9 +4864,8 @@ const mockMediaData = [
     nodes: [
       {    
         startTime: new Date("09/25/2024"),
-        endTime: new Date("9/28/2024"),
+        endTime: null
       },
-      // endTime: new Date("9/28/2024"),
     ],
     type: mediaTypes.podcast,
   },
@@ -4889,13 +4890,13 @@ const mockMediaData = [
     endTime: new Date("10/12/2024"),
     type: mediaTypes.book,
   },
-  {
-    _id: 569,
-    name: "Star vs. the Forces of Evil S1",
-    startTime: new Date("10/3/2024"),
-    endTime: null,
-    type: mediaTypes.tv,
-  },
+  // {
+  //   _id: 569,
+  //   name: "Star vs. the Forces of Evil S1",
+  //   startTime: new Date("10/3/2024"),
+  //   endTime: null,
+  //   type: mediaTypes.tv,
+  // },
   {
     _id: 570,
     name: "Dan Da Dan",
@@ -4928,7 +4929,7 @@ const mockMediaData = [
     _id: 574,
     name: "Pico Park 2",
     startTime: new Date("10/26/2024"),
-    endTime: null,
+    endTime: new Date("11/10/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4942,23 +4943,23 @@ const mockMediaData = [
     _id: 576,
     name: "Andor S1",
     startTime: new Date("11/8/2024"),
-    endTime: null,
+    endTime: new Date("11/19/2024"),
     type: mediaTypes.tv,
   },
   {
     _id: 577,
     name: "Manor Lords",
     startTime: new Date("11/9/2024"),
-    endTime: null,
+    endTime: new Date("11/13/2024"),
     type: mediaTypes.videogame,
   },
-  {
-    _id: 578,
-    name: "What If...? S1",
-    startTime: new Date("11/13/2024"),
-    endTime: null,
-    type: mediaTypes.tv,
-  },
+  // {
+  //   _id: 578,
+  //   name: "What If...? S1",
+  //   startTime: new Date("11/13/2024"),
+  //   endTime: null,
+  //   type: mediaTypes.tv,
+  // },
   {
     _id: 579,
     name: "Silent Hill 2 Remake",
@@ -4984,7 +4985,7 @@ const mockMediaData = [
     _id: 582,
     name: "Rise of the Golden Idol",
     startTime: new Date("12/3/2024"),
-    endTime: null,
+    endTime: new Date("12/8/2024"),
     type: mediaTypes.videogame,
   },
   {
@@ -4994,6 +4995,28 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 584,
+    name: "NRB plays A King's Dilemma",
+    startTime: new Date("12/5/2024"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: "585",
+    name: "Shuumatsu No Valkyrie (Record of Ragnarok)",
+        startTime: new Date("12/21/2024"),
+        endTime: new Date("12/24/2024"),
+    type: mediaTypes.book,
+  },
+    {
+    _id: "586",
+    name: "Hunter x Hunter",
+    startTime: new Date("12/25/2024"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  
 
 
 
