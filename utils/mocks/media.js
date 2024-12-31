@@ -5016,7 +5016,16 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.book,
   },
+  {
+    _id: 587,
+    name: "Star Wars Jedi: Survivor",
+    startTime: new Date("12/30/2024"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
   
+    
+    
 
 
 
