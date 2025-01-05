@@ -4992,7 +4992,7 @@ const mockMediaData = [
     _id: 583,
     name: "Arcane S1",
     startTime: new Date("12/3/2024"),
-    endTime: null,
+    endTime: new Date("1/5/2024"),
     type: mediaTypes.tv,
   },
   {
