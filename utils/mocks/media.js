@@ -4900,8 +4900,16 @@ const mockMediaData = [
   {
     _id: 570,
     name: "Dan Da Dan",
-    startTime: new Date("10/10/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("10/10/2024"),
+        endTime: new Date("12/1/2024"),
+      },
+      {
+        startTime: new Date("1/8/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -5005,8 +5013,8 @@ const mockMediaData = [
   {
     _id: "585",
     name: "Shuumatsu No Valkyrie (Record of Ragnarok)",
-        startTime: new Date("12/21/2024"),
-        endTime: new Date("12/24/2024"),
+    startTime: new Date("12/21/2024"),
+    endTime: new Date("12/24/2024"),
     type: mediaTypes.book,
   },
     {
@@ -5023,9 +5031,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
-  
-    
-    
+  {
+    _id: 588,
+    name: "Squid Game S2",
+    startTime: new Date("1/6/2025"),
+    endTime: new Date("1/11/2025"),
+    type: mediaTypes.tv,
+  },
 
 
 
