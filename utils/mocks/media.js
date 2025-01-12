@@ -5011,14 +5011,14 @@ const mockMediaData = [
     type: mediaTypes.podcast,
   },
   {
-    _id: "585",
+    _id: 585,
     name: "Shuumatsu No Valkyrie (Record of Ragnarok)",
     startTime: new Date("12/21/2024"),
     endTime: new Date("12/24/2024"),
     type: mediaTypes.book,
   },
     {
-    _id: "586",
+    _id: 586,
     name: "Hunter x Hunter",
     startTime: new Date("12/25/2024"),
     endTime: null,
@@ -5038,7 +5038,13 @@ const mockMediaData = [
     endTime: new Date("1/11/2025"),
     type: mediaTypes.tv,
   },
-
+  {
+    _id: 589,
+    name: "A Killer Paradox",
+    startTime: new Date("1/12/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
 
 
