@@ -4860,13 +4860,7 @@ const mockMediaData = [
     _id: 565,
     name: "Chaotic Neutral plays Call of Cthulu",
     startTime: new Date("09/25/2024"),
-    endTime: new Date("9/28/2024"),
-    nodes: [
-      {    
-        startTime: new Date("09/25/2024"),
-        endTime: null
-      },
-    ],
+    endTime: new Date("1/12/2025"),
     type: mediaTypes.podcast,
   },
   {
@@ -5045,6 +5039,22 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 590,
+    name: "Sakamoto Days",
+    startTime: new Date("1/13/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 591,
+    name: "Chaotic Neutral plays D&D",
+    startTime: new Date("1/13/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+
+  
 
 
 
