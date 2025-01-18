@@ -4965,8 +4965,20 @@ const mockMediaData = [
   {
     _id: 579,
     name: "Silent Hill 2 Remake",
-    startTime: new Date("11/16/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("11/16/2024"),
+        endTime: new Date("12/13/2024"),
+      },
+      {
+        startTime: new Date("12/29/2024"),
+        endTime: addHoursToDate(new Date("12/29/2024"), 4),
+      },
+      {
+        startTime: new Date("1/16/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -5022,7 +5034,7 @@ const mockMediaData = [
     _id: 587,
     name: "Star Wars Jedi: Survivor",
     startTime: new Date("12/30/2024"),
-    endTime: null,
+    endTime: new Date("1/16/2025"),
     type: mediaTypes.videogame,
   },
   {
