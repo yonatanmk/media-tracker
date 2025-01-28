@@ -4991,8 +4991,16 @@ const mockMediaData = [
   {
     _id: 581,
     name: "Trails in the Sky Second Chapter",
-    startTime: new Date("11/18/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("11/18/2024"),
+        endTime: new Date("11/26/2024"),
+      },
+      {
+        startTime: new Date("1/26/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -5023,7 +5031,7 @@ const mockMediaData = [
     endTime: new Date("12/24/2024"),
     type: mediaTypes.book,
   },
-    {
+  {
     _id: 586,
     name: "Hunter x Hunter",
     startTime: new Date("12/25/2024"),
@@ -5063,13 +5071,13 @@ const mockMediaData = [
     name: "Chaotic Neutral plays D&D",
     startTime: new Date("1/13/2025"),
     endTime: new Date("1/24/2025"),
-    type: mediaTypes.tv,
+    type: mediaTypes.podcast,
   },
   {
     _id: 592,
     name: "Toem",
     startTime: new Date("1/20/2025"),
-    endTime: null,
+    endTime: new Date("1/25/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5077,11 +5085,24 @@ const mockMediaData = [
     name: "One Shot D&D",
     startTime: new Date("1/24/2025"),
     endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 594,
+    name: "Bone",
+    startTime: new Date("12/25/2024"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 595,
+    name: "Chef & My Fridge",
+    startTime: new Date("1/26/2025"),
+    endTime: null,
     type: mediaTypes.tv,
   },
 
   
-
 
 
 
