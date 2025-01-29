@@ -5084,7 +5084,7 @@ const mockMediaData = [
     _id: 593,
     name: "One Shot D&D",
     startTime: new Date("1/24/2025"),
-    endTime: null,
+    endTime: new Date("1/28/2025"),
     type: mediaTypes.podcast,
   },
   {
@@ -5101,7 +5101,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
-
+  {
+    _id: 596,
+    name: "The Adventure Zone Dust Season 2",
+    startTime: new Date("01/28/2025"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
   
 
 
