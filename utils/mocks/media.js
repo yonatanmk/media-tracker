@@ -4893,7 +4893,7 @@ const mockMediaData = [
   // },
   {
     _id: 570,
-    name: "Dan Da Dan",
+    name: "Dan Da Dan S1",
     nodes: [
       {
         startTime: new Date("10/10/2024"),
@@ -4901,7 +4901,11 @@ const mockMediaData = [
       },
       {
         startTime: new Date("1/8/2025"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("1/8/2025"), 4),
+      },
+      {
+        startTime: new Date("1/22/2025"),
+        endTime: addHoursToDate(new Date("1/22/2025"), 4),
       },
     ],
     type: mediaTypes.tv,
@@ -4976,7 +4980,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("1/16/2025"),
-        endTime: null,
+        endTime: new Date("2/8/2025"),
       },
     ],
     type: mediaTypes.videogame,
@@ -5084,7 +5088,7 @@ const mockMediaData = [
     _id: 593,
     name: "One Shot D&D",
     startTime: new Date("1/24/2025"),
-    endTime: new Date("1/28/2025"),
+    endTime: null,
     type: mediaTypes.podcast,
   },
   {
@@ -5105,8 +5109,29 @@ const mockMediaData = [
     _id: 596,
     name: "The Adventure Zone Dust Season 2",
     startTime: new Date("01/28/2025"),
+    endTime: new Date("02/02/2025"),
+    type: mediaTypes.podcast,
+  },
+    {
+    _id: 597,
+    name: "Band of Brothers",
+    startTime: new Date("2/1/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 598,
+    name: "The Adventure Zone Versus Dracula",
+    startTime: new Date("02/02/2025"),
     endTime: null,
     type: mediaTypes.podcast,
+  },
+    {
+    _id: 599,
+    name: "Assassin's Creed Odyssey Playthrough",
+    startTime: new Date("2/6/2025"),
+    endTime: null,
+    type: mediaTypes.playthrough,
   },
   
 
