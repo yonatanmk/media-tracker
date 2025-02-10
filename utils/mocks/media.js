@@ -5126,14 +5126,20 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.podcast,
   },
-    {
+  {
     _id: 599,
-    name: "Assassin's Creed Odyssey Playthrough",
+    name: "Assassin's Creed Odyssey Cutscenes",
     startTime: new Date("2/6/2025"),
+    endTime: new Date("2/9/2025"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 600,
+    name: "Assassin's Creed Odyssey The Fate of Atlantis Cutscenes",
+    startTime: new Date("2/9/2025"),
     endTime: null,
     type: mediaTypes.playthrough,
   },
-  
 
 
 
