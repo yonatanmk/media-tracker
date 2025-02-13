@@ -4994,7 +4994,7 @@ const mockMediaData = [
   },
   {
     _id: 581,
-    name: "Trails in the Sky Second Chapter",
+    name: "Trails in the Sky Second Chapter (SC)",
     nodes: [
       {
         startTime: new Date("11/18/2024"),
@@ -5002,7 +5002,8 @@ const mockMediaData = [
       },
       {
         startTime: new Date("1/26/2025"),
-        endTime: null,
+        // endTime: null,
+        endTime: new Date("2/12/2025"),
       },
     ],
     type: mediaTypes.videogame,
@@ -5095,7 +5096,7 @@ const mockMediaData = [
     _id: 594,
     name: "Bone",
     startTime: new Date("12/25/2024"),
-    endTime: null,
+    endTime: new Date("2/12/2025"),
     type: mediaTypes.book,
   },
   {
@@ -5135,10 +5136,28 @@ const mockMediaData = [
   },
   {
     _id: 600,
-    name: "Assassin's Creed Odyssey The Fate of Atlantis Cutscenes",
+    name: "Assassin's Creed Odyssey The Fate of Atlantis DLC Cutscenes",
     startTime: new Date("2/9/2025"),
-    endTime: null,
+    endTime: new Date("2/10/2025"),
     type: mediaTypes.playthrough,
+  },
+  {
+    _id: 601,
+    name: "Trails in the Sky Second Chapter (SC)",
+    nodes: [
+      {
+        startTime: new Date("2/12/2025"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 602,
+    name: "Interior Chinatown",
+    startTime: new Date("2/12/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
 
