@@ -4097,7 +4097,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("7/20/2024"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("7/20/2024"), 4),
       },
     ],
     type: mediaTypes.videogame,
@@ -5156,8 +5156,19 @@ const mockMediaData = [
     _id: 602,
     name: "Interior Chinatown",
     startTime: new Date("2/12/2025"),
-    endTime: null,
+    endTime: new Date("2/19/2025"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 603,
+    name: "Baldur's Gate 3 solo",
+    nodes: [
+      {
+        startTime: new Date("2/14/2024"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
   },
 
 
