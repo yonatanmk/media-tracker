@@ -5170,6 +5170,22 @@ const mockMediaData = [
     ],
     type: mediaTypes.videogame,
   },
+  {
+    _id: 239,
+    name: "Like a Dragon: Pirate Yakuza in Hawaii",
+    startTime: new Date("2/20/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 239,
+    name: "Cobra Kai S3",
+    startTime: new Date("2/22/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+
+  
 
 
 
