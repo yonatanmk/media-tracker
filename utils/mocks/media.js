@@ -5025,8 +5025,16 @@ const mockMediaData = [
   {
     _id: 584,
     name: "NRB plays A King's Dilemma",
-    startTime: new Date("12/5/2024"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("12/5/2024"),
+        endTime: new Date("12/12/2024"),
+      },
+      {
+        startTime: new Date("2/27/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.podcast,
   },
   {
@@ -5171,18 +5179,25 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 239,
+    _id: 604,
     name: "Like a Dragon: Pirate Yakuza in Hawaii",
     startTime: new Date("2/20/2025"),
     endTime: null,
     type: mediaTypes.videogame,
   },
   {
-    _id: 239,
-    name: "Cobra Kai S3",
+    _id: 605,
+    name: "Cobra Kai S6",
     startTime: new Date("2/22/2025"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 606,
+    name: "Mouthwashing",
+    startTime: new Date("2/28/2025"),
+    endTime: addHoursToDate(new Date("02/28/2025"), 3),
+    type: mediaTypes.videogame,
   },
 
   
