@@ -2595,14 +2595,6 @@ const mockMediaData = [
     endTime: new Date("02/07/2022"),
     type: mediaTypes.tv,
   },
-  // {
-  //   _id: 315,
-  //   name: "Peacemaker",
-  //   startTime: new Date("01/22/2022"),
-  //   endTime: null,
-  //   // endTime: new Date("01/17/2022"),
-  //   type: mediaTypes.tv,
-  // },
   {
     _id: 316,
     name: "Critical Role Campaign 2 again, C2E73 to C2E95",
@@ -3383,10 +3375,6 @@ const mockMediaData = [
         startTime: new Date("12/20/2022"),
         endTime: addHoursToDate(new Date("12/20/2022"), 4),
       },
-      // {
-      //   startTime: new Date("12/20/2022"),
-      //   endTime: null,
-      // },
     ],
     type: mediaTypes.tv,
   },
@@ -4245,21 +4233,6 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 493,
-    name: "Scott Pilgrim Takes Off",
-    nodes: [
-      {
-        startTime: new Date("11/28/2023"),
-        endTime: addHoursToDate(new Date("11/28/2023"), 4),
-      },
-      // {
-      //   startTime: new Date("11/28/2023"),
-      //   endTime: null,
-      // },
-    ],
-    type: mediaTypes.tv,
-  },
-  {
     _id: 494,
     name: "Heavenly Delusion S1",
     nodes: [
@@ -4349,7 +4322,6 @@ const mockMediaData = [
     name: "Yu Yu Hakusho",
     startTime: new Date("1/10/2024"),
     endTime: new Date("1/23/2024"),
-    // null
     type: mediaTypes.tv,
   },
   {
@@ -4591,7 +4563,6 @@ const mockMediaData = [
     name: "Assassin's Creed Odyssey",
     startTime: new Date("5/4/2024"),
     endTime: new Date("8/16/2024"),
-    // null
     type: mediaTypes.videogame,
   },
   {
@@ -4679,7 +4650,6 @@ const mockMediaData = [
     _id: 541,
     name: "Vampire Survivors Mobile App",
     startTime: new Date("5/24/2024"),
-    // endTime: null,
     endTime: new Date("7/14/2024"),
     type: mediaTypes.videogame,
   },
@@ -4884,13 +4854,6 @@ const mockMediaData = [
     endTime: new Date("10/12/2024"),
     type: mediaTypes.book,
   },
-  // {
-  //   _id: 569,
-  //   name: "Star vs. the Forces of Evil S1",
-  //   startTime: new Date("10/3/2024"),
-  //   endTime: null,
-  //   type: mediaTypes.tv,
-  // },
   {
     _id: 570,
     name: "Dan Da Dan S1",
@@ -4928,7 +4891,7 @@ const mockMediaData = [
     _id: 573,
     name: "Metaphor Refantazio",
     startTime: new Date("10/18/2024"),
-    endTime: null,
+    endTime: new Date("1/25/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -4959,13 +4922,6 @@ const mockMediaData = [
     endTime: new Date("11/13/2024"),
     type: mediaTypes.videogame,
   },
-  // {
-  //   _id: 578,
-  //   name: "What If...? S1",
-  //   startTime: new Date("11/13/2024"),
-  //   endTime: null,
-  //   type: mediaTypes.tv,
-  // },
   {
     _id: 579,
     name: "Silent Hill 2 Remake",
@@ -5002,7 +4958,6 @@ const mockMediaData = [
       },
       {
         startTime: new Date("1/26/2025"),
-        // endTime: null,
         endTime: new Date("2/12/2025"),
       },
     ],
@@ -5072,13 +5027,13 @@ const mockMediaData = [
     endTime: new Date("1/23/2025"),
     type: mediaTypes.tv,
   },
-  {
-    _id: 590,
-    name: "Sakamoto Days",
-    startTime: new Date("1/13/2025"),
-    endTime: null,
-    type: mediaTypes.tv,
-  },
+  // {
+  //   _id: 590,
+  //   name: "Sakamoto Days",
+  //   startTime: new Date("1/13/2025"),
+  //   endTime: null,
+  //   type: mediaTypes.tv,
+  // },
   {
     _id: 591,
     name: "Chaotic Neutral plays D&D",
@@ -5182,14 +5137,14 @@ const mockMediaData = [
     _id: 604,
     name: "Like a Dragon: Pirate Yakuza in Hawaii",
     startTime: new Date("2/20/2025"),
-    endTime: null,
+    endTime: new Date("3/6/2025"),
     type: mediaTypes.videogame,
   },
   {
     _id: 605,
     name: "Cobra Kai S6",
     startTime: new Date("2/22/2025"),
-    endTime: null,
+    endTime: new Date("3/15/2025"),
     type: mediaTypes.tv,
   },
   {
@@ -5199,7 +5154,42 @@ const mockMediaData = [
     endTime: addHoursToDate(new Date("02/28/2025"), 3),
     type: mediaTypes.videogame,
   },
-
+  {
+    _id: 607,
+    name: "Pantheon S1",
+    startTime: new Date("2/28/2025"),
+    endTime: new Date("3/4/2025"),
+    type: mediaTypes.tv,
+  },
+    {
+    _id: 608,
+    name: "Blue Box",
+    startTime: new Date("3/6/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 609,
+    name: "The Legend of Zelda: Echoes of Wisdom",
+    startTime: new Date("3/7/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 610,
+    name: "Split Fiction",
+    startTime: new Date("3/7/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 611,
+    name: "Luigi's Mansion 3",
+    startTime: new Date("3/11/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+    
   
 
 
