@@ -4828,9 +4828,17 @@ const mockMediaData = [
   },
   {
     _id: 565,
-    name: "Chaotic Neutral plays Call of Cthulu",
-    startTime: new Date("09/25/2024"),
-    endTime: new Date("1/12/2025"),
+    name: "Chaotic Neutral plays Call of Cthulhu",
+    nodes: [
+      {
+        startTime: new Date("09/25/2024"),
+        endTime: new Date("1/12/2025"),
+      },
+      {
+        startTime: new Date("03/17/2024"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.podcast,
   },
   {
@@ -4999,13 +5007,13 @@ const mockMediaData = [
     endTime: new Date("12/24/2024"),
     type: mediaTypes.book,
   },
-  {
-    _id: 586,
-    name: "Hunter x Hunter",
-    startTime: new Date("12/25/2024"),
-    endTime: null,
-    type: mediaTypes.book,
-  },
+  // {
+  //   _id: 586,
+  //   name: "Hunter x Hunter",
+  //   startTime: new Date("12/25/2024"),
+  //   endTime: null,
+  //   type: mediaTypes.book,
+  // },
   {
     _id: 587,
     name: "Star Wars Jedi: Survivor",
@@ -5087,7 +5095,7 @@ const mockMediaData = [
     _id: 598,
     name: "The Adventure Zone Versus Dracula",
     startTime: new Date("02/02/2025"),
-    endTime: null,
+    endTime: new Date("03/16/2025"),
     type: mediaTypes.podcast,
   },
   {
@@ -5161,7 +5169,7 @@ const mockMediaData = [
     endTime: new Date("3/4/2025"),
     type: mediaTypes.tv,
   },
-    {
+  {
     _id: 608,
     name: "Blue Box",
     startTime: new Date("3/6/2025"),
@@ -5189,8 +5197,27 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
-    
-  
+  {
+    _id: 612,
+    name: "The Roottrees are Dead",
+    startTime: new Date("3/17/2025"),
+    endTime: new Date("3/20/2025"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 613,
+    name: "Man on the Inside S1",
+    startTime: new Date("3/18/2025"),
+    endTime: new Date("3/21/2025"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 614,
+    name: "Wind and Truth",
+    startTime: new Date("3/24/2025"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
 
 
 
