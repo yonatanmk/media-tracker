@@ -5218,6 +5218,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.book,
   },
+  {
+    _id: 615,
+    name: "The Residence S1",
+    startTime: new Date("3/30/2025"),
+    endTime: new Date("4/4/2025"),
+    type: mediaTypes.tv,
+  },
 
 
 
