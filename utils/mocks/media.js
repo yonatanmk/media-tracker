@@ -4835,8 +4835,8 @@ const mockMediaData = [
         endTime: new Date("1/12/2025"),
       },
       {
-        startTime: new Date("03/17/2024"),
-        endTime: null,
+        startTime: new Date("03/17/2025"),
+        endTime: new Date("04/6/2025"),
       },
     ],
     type: mediaTypes.podcast,
@@ -5087,8 +5087,16 @@ const mockMediaData = [
     {
     _id: 597,
     name: "Band of Brothers",
-    startTime: new Date("2/1/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("2/1/2025"),
+        endTime: new Date("2/10/2025"),
+      },
+      {
+        startTime: new Date("4/9/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -5118,6 +5126,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("2/12/2025"),
+        endTime: new Date("3/24/2025"),
+      },
+      {
+        startTime: new Date("4/10/2025"),
         endTime: null,
       },
     ],
@@ -5224,6 +5236,13 @@ const mockMediaData = [
     startTime: new Date("3/30/2025"),
     endTime: new Date("4/4/2025"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 616,
+    name: "Against the Storm",
+    startTime: new Date("4/7/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
 
 
