@@ -4632,13 +4632,6 @@ const mockMediaData = [
     endTime: new Date("06/29/2024"),
     type: mediaTypes.tv,
   },
-  // {
-  //   _id: 539,
-  //   name: "Lily playing Paper Mario: The Thousand-Year Door",
-  //   startTime: new Date("5/28/2024"),
-  //   endTime: null,
-  //   type: mediaTypes.videogame,
-  // },
   {
     _id: 540,
     name: "Unicorn Overload",
@@ -4838,6 +4831,10 @@ const mockMediaData = [
         startTime: new Date("03/17/2025"),
         endTime: new Date("04/6/2025"),
       },
+      {
+        startTime: new Date("05/7/2025"),
+        endTime: new Date("05/21/2025"),
+      },
     ],
     type: mediaTypes.podcast,
   },
@@ -4913,7 +4910,7 @@ const mockMediaData = [
     _id: 575,
     name: "Shangri-La Frontier S2",
     startTime: new Date("11/7/2024"),
-    endTime: null,
+    endTime: new Date("4/13/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -4995,8 +4992,13 @@ const mockMediaData = [
       },
       {
         startTime: new Date("2/27/2025"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("2/27/2025"), 4),
       },
+      {
+        startTime: new Date("5/21/2025"),
+        endTime: new Date("5/25/2025"),
+      },
+      //   endTime: null,
     ],
     type: mediaTypes.podcast,
   },
@@ -5060,7 +5062,7 @@ const mockMediaData = [
     _id: 593,
     name: "One Shot D&D",
     startTime: new Date("1/24/2025"),
-    endTime: null,
+    endTime: new Date("3/13/2025"),
     type: mediaTypes.podcast,
   },
   {
@@ -5130,7 +5132,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("4/10/2025"),
-        endTime: null,
+        endTime: new Date("4/23/2025"),
       },
     ],
     type: mediaTypes.playthrough,
@@ -5183,9 +5185,9 @@ const mockMediaData = [
   },
   {
     _id: 608,
-    name: "Blue Box",
+    name: "Blue Box S1",
     startTime: new Date("3/6/2025"),
-    endTime: null,
+    endTime: new Date("5/14/2025"),
     type: mediaTypes.tv,
   },
   {
@@ -5243,6 +5245,59 @@ const mockMediaData = [
     startTime: new Date("4/7/2025"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 617,
+    name: "Dr Stone S4 Part 1",
+    startTime: new Date("4/14/2025"),
+    endTime: new Date("4/23/2025"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 618,
+    name: "NADDPOD: The Mavrus Chronicles",
+    startTime: new Date("4/17/2025"),
+    endTime: new Date("5/5/2025"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 619,
+    name: "Marvel's Spider-Man 2",
+    startTime: new Date("4/17/2025"),
+    endTime: new Date("5/16/2025"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 620,
+    name: "Clair Obscur: Expedition 33",
+    startTime: new Date("4/26/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 621,
+    name: "Poker Face S2",
+    startTime: new Date("5/15/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 622,
+    name: "Invincible S2",
+    startTime: new Date("5/16/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+    {
+    _id: 623,
+    name: "Taskmaster S19",
+    nodes: [
+      {
+        startTime: new Date("5/06/2025"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
   },
 
 
