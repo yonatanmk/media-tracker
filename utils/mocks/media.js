@@ -4525,7 +4525,7 @@ const mockMediaData = [
   },
   {
     _id: 527,
-    name: "Conan O'Brien Must Go",
+    name: "Conan O'Brien Must Go S1",
     startTime: new Date("04/18/2024"),
     endTime: addHoursToDate(new Date("04/18/2024"), 4),
     type: mediaTypes.tv,
@@ -5229,7 +5229,7 @@ const mockMediaData = [
     _id: 614,
     name: "Wind and Truth",
     startTime: new Date("3/24/2025"),
-    endTime: null,
+    endTime: new Date("6/3/2025"),
     type: mediaTypes.book,
   },
   {
@@ -5271,7 +5271,7 @@ const mockMediaData = [
     _id: 620,
     name: "Clair Obscur: Expedition 33",
     startTime: new Date("4/26/2025"),
-    endTime: null,
+    endTime: new Date("6/2/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5285,10 +5285,10 @@ const mockMediaData = [
     _id: 622,
     name: "Invincible S2",
     startTime: new Date("5/16/2025"),
-    endTime: null,
+    endTime: new Date("5/29/2025"),
     type: mediaTypes.tv,
   },
-    {
+  {
     _id: 623,
     name: "Taskmaster S19",
     nodes: [
@@ -5299,7 +5299,34 @@ const mockMediaData = [
     ],
     type: mediaTypes.tv,
   },
-
+  {
+    _id: 624,
+    name: "Story Break: Heaven Heist",
+    startTime: new Date("5/25/2025"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 625,
+    name: "Conan O'Brien Must Go S2",
+    startTime: new Date("05/28/2025"),
+    endTime: new Date("06/4/2025"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 626,
+    name: "Invincible S3",
+    startTime: new Date("5/29/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 627,
+    name: "Kingdom Come Deliverance 2",
+    startTime: new Date("6/3/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
 
 
   // TESTING
