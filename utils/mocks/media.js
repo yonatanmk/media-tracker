@@ -4835,6 +4835,10 @@ const mockMediaData = [
         startTime: new Date("05/7/2025"),
         endTime: new Date("05/21/2025"),
       },
+      {
+        startTime: new Date("07/29/2025"),
+        endTime: new Date("08/3/2025"),
+      },
     ],
     type: mediaTypes.podcast,
   },
@@ -5209,6 +5213,16 @@ const mockMediaData = [
     name: "Luigi's Mansion 3",
     startTime: new Date("3/11/2025"),
     endTime: null,
+    nodes: [
+      {
+        startTime: new Date("3/11/2025"),
+        endTime: new Date("3/12/2025"),
+      },
+      {
+        startTime: new Date("7/21/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -5303,7 +5317,7 @@ const mockMediaData = [
     _id: 624,
     name: "Story Break: Heaven Heist",
     startTime: new Date("5/25/2025"),
-    endTime: null,
+    endTime: new Date("7/1/2025"),
     type: mediaTypes.podcast,
   },
   {
@@ -5324,10 +5338,86 @@ const mockMediaData = [
     _id: 627,
     name: "Kingdom Come Deliverance 2",
     startTime: new Date("6/3/2025"),
+    endTime: new Date("7/26/2025"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 628,
+    name: "White Sand 1-3",
+    startTime: new Date("6/5/2025"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 629,
+    name: "Dadhammer: 40,000",
+    startTime: new Date("6/7/2025"),
+    endTime: new Date("6/15/2025"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 630,
+    name: "Malcolm in the Middle S1-XXX",
+    startTime: new Date("5/27/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 631,
+    name: "Mistborn: Secret History",
+    startTime: new Date("06/19/2025"),
+    endTime: new Date("06/30/2025"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 632,
+    name: "Warbreaker",
+    startTime: new Date("07/5/2025"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 633,
+    name: "The Alters",
+    startTime: new Date("7/6/2025"),
+    endTime: new Date("7/20/2025"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 634,
+    name: "Blue Prince",
+    startTime: new Date("7/11/2025"),
+    endTime: new Date("7/16/2025"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 635,
+    name: "Adventure Zone: Outre Space",
+    startTime: new Date("7/13/2025"),
+    endTime: new Date("7/25/2025"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 636,
+    name: "D&D Minus S1",
+    startTime: new Date("7/25/2025"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 637,
+    name: "Tiny Tina's Wonderland",
+    startTime: new Date("7/11/2025"),
+    endTime: new Date("7/16/2025"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 638,
+    name: "Death Stranding 2",
+    startTime: new Date("7/31/2025"),
     endTime: null,
     type: mediaTypes.videogame,
   },
-
 
   // TESTING
 
