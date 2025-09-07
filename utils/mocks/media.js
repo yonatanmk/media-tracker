@@ -5262,7 +5262,7 @@ const mockMediaData = [
   },
   {
     _id: 617,
-    name: "Dr Stone S4 Part 1",
+    name: "Dr. Stone S4 Part 1",
     startTime: new Date("4/14/2025"),
     endTime: new Date("4/23/2025"),
     type: mediaTypes.tv,
@@ -5358,8 +5358,13 @@ const mockMediaData = [
   {
     _id: 630,
     name: "Malcolm in the Middle S1-XXX",
-    startTime: new Date("5/27/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("5/27/2025"),
+        endTime: new Date("7/9/2025"),
+        // endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -5401,14 +5406,14 @@ const mockMediaData = [
     _id: 636,
     name: "D&D Minus S1",
     startTime: new Date("7/25/2025"),
-    endTime: null,
+    endTime: new Date("9/4/2025"),
     type: mediaTypes.podcast,
   },
   {
     _id: 637,
     name: "Tiny Tina's Wonderland",
     startTime: new Date("7/11/2025"),
-    endTime: new Date("7/16/2025"),
+    endTime: null,
     type: mediaTypes.videogame,
   },
   {
@@ -5417,6 +5422,66 @@ const mockMediaData = [
     startTime: new Date("7/31/2025"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 639,
+    name: "Persona 3 Reloaded",
+    nodes: [
+      {
+        startTime: new Date("8/10/2025"),
+        endTime: null
+      },
+    ],
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 640,
+    name: "Shrinking S1",
+    startTime: new Date("8/13/2025"),
+    endTime: new Date("8/25/2025"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 641,
+    name: "Kaiju No. 8 S2",
+    startTime: new Date("8/18/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 642,
+    name: "Backpack Hero",
+    startTime: new Date("8/19/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 643,
+    name: "Dr. Stone S4 Part 2",
+    startTime: new Date("8/20/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 644,
+    name: "Shrinking S2",
+    startTime: new Date("8/25/2025"),
+    endTime: new Date("9/5/2025"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 645,
+    name: "Game Changer S7",
+    startTime: new Date("8/25/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 646,
+    name: "Great British Bake Off S13 (Series 16)",
+    startTime: new Date("9/6/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
 
   // TESTING
