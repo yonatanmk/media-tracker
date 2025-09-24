@@ -5378,7 +5378,7 @@ const mockMediaData = [
     _id: 632,
     name: "Warbreaker",
     startTime: new Date("07/5/2025"),
-    endTime: null,
+    endTime: new Date("09/6/2025"),
     type: mediaTypes.book,
   },
   {
@@ -5420,7 +5420,7 @@ const mockMediaData = [
     _id: 638,
     name: "Death Stranding 2",
     startTime: new Date("7/31/2025"),
-    endTime: null,
+    endTime: new Date("9/23/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5473,7 +5473,7 @@ const mockMediaData = [
     _id: 645,
     name: "Game Changer S7",
     startTime: new Date("8/25/2025"),
-    endTime: null,
+    endTime: new Date("9/9/2025"),
     type: mediaTypes.tv,
   },
   {
@@ -5481,6 +5481,27 @@ const mockMediaData = [
     name: "Great British Bake Off S13 (Series 16)",
     startTime: new Date("9/6/2025"),
     endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 647,
+    name: "Worlds Beyond Number S1",
+    startTime: new Date("9/8/2025"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 648,
+    name: "Ted Lasso Rewatch S1-3",
+    startTime: new Date("8/23/2025"),
+    endTime: new Date("9/14/2025"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 649,
+    name: "Severance S2",
+    startTime: new Date("9/16/2025"),
+    endTime: new Date("9/23/2025"),
     type: mediaTypes.tv,
   },
 
