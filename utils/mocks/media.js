@@ -5330,8 +5330,16 @@ const mockMediaData = [
   {
     _id: 626,
     name: "Invincible S3",
-    startTime: new Date("5/29/2025"),
-    endTime: null,
+      nodes: [
+        {
+          startTime: new Date("5/29/2025"),
+          endTime: addHoursToDate(new Date("05/29/2025"), 4),
+        },
+        {
+          startTime: new Date("9/29/2025"),
+          endTime: null
+        },
+      ],
     type: mediaTypes.tv,
   },
   {
@@ -5357,11 +5365,11 @@ const mockMediaData = [
   },
   {
     _id: 630,
-    name: "Malcolm in the Middle S1-XXX",
+    name: "Malcolm in the Middle S1-XXX", // S4
     nodes: [
       {
         startTime: new Date("5/27/2025"),
-        endTime: new Date("7/9/2025"),
+        endTime: new Date("9/28/2025"),
         // endTime: null,
       },
     ],
@@ -5504,6 +5512,35 @@ const mockMediaData = [
     endTime: new Date("9/23/2025"),
     type: mediaTypes.tv,
   },
+  {
+    _id: 650,
+    name: "Slow Horses S1-2",
+    startTime: new Date("9/24/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 651,
+    name: "The Stanley Parable",
+    startTime: new Date("9/24/2025"),
+    endTime: new Date("9/26/2025"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 652,
+    name: "Lil Gator Game",
+    startTime: new Date("9/25/2025"),
+    endTime: new Date("9/27/2025"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 652,
+    name: "Loddlenaut",
+    startTime: new Date("9/27/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  
 
   // TESTING
 
