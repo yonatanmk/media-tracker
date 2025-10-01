@@ -5199,20 +5199,44 @@ const mockMediaData = [
     name: "The Legend of Zelda: Echoes of Wisdom",
     startTime: new Date("3/7/2025"),
     endTime: null,
+    nodes: [
+      {
+        startTime: new Date("3/7/2025"),
+        endTime: new Date("3/27/2025"),
+      },
+      {
+        startTime: new Date("9/26/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
     _id: 610,
     name: "Split Fiction",
-    startTime: new Date("3/7/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("3/7/2025"),
+        endTime: new Date("3/21/2025"),
+      },
+      {
+        startTime: new Date("4/27/2025"),
+        endTime: new Date("5/7/2025"),
+      },
+      {
+        startTime: new Date("6/30/2025"),
+        endTime: new Date("7/1/2025"),
+      },
+      {
+        startTime: new Date("9/24/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
     _id: 611,
     name: "Luigi's Mansion 3",
-    startTime: new Date("3/11/2025"),
-    endTime: null,
     nodes: [
       {
         startTime: new Date("3/11/2025"),
@@ -5467,7 +5491,7 @@ const mockMediaData = [
     _id: 643,
     name: "Dr. Stone S4 Part 2",
     startTime: new Date("8/20/2025"),
-    endTime: null,
+    endTime: new Date("9/30/2025"),
     type: mediaTypes.tv,
   },
   {
@@ -5514,7 +5538,7 @@ const mockMediaData = [
   },
   {
     _id: 650,
-    name: "Slow Horses S1-2",
+    name: "Slow Horses S1-3",
     startTime: new Date("9/24/2025"),
     endTime: null,
     type: mediaTypes.tv,
@@ -5537,7 +5561,7 @@ const mockMediaData = [
     _id: 652,
     name: "Loddlenaut",
     startTime: new Date("9/27/2025"),
-    endTime: null,
+    endTime: new Date("9/30/2025"),
     type: mediaTypes.videogame,
   },
   
