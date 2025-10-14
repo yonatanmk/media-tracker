@@ -4839,6 +4839,10 @@ const mockMediaData = [
         startTime: new Date("07/29/2025"),
         endTime: new Date("08/3/2025"),
       },
+      {
+        startTime: new Date("09/30/2025"),
+        endTime: new Date("10/3/2025"),
+      },
     ],
     type: mediaTypes.podcast,
   },
@@ -5315,8 +5319,16 @@ const mockMediaData = [
   {
     _id: 621,
     name: "Poker Face S2",
-    startTime: new Date("5/15/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("5/15/2025"),
+        endTime: new Date("6/5/2025"),
+      },
+      {
+        startTime: new Date("10/12/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -5361,7 +5373,7 @@ const mockMediaData = [
         },
         {
           startTime: new Date("9/29/2025"),
-          endTime: null
+          startTime: new Date("10/2/2025"),
         },
       ],
     type: mediaTypes.tv,
@@ -5444,8 +5456,17 @@ const mockMediaData = [
   {
     _id: 637,
     name: "Tiny Tina's Wonderland",
-    startTime: new Date("7/11/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("7/11/2025"),
+        endTime: new Date("8/18/2025"),
+      },
+      {
+        startTime: new Date("9/30/2025"),
+        endTime: new Date("10/1/2025"),
+      },
+      // null
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -5461,9 +5482,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("8/10/2025"),
-        endTime: null
+        endTime: new Date("9/15/2025"),
       },
     ],
+    // null
     type: mediaTypes.playthrough,
   },
   {
@@ -5538,16 +5560,16 @@ const mockMediaData = [
   },
   {
     _id: 650,
-    name: "Slow Horses S1-3",
+    name: "Slow Horses S1-4",
     startTime: new Date("9/24/2025"),
-    endTime: null,
+    endTime: new Date("9/24/2025"),
     type: mediaTypes.tv,
   },
   {
     _id: 651,
     name: "The Stanley Parable",
     startTime: new Date("9/24/2025"),
-    endTime: new Date("9/26/2025"),
+    endTime: new Date("10/7/2025"),
     type: mediaTypes.playthrough,
   },
   {
@@ -5558,14 +5580,61 @@ const mockMediaData = [
     type: mediaTypes.videogame,
   },
   {
-    _id: 652,
+    _id: 653,
     name: "Loddlenaut",
     startTime: new Date("9/27/2025"),
     endTime: new Date("9/30/2025"),
     type: mediaTypes.videogame,
   },
-  
-
+  {
+    _id: 654,
+    name: "Ghost of Yotei",
+    startTime: new Date("10/1/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 655,
+    name: "Gumshoes and Dragons",
+    startTime: new Date("10/2/2025"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 656,
+    name: "Gachiakuta",
+    startTime: new Date("10/8/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 657,
+    name: "Only Murders in the Building S5",
+    startTime: new Date("10/8/2024"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 658,
+    name: "Indiana Jones and the Great Circle",
+    startTime: new Date("10/10/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 659,
+    name: "Cookie Clicker",
+    startTime: new Date("10/2/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 660,
+    name: "The Adventure Zone Graduation",
+    startTime: new Date("10/10/2025"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
   // TESTING
 
   // {
