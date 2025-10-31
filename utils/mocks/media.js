@@ -5006,7 +5006,6 @@ const mockMediaData = [
         startTime: new Date("5/21/2025"),
         endTime: new Date("5/25/2025"),
       },
-      //   endTime: null,
     ],
     type: mediaTypes.podcast,
   },
@@ -5084,7 +5083,7 @@ const mockMediaData = [
     _id: 595,
     name: "Chef & My Fridge",
     startTime: new Date("1/26/2025"),
-    endTime: null,
+    endTime: new Date("4/7/2025"),
     type: mediaTypes.tv,
   },
   {
@@ -5201,8 +5200,6 @@ const mockMediaData = [
   {
     _id: 609,
     name: "The Legend of Zelda: Echoes of Wisdom",
-    startTime: new Date("3/7/2025"),
-    endTime: null,
     nodes: [
       {
         startTime: new Date("3/7/2025"),
@@ -5233,7 +5230,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("9/24/2025"),
-        endTime: null,
+        endTime: new Date("10/6/2025"),
       },
     ],
     type: mediaTypes.videogame,
@@ -5285,7 +5282,7 @@ const mockMediaData = [
     _id: 616,
     name: "Against the Storm",
     startTime: new Date("4/7/2025"),
-    endTime: null,
+    endTime: new Date("4/23/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5326,7 +5323,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("10/12/2025"),
-        endTime: null,
+        endTime: new Date("10/14/2025"),
       },
     ],
     type: mediaTypes.tv,
@@ -5389,7 +5386,7 @@ const mockMediaData = [
     _id: 628,
     name: "White Sand 1-3",
     startTime: new Date("6/5/2025"),
-    endTime: null,
+    endTime: new Date("7/5/2025"),
     type: mediaTypes.book,
   },
   {
@@ -5497,16 +5494,16 @@ const mockMediaData = [
   },
   {
     _id: 641,
-    name: "Kaiju No. 8 S2",
+    name: "Kaiju No. 8 S2 Part 1",
     startTime: new Date("8/18/2025"),
-    endTime: null,
+    endTime: new Date("9/17/2025"),
     type: mediaTypes.tv,
   },
   {
     _id: 642,
     name: "Backpack Hero",
     startTime: new Date("8/19/2025"),
-    endTime: null,
+    endTime: new Date("8/22/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5562,7 +5559,7 @@ const mockMediaData = [
     _id: 650,
     name: "Slow Horses S1-4",
     startTime: new Date("9/24/2025"),
-    endTime: new Date("9/24/2025"),
+    endTime: new Date("10/7/2025"),
     type: mediaTypes.tv,
   },
   {
@@ -5611,7 +5608,7 @@ const mockMediaData = [
     _id: 657,
     name: "Only Murders in the Building S5",
     startTime: new Date("10/8/2024"),
-    endTime: null,
+    endTime: new Date("10/29/2024"),
     type: mediaTypes.tv,
   },
   {
@@ -5635,6 +5632,21 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.podcast,
   },
+  {
+    _id: 661,
+    name: "FINAL FANTASY TACTICS - The Ivalice Chronicles",
+    startTime: new Date("10/19/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 662,
+    name: "Slow Horses S5",
+    startTime: new Date("10/30/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  
   // TESTING
 
   // {
