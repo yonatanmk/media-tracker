@@ -5615,7 +5615,7 @@ const mockMediaData = [
     _id: 658,
     name: "Indiana Jones and the Great Circle",
     startTime: new Date("10/10/2025"),
-    endTime: null,
+    endTime: new Date("11/5/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5643,9 +5643,46 @@ const mockMediaData = [
     _id: 662,
     name: "Slow Horses S5",
     startTime: new Date("10/30/2025"),
+    endTime: new Date("11/5/2025"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 663,
+    name: "Vinland Saga, starting from Chapter 100",
+    startTime: new Date("11/01/2025"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 664,
+    name: "Dispatch",
+    startTime: new Date("10/19/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 665,
+    name: "UFO 50",
+    startTime: new Date("11/3/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 666,
+    name: "We Solve Murders",
+    startTime: new Date("11/04/2025"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 667,
+    name: "Down Cemetery Road",
+    startTime: new Date("11/9/2025"),
     endTime: null,
     type: mediaTypes.tv,
   },
+
+  
   
   // TESTING
 
