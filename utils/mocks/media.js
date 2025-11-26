@@ -5648,9 +5648,9 @@ const mockMediaData = [
   },
   {
     _id: 663,
-    name: "Vinland Saga, starting from Chapter 100",
+    name: "Vinland Saga, Chapter 100 to 220",
     startTime: new Date("11/01/2025"),
-    endTime: null,
+    endTime: new Date("11/15/2025"),
     type: mediaTypes.book,
   },
   {
@@ -5671,7 +5671,7 @@ const mockMediaData = [
     _id: 666,
     name: "We Solve Murders",
     startTime: new Date("11/04/2025"),
-    endTime: null,
+    endTime: new Date("11/11/2025"),
     type: mediaTypes.book,
   },
   {
@@ -5681,9 +5681,34 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
-
-  
-  
+  {
+    _id: 668,
+    name: "Sonic X Shadow Generations",
+    startTime: new Date("11/9/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 669,
+    name: "Mario & Luigi: Brothership",
+    startTime: new Date("11/16/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 670,
+    name: "Wednesday S2",
+    startTime: new Date("11/18/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 671,
+    name: "Man on the Inside S2",
+    startTime: new Date("11/21/2025"),
+    endTime: new Date("11/25/2025"),
+    type: mediaTypes.tv,
+  },
   // TESTING
 
   // {
