@@ -5586,15 +5586,31 @@ const mockMediaData = [
   {
     _id: 654,
     name: "Ghost of Yotei",
-    startTime: new Date("10/1/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("10/1/2025"),
+        endTime: new Date("11/14/2025"),
+      },
+      {
+        startTime: new Date("12/9/2025"),
+        endTime: new Date("12/11/2025"),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
     _id: 655,
     name: "Gumshoes and Dragons",
-    startTime: new Date("10/2/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("10/2/2025"),
+        endTime: new Date("12/3/2025"),
+      },
+      // {
+      //   startTime: new Date("12/9/2025"),
+      //   endTime: null,
+      // },
+    ],
     type: mediaTypes.podcast,
   },
   {
@@ -5602,6 +5618,16 @@ const mockMediaData = [
     name: "Gachiakuta",
     startTime: new Date("10/8/2025"),
     endTime: null,
+    nodes: [
+      {
+        startTime: new Date("10/8/2025"),
+        endTime: null,
+      },
+      // {
+      //   startTime: new Date("12/9/2025"),
+      //   endTime: null,
+      // },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -5692,7 +5718,7 @@ const mockMediaData = [
     _id: 669,
     name: "Mario & Luigi: Brothership",
     startTime: new Date("11/16/2025"),
-    endTime: null,
+    endTime: new Date("12/8/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5708,6 +5734,20 @@ const mockMediaData = [
     startTime: new Date("11/21/2025"),
     endTime: new Date("11/25/2025"),
     type: mediaTypes.tv,
+  },
+  {
+    _id: 672,
+    name: "Ball x Pit",
+    startTime: new Date("12/7/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 673,
+    name: "Hollow Knight: Silksong",
+    startTime: new Date("12/11/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
   // TESTING
 
