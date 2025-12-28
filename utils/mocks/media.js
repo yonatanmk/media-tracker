@@ -5481,8 +5481,11 @@ const mockMediaData = [
         startTime: new Date("8/10/2025"),
         endTime: new Date("9/15/2025"),
       },
+      {
+        startTime: new Date("12/13/2025"),
+        endTime: new Date("12/27/2025"),
+      },
     ],
-    // null
     type: mediaTypes.playthrough,
   },
   {
@@ -5606,6 +5609,10 @@ const mockMediaData = [
         startTime: new Date("10/2/2025"),
         endTime: new Date("12/3/2025"),
       },
+      {
+        startTime: new Date("12/14/2025"),
+        endTime: new Date("12/22/2025"),
+      },
       // {
       //   startTime: new Date("12/9/2025"),
       //   endTime: null,
@@ -5655,7 +5662,7 @@ const mockMediaData = [
     _id: 660,
     name: "The Adventure Zone Graduation",
     startTime: new Date("10/10/2025"),
-    endTime: null,
+    endTime: new Date("12/14/2025"),
     type: mediaTypes.podcast,
   },
   {
@@ -5748,6 +5755,34 @@ const mockMediaData = [
     startTime: new Date("12/11/2025"),
     endTime: null,
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 674,
+    name: "Final Fantasy VI",
+    startTime: new Date("12/19/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 675,
+    name: "Hades 2",
+    startTime: new Date("12/16/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 676,
+    name: "The Adventure Zone: Imbalance",
+    startTime: new Date("12/25/2021"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 677,
+    name: "Lord of Mysteries",
+    startTime: new Date("12/11/2021"),
+    endTime: null,
+    type: mediaTypes.tv,
   },
   // TESTING
 
