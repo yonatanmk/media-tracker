@@ -5655,7 +5655,7 @@ const mockMediaData = [
     _id: 659,
     name: "Cookie Clicker",
     startTime: new Date("10/2/2025"),
-    endTime: null,
+    endTime: new Date("12/11/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5773,14 +5773,21 @@ const mockMediaData = [
   {
     _id: 676,
     name: "The Adventure Zone: Imbalance",
-    startTime: new Date("12/25/2021"),
+    startTime: new Date("12/25/2025"),
     endTime: null,
     type: mediaTypes.podcast,
   },
   {
     _id: 677,
     name: "Lord of Mysteries",
-    startTime: new Date("12/11/2021"),
+    startTime: new Date("12/11/2025"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 678,
+    name: "The Man Who Died Twice",
+    startTime: new Date("12/27/2025"),
     endTime: null,
     type: mediaTypes.tv,
   },
