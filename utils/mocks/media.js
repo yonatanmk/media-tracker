@@ -5540,8 +5540,16 @@ const mockMediaData = [
   {
     _id: 647,
     name: "Worlds Beyond Number S1",
-    startTime: new Date("9/8/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("9/8/2025"),
+        endTime: new Date("10/9/2025"),
+      },
+      {
+        startTime: new Date("12/29/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.podcast,
   },
   {
@@ -5622,18 +5630,16 @@ const mockMediaData = [
   },
   {
     _id: 656,
-    name: "Gachiakuta",
-    startTime: new Date("10/8/2025"),
-    endTime: null,
+    name: "Gachiakuta S1",
     nodes: [
       {
         startTime: new Date("10/8/2025"),
-        endTime: null,
+        endTime: new Date("12/9/2025"),
       },
-      // {
-      //   startTime: new Date("12/9/2025"),
-      //   endTime: null,
-      // },
+      {
+        startTime: new Date("12/7/2025"),
+        endTime: new Date("12/8/2025"),
+      },
     ],
     type: mediaTypes.tv,
   },
@@ -5668,8 +5674,16 @@ const mockMediaData = [
   {
     _id: 661,
     name: "FINAL FANTASY TACTICS - The Ivalice Chronicles",
-    startTime: new Date("10/19/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("10/19/2025"),
+        endTime: new Date("10/31/2025"),
+      },
+      {
+        startTime: new Date("1/10/2026"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -5711,14 +5725,14 @@ const mockMediaData = [
     _id: 667,
     name: "Down Cemetery Road",
     startTime: new Date("11/9/2025"),
-    endTime: null,
+    endTime: new Date("1/9/2025"),
     type: mediaTypes.tv,
   },
   {
     _id: 668,
     name: "Sonic X Shadow Generations",
     startTime: new Date("11/9/2025"),
-    endTime: null,
+    endTime: new Date("11/13/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5774,7 +5788,7 @@ const mockMediaData = [
     _id: 676,
     name: "The Adventure Zone: Imbalance",
     startTime: new Date("12/25/2025"),
-    endTime: null,
+    endTime: new Date("12/28/2025"),
     type: mediaTypes.podcast,
   },
   {
@@ -5788,8 +5802,22 @@ const mockMediaData = [
     _id: 678,
     name: "The Man Who Died Twice",
     startTime: new Date("12/27/2025"),
+    endTime: new Date("1/8/2026"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 679,
+    name: "Sentenced to Be a Hero S1",
+    startTime: new Date("1/7/2026"),
     endTime: null,
     type: mediaTypes.tv,
+  },
+  {
+    _id: 680,
+    name: "The Hollow Man",
+    startTime: new Date("1/11/2026"),
+    endTime: null,
+    type: mediaTypes.book,
   },
   // TESTING
 
