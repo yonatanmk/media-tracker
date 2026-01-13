@@ -26,7 +26,7 @@ function findRepeatedNumbersInFile(filePath) {
   return repeatedNumbers;
 }
 
-const filePath = "./media.js";
+const filePath = "./utils/mocks/media.js";
 const repeatedNumbers = findRepeatedNumbersInFile(filePath);
 
 console.log('REPEATED NUMBERS')
