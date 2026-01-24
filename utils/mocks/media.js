@@ -5621,8 +5621,12 @@ const mockMediaData = [
         startTime: new Date("12/14/2025"),
         endTime: new Date("12/22/2025"),
       },
+      {
+        startTime: new Date("1/18/2026"),
+        endTime: new Date("1/22/2026"),
+      },
       // {
-      //   startTime: new Date("12/9/2025"),
+      //   startTime: new Date("1/18/2026"),
       //   endTime: null,
       // },
     ],
@@ -5704,7 +5708,7 @@ const mockMediaData = [
     _id: 664,
     name: "Dispatch",
     startTime: new Date("10/19/2025"),
-    endTime: null,
+    endTime: new Date("1/22/2025"),
     type: mediaTypes.videogame,
   },
   {
@@ -5825,7 +5829,14 @@ const mockMediaData = [
     startTime: new Date("1/12/2026"),
     endTime: null,
     type: mediaTypes.tv,
-  },  
+  },
+  {
+    _id: 682,
+    name: "Culinary Class Wars S2",
+    startTime: new Date("1/23/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
 
 
   
