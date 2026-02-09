@@ -2198,7 +2198,7 @@ const mockMediaData = [
   },
   {
     _id: 269,
-    name: "The Night Manager",
+    name: "The Night Manager S1",
     startTime: new Date("05/30/2021"),
     endTime: new Date("06/05/2021"),
     type: mediaTypes.tv,
@@ -5625,6 +5625,10 @@ const mockMediaData = [
         startTime: new Date("1/18/2026"),
         endTime: new Date("1/22/2026"),
       },
+      {
+        startTime: new Date("2/2/2026"),
+        endTime: new Date("2/3/2026"),
+      },
       // {
       //   startTime: new Date("1/18/2026"),
       //   endTime: null,
@@ -5820,7 +5824,7 @@ const mockMediaData = [
     _id: 680,
     name: "The Hollow Man",
     startTime: new Date("1/11/2026"),
-    endTime: null,
+    endTime: new Date("2/3/2026"),
     type: mediaTypes.book,
   },
   {
@@ -5834,12 +5838,37 @@ const mockMediaData = [
     _id: 682,
     name: "Culinary Class Wars S2",
     startTime: new Date("1/23/2026"),
+    endTime: new Date("2/1/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 683,
+    name: "NordHold",
+    startTime: new Date("1/29/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 684,
+    name: "The Night Manager S2",
+    startTime: new Date("2/3/2026"),
     endTime: null,
     type: mediaTypes.tv,
   },
-
-
-  
+  {
+    _id: 685,
+    name: "Bridgerton S4",
+    startTime: new Date("2/8/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 686,
+    name: "Stories of Your Life and Others",
+    startTime: new Date("2/7/2026"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
   // TESTING
 
   // {
