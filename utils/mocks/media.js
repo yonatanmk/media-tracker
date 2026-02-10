@@ -5845,7 +5845,8 @@ const mockMediaData = [
     _id: 683,
     name: "NordHold",
     startTime: new Date("1/29/2025"),
-    endTime: null,
+    endTime: new Date("2/6/2025"),
+    // endTime: null,
     type: mediaTypes.videogame,
   },
   {
@@ -5868,6 +5869,13 @@ const mockMediaData = [
     startTime: new Date("2/7/2026"),
     endTime: null,
     type: mediaTypes.book,
+  },
+  {
+    _id: 687,
+    name: "Drillcore",
+    startTime: new Date("2/9/2025"),
+    endTime: null,
+    type: mediaTypes.videogame,
   },
   // TESTING
 
