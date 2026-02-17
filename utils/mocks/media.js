@@ -5877,6 +5877,13 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 685,
+    name: "Bridgerton S3",
+    startTime: new Date("2/9/2026"),
+    endTime: new Date("2/16/2026"),
+    type: mediaTypes.tv,
+  },
   // TESTING
 
   // {
