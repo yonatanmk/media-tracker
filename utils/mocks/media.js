@@ -5831,7 +5831,7 @@ const mockMediaData = [
     _id: 681,
     name: "Apocalypse Hotel",
     startTime: new Date("1/12/2026"),
-    endTime: null,
+    endTime: new Date("1/18/2026"),
     type: mediaTypes.tv,
   },
   {
@@ -5882,6 +5882,13 @@ const mockMediaData = [
     name: "Bridgerton S3",
     startTime: new Date("2/9/2026"),
     endTime: new Date("2/16/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 686,
+    name: "Bridgerton S2",
+    startTime: new Date("2/17/2026"),
+    endTime: null,
     type: mediaTypes.tv,
   },
   // TESTING
