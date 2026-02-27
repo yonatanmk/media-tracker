@@ -5844,8 +5844,8 @@ const mockMediaData = [
   {
     _id: 683,
     name: "NordHold",
-    startTime: new Date("1/29/2025"),
-    endTime: new Date("2/6/2025"),
+    startTime: new Date("1/29/2026"),
+    endTime: new Date("2/6/2026"),
     // endTime: null,
     type: mediaTypes.videogame,
   },
@@ -5865,7 +5865,7 @@ const mockMediaData = [
         startTime: new Date("2/9/2026"),
       },
       {
-        startTime: new Date("2/26/2025"),
+        startTime: new Date("2/26/2026"),
         endTime: null,
       },
     ],
@@ -5881,7 +5881,7 @@ const mockMediaData = [
   {
     _id: 687,
     name: "Drillcore",
-    startTime: new Date("2/9/2025"),
+    startTime: new Date("2/9/2026"),
     endTime: null,
     type: mediaTypes.videogame,
   },
@@ -5902,14 +5902,14 @@ const mockMediaData = [
   {
     _id: 690,
     name: "The Darkside Detective",
-    startTime: new Date("2/18/2025"),
-    endTime: new Date("2/26/2025"),
+    startTime: new Date("2/18/2026"),
+    endTime: new Date("2/26/2026"),
     type: mediaTypes.videogame,
   },
   {
     _id: 691,
     name: "Resident Evil 7: Biohazard + DLC",
-    startTime: new Date("2/22/2025"),
+    startTime: new Date("2/22/2026"),
     endTime: null,
     type: mediaTypes.videogame,
   },
@@ -5927,6 +5927,15 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.tv,
   },
+  {
+    _id: 694,
+    name: "The Darkside Detective 2: A Fumble in the Dark",
+    startTime: new Date("2/27/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+
+  
   // TESTING
 
   // {
