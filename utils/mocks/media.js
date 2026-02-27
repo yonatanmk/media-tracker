@@ -5859,8 +5859,16 @@ const mockMediaData = [
   {
     _id: 685,
     name: "Bridgerton S4",
-    startTime: new Date("2/8/2026"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("2/7/2026"),
+        startTime: new Date("2/9/2026"),
+      },
+      {
+        startTime: new Date("2/26/2025"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -5895,12 +5903,12 @@ const mockMediaData = [
     _id: 690,
     name: "The Darkside Detective",
     startTime: new Date("2/18/2025"),
-    endTime: null,
+    endTime: new Date("2/26/2025"),
     type: mediaTypes.videogame,
   },
   {
     _id: 691,
-    name: "Resident Evil 7: Biohazard",
+    name: "Resident Evil 7: Biohazard + DLC",
     startTime: new Date("2/22/2025"),
     endTime: null,
     type: mediaTypes.videogame,
@@ -5909,6 +5917,13 @@ const mockMediaData = [
     _id: 692,
     name: "Shrinking S3",
     startTime: new Date("2/25/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 693,
+    name: "Hell's Paradise S2",
+    startTime: new Date("2/26/2026"),
     endTime: null,
     type: mediaTypes.tv,
   },
