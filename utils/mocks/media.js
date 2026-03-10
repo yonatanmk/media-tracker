@@ -5629,6 +5629,10 @@ const mockMediaData = [
         startTime: new Date("2/2/2026"),
         endTime: new Date("2/3/2026"),
       },
+      {
+        startTime: new Date("3/3/2026"),
+        endTime: null,
+      },
       // {
       //   startTime: new Date("1/18/2026"),
       //   endTime: null,
@@ -5852,8 +5856,16 @@ const mockMediaData = [
   {
     _id: 684,
     name: "The Night Manager S2",
-    startTime: new Date("2/3/2026"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("2/3/2026"),
+        endTime: new Date("2/7/2026"),
+      },
+      {
+        startTime: new Date("3/9/2026"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -5862,11 +5874,11 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("2/7/2026"),
-        startTime: new Date("2/9/2026"),
+        endTime: new Date("2/9/2026"),
       },
       {
         startTime: new Date("2/26/2026"),
-        endTime: null,
+        endTime: new Date("3/2/2026"),
       },
     ],
     type: mediaTypes.tv,
@@ -5908,9 +5920,9 @@ const mockMediaData = [
   },
   {
     _id: 691,
-    name: "Resident Evil 7: Biohazard + DLC",
+    name: "Resident Evil 7: Biohazard",
     startTime: new Date("2/22/2026"),
-    endTime: null,
+    endTime: new Date("3/1/2026"),
     type: mediaTypes.videogame,
   },
   {
@@ -5934,7 +5946,20 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
-
+  {
+    _id: 695,
+    name: "Metal Gear Solid Delta: Snake Eater",
+    startTime: new Date("3/2/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 696,
+    name: "Elantris",
+    startTime: new Date("3/3/2026"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
   
   // TESTING
 
