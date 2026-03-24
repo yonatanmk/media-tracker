@@ -5207,7 +5207,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("9/26/2025"),
-        endTime: null,
+        endTime: new Date("11/20/2025"),
       },
     ],
     type: mediaTypes.videogame,
@@ -5462,7 +5462,6 @@ const mockMediaData = [
         startTime: new Date("9/30/2025"),
         endTime: new Date("10/1/2025"),
       },
-      // null
     ],
     type: mediaTypes.videogame,
   },
@@ -5534,7 +5533,7 @@ const mockMediaData = [
     _id: 646,
     name: "Great British Bake Off S13 (Series 16)",
     startTime: new Date("9/6/2025"),
-    endTime: null,
+    endTime: new Date("11/7/2025"),
     type: mediaTypes.tv,
   },
   {
@@ -5547,7 +5546,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("12/29/2025"),
-        endTime: null,
+        endTime: new Date("3/9/2026"),
       },
     ],
     type: mediaTypes.podcast,
@@ -5631,11 +5630,19 @@ const mockMediaData = [
       },
       {
         startTime: new Date("3/3/2026"),
-        endTime: null,
+        endTime: addHoursToDate(new Date("3/3/2026"), 4),
+      },
+      {
+        startTime: new Date("3/17/2026"),
+        endTime: new Date("3/20/2026"),
       },
       // {
       //   startTime: new Date("1/18/2026"),
       //   endTime: null,
+      // },
+      // {
+      //   startTime: new Date("3/3/2026"),
+      //   endTime: addHoursToDate(new Date("3/3/2026"), 4),
       // },
     ],
     type: mediaTypes.podcast,
@@ -5693,6 +5700,10 @@ const mockMediaData = [
       },
       {
         startTime: new Date("1/10/2026"),
+        endTime: new Date("1/21/2026"),
+      },
+      {
+        startTime: new Date("3/18/2026"),
         endTime: null,
       },
     ],
@@ -5779,7 +5790,7 @@ const mockMediaData = [
     _id: 673,
     name: "Hollow Knight: Silksong",
     startTime: new Date("12/11/2025"),
-    endTime: null,
+    endTime: new Date("2/17/2026"),
     type: mediaTypes.videogame,
   },
   {
@@ -5850,7 +5861,6 @@ const mockMediaData = [
     name: "NordHold",
     startTime: new Date("1/29/2026"),
     endTime: new Date("2/6/2026"),
-    // endTime: null,
     type: mediaTypes.videogame,
   },
   {
@@ -5887,7 +5897,7 @@ const mockMediaData = [
     _id: 686,
     name: "Stories of Your Life and Others",
     startTime: new Date("2/7/2026"),
-    endTime: null,
+    endTime: new Date("2/9/2026"),
     type: mediaTypes.book,
   },
   {
@@ -5950,17 +5960,44 @@ const mockMediaData = [
     _id: 695,
     name: "Metal Gear Solid Delta: Snake Eater",
     startTime: new Date("3/2/2026"),
-    endTime: null,
+    endTime: new Date("3/11/2026"),
     type: mediaTypes.videogame,
   },
   {
     _id: 696,
     name: "Elantris",
     startTime: new Date("3/3/2026"),
+    endTime: new Date("3/19/2026"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 697,
+    name: "Resident Evil: Requiem",
+    startTime: new Date("3/12/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 698,
+    name: "One Piece Live Action S2",
+    startTime: new Date("03/17/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 699,
+    name: "Dungeons and Daddies C3",
+    startTime: new Date("3/20/2026"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 700,
+    name: "The Emperor's Soul",
+    startTime: new Date("3/23/2026"),
     endTime: null,
     type: mediaTypes.book,
   },
-  
   // TESTING
 
   // {
