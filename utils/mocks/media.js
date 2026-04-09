@@ -3078,7 +3078,6 @@ const mockMediaData = [
       {
         startTime: new Date("07/24/2022"),
         endTime: new Date("07/25/2022"),
-        // endTime: null,
       },
     ],
     type: mediaTypes.tv,
@@ -4138,8 +4137,8 @@ const mockMediaData = [
         endTime: new Date("11/16/2023"),
       },
       {
-        startTime: new Date("1/07/2024"),
-        endTime: null,
+        startTime: new Date("1/7/2024"),
+        endTime: addHoursToDate(new Date("1/7/2024"), 4),
       },
     ],
     type: mediaTypes.tv,
@@ -4722,7 +4721,7 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("08/1/2024"),
-        endTime: null,
+        endTime: new Date("9/12/2024"),
       },
     ],
     type: mediaTypes.tv,
@@ -5016,13 +5015,6 @@ const mockMediaData = [
     endTime: new Date("12/24/2024"),
     type: mediaTypes.book,
   },
-  // {
-  //   _id: 586,
-  //   name: "Hunter x Hunter",
-  //   startTime: new Date("12/25/2024"),
-  //   endTime: null,
-  //   type: mediaTypes.book,
-  // },
   {
     _id: 587,
     name: "Star Wars Jedi: Survivor",
@@ -5044,13 +5036,6 @@ const mockMediaData = [
     endTime: new Date("1/23/2025"),
     type: mediaTypes.tv,
   },
-  // {
-  //   _id: 590,
-  //   name: "Sakamoto Days",
-  //   startTime: new Date("1/13/2025"),
-  //   endTime: null,
-  //   type: mediaTypes.tv,
-  // },
   {
     _id: 591,
     name: "Chaotic Neutral plays D&D",
@@ -5981,7 +5966,7 @@ const mockMediaData = [
     _id: 698,
     name: "One Piece Live Action S2",
     startTime: new Date("03/17/2026"),
-    endTime: null,
+    endTime: new Date("03/27/2026"),
     type: mediaTypes.tv,
   },
   {
@@ -5995,9 +5980,39 @@ const mockMediaData = [
     _id: 700,
     name: "The Emperor's Soul",
     startTime: new Date("3/23/2026"),
-    endTime: null,
+    endTime: new Date("3/26/2026"),
     type: mediaTypes.book,
   },
+  {
+    _id: 701,
+    name: "Pokopia",
+    startTime: new Date("3/24/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 702,
+    name: "Ted S2",
+    startTime: new Date("3/27/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 703,
+    name: "Jury Duty",
+    startTime: new Date("4/1/2026"),
+    endTime: new Date("4/7/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 704,
+    name: "Jury Duty Presents: Company Retreat",
+    startTime: new Date("4/8/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+
+
   // TESTING
 
   // {
