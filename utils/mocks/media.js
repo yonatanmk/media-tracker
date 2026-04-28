@@ -5388,7 +5388,10 @@ const mockMediaData = [
       {
         startTime: new Date("5/27/2025"),
         endTime: new Date("9/28/2025"),
-        // endTime: null,
+      },
+      {
+        startTime: new Date("4/15/2026"),
+        endTime: null,
       },
     ],
     type: mediaTypes.tv,
@@ -5817,7 +5820,7 @@ const mockMediaData = [
     _id: 679,
     name: "Sentenced to Be a Hero S1",
     startTime: new Date("1/7/2026"),
-    endTime: null,
+    endTime: new Date("4/10/2026"),
     type: mediaTypes.tv,
   },
   {
@@ -5858,7 +5861,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("3/9/2026"),
-        endTime: null,
+        endTime: new Date("4/24/2026"),
       },
     ],
     type: mediaTypes.tv,
@@ -5924,7 +5927,7 @@ const mockMediaData = [
     _id: 692,
     name: "Shrinking S3",
     startTime: new Date("2/25/2026"),
-    endTime: null,
+    endTime: new Date("4/10/2026"),
     type: mediaTypes.tv,
   },
   {
@@ -5959,7 +5962,7 @@ const mockMediaData = [
     _id: 697,
     name: "Resident Evil: Requiem",
     startTime: new Date("3/12/2026"),
-    endTime: null,
+    endTime: new Date("4/11/2026"),
     type: mediaTypes.videogame,
   },
   {
@@ -5994,7 +5997,7 @@ const mockMediaData = [
     _id: 702,
     name: "Ted S2",
     startTime: new Date("3/27/2026"),
-    endTime: null,
+    endTime: new Date("4/26/2026"),
     type: mediaTypes.tv,
   },
   {
@@ -6008,11 +6011,65 @@ const mockMediaData = [
     _id: 704,
     name: "Jury Duty Presents: Company Retreat",
     startTime: new Date("4/8/2026"),
+    endTime: new Date("4/17/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 705,
+    name: "Big Mistakes",
+    startTime: new Date("4/9/2026"),
     endTime: null,
     type: mediaTypes.tv,
   },
-
-
+  {
+    _id: 706,
+    name: "The Miniature Wife",
+    startTime: new Date("4/12/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 707,
+    name: "Arcanum Unbounded",
+    startTime: new Date("4/9/2026"),
+    endTime: new Date("4/26/2026"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 708,
+    name: "Malcolm in the Middle: Life's Still Unfair",
+    startTime: new Date("4/13/2026"),
+    endTime: new Date("4/19/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 709,
+    name: "The King is Watching",
+    startTime: new Date("4/15/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+    {
+    _id: 710,
+    name: "Pragmata",
+    startTime: new Date("4/17/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 711,
+    name: "Pluribus",
+    startTime: new Date("4/27/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 712,
+    name: "Mistborn: The Lost Metal",
+    startTime: new Date("4/13/2026"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
   // TESTING
 
   // {
