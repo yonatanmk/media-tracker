@@ -4332,7 +4332,7 @@ const mockMediaData = [
   },
   {
     _id: 507,
-    name: "Sousou no Frieren",
+    name: "Sousou no Frieren S1",
     nodes: [
       {
         startTime: new Date("2/5/2024"),
@@ -5892,7 +5892,7 @@ const mockMediaData = [
     _id: 687,
     name: "Drillcore",
     startTime: new Date("2/9/2026"),
-    endTime: null,
+    endTime: new Date("2/17/2026"),
     type: mediaTypes.videogame,
   },
   {
@@ -5934,14 +5934,15 @@ const mockMediaData = [
     _id: 693,
     name: "Hell's Paradise S2",
     startTime: new Date("2/26/2026"),
-    endTime: null,
+    endTime: new Date("5/2/2026"),
     type: mediaTypes.tv,
   },
   {
     _id: 694,
     name: "The Darkside Detective 2: A Fumble in the Dark",
     startTime: new Date("2/27/2026"),
-    endTime: null,
+    endTime: new Date("3/17/2026"),
+    // endTime: null,
     type: mediaTypes.videogame,
   },
   {
@@ -5990,7 +5991,7 @@ const mockMediaData = [
     _id: 701,
     name: "Pokopia",
     startTime: new Date("3/24/2026"),
-    endTime: null,
+    endTime: new Date("5/9/2026"),
     type: mediaTypes.videogame,
   },
   {
@@ -6046,14 +6047,15 @@ const mockMediaData = [
     _id: 709,
     name: "The King is Watching",
     startTime: new Date("4/15/2026"),
+    endTime: new Date("4/28/2026"),
     endTime: null,
     type: mediaTypes.videogame,
   },
-    {
+  {
     _id: 710,
     name: "Pragmata",
     startTime: new Date("4/17/2026"),
-    endTime: null,
+    endTime: new Date("4/28/2026"),
     type: mediaTypes.videogame,
   },
   {
@@ -6067,8 +6069,79 @@ const mockMediaData = [
     _id: 712,
     name: "Mistborn: The Lost Metal",
     startTime: new Date("4/13/2026"),
+    endTime: new Date("5/12/2026"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 713,
+    name: "Dying Light 2 Stay Human",
+    startTime: new Date("4/29/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 714,
+    name: "Nioh 2 (abandoned)",
+    startTime: new Date("4/29/2026"),
+    endTime: new Date("5/1/2026"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 715,
+    name: "Bread and Fred",
+    startTime: new Date("5/2/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 716,
+    name: "Sousou no Frieren S2",
+    startTime: new Date("5/3/2026"),
+    endTime: new Date("5/9/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 717,
+    name: "Anxious People",
+    startTime: new Date("5/7/2026"),
+    endTime: new Date("5/8/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 718,
+    name: "Trying S1-S4",
+    startTime: new Date("5/10/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 719,
+    name: "The Sunlit Man",
+    startTime: new Date("5/12/2026"),
+    endTime: new Date("5/20/2026"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 719,
+    name: "Tress of the Emerald Sea",
+    startTime: new Date("5/21/2026"),
     endTime: null,
     type: mediaTypes.book,
+  },
+  {
+    _id: 715,
+    name: "Donkey Kong Bananaza",
+    nodes: [
+      {
+        startTime: new Date("5/9/2026"),
+        endTime: new Date("5/10/2026"),
+      },
+      {
+        startTime: new Date("5/20/2026"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
   },
   // TESTING
 
