@@ -4842,6 +4842,10 @@ const mockMediaData = [
         startTime: new Date("09/30/2025"),
         endTime: new Date("10/3/2025"),
       },
+      {
+        startTime: new Date("06/18/2026"),
+        endTime: null,
+      },
     ],
     type: mediaTypes.podcast,
   },
@@ -5721,8 +5725,16 @@ const mockMediaData = [
   {
     _id: 665,
     name: "UFO 50",
-    startTime: new Date("11/3/2025"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("11/3/2025"),
+        endTime: new Date("12/19/2025"),
+      },
+      {
+        startTime: new Date("6/17/2026"),
+        endTime: addHoursToDate(new Date("06/17/2026"), 4),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -6111,7 +6123,7 @@ const mockMediaData = [
     _id: 718,
     name: "Trying S1-S4",
     startTime: new Date("5/10/2026"),
-    endTime: null,
+    endTime: new Date("5/21/2026"),
     type: mediaTypes.tv,
   },
   {
@@ -6122,14 +6134,14 @@ const mockMediaData = [
     type: mediaTypes.book,
   },
   {
-    _id: 719,
+    _id: 720,
     name: "Tress of the Emerald Sea",
     startTime: new Date("5/21/2026"),
     endTime: null,
     type: mediaTypes.book,
   },
   {
-    _id: 715,
+    _id: 721,
     name: "Donkey Kong Bananaza",
     nodes: [
       {
@@ -6142,6 +6154,27 @@ const mockMediaData = [
       },
     ],
     type: mediaTypes.videogame,
+  },
+  {
+    _id: 722,
+    name: "The Eminence in Shadow",
+    startTime: new Date("6/2/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 723,
+    name: "Acapulco S1-XXX",
+    startTime: new Date("6/4/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 724,
+    name: "Foster",
+    startTime: new Date("6/5/2026"),
+    endTime: null,
+    type: mediaTypes.book,
   },
   // TESTING
 
