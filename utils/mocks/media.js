@@ -4159,7 +4159,7 @@ const mockMediaData = [
   },
   {
     _id: 487,
-    name: "Ron Kamonohashi's Forbidden Deductions",
+    name: "Ron Kamonohashi's Forbidden Deductions S1",
     nodes: [
       {
         startTime: new Date("11/12/2023"),
@@ -4844,7 +4844,7 @@ const mockMediaData = [
       },
       {
         startTime: new Date("06/18/2026"),
-        endTime: null,
+        endTime: new Date("06/26/2026"),
       },
     ],
     type: mediaTypes.podcast,
@@ -6137,7 +6137,7 @@ const mockMediaData = [
     _id: 720,
     name: "Tress of the Emerald Sea",
     startTime: new Date("5/21/2026"),
-    endTime: null,
+    endTime: new Date("6/25/2026"),
     type: mediaTypes.book,
   },
   {
@@ -6150,32 +6150,105 @@ const mockMediaData = [
       },
       {
         startTime: new Date("5/20/2026"),
-        endTime: null,
+        endTime: new Date("6/24/2026"),
       },
     ],
     type: mediaTypes.videogame,
   },
   {
     _id: 722,
-    name: "The Eminence in Shadow",
+    name: "The Eminence in Shadow S1",
     startTime: new Date("6/2/2026"),
-    endTime: null,
+    endTime: new Date("7/13/2026"),
     type: mediaTypes.tv,
   },
   {
     _id: 723,
     name: "Acapulco S1-XXX",
     startTime: new Date("6/4/2026"),
-    endTime: null,
+    endTime: null, // S2 new Date("6/26/2026"),
     type: mediaTypes.tv,
   },
   {
     _id: 724,
     name: "Foster",
     startTime: new Date("6/5/2026"),
+    endTime: new Date("6/7/2026"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 725,
+    name: "007: First Light",
+    nodes: [
+      {
+        startTime: new Date("6/22/2026"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 726,
+    name: "Metroid 4: Beyond",
+    nodes: [
+      {
+        startTime: new Date("6/24/2026"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 727,
+    name: "Isles of the Emberdark",
+    startTime: new Date("6/26/2026"),
+    endTime: new Date("7/12/2026"),
+    type: mediaTypes.book,
+  },
+  {
+    _id: 728,
+    name: "The Séance of Blake Manor",
+    startTime: new Date("6/30/2026"),
+    endTime: new Date("7/14/2026"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 729,
+    name: "Yumi and the Nightmare Painter",
+    startTime: new Date("7/12/2026"),
     endTime: null,
     type: mediaTypes.book,
   },
+  {
+    _id: 730,
+    name: "Ron Kamonohashi's Forbidden Deductions S2",
+    startTime: new Date("7/14/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 731,
+    name: "Master Detective Archives: Rain Code",
+    startTime: new Date("7/15/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 732,
+    name: "The Amazing Digital Circus",
+    startTime: new Date("7/16/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 733,
+    name: "Crimson Desert",
+    startTime: new Date("7/16/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+
+
   // TESTING
 
   // {
