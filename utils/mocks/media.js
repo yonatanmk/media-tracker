@@ -4846,6 +4846,10 @@ const mockMediaData = [
         startTime: new Date("06/18/2026"),
         endTime: new Date("06/26/2026"),
       },
+      {
+        startTime: new Date("08/10/2026"),
+        endTime: new Date("08/20/2026"),
+      },
     ],
     type: mediaTypes.podcast,
   },
@@ -5628,10 +5632,10 @@ const mockMediaData = [
         startTime: new Date("3/17/2026"),
         endTime: new Date("3/20/2026"),
       },
-      // {
-      //   startTime: new Date("1/18/2026"),
-      //   endTime: null,
-      // },
+      {
+        startTime: new Date("08/20/2026"),
+        endTime: null,
+      },
       // {
       //   startTime: new Date("3/3/2026"),
       //   endTime: addHoursToDate(new Date("3/3/2026"), 4),
@@ -5798,6 +5802,20 @@ const mockMediaData = [
     name: "Final Fantasy VI",
     startTime: new Date("12/19/2025"),
     endTime: null,
+    // startTime: new Date("7/31/2026"),
+    // endTime: new Date("8/4/2026"),
+    // endTime: null,
+    nodes: [
+      {
+        startTime: new Date("12/19/2025"),
+        endTime: new Date("12/23/2025"),
+      },
+      {
+        startTime: new Date("7/31/2026"),
+        // endTime: new Date("8/4/2026"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -5989,7 +6007,7 @@ const mockMediaData = [
     _id: 699,
     name: "Dungeons and Daddies C3",
     startTime: new Date("3/20/2026"),
-    endTime: null,
+    endTime: new Date("8/10/2026"),
     type: mediaTypes.podcast,
   },
   {
@@ -6074,7 +6092,7 @@ const mockMediaData = [
     _id: 711,
     name: "Pluribus",
     startTime: new Date("4/27/2026"),
-    endTime: null,
+    endTime: new Date("5/15/2026"),
     type: mediaTypes.tv,
   },
   {
@@ -6087,8 +6105,16 @@ const mockMediaData = [
   {
     _id: 713,
     name: "Dying Light 2 Stay Human",
-    startTime: new Date("4/29/2026"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("4/29/2026"),
+        endTime: new Date("5/22/2026"),
+      },
+      // {
+      //   startTime: new Date("8/19/2026"),
+      //   endTime: null,
+      // },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -6216,7 +6242,7 @@ const mockMediaData = [
     _id: 729,
     name: "Yumi and the Nightmare Painter",
     startTime: new Date("7/12/2026"),
-    endTime: null,
+    endTime: new Date("8/5/2026"),
     type: mediaTypes.book,
   },
   {
@@ -6230,14 +6256,14 @@ const mockMediaData = [
     _id: 731,
     name: "Master Detective Archives: Rain Code",
     startTime: new Date("7/15/2026"),
-    endTime: null,
+    endTime: new Date("8/6/2026"),
     type: mediaTypes.videogame,
   },
   {
     _id: 732,
     name: "The Amazing Digital Circus",
     startTime: new Date("7/16/2026"),
-    endTime: null,
+    endTime: new Date("7/19/2026"),
     type: mediaTypes.tv,
   },
   {
@@ -6247,6 +6273,43 @@ const mockMediaData = [
     endTime: null,
     type: mediaTypes.videogame,
   },
+  {
+    _id: 734,
+    name: "Master Detective Archives: Rain Code",
+    startTime: new Date("8/6/2026"),
+    endTime: new Date("8/14/2026"),
+    type: mediaTypes.playthrough,
+  },
+  {
+    _id: 735,
+    name: "Ted Lasso S4",
+    startTime: new Date("8/14/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 736,
+    name: "The Burning White",
+    startTime: new Date("8/17/2026"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
+  {
+    _id: 737,
+    name: "Nobody Wants This S1-2",
+    nodes: [
+      {
+        startTime: new Date("08/1/2026"),
+        endTime: addHoursToDate(new Date("08/1/2026"), 4),
+      },
+      {
+        startTime: new Date("08/22/2026"),
+        endTime: null,
+      },
+    ],
+    type: mediaTypes.tv,
+  },
+  
 
 
   // TESTING
