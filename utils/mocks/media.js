@@ -5634,12 +5634,13 @@ const mockMediaData = [
       },
       {
         startTime: new Date("08/20/2026"),
-        endTime: null,
+        endTime: new Date("09/15/2026"),
       },
       // {
       //   startTime: new Date("3/3/2026"),
       //   endTime: addHoursToDate(new Date("3/3/2026"), 4),
       // },
+      // null
     ],
     type: mediaTypes.podcast,
   },
@@ -6304,13 +6305,34 @@ const mockMediaData = [
       },
       {
         startTime: new Date("08/22/2026"),
-        endTime: null,
+        endTime: new Date("09/15/2026"),
       },
     ],
     type: mediaTypes.tv,
   },
-  
+  {
+    _id: 738,
+    name: "Mina the Hollower",
+    startTime: new Date("8/26/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 739,
+    name: "Paranormasight",
+    startTime: new Date("9/14/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 740,
+    name: "Bitcherton",
+    startTime: new Date("9/15/2026"),
+    endTime: null,
+    type: mediaTypes.podcast,
+  },
 
+  Bitcherton 
 
   // TESTING
 
