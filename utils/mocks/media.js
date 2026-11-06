@@ -5636,11 +5636,10 @@ const mockMediaData = [
         startTime: new Date("08/20/2026"),
         endTime: new Date("09/15/2026"),
       },
-      // {
-      //   startTime: new Date("3/3/2026"),
-      //   endTime: addHoursToDate(new Date("3/3/2026"), 4),
-      // },
-      // null
+      {
+        startTime: new Date("10/9/2026"),
+        endTime: addHoursToDate(new Date("10/4/2026"), 4),
+      },
     ],
     type: mediaTypes.podcast,
   },
@@ -5653,8 +5652,8 @@ const mockMediaData = [
         endTime: new Date("12/9/2025"),
       },
       {
-        startTime: new Date("12/7/2025"),
-        endTime: new Date("12/8/2025"),
+        startTime: new Date("1/7/2025"),
+        endTime: new Date("1/8/2025"),
       },
     ],
     type: mediaTypes.tv,
@@ -6209,6 +6208,10 @@ const mockMediaData = [
     nodes: [
       {
         startTime: new Date("6/22/2026"),
+        endTime: new Date("7/14/2026"),
+      },
+      {
+        startTime: new Date("11/2/2026"),
         endTime: null,
       },
     ],
@@ -6271,7 +6274,7 @@ const mockMediaData = [
     _id: 733,
     name: "Crimson Desert",
     startTime: new Date("7/16/2026"),
-    endTime: null,
+    endTime: new Date("10/2/2026"),
     type: mediaTypes.videogame,
   },
   {
@@ -6285,14 +6288,14 @@ const mockMediaData = [
     _id: 735,
     name: "Ted Lasso S4",
     startTime: new Date("8/14/2026"),
-    endTime: null,
+    endTime: new Date("10/8/2026"),
     type: mediaTypes.tv,
   },
   {
     _id: 736,
     name: "The Burning White",
     startTime: new Date("8/17/2026"),
-    endTime: null,
+    endTime: new Date("11/2/2026"),
     type: mediaTypes.book,
   },
   {
@@ -6321,18 +6324,93 @@ const mockMediaData = [
     _id: 739,
     name: "Paranormasight",
     startTime: new Date("9/14/2026"),
-    endTime: null,
+    endTime: new Date("9/25/2026"),
     type: mediaTypes.videogame,
   },
   {
     _id: 740,
     name: "Bitcherton",
     startTime: new Date("9/15/2026"),
+    endTime: new Date("10/4/2026"),
+    type: mediaTypes.podcast,
+  },
+  {
+    _id: 741,
+    name: "Trying S5",
+    startTime: new Date("9/18/2026"),
+    endTime: new Date("9/23/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 742,
+    name: "Widow's Bay S1",
+    startTime: new Date("9/19/2026"),
+    endTime: new Date("10/3/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 743,
+    name: "Great British Bake Off S14 (Series 17)",
+    startTime: new Date("9/28/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 744,
+    name: "Orb: On the Movements of the Earth",
+    startTime: new Date("9/29/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 745,
+    name: "Control Resonant",
+    startTime: new Date("10/2/2026"),
+    endTime: new Date("10/15/2026"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 746,
+    name: "The Adventure Zone: Steeplechase",
+    startTime: new Date("10/4/2026"),
     endTime: null,
     type: mediaTypes.podcast,
   },
-
-  Bitcherton 
+  {
+    _id: 747,
+    name: "Squid Game S3",
+    startTime: new Date("10/5/2026"),
+    endTime: new Date("10/8/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 748,
+    name: "Parks and Rec S2-XXX",
+    startTime: new Date("10/12/2026"),
+    endTime: null,
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 749,
+    name: "Blood of the Dawnwalker",
+    startTime: new Date("10/13/2026"),
+    endTime: new Date("11/5/2026"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 750,
+    name: "Slow Horses S6",
+    startTime: new Date("10/22/2026"),
+    endTime: new Date("10/30/2026"),
+    type: mediaTypes.tv,
+  },
+  {
+    _id: 751,
+    name: "Jade City",
+    startTime: new Date("11/2/2026"),
+    endTime: null,
+    type: mediaTypes.book,
+  },
 
   // TESTING
 
