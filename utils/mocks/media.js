@@ -6252,8 +6252,16 @@ const mockMediaData = [
   {
     _id: 730,
     name: "Ron Kamonohashi's Forbidden Deductions S2",
-    startTime: new Date("7/14/2026"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("7/14/2026"),
+        endTime: new Date("7/20/2026"),
+      },
+      {
+        startTime: new Date("11/12/2026"),
+        endTime: null,
+      },
+    ],
     type: mediaTypes.tv,
   },
   {
@@ -6316,8 +6324,16 @@ const mockMediaData = [
   {
     _id: 738,
     name: "Mina the Hollower",
-    startTime: new Date("8/26/2026"),
-    endTime: null,
+    nodes: [
+      {
+        startTime: new Date("8/26/2026"),
+        endTime: new Date("9/25/2026"),
+      },
+      {
+        startTime: new Date("11/13/2026"),
+        endTime: new Date("11/18/2026"),
+      },
+    ],
     type: mediaTypes.videogame,
   },
   {
@@ -6385,7 +6401,7 @@ const mockMediaData = [
   },
   {
     _id: 748,
-    name: "Parks and Rec S2-XXX",
+    name: "Parks and Rec S2-XXX", // S4
     startTime: new Date("10/12/2026"),
     endTime: null,
     type: mediaTypes.tv,
@@ -6408,8 +6424,29 @@ const mockMediaData = [
     _id: 751,
     name: "Jade City",
     startTime: new Date("11/2/2026"),
-    endTime: null,
+    endTime: new Date("11/18/2026"),
     type: mediaTypes.book,
+  },
+  {
+    _id: 752,
+    name: "Flotsam",
+    startTime: new Date("1 1/6/2026"),
+    endTime: new Date("11/11/2026"),
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 753,
+    name: "Onimusha: Way of the Sword",
+    startTime: new Date("11/8/2026"),
+    endTime: null,
+    type: mediaTypes.videogame,
+  },
+  {
+    _id: 754,
+    name: "Ride or Die S1",
+    startTime: new Date("11/9/2026"),
+    endTime: new Date("11/18/2026"),
+    type: mediaTypes.tv,
   },
 
   // TESTING
